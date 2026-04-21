@@ -1,0 +1,45 @@
+/* Tailwind layers: base = resets/typography, components = reusable classes, utilities = one-off helpers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles: applied globally. Colors/fonts reference tailwind.config.js theme (e.g. bg-body, font-lora). */
+@layer base {
+  * {
+    @apply box-border;
+  }
+  /* html/body background avoids white flash before React hydrates */
+  html {
+    @apply bg-body;
+  }
+  body {
+    @apply font-poppins bg-body text-black tracking-[0.5px];
+  }
+  /* Headings use Lora; sizes tuned for hero/section titles */
+  h1,
+  h2,
+  h3 {
+    @apply font-lora font-bold;
+  }
+  h1 {
+    @apply text-[62px] leading-[84px];
+  }
+  h2 {
+    @apply text-[32px] leading-[46px];
+  }
+  h3 {
+    @apply text-[20px] leading-[30px];
+  }
+  p {
+    @apply text-black/80 leading-8;
+  }
+  a {
+    @apply text-white hover:text-orange transition-all duration-300 cursor-pointer;
+  }
+  label {
+    @apply text-white text-sm uppercase font-normal block mb-2;
+  }
+  .active {
+    @apply text-orange;
+  }
+}

@@ -50,7 +50,7 @@ export default function NavMobile({
             <IoCloseOutline />
           </button>
           <Link href="/">
-            <Image src="/logo.svg" width={90} height={36} alt="W'Food" />
+            <Image src="/logo.svg" width={90} height={36} alt="Delimwitu Cafe" />
           </Link>
           <div className="flex flex-col gap-y-8">
             {navMobileLinks.map((link) => (

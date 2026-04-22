@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Branch {
+  id        String     @id @default(cuid())
+  name      String     @unique
+  address   String
+  phone     String
+  email     String
+  openTime  String     // e.g., "7:00 AM"
+  closeTime String     // e.g., "11:00 PM"
+  capacity  Int        @default(100) // seat capacity
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  reservations Reservation[]
+
+  @@map("branches")
+}
+
+model Reservation {
+  id                  String     @id @default(cuid())
+  branchId            String
+  branch              Branch     @relation(fields: [branchId], references: [id], onDelete: Cascade)
+  
+  customerName        String
+  customerEmail       String
+  customerPhone       String
+  
+  guestCount          Int
+  reservationDate     DateTime
+  seatingPreference   String     // "flexible", "inside", "outside"
+  specialOccasion     String?    // e.g., "Birthday", "Anniversary"
+  
+  status              String     @default("pending") // "auto_confirmed", "pending_manual", "confirmed", "cancelled"
+  notes               String?
+  
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+
+  @@map("reservations")
+  @@index([branchId])
+  @@index([reservationDate])
+}

@@ -1,0 +1,44 @@
+
+> restaurant-ui-2@0.1.1 dev
+> next dev
+
+   ▲ Next.js 15.5.10
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.108:3000
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 5.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 13.1s (617 modules)
+ GET / 200 in 13949ms
+ GET / 200 in 638ms
+ ○ Compiling /book-table ...
+ ✓ Compiled /book-table in 5.5s (698 modules)
+ GET / 200 in 1774ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /book-table 200 in 7645ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1159ms (465 modules)
+ GET /favicon.ico 200 in 2441ms
+ POST /book-table 200 in 2742ms
+ GET /book-table 200 in 649ms
+ POST /book-table 200 in 109ms
+ GET /book-table 200 in 345ms
+ POST /book-table 200 in 71ms
+ ✓ Compiled in 7s (698 modules)
+ ✓ Compiled in 2.7s (698 modules)
+ ✓ Compiled in 2.8s (698 modules)
+ ✓ Compiled in 3.4s (698 modules)
+ ✓ Compiled in 3.5s (698 modules)
+ ✓ Compiled in 2.7s (698 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/3.pack.gz_' -> '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/3.pack.gz'
+ ✓ Compiled in 3.6s (698 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/delimwitu-web/.next/cache/webpack/server-development/4.pack.gz_' -> '/home/wilfred/delimwitu-web/.next/cache/webpack/server-development/4.pack.gz'
+ ✓ Compiled in 4.6s (698 modules)
+ ✓ Compiled in 1593ms (698 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/1.pack.gz_' -> '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/1.pack.gz'
+ ✓ Compiled in 7.4s (698 modules)
+ ✓ Compiled in 3.6s (698 modules)
+ ✓ Compiled in 3.1s (698 modules)
+ ✓ Compiled in 3.3s (698 modules)

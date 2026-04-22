@@ -1,24 +1,26 @@
-/**
- * Home Page (route: /) – Single-page layout composing all sections.
- * No API calls; all content is static. MapDynamic loads the map only on the client (Leaflet needs window).
- */
-import About from "@/components/About";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import MapDynamic from "@/components/MapDynamic";
 import Menu from "@/components/Menu";
-import Reservation from "@/components/Reservation";
+import About from "@/components/About";
+import Gallery from "@/components/Gallery";
+import Reviews from "@/components/Reviews";
+import Team from "@/components/Team";
+import SpecialsBanner from "@/components/SpecialsBanner";
+import ReservationCard from "@/components/ReservationCard";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full max-w-[1440px] bg-white mx-auto overflow-hidden">
+    <main className="w-full overflow-hidden">
       <Header />
       <Hero />
       <Menu />
-      <Reservation />
+      <SpecialsBanner />
       <About />
-      <MapDynamic />
+      <Gallery />
+      <Reviews />
+      <Team />
+      <ReservationCard />
       <Footer />
     </main>
   );

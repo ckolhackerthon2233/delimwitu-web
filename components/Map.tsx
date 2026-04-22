@@ -7,11 +7,12 @@
 import { fadeIn } from "@/lib/variants";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { useMediaQuery } from "react-responsive";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { mapMarkers } from "@/data/mapMarkers";
+import { useEffect, useState } from "react";
 
 /** Custom pin icon for markers (replaces default Leaflet marker). */
 const customIcon = new Icon({
@@ -19,9 +20,37 @@ const customIcon = new Icon({
   iconSize: [40, 40],
 });
 
+/** MapController – Updates zoom level when device orientation changes, without remounting the map. */
+function MapController({ isMobile }: { isMobile: boolean }) {
+  const map = useMap();
+
+  useEffect(() => {
+    map.setZoom(isMobile ? 10 : 12);
+  }, [isMobile, map]);
+
+  return null;
+}
+
 export default function Map() {
+  const [mounted, setMounted] = useState(false);
   /** Responsive: smaller height and zoom on mobile for better UX */
   const isMobile = useMediaQuery({ query: "(max-width:768px)" });
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Clean up stale Leaflet container state on unmount
+  useEffect(() => {
+    return () => {
+      const el = document.getElementById("leaflet-map") as (HTMLElement & { _leaflet_id?: number | null }) | null;
+      if (el && el._leaflet_id !== undefined) {
+        el._leaflet_id = null;
+      }
+    };
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <motion.section
@@ -33,9 +62,9 @@ export default function Map() {
       className="relative xl:after:w-full xl:after:h-[240px] xl:after:bg-gradient-to-b xl:after:from-white xl:after:via-white/80 xl:after:to-white/20 xl:after:absolute xl:after:top-0 xl:after:z-20"
     >
       <MapContainer
-        key={isMobile ? "mobile-map" : "desktop-map"}
+        id="leaflet-map"
         center={[34.052235, -118.243683]}
-        zoom={isMobile ? 10 : 12}
+        zoom={12}
         className={`${isMobile ? "h-[300px]" : "h-[900px]"} z-10`}
         zoomControl={false}
       >
@@ -44,6 +73,7 @@ export default function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         />
+        <MapController isMobile={isMobile} />
         {mapMarkers.map((marker) => (
           <Marker
             key={marker.title}

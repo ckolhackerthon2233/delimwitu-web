@@ -3,21 +3,22 @@
  * Next.js App Router: layout.tsx is the root shell; children are the current route's page.
  */
 import type { Metadata } from "next";
-import { Lora, Poppins } from "next/font/google";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { ToastProvider } from "@/components/ToastProvider";
 
-/** Google Fonts via next/font: Lora (serif) for headings. Subsets/weights reduce bundle size. */
-const lora = Lora({
+/** Playfair Display (serif) for headings */
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-lora",
+  weight: ["400", "700", "900"],
+  variable: "--font-playfair",
 });
 
-/** Poppins (sans-serif) for body text. Variable exposes --font-poppins for Tailwind. */
-const poppins = Poppins({
+/** DM Sans (sans-serif) for body text */
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-dm-sans",
 });
 
 /**
@@ -27,31 +28,31 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://restaurant-wfood.vercel.app"),
   title: {
-    default: "W'Food - A Taste of Local Flavours | Modern Restaurant Website",
-    template: "%s | W'Food Restaurant",
+    default: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
+    template: "%s | Delimwitu Cafe",
   },
   description:
-    "Experience authentic local flavours at W'Food restaurant. Discover our favorite menu featuring Stilton and pancetta penne, Chorizo and avocado spaghetti, and more. Book a table online and enjoy modern dining with us.",
+    "Experience authentic Kenyan coffee and cuisine at Delimwitu Cafe in Kileleshua, Nairobi. Premium roasted beans, fresh pastries, and a vibrant community space.",
   keywords: [
-    "restaurant",
+    "coffee",
+    "cafe",
+    "Nairobi",
+    "Kileleshua",
+    "Delimwitu Cafe",
+    "specialty coffee",
+    "third-wave roastery",
     "local food",
+    "pastries",
     "dining",
-    "W'Food",
-    "restaurant website",
-    "food menu",
+    "restaurant",
+    "community space",
+    "Kenyan coffee",
+    "artisan coffee",
+    "cafe nairobi",
+    "specialty drinks",
     "book table",
-    "restaurant reservation",
-    "local flavours",
-    "modern restaurant",
-    "fine dining",
-    "gourmet food",
-    "restaurant menu",
-    "online reservation",
-    "restaurant booking",
-    "Next.js",
-    "React",
-    "TailwindCSS",
-    "Framer Motion",
+    "cafe reservation",
+    "WiFi cafe",
   ],
   authors: [
     {
@@ -60,8 +61,8 @@ export const metadata: Metadata = {
     },
   ],
   other: {
-    "application-name": "W'Food Restaurant",
-    "apple-mobile-web-app-title": "W'Food",
+    "application-name": "Delimwitu Cafe",
+    "apple-mobile-web-app-title": "Delimwitu Cafe",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
     "mobile-web-app-capable": "yes",
@@ -85,32 +86,32 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://restaurant-wfood.vercel.app",
-    siteName: "W'Food Restaurant",
-    title: "W'Food - A Taste of Local Flavours | Modern Restaurant Website",
+    siteName: "Delimwitu Cafe",
+    title: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
     description:
-      "Experience authentic local flavours at W'Food restaurant. Discover our favorite menu and book a table online.",
+      "Experience authentic Kenyan coffee and cuisine at Delimwitu Cafe in Kileleshua, Nairobi. Book a table online.",
     images: [
       {
         url: "/hero/plate.png",
         width: 756,
         height: 682,
-        alt: "W'Food Restaurant - A Taste of Local Flavours",
+        alt: "Delimwitu Cafe - Premium Coffee in Nairobi",
       },
       {
         url: "/logo.svg",
         width: 90,
         height: 36,
-        alt: "W'Food Restaurant Logo",
+        alt: "Delimwitu Cafe Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "W'Food - A Taste of Local Flavours | Modern Restaurant Website",
+    title: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
     description:
-      "Experience authentic local flavours at W'Food restaurant. Discover our favorite menu and book a table online.",
+      "Experience authentic Kenyan coffee and cuisine at Delimwitu Cafe in Kileleshua, Nairobi. Book a table online.",
     images: ["/hero/plate.png"],
-    creator: "@arnob_mahmud",
+    creator: "@delimwitu_cafe",
   },
   icons: {
     icon: "/favicon.ico",
@@ -125,8 +126,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" style={{ backgroundColor: "#e5e5e5" }}>
-      <body className={`${lora.variable} ${poppins.variable}`} style={{ backgroundColor: "#e5e5e5" }}>{children}</body>
+    <html lang="en" style={{ backgroundColor: "#FDFAF5" }}>
+      <body className={`${playfair.variable} ${dmSans.variable}`} style={{ backgroundColor: "#FDFAF5" }}>
+        <ToastProvider>{children}</ToastProvider>
+      </body>
     </html>
   );
 }

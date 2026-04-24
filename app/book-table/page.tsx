@@ -107,10 +107,10 @@ export default function BookTable() {
 
   // Branch image mappings
   const branchImages: Record<string, string> = {
-    default: "https://images.unsplash.com/photo-1600565193566-fd09a7fd41a3?w=600&h=400&fit=crop",
-    kileleshua: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=400&fit=crop",
-    downtown: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=600&h=400&fit=crop",
-    westlands: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop",
+    default: "",
+    kileleshua: "",
+    downtown: "",
+    westlands: "",
   };
 
   const getBranchImage = (branchName: string) => {

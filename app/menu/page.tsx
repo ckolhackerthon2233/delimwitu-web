@@ -1,0 +1,126 @@
+"use client";
+
+import { useState } from "react";
+import { menuData } from "@/data/menuData";
+
+export default function MenuPage() {
+  const [activeFilter, setActiveFilter] = useState("all");
+
+  const categories = ["all", "breakfast", "lunch", "mains", "desserts", "drinks"];
+  const filteredItems =
+    activeFilter === "all"
+      ? menuData
+      : menuData.filter((item) => item.cat === activeFilter);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
+      {/* Hero Section */}
+      <div className="pt-32 pb-20 px-6 bg-gradient-to-r from-dark-brown to-orange">
+        <div className="max-w-6xl mx-auto text-center text-white">
+          <h1 className="text-6xl md:text-7xl font-black mb-6">Our Complete Menu</h1>
+          <p className="text-xl md:text-2xl mb-4 text-white/90">
+            Explore all our delicious offerings
+          </p>
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">
+            Handcrafted dishes featuring the finest local and international ingredients
+          </p>
+        </div>
+      </div>
+
+      {/* Menu Section */}
+      <div className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-14 max-md:mb-10">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-3">
+              What We Serve
+            </span>
+            <h2 className="text-4xl font-bold text-dark-brown max-md:text-3xl">
+              All Menu Items
+            </h2>
+            <div className="w-15 h-0.75 bg-orange mx-auto my-6 rounded"></div>
+            <p className="max-w-96 mx-auto text-base text-gray-700">
+              Discover our diverse selection of breakfast, lunch, main courses,
+              desserts, and refreshing beverages.
+            </p>
+          </div>
+
+          {/* Filter Tabs */}
+          <div className="flex justify-center gap-2 flex-wrap mb-10">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                className={`px-5 py-2 rounded-full border-1.5 text-sm font-medium cursor-pointer transition-all duration-200 ${
+                  activeFilter === cat
+                    ? "bg-dark-brown text-white border-dark-brown"
+                    : "bg-transparent text-gray-600 border-tan hover:bg-dark-brown hover:text-white hover:border-dark-brown"
+                }`}
+                onClick={() => setActiveFilter(cat)}
+              >
+                {cat.charAt(0).toUpperCase() + cat.slice(1)}
+              </button>
+            ))}
+          </div>
+
+          {/* Menu Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {filteredItems.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-minus-2 hover:shadow-lg cursor-pointer"
+              >
+                {/* Image Container */}
+                <div className="relative aspect-square overflow-hidden bg-gray-100">
+                  {item.badge && (
+                    <div className="absolute top-0 right-0 bg-orange text-white px-3 py-1 text-xs font-semibold uppercase z-10">
+                      {item.badge}
+                    </div>
+                  )}
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-600 hover:scale-108"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = item.fallback;
+                    }}
+                  />
+                </div>
+
+                {/* Card Body */}
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-dark-brown mb-2 line-clamp-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                    {item.desc}
+                  </p>
+
+                  {/* Footer with Price and Button */}
+                  <div className="flex items-center justify-between">
+                    <div className="font-semibold text-dark-brown">
+                      {item.price}
+                    </div>
+                    <button
+                      className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
+                      title="Add to order"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Results Count */}
+          <div className="text-center mt-10 text-gray-600">
+            <p className="text-sm">
+              Showing {filteredItems.length} item{filteredItems.length !== 1 ? "s" : ""}
+              {activeFilter !== "all" && ` in ${activeFilter}`}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

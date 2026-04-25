@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { menuData } from "@/data/menuData";
+import FilterButton from "@/components/FilterButton";
+import MenuGrid from "@/components/MenuGrid";
 
 export default function MenuPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -45,72 +47,20 @@ export default function MenuPage() {
             </p>
           </div>
 
-          {/* Filter Tabs */}
-          <div className="flex justify-center gap-2 flex-wrap mb-10">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                className={`px-5 py-2 rounded-full border-1.5 text-sm font-medium cursor-pointer transition-all duration-200 ${
-                  activeFilter === cat
-                    ? "bg-dark-brown text-white border-dark-brown"
-                    : "bg-transparent text-gray-600 border-tan hover:bg-dark-brown hover:text-white hover:border-dark-brown"
-                }`}
-                onClick={() => setActiveFilter(cat)}
-              >
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            ))}
-          </div>
+           {/* Filter Tabs */}
+           <div className="flex justify-center gap-2 flex-wrap mb-10">
+              {categories.map((cat) => (
+                <FilterButton
+                  key={cat}
+                  label={cat}
+                  isActive={activeFilter === cat}
+                  onClick={() => setActiveFilter(cat)}
+                />
+              ))}
+            </div>
 
           {/* Menu Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {filteredItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-minus-2 hover:shadow-lg cursor-pointer"
-              >
-                {/* Image Container */}
-                <div className="relative aspect-square overflow-hidden bg-gray-100">
-                  {item.badge && (
-                    <div className="absolute top-0 right-0 bg-orange text-white px-3 py-1 text-xs font-semibold uppercase z-10">
-                      {item.badge}
-                    </div>
-                  )}
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-600 hover:scale-108"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = item.fallback;
-                    }}
-                  />
-                </div>
-
-                {/* Card Body */}
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-dark-brown mb-2 line-clamp-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                    {item.desc}
-                  </p>
-
-                  {/* Footer with Price and Button */}
-                  <div className="flex items-center justify-between">
-                    <div className="font-semibold text-dark-brown">
-                      {item.price}
-                    </div>
-                    <button
-                      className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
-                      title="Add to order"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <MenuGrid items={filteredItems} variant="default" />
 
           {/* Results Count */}
           <div className="text-center mt-10 text-gray-600">

@@ -4,7 +4,7 @@ export default function SpecialsBanner() {
   return (
     <div className="relative py-20 bg-dark-brown text-white overflow-hidden max-md:py-16">
       {/* Background image */}
-      <div className="absolute inset-0 opacity-20" style={{backgroundImage: "url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1800&q=80')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+      <div className="absolute inset-0 opacity-20" style={{backgroundImage: "url('/hero/bg.png')", backgroundSize: "cover", backgroundPosition: "center"}}></div>
       <div className="absolute inset-0 bg-gradient-to-r from-dark-brown via-dark-brown/80 to-dark-brown/60"></div>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
@@ -34,12 +34,12 @@ export default function SpecialsBanner() {
           {/* Image Section */}
           <div className="hidden lg:block h-96 rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=700&q=85"
+              src="/menu/lunch&dinner/butter-curry-chicken-02_200x.png"
               alt="Chef's special curry"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               onError={(e) => {
                 (e.target as HTMLImageElement).src =
-                  "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=700&q=80";
+                  "/hero/plate.png";
               }}
             />
           </div>

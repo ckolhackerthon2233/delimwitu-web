@@ -1,26 +1,45 @@
 "use client";
 
 import { useState } from "react";
-import { getItemsByCategory } from "@/data/menuData";
+import { getItemsByCategory, getItemsByMultipleCategories } from "@/data/menuData";
+import FilterButton from "@/components/FilterButton";
+import MenuGrid from "@/components/MenuGrid";
 
 export default function FoodPage() {
-  const [activeFilter, setActiveFilter] = useState("breakfast");
+  const [activeFilter, setActiveFilter] = useState("all");
 
-  const categories = ["breakfast", "lunch"];
-  const filteredItems = getItemsByCategory(activeFilter);
+  const categories = ["all", "breakfast", "lunch", "mains", "sides", "desserts"];
+  const filteredItems =
+    activeFilter === "all"
+      ? getItemsByMultipleCategories([
+          "breakfast",
+          "lunch",
+          "mains",
+          "sides",
+          "desserts",
+        ])
+      : getItemsByCategory(activeFilter);
 
   const getCategoryTitle = (cat: string) => {
     const titles: Record<string, string> = {
+      all: "Food Menu",
       breakfast: "Breakfast Menu",
       lunch: "Lunch Menu",
+      mains: "Main Course",
+      sides: "Sides & Starters",
+      desserts: "Desserts",
     };
     return titles[cat] || cat.charAt(0).toUpperCase() + cat.slice(1);
   };
 
   const getCategoryDescription = (cat: string) => {
     const descriptions: Record<string, string> = {
+      all: "Explore our full food selection",
       breakfast: "Start your day with our delicious breakfast selections",
       lunch: "Enjoy our lunch specials and hearty midday meals",
+      mains: "Heartier dishes to satisfy your appetite",
+      sides: "Perfect accompaniments to your meal",
+      desserts: "Sweet treats to end your meal",
     };
     return descriptions[cat] || "";
   };
@@ -57,81 +76,29 @@ export default function FoodPage() {
             </p>
           </div>
 
-          {/* Filter Tabs */}
-          <div className="flex justify-center gap-3 flex-wrap mb-12">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                className={`px-6 py-3 rounded-full border-2 text-sm font-medium cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-                  activeFilter === cat
-                    ? "bg-dark-brown text-white border-dark-brown shadow-lg"
-                    : "bg-transparent text-gray-600 border-tan hover:bg-dark-brown hover:text-white hover:border-dark-brown"
-                }`}
-                onClick={() => setActiveFilter(cat)}
-              >
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            ))}
-          </div>
+           {/* Filter Tabs */}
+           <div className="flex justify-center gap-3 flex-wrap mb-12">
+              {categories.map((cat) => (
+                <FilterButton
+                  key={cat}
+                  label={cat}
+                  isActive={activeFilter === cat}
+                  onClick={() => setActiveFilter(cat)}
+                />
+              ))}
+            </div>
 
-          {/* Menu Grid - Fully Responsive */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {filteredItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="group bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:translate-y-minus-3 hover:shadow-xl cursor-pointer"
-              >
-                {/* Image Container */}
-                <div className="relative aspect-square overflow-hidden bg-gray-100">
-                  {item.badge && (
-                    <div className="absolute top-2 right-2 bg-orange text-white px-3 py-1 text-xs font-semibold uppercase z-10 rounded">
-                      {item.badge}
-                    </div>
-                  )}
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = item.fallback;
-                    }}
-                  />
-                </div>
+             {/* Menu Grid - Fully Responsive */}
+             <MenuGrid items={filteredItems} variant="compact" />
 
-                {/* Card Body */}
-                <div className="p-4 md:p-5">
-                  <h3 className="text-base md:text-lg font-semibold text-dark-brown mb-2 line-clamp-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs md:text-sm text-gray-600 mb-4 line-clamp-2">
-                    {item.desc}
-                  </p>
-
-                  {/* Footer with Price and Button */}
-                  <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                    <div className="font-semibold text-dark-brown text-sm md:text-base">
-                      {item.price}
-                    </div>
-                    <button
-                      className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 transform hover:scale-110 cursor-pointer border-0"
-                      title="Add to order"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Results Count */}
-          <div className="text-center mt-12 text-gray-600">
-            <p className="text-sm">
-              Showing {filteredItems.length} item{filteredItems.length !== 1 ? "s" : ""}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+           {/* Results Count */}
+           <div className="text-center mt-12 text-gray-600">
+             <p className="text-sm">
+               Showing {filteredItems.length} item{filteredItems.length !== 1 ? "s" : ""}
+             </p>
+           </div>
+         </div>
+       </div>
+     </div>
+   );
+ }

@@ -19,12 +19,12 @@ export default function About() {
             {/* Large image */}
             <div className="col-span-2 lg:col-span-1 lg:row-span-2 h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-md">
               <img
-                src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=700&q=85"
+                src="/about/img.png"
                 alt="Cafe interior"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&q=80";
+                    "/hero/plate.png";
                 }}
               />
             </div>
@@ -32,12 +32,12 @@ export default function About() {
             {/* Small image */}
             <div className="h-48 lg:h-56 rounded-lg overflow-hidden shadow-md">
               <img
-                src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=500&q=85"
+                src="/about/img.png"
                 alt="Coffee preparation"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80";
+                    "/hero/plate.png";
                 }}
               />
             </div>

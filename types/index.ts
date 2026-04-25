@@ -9,9 +9,13 @@ import type { ReactNode } from "react";
 export type FadeDirection = "up" | "down" | "left" | "right";
 
 export interface MenuItem {
-  img: string;
+  cat: "breakfast" | "lunch" | "mains" | "sides" | "desserts" | "drinks";
+  badge?: string;
   title: string;
+  desc: string;
   price: string;
+  img: string;
+  subcategory?: string;
 }
 
 export interface NavLinkConfig {

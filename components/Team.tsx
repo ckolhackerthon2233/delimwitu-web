@@ -6,22 +6,22 @@ export default function Team() {
       name: "Chef Wildan Wari",
       role: "Head Chef & Founder",
       bio: "15 years of culinary mastery. Wildan trained in Cape Town and Nairobi before bringing his vision of coastal fusion cuisine home to Mombasa.",
-      image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80",
-      fallback: "https://i.pravatar.cc/400?img=68",
+      image: "/menu/starters/art-wings-large-02_180x.png",
+      fallback: "/hero/plate.png",
     },
     {
       name: "Aisha Baraka",
       role: "Pastry Chef",
       bio: "A self-taught baker who turned her grandmother's recipes into a celebrated dessert menu loved by locals and visitors alike.",
-      image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
-      fallback: "https://i.pravatar.cc/400?img=45",
+      image: "/menu/everydayclassic/mango-granola-bowl-01.png",
+      fallback: "/hero/plate.png",
     },
     {
       name: "Marco Njoroge",
       role: "Head Barista",
       bio: "Kenya's 2023 Regional Barista Champion. Marco sources single-origin beans from Mt. Kenya slopes and crafts each cup as a work of art.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-      fallback: "https://i.pravatar.cc/400?img=53",
+      image: "/hero/coffee.png",
+      fallback: "/hero/plate.png",
     },
   ];
 
@@ -37,10 +37,10 @@ export default function Team() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {team.map((member, idx) => (
             <div key={idx} className="text-center">
-              <div className="mb-6 h-72 rounded-lg overflow-hidden shadow-md">
+              <div className="mb-6 h-48 md:h-72 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={member.image}
                   alt={member.name}

@@ -123,18 +123,20 @@ export default function BookTable() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
-      {/* Hero Section */}
-      <div className="pt-32 pb-20 px-6 bg-gradient-to-r from-dark-brown to-orange bg-opacity-90">
-        <div className="max-w-6xl mx-auto text-center text-white">
-          <h1 className="text-6xl md:text-7xl font-black mb-6">Book Your Table</h1>
-          <p className="text-xl md:text-2xl mb-4 text-white/90">
-            Reserve your culinary experience at Delimwitu
-          </p>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Join us for an unforgettable meal in one of our carefully curated locations across Nairobi
-          </p>
-        </div>
-      </div>
+       {/* Hero Section */}
+       <div className="pt-32 pb-20 px-6 relative">
+         <div className="absolute inset-0 bg-[url('/hero/tb')] bg-center bg-cover bg-no-repeat" />
+         <div className="absolute inset-0 bg-black bg-opacity-50" />
+         <div className="relative max-w-6xl mx-auto text-center text-white pt-32 pb-20 px-6">
+           <h1 className="text-6xl md:text-7xl font-black mb-6">Book Your Table</h1>
+           <p className="text-xl md:text-2xl mb-4 text-white/90">
+             Reserve your culinary experience at Delimwitu
+           </p>
+           <p className="text-lg text-white/80 max-w-2xl mx-auto">
+             Join us for an unforgettable meal in one of our carefully curated locations across Nairobi
+           </p>
+         </div>
+       </div>
 
       {/* Reservation Form Section */}
       <div className="py-20 px-6">

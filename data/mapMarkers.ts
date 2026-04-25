@@ -7,21 +7,21 @@ import type { MapMarkerData } from "@/types";
 /** Map marker data: position [lat, lng], title, subtitle, image path */
 export const mapMarkers: MapMarkerData[] = [
   {
-    position: [34.052235, -118.243683],
-    title: "Location 1",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    position: [-1.2921, 36.8219],
+    title: "Kileleshwa Branch",
+    subtitle: "Our main location in the heart of Nairobi",
     image: "/map/1.png",
   },
   {
-    position: [33.9748, -118.3356],
-    title: "Location 2",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    position: [-1.2625, 36.7974],
+    title: "Westlands Branch",
+    subtitle: "Conveniently located in the Westlands area",
     image: "/map/2.png",
   },
   {
-    position: [34.0211, -118.2965],
-    title: "Location 3",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    position: [-1.3125, 36.7044],
+    title: "Karen Branch",
+    subtitle: "Visit us in the serene Karen neighborhood",
     image: "/map/3.png",
   },
 ];

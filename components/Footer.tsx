@@ -1,5 +1,7 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 export default function Footer() {
   const hours = [
     { day: "Monday", time: "7AM – 10PM" },
@@ -10,6 +12,16 @@ export default function Footer() {
     { day: "Saturday", time: "8AM – 11PM" },
     { day: "Sunday", time: "8AM – 10PM" },
   ];
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -31,7 +43,7 @@ export default function Footer() {
                   <div className="text-2xl flex-shrink-0">📍</div>
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Address</h4>
-                    <p className="text-sm text-gray-600">14 Nyali Road, Mombasa County, Kenya</p>
+                    <p className="text-sm text-gray-600">Kileleshua, Nairobi, Kenya</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -69,12 +81,12 @@ export default function Footer() {
             {/* Map */}
             <div className="h-96 rounded-lg overflow-hidden shadow-md">
               <img
-                src="https://images.unsplash.com/photo-1524661135423-995f23f2e02f?w=700&q=80"
+                src="/footer/bg.png"
                 alt="Mombasa Kenya map area"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=700&q=80";
+                    "/hero/plate.png";
                 }}
               />
             </div>
@@ -184,11 +196,7 @@ export default function Footer() {
       <button
         id="scroll-top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-orange text-white font-bold flex items-center justify-center opacity-0 invisible hover:bg-orange-hover transition-all duration-300 hover:shadow-lg z-50"
-        style={{
-          opacity: typeof window !== "undefined" && window.scrollY > 400 ? 1 : 0,
-          visibility: typeof window !== "undefined" && window.scrollY > 400 ? "visible" : "hidden",
-        }}
+        className={`fixed bottom-8 right-8 w-12 h-12 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 hover:shadow-lg z-50 ${showScrollTop ? "opacity-100 visible" : "opacity-0 invisible"}`}
         aria-label="Back to top"
       >
         ↑

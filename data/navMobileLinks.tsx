@@ -9,7 +9,7 @@ import type { NavMobileLinkConfig } from "@/types";
 
 /** Mobile nav links with icons */
 export const navMobileLinks: NavMobileLinkConfig[] = [
-  { icon: <RiHomeFill />, path: "home", name: "home", offset: 0 },
+  { icon: <RiHomeFill />, path: "hero", name: "home", offset: 0 },
   { icon: <BiSolidFoodMenu />, path: "menu", name: "menu", offset: 0 },
   { icon: <FaUsers />, path: "about", name: "about", offset: -50 },
   { icon: <FaEnvelope />, path: "contact", name: "contact", offset: 0 },

@@ -1,9 +1,42 @@
 "use client";
 
-import { getItemsByCategory } from "@/data/menuData";
+import { useState } from "react";
+import { getItemsByCategory, getItemsByMultipleCategories } from "@/data/menuData";
+import FilterButton from "@/components/FilterButton";
+import MenuGrid from "@/components/MenuGrid";
 
 export default function DrinksPage() {
-  const filteredItems = getItemsByCategory("drinks");
+  const [activeFilter, setActiveFilter] = useState("all");
+
+  const categories = ["all", "hot", "cold", "alcoholic", "non-alcoholic"];
+  const filteredItems =
+    activeFilter === "all"
+      ? getItemsByCategory("drinks")
+      : getItemsByMultipleCategories(["drinks"]).filter(
+          (item) => item.subcategory === activeFilter
+        );
+
+  const getCategoryTitle = (cat: string) => {
+    const titles: Record<string, string> = {
+      all: "Beverages",
+      hot: "Hot Drinks",
+      cold: "Cold Drinks",
+      alcoholic: "Alcoholic Beverages",
+      "non-alcoholic": "Non-Alcoholic Beverages",
+    };
+    return titles[cat] || cat.charAt(0).toUpperCase() + cat.slice(1);
+  };
+
+  const getCategoryDescription = (cat: string) => {
+    const descriptions: Record<string, string> = {
+      all: "Explore our full beverage selection",
+      hot: "Warm beverages to comfort and refresh",
+      cold: "Chilled drinks to cool and revitalize",
+      alcoholic: "Spirited beverages for special occasions",
+      "non-alcoholic": "Refreshing drinks without alcohol",
+    };
+    return descriptions[cat] || "";
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
@@ -38,55 +71,20 @@ export default function DrinksPage() {
             </p>
           </div>
 
-          {/* Menu Grid - Fully Responsive */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {filteredItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="group bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:translate-y-minus-3 hover:shadow-xl cursor-pointer"
-              >
-                {/* Image Container */}
-                <div className="relative aspect-square overflow-hidden bg-gray-100">
-                  {item.badge && (
-                    <div className="absolute top-2 right-2 bg-orange text-white px-3 py-1 text-xs font-semibold uppercase z-10 rounded">
-                      {item.badge}
-                    </div>
-                  )}
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = item.fallback;
-                    }}
-                  />
-                </div>
-
-                {/* Card Body */}
-                <div className="p-4 md:p-5">
-                  <h3 className="text-base md:text-lg font-semibold text-dark-brown mb-2 line-clamp-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs md:text-sm text-gray-600 mb-4 line-clamp-2">
-                    {item.desc}
-                  </p>
-
-                  {/* Footer with Price and Button */}
-                  <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                    <div className="font-semibold text-dark-brown text-sm md:text-base">
-                      {item.price}
-                    </div>
-                    <button
-                      className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 transform hover:scale-110 cursor-pointer border-0"
-                      title="Add to order"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
+          {/* Filter Tabs */}
+          <div className="flex justify-center gap-3 flex-wrap mb-12">
+            {categories.map((cat) => (
+              <FilterButton
+                key={cat}
+                label={cat}
+                isActive={activeFilter === cat}
+                onClick={() => setActiveFilter(cat)}
+              />
             ))}
           </div>
+
+          {/* Menu Grid - Fully Responsive */}
+          <MenuGrid items={filteredItems} variant="compact" />
 
           {/* Results Count */}
           <div className="text-center mt-12 text-gray-600">

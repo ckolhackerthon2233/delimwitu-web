@@ -63,7 +63,7 @@ export default function Map() {
     >
       <MapContainer
         id="leaflet-map"
-        center={[34.052235, -118.243683]}
+        center={[1.2921, 36.8219]}
         zoom={12}
         className={`${isMobile ? "h-[300px]" : "h-[900px]"} z-10`}
         zoomControl={false}

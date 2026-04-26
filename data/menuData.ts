@@ -9,6 +9,7 @@ export const menuData: MenuItem[] = [
   // Breakfast Items
   {
     cat: "breakfast",
+    subcategory: "pastries",
     badge: "Popular",
     title: "Everyday Breakfast",
     desc: "Classic morning favorites with fresh ingredients",
@@ -17,6 +18,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "pastries",
     badge: "Chef's Pick",
     title: "French Toast",
     desc: "Golden, buttery French toast with syrup and berries",
@@ -25,6 +27,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "pastries",
     title: "Breakfast Croissant",
     desc: "Flaky, buttery croissant perfect for any morning",
     price: "KSh 420",
@@ -32,6 +35,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "pastries",
     title: "Pancakes",
     desc: "Fluffy pancakes stacked high with toppings",
     price: "KSh 480",
@@ -39,6 +43,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "eggs",
     title: "Eggs & Toast",
     desc: "Perfectly cooked eggs with crispy toast",
     price: "KSh 450",
@@ -46,6 +51,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "bowls",
     title: "Mango Granola Bowl",
     desc: "Fresh mango with granola and yogurt",
     price: "KSh 490",
@@ -53,6 +59,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "bowls",
     title: "Fruit & Nut Granola",
     desc: "Nutritious granola with fresh fruits and nuts",
     price: "KSh 470",
@@ -60,6 +67,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "breakfast",
+    subcategory: "eggs",
     title: "The Nairobian",
     desc: "Traditional Nairobi breakfast special",
     price: "KSh 550",
@@ -69,6 +77,7 @@ export const menuData: MenuItem[] = [
   // Lunch Items
   {
     cat: "lunch",
+    subcategory: "fish",
     badge: "Bestseller",
     title: "Classic Fish & Chips",
     desc: "Fresh battered fish with golden fries",
@@ -77,6 +86,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "lunch",
+    subcategory: "chicken",
     badge: "Chef's Pick",
     title: "Butter Curry Chicken",
     desc: "Tender chicken in creamy curry sauce",
@@ -85,6 +95,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "lunch",
+    subcategory: "fish",
     title: "Grilled Salmon",
     desc: "Fresh grilled salmon with seasonal vegetables",
     price: "KSh 850",
@@ -92,6 +103,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "lunch",
+    subcategory: "chicken",
     title: "Roast Chicken",
     desc: "Succulent roasted chicken with herbs",
     price: "KSh 650",
@@ -99,6 +111,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "lunch",
+    subcategory: "chicken",
     title: "Sweet & Spicy Chicken",
     desc: "Chicken with sweet and spicy glaze",
     price: "KSh 670",
@@ -106,6 +119,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "lunch",
+    subcategory: "beef",
     title: "Steak of the Day",
     desc: "Premium grilled steak with sides",
     price: "KSh 950",
@@ -113,6 +127,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "lunch",
+    subcategory: "beef",
     title: "Slow-Cooked BBQ Beef",
     desc: "Tender BBQ beef cooked to perfection",
     price: "KSh 780",
@@ -122,6 +137,7 @@ export const menuData: MenuItem[] = [
   // Main Course - Bowls & Salads
   {
     cat: "mains",
+    subcategory: "beef",
     badge: "Popular",
     title: "Asian Beef Stir Fry",
     desc: "Crispy beef with Asian vegetables",
@@ -130,6 +146,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "chicken",
     title: "Chicken Caesar Salad",
     desc: "Fresh Caesar salad with grilled chicken",
     price: "KSh 580",
@@ -137,6 +154,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "beef",
     title: "Teriyaki Bowl",
     desc: "Flavorful teriyaki with rice and vegetables",
     price: "KSh 650",
@@ -144,6 +162,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "vegetarian",
     title: "Green Harvest Bowl",
     desc: "Fresh greens with seasonal vegetables",
     price: "KSh 520",
@@ -151,6 +170,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "chicken",
     title: "Samurai Salad",
     desc: "Japanese-inspired salad with chicken",
     price: "KSh 610",
@@ -158,6 +178,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "vegetarian",
     title: "Heart Beet Bowl",
     desc: "Nutritious beet bowl with fresh vegetables",
     price: "KSh 550",
@@ -165,6 +186,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "vegetarian",
     title: "The Mexican Salad",
     desc: "Spicy Mexican-style salad with fresh ingredients",
     price: "KSh 590",
@@ -174,6 +196,7 @@ export const menuData: MenuItem[] = [
   // Main Course - Burgers
   {
     cat: "mains",
+    subcategory: "beef",
     badge: "Bestseller",
     title: "Classic Beef Burger",
     desc: "Juicy beef burger with all the toppings",
@@ -182,6 +205,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "beef",
     title: "Texas Burger",
     desc: "Hearty Texas-style burger with bacon and cheese",
     price: "KSh 720",
@@ -189,6 +213,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "beef",
     title: "Cheese Burger",
     desc: "Classic cheeseburger with melted cheese",
     price: "KSh 600",
@@ -196,6 +221,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "vegetarian",
     title: "Beet It Burger",
     desc: "Unique beet and bean burger for vegetarians",
     price: "KSh 580",
@@ -203,6 +229,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "chicken",
     title: "TexMex Chicken Burger",
     desc: "Spicy Mexican-style chicken burger",
     price: "KSh 640",
@@ -212,6 +239,7 @@ export const menuData: MenuItem[] = [
   // Main Course - Pizza
   {
     cat: "mains",
+    subcategory: "beef",
     title: "Diavola Pizza",
     desc: "Spicy pizza with hot peppers and salami",
     price: "KSh 680",
@@ -219,6 +247,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "chicken",
     title: "Hawaiian Pizza",
     desc: "Tropical pizza with pineapple and ham",
     price: "KSh 700",
@@ -226,6 +255,7 @@ export const menuData: MenuItem[] = [
   },
   {
     cat: "mains",
+    subcategory: "vegetarian",
     title: "Veggie Extravaganza Pizza",
     desc: "Garden fresh vegetables on crispy crust",
     price: "KSh 620",
@@ -290,6 +320,91 @@ export const menuData: MenuItem[] = [
     title: "Virgin Mojito",
     desc: "Refreshing mint and lime mocktail",
     price: "KSh 300",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+
+  // Desserts
+  {
+    cat: "desserts",
+    subcategory: "chocolate",
+    badge: "Popular",
+    title: "Chocolate Lava Cake",
+    desc: "Warm chocolate cake with molten center and vanilla ice cream",
+    price: "KSh 450",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "cakes",
+    badge: "Chef's Pick",
+    title: "Cheesecake Delight",
+    desc: "Creamy New York style cheesecake with berry compote",
+    price: "KSh 480",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "ice-cream",
+    title: "Mango Sorbet",
+    desc: "Refreshing homemade mango sorbet with fresh fruit",
+    price: "KSh 350",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "cakes",
+    title: "Tiramisu",
+    desc: "Classic Italian dessert with mascarpone and espresso",
+    price: "KSh 420",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "cakes",
+    title: "Strawberry Shortcake",
+    desc: "Fluffy cake with fresh strawberries and whipped cream",
+    price: "KSh 400",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "ice-cream",
+    title: "Coconut Panna Cotta",
+    desc: "Silky coconut cream dessert with tropical fruit",
+    price: "KSh 390",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "chocolate",
+    badge: "Bestseller",
+    title: "Caramel Brownies",
+    desc: "Fudgy brownies with caramel swirl and sea salt",
+    price: "KSh 380",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "pastries",
+    title: "Passion Fruit Tart",
+    desc: "Buttery tart shell with passion fruit curd and cream",
+    price: "KSh 460",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "ice-cream",
+    title: "Matcha Panna Cotta",
+    desc: "Silky green tea panna cotta with berry compote",
+    price: "KSh 410",
+    img: "/menu/everydayclassic/mango-granola-bowl-01.png",
+  },
+  {
+    cat: "desserts",
+    subcategory: "chocolate",
+    title: "Avocado Chocolate Mousse",
+    desc: "Creamy dairy-free mousse with dark chocolate",
+    price: "KSh 420",
     img: "/menu/everydayclassic/mango-granola-bowl-01.png",
   },
 ];

@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import About from "@/components/About";
-import Gallery from "@/components/Gallery";
 import Reviews from "@/components/Reviews";
 import Team from "@/components/Team";
 import SpecialsBanner from "@/components/SpecialsBanner";
@@ -17,10 +16,7 @@ export default function Home() {
       <Menu />
       <SpecialsBanner />
       <About />
-      <Gallery />
       <Reviews />
-      <Team />
-      <ReservationCard />
       <Footer />
     </main>
   );

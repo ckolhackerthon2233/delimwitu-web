@@ -54,17 +54,29 @@ export default function NavMobile({
           </Link>
           <div className="flex flex-col gap-y-8">
             {navMobileLinks.map((link) => (
-              <ScrollLink
-                key={link.path}
-                to={link.path}
-                offset={link.offset}
-                smooth={false}
-                className="flex items-center gap-x-3 cursor-pointer"
-                onClick={() => setIsOpen(false)}
-              >
-                <div className={iconStyles}>{link.icon}</div>
-                <div className={linkStyles}>{link.name}</div>
-              </ScrollLink>
+              link.isExternal ? (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  className="flex items-center gap-x-3 cursor-pointer"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div className={iconStyles}>{link.icon}</div>
+                  <div className={linkStyles}>{link.name}</div>
+                </Link>
+              ) : (
+                <ScrollLink
+                  key={link.path}
+                  to={link.path}
+                  offset={link.offset}
+                  smooth={false}
+                  className="flex items-center gap-x-3 cursor-pointer"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div className={iconStyles}>{link.icon}</div>
+                  <div className={linkStyles}>{link.name}</div>
+                </ScrollLink>
+              )
             ))}
           </div>
           <ScrollLink to="reservation" smooth offset={-150}>

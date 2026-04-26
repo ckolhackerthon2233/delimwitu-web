@@ -61,7 +61,7 @@ export default function FoodPage() {
 
       {/* Food Section */}
       <div className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="">
           {/* Section Header */}
           <div className="text-center mb-14 max-md:mb-10">
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-3">

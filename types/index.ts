@@ -9,6 +9,7 @@ import type { ReactNode } from "react";
 export type FadeDirection = "up" | "down" | "left" | "right";
 
 export interface MenuItem {
+  id?: string;
   cat: "breakfast" | "lunch" | "mains" | "sides" | "desserts" | "drinks";
   badge?: string;
   title: string;
@@ -33,4 +34,5 @@ export interface MapMarkerData {
 
 export interface NavMobileLinkConfig extends NavLinkConfig {
   icon: ReactNode;
+  isExternal?: boolean;
 }

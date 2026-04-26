@@ -35,12 +35,10 @@ export default function Header() {
   };
 
   const navLinks = [
-    { href: "#hero", label: "Home" },
-    { href: "#menu", label: "Menu" },
-    { href: "#about", label: "About" },
-    { href: "#gallery", label: "Gallery" },
-    { href: "#reservation-cta", label: "Reserve" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/menu", label: "Menu" },
+    { href: "/#about", label: "About" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   const handleNavClick = (href: string) => {

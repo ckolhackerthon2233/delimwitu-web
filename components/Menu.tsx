@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { menuData } from "@/data/menuData";
 import FilterButton from "@/components/FilterButton";
 
@@ -52,49 +53,58 @@ export default function Menu() {
 
         {/* Menu Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          {filteredItems.map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-minus-2 hover:shadow-lg cursor-pointer"
-            >
-              {/* Image Container */}
-              <div className="relative aspect-square overflow-hidden bg-gray-100">
-                {item.badge && (
-                  <div className="absolute top-0 right-0 bg-orange text-white px-3 py-1 text-xs font-semibold uppercase z-10">
-                    {item.badge}
-                  </div>
-                )}
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-600 hover:scale-108"
-                />
-              </div>
-
-              {/* Card Body */}
-              <div className="p-5">
-                <h3 className="text-lg font-semibold text-dark-brown mb-2 line-clamp-2">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                  {item.desc}
-                </p>
-
-                {/* Footer with Price and Button */}
-                <div className="flex items-center justify-between">
-                  <div className="font-semibold text-dark-brown">
-                    {item.price}
-                  </div>
-                  <button
-                    className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
-                    title="Add to order"
-                  >
-                    +
-                  </button>
+          {filteredItems.map((item, idx) => {
+            const itemId = item.id || item.title.toLowerCase().replace(/\s+/g, "-");
+            const category = item.cat;
+            return (
+              <Link
+                key={idx}
+                href={`/menu/${category}/${itemId}`}
+                className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-minus-2 hover:shadow-lg cursor-pointer"
+              >
+                {/* Image Container */}
+                <div className="relative aspect-square overflow-hidden bg-gray-100">
+                  {item.badge && (
+                    <div className="absolute top-0 right-0 bg-orange text-white px-3 py-1 text-xs font-semibold uppercase z-10">
+                      {item.badge}
+                    </div>
+                  )}
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-600 hover:scale-108"
+                  />
                 </div>
-              </div>
-            </div>
-          ))}
+
+                {/* Card Body */}
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-dark-brown mb-2 line-clamp-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                    {item.desc}
+                  </p>
+
+                  {/* Footer with Price and Button */}
+                  <div className="flex items-center justify-between">
+                    <div className="font-semibold text-dark-brown">
+                      {item.price}
+                    </div>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = `/menu/${category}/${itemId}`;
+                      }}
+                      className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
+                      title="View details & order"
+                    >
+                      →
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
 
         {/* View Full Menu Button */}

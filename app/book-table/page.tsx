@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { createReservation, getBranches } from "@/actions/reservations";
+import { useState } from "react";
+import { createReservation } from "@/actions/reservations";
 import dynamic from "next/dynamic";
 
 interface Branch {
@@ -9,24 +9,59 @@ interface Branch {
   name: string;
   address: string;
   phone: string;
-  email: string;
   openTime: string;
   closeTime: string;
   capacity: number;
 }
 
-const MapComponent = dynamic(() => import("@/components/MapDynamic"), {
+// Hardcoded branches
+const BRANCHES: Branch[] = [
+  {
+    id: "1",
+    name: "Delimwitu Kileleshua",
+    address: "Kileleshua, Nairobi",
+    phone: "+254 701 234 567",
+    openTime: "10:00 AM",
+    closeTime: "10:00 PM",
+    capacity: 50,
+  },
+  {
+    id: "2",
+    name: "Delimwitu Downtown",
+    address: "CBD, Nairobi",
+    phone: "+254 701 234 568",
+    openTime: "10:00 AM",
+    closeTime: "10:00 PM",
+    capacity: 60,
+  },
+  {
+    id: "3",
+    name: "Delimwitu Westlands",
+    address: "Westlands, Nairobi",
+    phone: "+254 701 234 569",
+    openTime: "10:00 AM",
+    closeTime: "11:00 PM",
+    capacity: 70,
+  },
+];
+
+// Leaflet map loaded dynamically to avoid SSR issues
+const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
   ssr: false,
-  loading: () => <div className="h-96 bg-gray-200 rounded-lg animate-pulse" />,
+  loading: () => (
+    <div className="h-full bg-gray-100 rounded-2xl animate-pulse flex items-center justify-center">
+      <p className="text-gray-400 font-medium">Loading map…</p>
+    </div>
+  ),
 });
 
 export default function BookTable() {
-  const [branches, setBranches] = useState<Branch[]>([]);
+  const [branches, setBranches] = useState<Branch[]>(BRANCHES);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [formData, setFormData] = useState({
-    branchId: "",
+    branchId: BRANCHES[0]?.id || "1",
     customerName: "",
     customerEmail: "",
     customerPhone: "",
@@ -36,17 +71,6 @@ export default function BookTable() {
     seatingPreference: "flexible",
     specialOccasion: "",
   });
-
-  useEffect(() => {
-    async function loadBranches() {
-      const data = await getBranches();
-      setBranches(data);
-      if (data.length > 0) {
-        setFormData((prev) => ({ ...prev, branchId: data[0].id }));
-      }
-    }
-    loadBranches();
-  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -62,17 +86,13 @@ export default function BookTable() {
     setLoading(true);
 
     try {
-      const reservationDateTime = new Date(
-        `${formData.reservationDate}T${formData.reservationTime}`
-      );
-
       const result = await createReservation({
-        branchId: formData.branchId,
         customerName: formData.customerName,
         customerEmail: formData.customerEmail,
         customerPhone: formData.customerPhone,
         guestCount: parseInt(formData.guestCount.toString()),
-        reservationDate: reservationDateTime.toISOString(),
+        reservationDate: formData.reservationDate,
+        reservationTime: formData.reservationTime,
         seatingPreference: formData.seatingPreference,
         specialOccasion: formData.specialOccasion || undefined,
       });
@@ -81,7 +101,7 @@ export default function BookTable() {
         setSuccessMessage(result.message);
         setSubmitted(true);
         setFormData({
-          branchId: branches[0]?.id || "",
+          branchId: BRANCHES[0]?.id || "1",
           customerName: "",
           customerEmail: "",
           customerPhone: "",
@@ -105,48 +125,90 @@ export default function BookTable() {
 
   const selectedBranch = branches.find((b) => b.id === formData.branchId);
 
-  // Branch image mappings
-  const branchImages: Record<string, string> = {
-    default: "",
-    kileleshua: "",
-    downtown: "",
-    westlands: "",
-  };
-
-  const getBranchImage = (branchName: string) => {
-    const name = branchName.toLowerCase();
-    if (name.includes("kileleshua")) return branchImages.kileleshua;
-    if (name.includes("downtown")) return branchImages.downtown;
-    if (name.includes("westlands")) return branchImages.westlands;
-    return branchImages.default;
-  };
+  const whyDineFeatures = [
+    {
+      icon: "🍽️",
+      title: "Premium Cuisine",
+      description:
+        "Authentic Kenyan and international dishes crafted by our award-winning chefs using locally sourced, seasonal ingredients.",
+      accent: "from-amber-400 to-orange-500",
+    },
+    {
+      icon: "👨‍💼",
+      title: "Exceptional Service",
+      description:
+        "Our dedicated team anticipates your every need, ensuring a seamless and memorable dining experience from arrival to farewell.",
+      accent: "from-rose-400 to-red-500",
+    },
+    {
+      icon: "🎭",
+      title: "Curated Ambiance",
+      description:
+        "Thoughtfully designed spaces that balance warmth and sophistication — ideal for intimate dinners, celebrations, or business meals.",
+      accent: "from-violet-400 to-purple-500",
+    },
+    {
+      icon: "🎵",
+      title: "Live Entertainment",
+      description:
+        "Enjoy curated live music and special cultural performances that transform your meal into an all-round sensory experience.",
+      accent: "from-teal-400 to-cyan-500",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
-       {/* Hero Section */}
-       <div className="pt-32 pb-20 px-6 relative">
-         <div className="absolute inset-0 bg-[url('/hero/tb')] bg-center bg-cover bg-no-repeat" />
-         <div className="absolute inset-0 bg-black bg-opacity-50" />
-         <div className="relative max-w-6xl mx-auto text-center text-white pt-32 pb-20 px-6">
-           <h1 className="text-6xl md:text-7xl font-black mb-6">Book Your Table</h1>
-           <p className="text-xl md:text-2xl mb-4 text-white/90">
-             Reserve your culinary experience at Delimwitu
-           </p>
-           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-             Join us for an unforgettable meal in one of our carefully curated locations across Nairobi
-           </p>
-         </div>
-       </div>
 
-      {/* Reservation Form Section */}
-      <div className="py-20 px-6">
-        <div className="container max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12">
-            {/* Form */}
-            <div className="md:col-span-2 bg-white rounded-2xl shadow-xl p-8 md:p-12">
+      {/* ── Hero Section ── */}
+      <div 
+        className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=900&fit=crop)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        {/* Multi-layer overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/30 to-transparent" />
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+          <span className="inline-block text-xs font-semibold uppercase tracking-[0.3em] text-orange-300 mb-6">
+            Delimwitu Restaurant
+          </span>
+          <h1 className="text-6xl md:text-8xl font-black mb-6 leading-none tracking-tight text-white">
+            Book Your
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-amber-400">
+              Table
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+            Reserve your culinary experience at one of our carefully curated
+            locations across Nairobi.
+          </p>
+          {/* Scroll cue */}
+          <div className="mt-12 flex justify-center">
+            <div className="w-px h-16 bg-gradient-to-b from-white/60 to-transparent" />
+          </div>
+        </div>
+      </div>
+
+      {/* ── Reservation Form Section ── */}
+      <div className="py-12 md:py-20 px-4 md:px-6 relative">
+        <div className="w-full max-w-screen-xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-12">
+
+            {/* Form — 2/3 width */}
+            <div className="md:col-span-2 bg-white rounded-2xl shadow-xl p-6 md:p-12 w-full overflow-visible">
+              <h2 className="text-3xl font-black text-dark-brown mb-8">
+                Make a Reservation
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
+
                 {/* Branch Selection */}
-                <div>
+                <div className="relative z-50">
                   <label className="block text-sm font-semibold text-dark-brown mb-2">
                     Choose a Branch *
                   </label>
@@ -155,11 +217,11 @@ export default function BookTable() {
                     value={formData.branchId}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-tan rounded-lg focus:border-orange focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-tan rounded-lg focus:border-orange focus:outline-none transition text-sm md:text-base bg-white cursor-pointer"
                   >
                     {branches.map((branch) => (
                       <option key={branch.id} value={branch.id}>
-                        {branch.name} — {branch.address.split(",")[0]}
+                        {branch.name}
                       </option>
                     ))}
                   </select>
@@ -297,13 +359,13 @@ export default function BookTable() {
                   />
                 </div>
 
-                {/* Submit Button */}
+                {/* Submit */}
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-4 bg-gradient-to-r from-orange to-red-500 text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300 disabled:opacity-50"
+                  className="w-full py-4 bg-gradient-to-r from-orange to-red-500 text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300 disabled:opacity-50 text-lg"
                 >
-                  {loading ? "Processing..." : "Reserve Your Table"}
+                  {loading ? "Processing…" : "Reserve Your Table"}
                 </button>
               </form>
 
@@ -312,28 +374,31 @@ export default function BookTable() {
                 <div className="mt-8 p-6 bg-green-50 border-l-4 border-green-500 rounded-lg text-green-700">
                   <p className="font-bold text-lg">✓ {successMessage}</p>
                   <p className="text-sm mt-2">
-                    Check your email for confirmation details. We look forward to welcoming you!
+                    Check your email for confirmation details. We look forward to
+                    welcoming you!
                   </p>
                 </div>
               )}
             </div>
-            {/* Sidebar */}
-            <div className="md:col-span-1 space-y-6">
-              {/* Current Branch Info with Image */}
+
+            {/* Sidebar — 1/3 width */}
+            <div className="md:col-span-1 space-y-6 w-full">
+
+              {/* Selected Branch Info */}
               {selectedBranch && (
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden w-full">
                   <div className="h-48 bg-gradient-to-br from-orange to-red-500 relative overflow-hidden">
                     <img
-                      src={getBranchImage(selectedBranch.name)}
+                      src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop&q=80"
                       alt={selectedBranch.name}
-                      className="w-full h-full object-cover opacity-90"
+                      className="w-full h-full object-cover opacity-80"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <p className="absolute bottom-3 left-4 text-white font-bold text-lg">
+                      {selectedBranch.name}
+                    </p>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-dark-brown mb-4">
-                      📍 {selectedBranch.name}
-                    </h3>
                     <div className="space-y-3 text-sm text-gray-700">
                       <div>
                         <p className="font-semibold text-dark-brown mb-1">Address</p>
@@ -363,8 +428,8 @@ export default function BookTable() {
                 </div>
               )}
 
-              {/* Guidelines */}
-              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 shadow-lg border-l-4 border-blue-500">
+              {/* Booking Guidelines */}
+              <div className="w-full bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 shadow-lg border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-dark-brown mb-4">
                   ℹ️ Booking Guidelines
                 </h3>
@@ -397,7 +462,7 @@ export default function BookTable() {
               </div>
 
               {/* Contact Support */}
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border-l-4 border-orange">
+              <div className="w-full bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 shadow-lg border-l-4 border-orange">
                 <h3 className="text-lg font-bold text-dark-brown mb-4">
                   💬 Need Help?
                 </h3>
@@ -406,7 +471,7 @@ export default function BookTable() {
                 </p>
                 <a
                   href="tel:+254701234567"
-                  className="inline-block px-6 py-3 bg-gradient-to-r from-orange to-red-500 text-white rounded-lg font-bold hover:shadow-lg transition-all"
+                  className="inline-block w-full text-center px-6 py-3 bg-gradient-to-r from-orange to-red-500 text-white rounded-lg font-bold hover:shadow-lg transition-all"
                 >
                   Call Us Now
                 </a>
@@ -416,161 +481,103 @@ export default function BookTable() {
         </div>
       </div>
 
-      {/* Branch Locations Section */}
-      <div className="py-20 px-6 bg-gradient-to-b from-transparent to-orange-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">Our Locations</span>
-            <h2 className="text-5xl font-black text-dark-brown mb-6">Visit Our Branches</h2>
-            <p className="text-lg text-gray-700">
-              Three carefully curated locations across Nairobi, each with its own unique charm
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {branches.map((branch) => (
-              <div
-                key={branch.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-              >
-                <div className="h-64 bg-gradient-to-br from-orange to-red-500 relative overflow-hidden">
-                  <img
-                    src={getBranchImage(branch.name)}
-                    alt={branch.name}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-2xl font-bold text-white">{branch.name}</h3>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-orange text-xl">📍</span>
-                      <div>
-                        <p className="font-semibold text-dark-brown">Location</p>
-                        <p className="text-sm text-gray-600">{branch.address}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-orange text-xl">🕐</span>
-                      <div>
-                        <p className="font-semibold text-dark-brown">Hours</p>
-                        <p className="text-sm text-gray-600">
-                          {branch.openTime} - {branch.closeTime}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-orange text-xl">🪑</span>
-                      <div>
-                        <p className="font-semibold text-dark-brown">Capacity</p>
-                        <p className="text-sm text-gray-600">{branch.capacity} Guests</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-orange text-xl">📞</span>
-                      <div>
-                        <p className="font-semibold text-dark-brown">Call</p>
-                        <a
-                          href={`tel:${branch.phone}`}
-                          className="text-sm text-orange font-semibold hover:underline"
-                        >
-                          {branch.phone}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => {
-                      setFormData((prev) => ({ ...prev, branchId: branch.id }));
-                      document.querySelector(".md\\:col-span-2")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="w-full mt-6 py-3 bg-gradient-to-r from-orange to-red-500 text-white font-bold rounded-lg hover:shadow-lg transition-all"
-                  >
-                    Book at this Location
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Map Section */}
+      {/* ── Leaflet Map Section ── */}
       <div className="py-20 px-6 bg-cream">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-screen-xl mx-auto w-full">
           <div className="text-center mb-12">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">Find Us</span>
-            <h2 className="text-5xl font-black text-dark-brown mb-6">Our Locations on the Map</h2>
-            <p className="text-lg text-gray-700">
-              Discover our branches and plan your visit
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">
+              Find Us
+            </span>
+            <h2 className="text-5xl font-black text-dark-brown mb-4">
+              Our Locations on the Map
+            </h2>
+            <p className="text-lg text-gray-600 max-w-xl mx-auto">
+              Explore our branches across Nairobi and plan your visit with ease.
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-2xl h-96 md:h-[500px]">
-            <MapComponent />
+
+          {/* Full-width Leaflet map */}
+          <div className="w-full rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+            <LeafletMap />
           </div>
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
-      <div className="py-20 px-6 bg-gradient-to-b from-orange-50 to-cream">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">Experience</span>
-            <h2 className="text-5xl font-black text-dark-brown mb-6">Why Dine With Us</h2>
+      {/* ── Why Dine With Us ── */}
+      <div className="py-24 px-6 bg-gradient-to-b from-orange-50 to-white">
+        <div className="max-w-screen-xl mx-auto w-full">
+
+          {/* Section header */}
+          <div className="text-center mb-20">
+            <span className="inline-block text-xs font-semibold uppercase tracking-[0.3em] text-orange mb-4">
+              The Delimwitu Difference
+            </span>
+            <h2 className="text-5xl md:text-6xl font-black text-dark-brown mb-6 leading-tight">
+              Why Dine With Us
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Every visit to Delimwitu is crafted to be more than a meal — it's
+              an experience that stays with you long after the last bite.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                icon: "🍽️",
-                title: "Premium Cuisine",
-                description: "Authentic Kenyan and international dishes prepared by our expert chefs",
-              },
-              {
-                icon: "👨‍💼",
-                title: "Exceptional Service",
-                description: "Dedicated staff ensuring every moment of your visit is memorable",
-              },
-              {
-                icon: "🎭",
-                title: "Ambiance",
-                description: "Carefully designed spaces perfect for any occasion or celebration",
-              },
-              {
-                icon: "🎵",
-                title: "Entertainment",
-                description: "Live music and special events to enhance your dining experience",
-              },
-            ].map((item, idx) => (
+          {/* Feature cards — full width grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+            {whyDineFeatures.map((item, idx) => (
               <div
                 key={idx}
-                className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all"
+                className="w-full group relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
               >
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-dark-brown mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                {/* Gradient top bar */}
+                <div
+                  className={`h-2 w-full bg-gradient-to-r ${item.accent}`}
+                />
+
+                <div className="p-8">
+                  {/* Icon bubble */}
+                  <div
+                    className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${item.accent} mb-6 text-3xl shadow-md group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-xl font-black text-dark-brown mb-3 leading-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+
+                {/* Decorative corner circle */}
+                <div
+                  className={`absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-br ${item.accent} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
+                />
               </div>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* CTA Section */}
-      <div className="py-16 px-6 bg-gradient-to-r from-dark-brown via-orange to-red-500">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-4xl font-black mb-4">Ready to Experience Delimwitu?</h2>
-          <p className="text-xl mb-8 text-white/90">
-            Book your table now and join us for an unforgettable culinary journey
-          </p>
-          <a
-            href="#reservation"
-            className="inline-block px-8 py-4 bg-white text-orange font-bold rounded-lg hover:shadow-lg transition-all text-lg"
-          >
-            Reserve Your Table
-          </a>
+          {/* Bottom CTA strip */}
+          <div className="mt-16 w-full bg-gradient-to-r from-orange to-red-500 rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+            <div className="text-white">
+              <h3 className="text-3xl md:text-4xl font-black mb-2">
+                Ready for an Unforgettable Evening?
+              </h3>
+              <p className="text-white/80 text-lg">
+                Secure your table now — availability is limited.
+              </p>
+            </div>
+            <button
+              onClick={() =>
+                document
+                  .querySelector("form")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="flex-shrink-0 px-10 py-4 bg-white text-orange font-black rounded-xl hover:bg-orange hover:text-white border-2 border-white transition-all duration-300 text-lg shadow-lg"
+            >
+              Book Now →
+            </button>
+          </div>
         </div>
       </div>
     </div>

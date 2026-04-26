@@ -27,7 +27,7 @@ export default function Footer() {
     <>
       {/* Location Section */}
       <section id="contact" className="py-24 max-md:py-16">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-lg:gap-12 max-md:gap-8">
             <div>
               <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">Find Us</span>
@@ -81,44 +81,18 @@ export default function Footer() {
             {/* Map */}
             <div className="h-96 rounded-lg overflow-hidden shadow-md">
               <img
-                src="/footer/bg.png"
-                alt="Mombasa Kenya map area"
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=900&fit=crop"
+                alt="Restaurant ambiance"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "/hero/plate.png";
-                }}
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <div className="bg-dark-brown text-white py-16 max-md:py-12">
-        <div className="max-w-[1200px] mx-auto px-6 text-center">
-          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-white/50 mb-4">Stay Connected</span>
-          <h2 className="text-3xl font-bold mb-4 max-md:text-2xl">Get Weekly Specials</h2>
-          <p className="max-w-96 mx-auto text-base text-white/80 mb-8">
-            Subscribe and be the first to know about new dishes, seasonal
-            menus, and exclusive events at Delimwitu.
-          </p>
-          <div className="flex gap-2 max-w-96 mx-auto max-md:flex-col">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-4 py-3 rounded bg-white/90 text-dark-brown placeholder-gray-500 border-0 focus:outline-none focus:ring-2 focus:ring-orange"
-            />
-            <button className="px-8 py-3 bg-orange text-white font-semibold uppercase text-xs tracking-wider rounded hover:bg-orange-hover transition-colors border-0 cursor-pointer">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
-
       {/* Footer */}
-      <footer className="bg-cream py-16 max-md:py-12">
-        <div className="max-w-[1200px] mx-auto px-6">
+      <footer className="py-16 max-md:py-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 max-md:gap-6">
             {/* Brand */}
             <div className="md:col-span-2 lg:col-span-1">
@@ -185,9 +159,9 @@ export default function Footer() {
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-tan pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
-            <p>&copy; 2026 Delimwitu Café. All rights reserved.</p>
-            <p>Made with ❤️ in Mombasa, Kenya</p>
+          <div className="border-t border-tan pt-4 flex flex-col md:flex-row justify-between items-center gap-4 text-lg text-gray-600">
+            <p className="items-center">&copy; 2026 Delimwitu Café. All rights reserved.</p>
+            <p>Made by  <a href="https://nexustechke.netlify.app" target="_blank" className="text-orange ">Vico softwares</a></p>
           </div>
         </div>
       </footer>

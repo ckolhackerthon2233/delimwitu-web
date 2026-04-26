@@ -35,11 +35,13 @@ export default function SpecialsBanner() {
           </div>
 
           {/* Image Section */}
-          <div className="hidden lg:block h-96 rounded-lg overflow-hidden shadow-lg">
+          <div className="hidden lg:block relative h-96 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/menu/lunch&dinner/butter-curry-chicken-02_200x.png"
               alt="Chef's special curry"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              fill
+              sizes="(max-width: 1200px) 100vw, 50vw"
+              className="object-cover hover:scale-105 transition-transform duration-500"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = "/hero/plate.png";
               }}

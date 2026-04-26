@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { getItemsByCategory, getItemsByMultipleCategories } from "@/data/menuData";
 import FilterButton from "@/components/FilterButton";
@@ -43,12 +44,14 @@ export default function DrinksPage() {
       {/* Hero Section */}
       <div className="pt-32 pb-20 px-6 bg-gradient-to-r from-dark-brown to-orange">
         <div className="text-center text-white">
-          <h1 className="text-6xl md:text-7xl font-black mb-6">Beverages</h1>
+          <h1 className="text-6xl md:text-7xl font-black mb-6">
+            {getCategoryTitle(activeFilter)}
+          </h1>
           <p className="text-xl md:text-2xl mb-4 text-white/90">
             Quench your thirst with our refreshing drinks
           </p>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            From premium cold brews to exotic smoothies and specialty beverages
+            {getCategoryDescription(activeFilter)}
           </p>
         </div>
       </div>
@@ -67,7 +70,7 @@ export default function DrinksPage() {
             <div className="w-15 h-0.75 bg-orange mx-auto my-6 rounded"></div>
             <p className="max-w-96 mx-auto text-base text-gray-700">
               Carefully crafted beverages to complement your meal or enjoy on
-              their own
+              their own.
             </p>
           </div>
 
@@ -97,18 +100,18 @@ export default function DrinksPage() {
           <div className="mt-16 text-center">
             <p className="text-gray-600 mb-6">Looking for something else?</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
+              <Link
                 href="/menu"
                 className="inline-flex items-center gap-2 px-6 py-2 bg-dark-brown text-white text-xs font-semibold uppercase rounded hover:bg-opacity-90 transition-all"
               >
                 View All Menu
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/menu/food"
                 className="inline-flex items-center gap-2 px-6 py-2 bg-transparent text-dark-brown text-xs font-semibold uppercase border-1.5 border-dark-brown rounded hover:bg-dark-brown hover:text-white transition-all"
               >
                 View Food Menu
-              </a>
+              </Link>
             </div>
           </div>
         </div>

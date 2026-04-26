@@ -28,6 +28,7 @@
     "react-leaflet": "^4.2.1",
     "react-responsive": "^10.0.0",
     "react-scroll": "^1.9.3",
+    "restaurant-ui-2": "link:",
     "tailwind-merge": "^2.6.1",
     "tailwindcss-animate": "^1.0.7"
   },

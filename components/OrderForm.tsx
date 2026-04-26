@@ -218,7 +218,7 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
         </button>
 
         <p className="text-xs text-gray-600 text-center">
-          ✓ We'll confirm your order via email. No payment info stored online.
+          We&apos;ll confirm your order via email. No payment info stored online.
         </p>
       </form>
     </div>

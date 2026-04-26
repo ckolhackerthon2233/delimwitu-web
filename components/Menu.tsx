@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { menuData } from "@/data/menuData";
 import FilterButton from "@/components/FilterButton";
@@ -40,16 +41,17 @@ export default function Menu() {
 
          {/* Filter Tabs */}
          <div className="flex justify-center gap-2 flex-wrap mb-10">
-           {["all", "breakfast", "lunch", "mains", "desserts", "drinks"].map(
-             (cat) => (
-               <FilterButton
-                 key={cat}
-                 label={cat}
-                 isActive={activeFilter === cat}
-                 onClick={() => setActiveFilter(cat)}
-               />
-             ))}
-         </div>
+            {["all", "breakfast", "lunch", "mains", "desserts", "drinks"].map(
+              (cat) => (
+                <FilterButton
+                  key={cat}
+                  label={cat}
+                  isActive={activeFilter === cat}
+                  onClick={() => setActiveFilter(cat)}
+                />
+              )
+            )}
+          </div>
 
         {/* Menu Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
@@ -60,7 +62,7 @@ export default function Menu() {
               <Link
                 key={idx}
                 href={`/menu/${category}/${itemId}`}
-                className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-minus-2 hover:shadow-lg cursor-pointer"
+                className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:-translate-y-2 hover:shadow-lg cursor-pointer"
               >
                 {/* Image Container */}
                 <div className="relative aspect-square overflow-hidden bg-gray-100">
@@ -69,10 +71,12 @@ export default function Menu() {
                       {item.badge}
                     </div>
                   )}
-                  <img
+                  <Image
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-600 hover:scale-108"
+                    fill
+                    className="object-cover transition-transform duration-600 hover:scale-108"
+                    sizes="(max-width: 768px) 100vw, 25vw"
                   />
                 </div>
 
@@ -109,12 +113,12 @@ export default function Menu() {
 
         {/* View Full Menu Button */}
         <div className="text-center mt-10">
-          <a
+          <Link
             href="/menu"
             className="inline-flex items-center gap-2 px-8 py-3 bg-transparent text-dark-brown text-xs font-semibold uppercase tracking-wider rounded border-1.5 border-dark-brown transition-all duration-250 hover:bg-dark-brown hover:text-white"
           >
             View Full Menu
-          </a>
+          </Link>
         </div>
       </div>
     </section>

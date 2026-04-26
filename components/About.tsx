@@ -1,5 +1,9 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+
 export default function About() {
   const features = [
     "Locally sourced ingredients",
@@ -10,6 +14,9 @@ export default function About() {
     "Live music on weekends",
   ];
 
+  const [smallImgSrc, setSmallImgSrc] = useState("/about/img.png");
+  const [largeImgSrc, setLargeImgSrc] = useState("/about/img.png");
+
   return (
     <section id="about" className="py-24 max-md:py-16">
       <div className="max-w-[1200px] mx-auto px-6">
@@ -18,32 +25,28 @@ export default function About() {
           <div className="grid grid-cols-2 gap-6 max-md:gap-4">
             {/* Large image */}
             <div className="col-span-2 lg:col-span-1 lg:row-span-2 h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-md">
-              <img
-                src="/about/img.png"
+              <Image
+                src={largeImgSrc}
                 alt="Cafe interior"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "/hero/plate.png";
-                }}
+                fill
+                className="object-cover"
+                onError={() => setLargeImgSrc("/hero/plate.png")}
               />
             </div>
 
             {/* Small image */}
-            <div className="h-48 lg:h-56 rounded-lg overflow-hidden shadow-md">
-              <img
-                src="/about/img.png"
+            <div className="h-48 lg:h-56 rounded-lg overflow-hidden shadow-md relative">
+              <Image
+                src={smallImgSrc}
                 alt="Coffee preparation"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "/hero/plate.png";
-                }}
+                fill
+                className="object-cover"
+                onError={() => setSmallImgSrc("/hero/plate.png")}
               />
             </div>
 
             {/* Badge */}
-            <div className="flex justify-center items-center c bg-orange text-white rounded-lg shadow-md col-span-1 h-32 lg:h-auto">
+            <div className="flex justify-center items-center bg-orange text-white rounded-lg shadow-md col-span-1 h-32 lg:h-auto">
               <div className="text-center">
                 <strong className="font-playfair text-3xl font-black block">5+</strong>
                 <span className="text-xs font-semibold uppercase tracking-wider">
@@ -60,10 +63,10 @@ export default function About() {
             <div className="h-0.75 w-15 bg-orange rounded mb-8"></div>
 
             <p className="text-base leading-relaxed text-gray-700 mb-6">
-              Born from a deep love for the Kenyan coast&apos;s rich culinary
-              heritage, Delimwitu started as a small corner café in the heart of
-              Mombasa. We believed that great food isn&apos;t complicated — it&apos;s
-              honest, fresh, and full of heart.
+              Born from a deep love for rich culinary heritage,
+               Delimwitu began as a small corner café built on a 
+              simple belief: great food isn’t complicated it’s honest, 
+              fresh, and full of heart.
             </p>
 
             <p className="text-base leading-relaxed text-gray-700 mb-8">
@@ -84,9 +87,9 @@ export default function About() {
               ))}
             </div>
 
-            <a href="#reservation" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-orange-hover hover:shadow-lg hover:translate-y-minus-2">
+            <Link href="/book-table" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-orange-hover hover:shadow-lg hover:-translate-y-0.5">
               Reserve a Table
-            </a>
+            </Link>
           </div>
         </div>
       </div>

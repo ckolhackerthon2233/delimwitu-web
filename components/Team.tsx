@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Team() {
   const team = [
     {
@@ -40,11 +42,12 @@ export default function Team() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {team.map((member, idx) => (
             <div key={idx} className="text-center">
-              <div className="mb-6 h-48 md:h-72 rounded-lg overflow-hidden shadow-md">
-                <img
+              <div className="mb-6 h-48 md:h-72 rounded-lg overflow-hidden shadow-md relative">
+                <Image
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = member.fallback;
                   }}

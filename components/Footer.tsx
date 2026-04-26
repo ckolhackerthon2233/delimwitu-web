@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
@@ -34,7 +35,7 @@ export default function Footer() {
               <h2 className="text-4xl font-bold text-dark-brown mb-6 max-md:text-3xl">Come Visit Us</h2>
               <div className="w-15 h-0.75 bg-orange rounded mb-8"></div>
               <p className="text-base text-gray-700 mb-8">
-                We&apos;re nestled in the heart of Nyali, with ample parking, a
+                We&apos;re located around ngong road in lavington, with ample parking, a
                 beautiful outdoor terrace, and a warm welcome waiting for you.
               </p>
 
@@ -43,7 +44,7 @@ export default function Footer() {
                   <div className="text-2xl flex-shrink-0">📍</div>
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Address</h4>
-                    <p className="text-sm text-gray-600">Kileleshua, Nairobi, Kenya</p>
+                    <p className="text-sm text-gray-600">Lovington, Nairobi, Kenya</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -71,7 +72,8 @@ export default function Footer() {
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Getting Here</h4>
                     <p className="text-sm text-gray-600">
-                      Free parking available. 5 mins from Nyali Bridge. Bus stop directly outside.
+                      Free parking available. 5 mins from Nairobi Hospital. 
+                      Bus stop directly outside.
                     </p>
                   </div>
                 </div>
@@ -79,11 +81,13 @@ export default function Footer() {
             </div>
 
             {/* Map */}
-            <div className="h-96 rounded-lg overflow-hidden shadow-md">
-              <img
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-md">
+              <Image
                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=900&fit=crop"
                 alt="Restaurant ambiance"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                unoptimized
               />
             </div>
           </div>
@@ -100,7 +104,8 @@ export default function Footer() {
                 Delimwitu
               </a>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                A café born from love for coastal Kenyan cuisine. We serve honest, fresh food made with ingredients you can&apos;t help but trust.
+                A café born from love and passion. We serve honest, 
+                fresh food made with ingredients you can&apos;t help but trust.
               </p>
               <div className="flex gap-3">
                 <a href="#" className="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center text-xs font-bold hover:bg-orange-hover transition-colors" aria-label="Instagram">

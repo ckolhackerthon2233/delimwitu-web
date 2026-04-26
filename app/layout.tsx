@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "coffee",
     "cafe",
     "Nairobi",
-    "Kileleshua",
+    "K",
     "Delimwitu Cafe",
     "specialty coffee",
     "third-wave roastery",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://restaurant-wfood.vercel.app",
+    url: "#",
     siteName: "Delimwitu Cafe",
     title: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
     description:

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { createReservation } from "@/actions/reservations";
 import dynamic from "next/dynamic";
 
@@ -18,8 +19,8 @@ interface Branch {
 const BRANCHES: Branch[] = [
   {
     id: "1",
-    name: "Delimwitu Kileleshua",
-    address: "Kileleshua, Nairobi",
+    name: "Delimwitu",
+    address: "Lovington, Nairobi",
     phone: "+254 701 234 567",
     openTime: "10:00 AM",
     closeTime: "10:00 PM",
@@ -56,7 +57,7 @@ const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
 });
 
 export default function BookTable() {
-  const [branches, setBranches] = useState<Branch[]>(BRANCHES);
+  const branches = BRANCHES;
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
@@ -157,40 +158,40 @@ export default function BookTable() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
+    <div className="min-h-screen bg-gradient-to-b via-cream to-warm-cream">
 
       {/* ── Hero Section ── */}
-      <div 
-        className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=900&fit=crop)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        {/* Multi-layer overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/30 to-transparent" />
+      <div className="relative w-full min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/hero/tb1.jpg"
+          alt="Book a table hero"
+          fill
+          className="object-cover object-center w-full h-full"
+          sizes="100vw"
+          priority
+          quality={85}
+          unoptimized
+        /> 
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-900/30 to-transparent" />
 
-        {/* Hero content */}
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-          <span className="inline-block text-xs font-semibold uppercase tracking-[0.3em] text-orange-300 mb-6">
-            Delimwitu Restaurant
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 max-w-4xl mx-auto">
+          <span className="inline-block text-xs font-semibold uppercase tracking-[0.3em] text-orange-300 mb-4 sm:mb-6">
+        Delimwitu Restaurant
           </span>
-          <h1 className="text-6xl md:text-8xl font-black mb-6 leading-none tracking-tight text-white">
-            Book Your
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-amber-400">
-              Table
-            </span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-4 sm:mb-6 leading-none tracking-tight text-white">
+        Book Your
+        <br />
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-amber-400">
+          Table
+        </span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Reserve your culinary experience at one of our carefully curated
-            locations across Nairobi.
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+        Reserve your culinary experience at one of our carefully curated
+        locations across Nairobi.
           </p>
-          {/* Scroll cue */}
-          <div className="mt-12 flex justify-center">
-            <div className="w-px h-16 bg-gradient-to-b from-white/60 to-transparent" />
+          <div className="mt-8 sm:mt-12 flex justify-center">
+        <div className="w-px h-12 sm:h-16 bg-gradient-to-b from-white/60 to-transparent" />
           </div>
         </div>
       </div>
@@ -388,10 +389,12 @@ export default function BookTable() {
               {selectedBranch && (
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden w-full">
                   <div className="h-48 bg-gradient-to-br from-orange to-red-500 relative overflow-hidden">
-                    <img
+                    <Image
                       src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop&q=80"
                       alt={selectedBranch.name}
-                      className="w-full h-full object-cover opacity-80"
+                      fill
+                      className="object-cover opacity-80"
+                      unoptimized
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <p className="absolute bottom-3 left-4 text-white font-bold text-lg">
@@ -516,9 +519,9 @@ export default function BookTable() {
               Why Dine With Us
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Every visit to Delimwitu is crafted to be more than a meal — it's
-              an experience that stays with you long after the last bite.
-            </p>
+                Every visit to Delimwitu is crafted to be more than a meal — it&apos;s
+                an experience that stays with you long after the last bite.
+              </p>
           </div>
 
           {/* Feature cards — full width grid */}

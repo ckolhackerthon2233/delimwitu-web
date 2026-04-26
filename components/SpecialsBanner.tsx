@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+
 export default function SpecialsBanner() {
   return (
     <div className="relative py-20 bg-dark-brown text-white overflow-hidden max-md:py-16">
@@ -12,7 +15,7 @@ export default function SpecialsBanner() {
           {/* Text Section */}
           <div>
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">This Week</span>
-            <h2 className="text-4xl font-bold mb-6 max-md:text-3xl">Chef&apos;s Special: Swahili Coconut Curry</h2>
+            <h2 className="text-4xl font-bold mb-6 max-md:text-3xl">Chef&apos;s Special: spanish curry</h2>
             <p className="text-base text-white/90 mb-8 leading-relaxed">
               An aromatic blend of slow-cooked local vegetables in creamy coconut
               milk, served with fragrant basmati rice and warm chapati. Available
@@ -26,20 +29,19 @@ export default function SpecialsBanner() {
               <span className="bg-orange text-white px-2.5 py-1 rounded text-xs font-bold">Save 23%</span>
             </div>
 
-            <a href="#reservation" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-cream hover:shadow-lg">
+            <Link href="/book-table" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-cream hover:shadow-lg">
               Order Now
-            </a>
+            </Link>
           </div>
 
           {/* Image Section */}
           <div className="hidden lg:block h-96 rounded-lg overflow-hidden shadow-lg">
-            <img
+            <Image
               src="/menu/lunch&dinner/butter-curry-chicken-02_200x.png"
               alt="Chef's special curry"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               onError={(e) => {
-                (e.target as HTMLImageElement).src =
-                  "/hero/plate.png";
+                (e.target as HTMLImageElement).src = "/hero/plate.png";
               }}
             />
           </div>

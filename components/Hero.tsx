@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Hero() {
@@ -22,7 +23,7 @@ export default function Hero() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: "url('/hero/bg.png')",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center top",
             backgroundAttachment: "fixed"
           }}
@@ -60,9 +61,9 @@ export default function Hero() {
               <button onClick={handleBookTable} className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center cursor-pointer border-0">
                 Book a Table
               </button>
-              <a href="#about" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
+              <Link href="/menu" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Order Online
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Header() {
   const router = useRouter();
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -42,13 +42,12 @@ export default function Header() {
   ];
 
   const handleNavClick = (href: string) => {
-    const isBookTablePage = pathname === "/book-table";
-    if (isBookTablePage) {
-      // Navigate to home page with anchor
-      router.push(`/${href}`);
-    } else {
-      // Use regular hash navigation for same page
-      window.location.hash = href;
+    if (href.startsWith("/#")) {
+      const sectionId = href.substring(1);
+      const el = document.querySelector(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -68,16 +67,27 @@ export default function Header() {
           ✕
         </button>
         {navLinks.map((link) => (
-          <button
-            key={link.href}
-            onClick={() => {
-              handleNavClick(link.href);
-              toggleMobileNav();
-            }}
-            className="font-playfair text-4xl font-bold text-dark-brown hover:text-orange transition-colors bg-transparent border-0 cursor-pointer"
-          >
-            {link.label}
-          </button>
+          link.href.startsWith("/#") ? (
+            <button
+              key={link.href}
+              onClick={() => {
+                handleNavClick(link.href);
+                toggleMobileNav();
+              }}
+              className="font-playfair text-4xl font-bold text-dark-brown hover:text-orange transition-colors bg-transparent border-0 cursor-pointer"
+            >
+              {link.label}
+            </button>
+          ) : (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={toggleMobileNav}
+              className="font-playfair text-4xl font-bold text-dark-brown hover:text-orange transition-colors bg-transparent border-0 cursor-pointer"
+            >
+              {link.label}
+            </Link>
+          )
         ))}
       </div>
 
@@ -86,28 +96,39 @@ export default function Header() {
         id="header"
         className={`fixed top-0 left-0 right-0 z-[1000] px-0 py-4.8 transition-all duration-300 ${
           scrolled
-            ? "bg-cream/97 backdrop-blur-lg shadow-sm"
-            : "bg-cream/80 backdrop-blur-sm"
+            ? "bg-cream shadow-sm"
+            : "bg-cream"
         }`}
       >
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex items-center justify-between gap-4">
-            <button
-              onClick={() => handleNavClick("#hero")}
+            <Link
+              href="/"
               className="font-playfair text-2xl font-black italic text-dark-brown whitespace-nowrap bg-transparent border-0 cursor-pointer hover:text-orange transition-colors"
             >
               Delimwitu
-            </button>
+            </Link>
             <nav className="hidden lg:flex gap-8 items-center">
               {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => handleNavClick(link.href)}
-                  className="text-sm font-medium text-dark-brown relative pb-0.75 tracking-wide transition-colors hover:text-orange group bg-transparent border-0 cursor-pointer"
-                >
-                  {link.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.375 bg-orange transition-all duration-300 group-hover:w-full"></span>
-                </button>
+                link.href.startsWith("/#") ? (
+                  <button
+                    key={link.href}
+                    onClick={() => handleNavClick(link.href)}
+                    className="text-sm font-medium text-dark-brown relative pb-0.75 tracking-wide transition-colors hover:text-orange group bg-transparent border-0 cursor-pointer"
+                  >
+                    {link.label}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.375 bg-orange transition-all duration-300 group-hover:w-full"></span>
+                  </button>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-sm font-medium text-dark-brown relative pb-0.75 tracking-wide transition-colors hover:text-orange group bg-transparent border-0 cursor-pointer"
+                  >
+                    {link.label}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.375 bg-orange transition-all duration-300 group-hover:w-full"></span>
+                  </Link>
+                )
               ))}
             </nav>
             <div className="flex items-center gap-4">

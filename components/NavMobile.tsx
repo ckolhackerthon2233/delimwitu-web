@@ -36,19 +36,27 @@ export default function NavMobile({
       >
         <RiMenu2Line className="text-3xl text-white transition-all duration-200" />
       </button>
-      {/* Overlay: slides in from right when isOpen. Fixed full viewport. */}
+      {/* Backdrop overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-10 transition-opacity duration-300"
+          onClick={() => setIsOpen(false)}
+          aria-label="Close menu"
+        />
+      )}
+      {/* Side drawer: slides in from right when isOpen. */}
       <aside
-        className={`${isOpen ? "right-0" : "-right-full"} bg-black fixed z-20 w-full p-10 top-0 bottom-0 transition-all duration-500`}
+        className={`${isOpen ? "right-0" : "-right-full"} bg-black fixed z-20 w-3/4 sm:w-1/2 p-10 top-0 bottom-0 transition-all duration-500 overflow-y-auto`}
       >
-        <div className="flex flex-col items-center justify-between h-full">
-          <button
-            type="button"
-            onClick={() => setIsOpen(false)}
-            className="cursor-pointer text-4xl text-white absolute w-10 h-10 left-8 bg-green flex items-center justify-center border-0"
-            aria-label="Close menu"
-          >
-            <IoCloseOutline />
-          </button>
+        <button
+          type="button"
+          onClick={() => setIsOpen(false)}
+          className="cursor-pointer text-4xl text-white absolute top-8 right-8 bg-transparent flex items-center justify-center border-0"
+          aria-label="Close menu"
+        >
+          <IoCloseOutline />
+        </button>
+        <div className="flex flex-col gap-y-10 mt-16">
           <Link href="/">
             <Image src="/logo.svg" width={90} height={36} alt="Delimwitu Cafe" />
           </Link>
@@ -79,9 +87,6 @@ export default function NavMobile({
               )
             ))}
           </div>
-          <ScrollLink to="reservation" smooth offset={-150}>
-            <Button variant="orange">Book a table</Button>
-          </ScrollLink>
         </div>
       </aside>
     </div>

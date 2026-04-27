@@ -15,7 +15,7 @@ export default function About() {
   ];
 
   const [smallImgSrc, setSmallImgSrc] = useState("/about/img.png");
-  const [largeImgSrc, setLargeImgSrc] = useState("/about/img.png");
+  const [largeImgSrc, setLargeImgSrc] = useState("/about/img-2.png");
 
   return (
     <section id="about" className="py-24 max-md:py-16">

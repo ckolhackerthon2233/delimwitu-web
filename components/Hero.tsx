@@ -23,9 +23,10 @@ export default function Hero() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: "url('/hero/bg.png')",
-            backgroundSize: "contain",
-            backgroundPosition: "center top",
-            backgroundAttachment: "fixed"
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "scroll",
+            backgroundRepeat: "no-repeat"
           }}
         ></div>
 

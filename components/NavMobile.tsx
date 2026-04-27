@@ -10,7 +10,6 @@ import Link from "next/link";
 import { RiMenu2Line } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link as ScrollLink } from "react-scroll";
-import { Button } from "./ui/button";
 import { navMobileLinks } from "@/data/navMobileLinks";
 
 export interface NavMobileProps {

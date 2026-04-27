@@ -148,10 +148,10 @@ export default function ItemDetailPage({
         .stagger-6 { animation-delay: .8s; }
       `}</style>
 
-      <div className="min-h-screen bg-gradient-to-b from-[#fff8f2] via-white to-[#fff4ec] overflow-x-hidden">
+      <div className="min-h-screen bg-gradient-to-b from-[#fff8f2] via-white to-[#fff4ec] overflow-x-hidden relative">
 
         {/* ── Decorative ambient blobs ── */}
-        <div className="pointer-events-none fixed inset-0 overflow-hidden -z-0">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden -z-0">
           <div className="animate-float-blob absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-orange/15 to-amber-300/10 blur-3xl" />
           <div className="animate-float-blob absolute bottom-0 -left-32 w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-red-400/10 to-orange/10 blur-3xl" style={{animationDelay:"-3s"}} />
           <div className="animate-rotate-slow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full border border-orange/5" />
@@ -296,10 +296,10 @@ function OrderFormWrapper({ item }: { item: MenuItem }) {
   const [submitting, setSubmitting] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative w-fit mx-auto">
       {/* Loading overlay */}
       {submitting && (
-        <div className="absolute inset-0 z-30 flex flex-col items-center justify-center rounded-2xl bg-white/90 backdrop-blur-sm border border-orange/20 shadow-xl gap-4">
+        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center rounded-2xl bg-white/95 backdrop-blur-sm border border-orange/20 shadow-2xl gap-4">
           {/* Pulsing ring */}
           <div className="relative flex items-center justify-center">
             <div className="absolute w-16 h-16 rounded-full border-4 border-orange/30 animate-pulse-ring" />

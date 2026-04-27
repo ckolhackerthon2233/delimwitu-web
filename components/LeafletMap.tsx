@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-// @ts-ignore
 import "leaflet/dist/leaflet.css";
 
 // Fix default Leaflet marker icons when bundled with webpack/Next.js

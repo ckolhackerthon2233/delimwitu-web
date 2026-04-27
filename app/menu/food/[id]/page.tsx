@@ -20,7 +20,7 @@ export default function FoodDetailPage() {
       <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-dark-brown mb-4">Food Not Found</h1>
-          <p className="text-gray-600 mb-8">The food item you're looking for doesn't exist.</p>
+          <p className="text-gray-600 mb-8">The food item you&apos;re looking for doesn&apos;t exist.</p>
           <Link
             href="/menu/food"
             className="inline-block px-8 py-3 bg-orange text-white font-semibold rounded-lg hover:bg-orange-hover transition-all duration-300"
@@ -107,7 +107,7 @@ export default function FoodDetailPage() {
               <div className="text-3xl mb-3">📧</div>
               <h3 className="font-bold text-dark-brown mb-2">Email Order</h3>
               <p className="text-gray-600 text-sm">
-                Send us your order details and we'll confirm via email. No payment needed online.
+                Send us your order details and we&apos;ll confirm via email. No payment needed online.
               </p>
             </div>
 

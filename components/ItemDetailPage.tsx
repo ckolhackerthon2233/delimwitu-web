@@ -96,8 +96,6 @@ export default function ItemDetailPage({
   backHref,
   backLabel,
 }: ItemDetailPageProps) {
-  const [imageReady, setImageReady] = useState(false);
-
   const item = menuData.find((menuItem) => {
     const id = menuItem.id || menuItem.title.toLowerCase().replace(/\s+/g, "-");
     return id === itemId && menuItem.cat === category;
@@ -110,7 +108,7 @@ export default function ItemDetailPage({
         <div className="text-center animate-fade-in-up">
           <div className="text-8xl mb-6">🍽️</div>
           <h1 className="text-5xl font-black text-dark-brown mb-4">Item Not Found</h1>
-          <p className="text-gray-500 mb-10 text-lg">The dish you're looking for seems to have disappeared.</p>
+          <p className="text-gray-500 mb-10 text-lg">The dish you&apos;re looking for seems to have disappeared.</p>
           <Link
             href={backHref}
             className="inline-flex items-center gap-2 px-10 py-4 bg-gradient-to-r from-orange to-red-500 text-white font-bold rounded-2xl hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"

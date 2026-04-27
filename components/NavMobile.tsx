@@ -36,37 +36,33 @@ export default function NavMobile({
       >
         <RiMenu2Line className="text-3xl text-white transition-all duration-200" />
       </button>
-      {/* Overlay backdrop - close menu on click */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 z-10"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
-      {/* Quarter-screen dropdown menu */}
+      {/* Overlay: slides in from right when isOpen. Fixed full viewport. */}
       <aside
-        className={`${isOpen ? "top-16" : "-top-full"} bg-gradient-to-b from-black/95 to-black/80 backdrop-blur-sm fixed z-20 w-full max-h-[25vh] overflow-y-auto transition-all duration-300 shadow-2xl`}
+        className={`${isOpen ? "right-0" : "-right-full"} bg-black fixed z-20 w-full p-10 top-0 bottom-0 transition-all duration-500`}
       >
-        <div className="flex flex-col items-start justify-start py-4 px-6 gap-y-2">
+        <div className="flex flex-col items-center justify-between h-full">
           <button
             type="button"
             onClick={() => setIsOpen(false)}
-            className="cursor-pointer text-3xl text-white absolute top-3 right-6 bg-transparent border-0 hover:text-orange transition-colors duration-200 ml-auto"
+            className="cursor-pointer text-4xl text-white absolute w-10 h-10 left-8 bg-green flex items-center justify-center border-0"
             aria-label="Close menu"
           >
             <IoCloseOutline />
           </button>
-          <div className="flex flex-col gap-y-1 w-full mt-6">
+          <Link href="/">
+            <Image src="/logo.svg" width={90} height={36} alt="Delimwitu Cafe" />
+          </Link>
+          <div className="flex flex-col gap-y-8">
             {navMobileLinks.map((link) => (
               link.isExternal ? (
                 <Link
                   key={link.path}
                   href={link.path}
-                  className="flex items-center gap-x-2 cursor-pointer px-3 py-2 rounded-md transition-all duration-200 hover:bg-orange/20 hover:translate-x-1 group w-full text-sm"
+                  className="flex items-center gap-x-3 cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
-                  <div className={`${iconStyles} text-lg group-hover:text-orange transition-colors duration-200`}>{link.icon}</div>
-                  <div className={`${linkStyles} text-white font-medium group-hover:text-orange transition-colors duration-200`}>{link.name}</div>
+                  <div className={iconStyles}>{link.icon}</div>
+                  <div className={linkStyles}>{link.name}</div>
                 </Link>
               ) : (
                 <ScrollLink
@@ -74,17 +70,17 @@ export default function NavMobile({
                   to={link.path}
                   offset={link.offset}
                   smooth={false}
-                  className="flex items-center gap-x-2 cursor-pointer px-3 py-2 rounded-md transition-all duration-200 hover:bg-orange/20 hover:translate-x-1 group w-full text-sm"
+                  className="flex items-center gap-x-3 cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
-                  <div className={`${iconStyles} text-lg group-hover:text-orange transition-colors duration-200`}>{link.icon}</div>
-                  <div className={`${linkStyles} text-white font-medium group-hover:text-orange transition-colors duration-200`}>{link.name}</div>
+                  <div className={iconStyles}>{link.icon}</div>
+                  <div className={linkStyles}>{link.name}</div>
                 </ScrollLink>
               )
             ))}
           </div>
-          <ScrollLink to="reservation" smooth offset={-150} className="w-full px-3 mt-2">
-            <Button variant="orange" className="w-full text-sm py-2 hover:shadow-lg transition-shadow duration-200">Book</Button>
+          <ScrollLink to="reservation" smooth offset={-150}>
+            <Button variant="orange">Book a table</Button>
           </ScrollLink>
         </div>
       </aside>

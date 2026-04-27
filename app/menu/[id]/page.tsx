@@ -32,7 +32,7 @@ export default function FoodDetailPage({ params }: Props) {
       <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-dark-brown mb-4">Item Not Found</h1>
-          <p className="text-gray-600 mb-6">Sorry, we couldn't find the food item you're looking for.</p>
+          <p className="text-gray-600 mb-6">Sorry, we couldn&apos;t find the food item you&apos;re looking for.</p>
           <Link href="/menu" className="px-8 py-3 bg-orange text-white rounded-lg font-bold hover:bg-orange-600 transition">
             Back to Menu
           </Link>

@@ -30,7 +30,7 @@ export default function About() {
                 alt="Cafe interior"
                 fill
                 className="object-cover"
-                onError={() => setLargeImgSrc("/hero/plate.png")}
+                onError={() => setLargeImgSrc("/hero/bg.png")}
               />
             </div>
 
@@ -41,7 +41,7 @@ export default function About() {
                 alt="Coffee preparation"
                 fill
                 className="object-cover"
-                onError={() => setSmallImgSrc("/hero/plate.png")}
+                onError={() => setSmallImgSrc("/hero/bg.png")}
               />
             </div>
 

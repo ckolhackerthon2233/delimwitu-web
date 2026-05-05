@@ -4,22 +4,23 @@ import { useState } from "react";
 import { menuData } from "@/data/menuData";
 import FilterButton from "@/components/FilterButton";
 import MenuGrid from "@/components/MenuGrid";
+import type { MenuItem } from "@/types";
 
 export default function MenuPage() {
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const categories = ["all", "breakfast", "lunch", "mains", "desserts", "drinks"];
-  const filteredItems =
+const categories = ["all", "food", "drinks", "bakery"];
+  const filteredItems: MenuItem[] =
     activeFilter === "all"
       ? menuData
-      : menuData.filter((item) => item.cat === activeFilter);
+      : menuData.filter((item: MenuItem) => item.cat === activeFilter);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
       {/* Hero Section */}
       <div className="pt-32 pb-20 px-6 bg-gradient-to-r from-dark-brown to-orange">
         <div className="max-w-6xl mx-auto text-center text-white">
-          <h1 className="text-6xl md:text-7xl font-black mb-6">Our Complete Menu</h1>
+          <h1 className="text-6xl md:text-7xl font-black mb-6">Our Menu Collections</h1>
           <p className="text-xl md:text-2xl mb-4 text-white/90">
             Explore all our delicious offerings
           </p>
@@ -38,12 +39,11 @@ export default function MenuPage() {
               What We Serve
             </span>
             <h2 className="text-4xl font-bold text-dark-brown max-md:text-3xl">
-              All Menu Items
+Menu Collections
             </h2>
             <div className="w-15 h-0.75 bg-orange mx-auto my-6 rounded"></div>
             <p className="max-w-96 mx-auto text-base text-gray-700">
-              Discover our diverse selection of breakfast, lunch, main courses,
-              desserts, and refreshing beverages.
+              Discover our Food, Drinks, and Bakery collections.
             </p>
           </div>
 

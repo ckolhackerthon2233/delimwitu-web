@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { MenuItem } from "@/types";
 
@@ -20,7 +21,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
           return (
             <Link
               key={idx}
-              href={`/menu/${category}/${itemId}`}
+              href={`/menu/${category}/${item.subcategory || 'featured'}/${itemId}`}
               className="group bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:translate-y-3 hover:shadow-xl cursor-pointer"
             >
               {/* Image Container */}
@@ -30,10 +31,12 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                     {item.badge}
                   </div>
                 )}
-                <img
+                <Image
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-600 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
 
@@ -52,10 +55,10 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                     {item.price}
                   </div>
                   <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.location.href = `/menu/${category}/${itemId}`;
-                    }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = `/menu/${category}/${item.subcategory || 'featured'}/${itemId}`;
+                  }}
                     className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 transform hover:scale-110 cursor-pointer border-0"
                     title="View details"
                   >
@@ -78,7 +81,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
         return (
           <Link
             key={idx}
-            href={`/menu/${category}/${itemId}`}
+            href={`/menu/${category}/${item.subcategory || 'featured'}/${itemId}`}
             className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-2 hover:shadow-lg cursor-pointer"
           >
             {/* Image Container */}
@@ -88,10 +91,12 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                   {item.badge}
                 </div>
               )}
-              <img
+              <Image
                 src={item.img}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-600 hover:scale-108"
+                fill
+                className="object-cover transition-transform duration-600 hover:scale-108"
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
 
@@ -112,7 +117,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                 <button
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = `/menu/${category}/${itemId}`;
+                      window.location.href = `/menu/${category}/${item.subcategory || 'featured'}/${itemId}`;
                   }}
                   className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
                   title="View details"

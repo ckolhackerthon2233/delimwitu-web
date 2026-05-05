@@ -10,7 +10,7 @@ export type FadeDirection = "up" | "down" | "left" | "right";
 
 export interface MenuItem {
   id?: string;
-  cat: "breakfast" | "lunch" | "mains" | "sides" | "desserts" | "drinks";
+  cat: "food" | "drinks" | "bakery";
   badge?: string;
   title: string;
   desc: string;

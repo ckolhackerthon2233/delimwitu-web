@@ -6,23 +6,23 @@ import { getSubcategoryItems } from "@/data/menuData";
 import FilterButton from "@/components/FilterButton";
 import MenuGrid from "@/components/MenuGrid";
 
-export default function DrinksMenuPage() {
+export default function BakeryMenuPage() {
   const [activeSubfilter, setActiveSubfilter] = useState("all");
 
-  const subcategories = ["all", "non-alcoholic"];
-  const filteredItems: MenuItem[] = getSubcategoryItems("drinks", activeSubfilter === "all" ? undefined : activeSubfilter);
+  const subcategories = ["all", "desserts"];
+  const filteredItems: MenuItem[] = getSubcategoryItems("bakery", activeSubfilter === "all" ? undefined : activeSubfilter);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
       {/* Hero Section */}
-      <div className="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-800 via-indigo-900 to-orange">
+      <div className="pt-32 pb-20 px-6 bg-gradient-to-r from-rose-500 via-pink-500 to-orange">
         <div className="max-w-6xl mx-auto text-center text-white">
-          <h1 className="text-6xl md:text-7xl font-black mb-6">Drinks Menu</h1>
+          <h1 className="text-6xl md:text-7xl font-black mb-6">Bakery & Desserts</h1>
           <p className="text-xl md:text-2xl mb-4 text-white/90">
-            Refreshing beverages
+            Sweet temptations
           </p>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Perfect companions for your meals
+            Freshly baked delights and decadent desserts
           </p>
         </div>
       </div>
@@ -33,14 +33,14 @@ export default function DrinksMenuPage() {
           {/* Section Header */}
           <div className="text-center mb-14 max-md:mb-10">
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-3">
-              Drinks Collection
+              Bakery Collection
             </span>
             <h2 className="text-4xl font-bold text-dark-brown max-md:text-3xl">
-              Drinks Menu Items
+              Bakery Menu Items
             </h2>
             <div className="w-15 h-0.75 bg-orange mx-auto my-6 rounded"></div>
             <p className="max-w-96 mx-auto text-base text-gray-700">
-              Quench your thirst with our selection.
+              Indulge in our artisan bakery selection.
             </p>
           </div>
 

@@ -17,6 +17,7 @@ export interface MenuItem {
   price: string;
   img: string;
   subcategory?: string;
+  modifiers?: { name: string; price: string }[];
 }
 
 export interface NavLinkConfig {

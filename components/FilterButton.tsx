@@ -14,7 +14,7 @@ interface FilterButtonProps {
 const FilterButton: FC<FilterButtonProps> = ({ label, isActive, onClick }) => {
   return (
     <button
-      className={`px-5 py-2 rounded-full border-1.5 text-sm font-medium cursor-pointer transition-all duration-200 ${
+      className={`px-3 py-1.5 rounded-full border-1.5 text-xs font-medium cursor-pointer transition-all duration-200 whitespace-nowrap ${
         isActive
           ? "bg-dark-brown text-white border-dark-brown"
           : "bg-transparent text-gray-600 border-tan hover:bg-dark-brown hover:text-white hover:border-dark-brown"

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { createReservation } from "@/actions/reservations";
-import dynamic from "next/dynamic";
 
 interface Branch {
   id: string;
@@ -44,16 +44,6 @@ const BRANCHES: Branch[] = [
     capacity: 70,
   },
 ];
-
-// Leaflet map loaded dynamically to avoid SSR issues
-const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
-  ssr: false,
-  loading: () => (
-    <div className="h-full bg-gray-100 rounded-2xl animate-pulse flex items-center justify-center">
-      <p className="text-gray-400 font-medium">Loading map…</p>
-    </div>
-  ),
-});
 
 export default function BookTable() {
   const branches = BRANCHES;
@@ -125,34 +115,27 @@ export default function BookTable() {
 
   const selectedBranch = branches.find((b) => b.id === formData.branchId);
 
-  const whyDineFeatures = [
+  const staffTeam = [
     {
-      icon: "🍽️",
-      title: "Premium Cuisine",
+      name: "Amina Mwangi",
+      role: "Lead Host",
       description:
-        "Authentic Kenyan and international dishes crafted by our award-winning chefs using locally sourced, seasonal ingredients.",
-      accent: "from-amber-400 to-orange-500",
+        "Welcomes every guest with warmth and ensures your table is ready as soon as you arrive.",
+      image: "/hero/tb1.jpg",
     },
     {
-      icon: "👨‍💼",
-      title: "Exceptional Service",
+      name: "James Otieno",
+      role: "Reservation Manager",
       description:
-        "Our dedicated team anticipates your every need, ensuring a seamless and memorable dining experience from arrival to farewell.",
-      accent: "from-rose-400 to-red-500",
+        "Coordinates bookings, seating, and special requests so your evening runs without a hitch.",
+      image: "/hero/tb2.jpg",
     },
     {
-      icon: "🎭",
-      title: "Curated Ambiance",
+      name: "Njeri Kamau",
+      role: "Guest Experience",
       description:
-        "Thoughtfully designed spaces that balance warmth and sophistication — ideal for intimate dinners, celebrations, or business meals.",
-      accent: "from-violet-400 to-purple-500",
-    },
-    {
-      icon: "🎵",
-      title: "Live Entertainment",
-      description:
-        "Enjoy curated live music and special cultural performances that transform your meal into an all-round sensory experience.",
-      accent: "from-teal-400 to-cyan-500",
+        "Keeps the dining flow smooth while offering the little extras that make your night unforgettable.",
+      image: "/hero/coffee.png",
     },
   ];
 
@@ -438,87 +421,49 @@ export default function BookTable() {
             </p>
           </div>
 
-          {/* Full-width Leaflet map */}
-          <div className="w-full rounded-2xl overflow-hidden shadow-2xl h-[500px]">
-            <LeafletMap />
-          </div>
         </div>
       </div>
 
-      {/* ── Why Dine With Us ── */}
-      <div className="py-24 px-6 bg-gradient-to-b from-orange-50 to-white">
-        <div className="max-w-screen-xl mx-auto w-full">
-
-          {/* Section header */}
-          <div className="text-center mb-20">
-            <span className="inline-block text-xs font-semibold uppercase tracking-[0.3em] text-orange mb-4">
-              The Delimwitu Difference
+      {/* ── Table Staff Section ── */}
+      <div className="py-20 px-6 bg-cream">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">
+              Meet the Team
             </span>
-            <h2 className="text-5xl md:text-6xl font-black text-dark-brown mb-6 leading-tight">
-              Why Dine With Us
+            <h2 className="text-5xl font-black text-dark-brown mb-4">
+              Your Table Staff
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Every visit to Delimwitu is crafted to be more than a meal — it&apos;s
-                an experience that stays with you long after the last bite.
-              </p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Our booking crew is ready to make your visit smooth, personal, and memorable.
+            </p>
           </div>
 
-          {/* Feature cards — full width grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-            {whyDineFeatures.map((item, idx) => (
-              <div
-                key={idx}
-                className="w-full group relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-              >
-                {/* Gradient top bar */}
-                <div
-                  className={`h-2 w-full bg-gradient-to-r ${item.accent}`}
-                />
-
-                <div className="p-8">
-                  {/* Icon bubble */}
-                  <div
-                    className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${item.accent} mb-6 text-3xl shadow-md group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    {item.icon}
-                  </div>
-
-                  <h3 className="text-xl font-black text-dark-brown mb-3 leading-tight">
-                    {item.title}
+          <div className="grid gap-6 md:grid-cols-3">
+            {staffTeam.map((member) => (
+              <div key={member.name} className="group relative overflow-hidden rounded-[2rem] bg-white shadow-[0_30px_80px_rgba(0,0,0,0.08)] transition-transform duration-500 hover:-translate-y-2">
+                <div className="relative h-72">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="text-sm uppercase tracking-[0.3em] text-orange mb-3">
+                    {member.role}
+                  </p>
+                  <h3 className="text-2xl font-black text-dark-brown mb-3">
+                    {member.name}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {item.description}
+                  <p className="text-gray-600 leading-relaxed">
+                    {member.description}
                   </p>
                 </div>
-
-                {/* Decorative corner circle */}
-                <div
-                  className={`absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-br ${item.accent} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
-                />
               </div>
             ))}
-          </div>
-
-          {/* Bottom CTA strip */}
-          <div className="mt-16 w-full bg-gradient-to-r from-orange to-red-500 rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
-            <div className="text-white">
-              <h3 className="text-3xl md:text-4xl font-black mb-2">
-                Ready for an Unforgettable Evening?
-              </h3>
-              <p className="text-white/80 text-lg">
-                Secure your table now — availability is limited.
-              </p>
-            </div>
-            <button
-              onClick={() =>
-                document
-                  .querySelector("form")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-              className="flex-shrink-0 px-10 py-4 bg-white text-orange font-black rounded-xl hover:bg-orange hover:text-white border-2 border-white transition-all duration-300 text-lg shadow-lg"
-            >
-              Book Now →
-            </button>
           </div>
         </div>
       </div>

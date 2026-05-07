@@ -1,0 +1,415 @@
+/**
+ * Complete menu data for Delimwitu Cafe - All Products with Prices
+ * Organized by major categories: Drinks, Breakfast, Beef, Goat, Fish, Chicken, Fillet, Beans, Meatballs, Starters
+ */
+
+import type { MenuItem } from "@/types";
+
+// ============ DRINKS - FRESH JUICES (12 items) ============
+const freshJuices: MenuItem[] = [
+  { id: "juice-001", cat: "drinks", subcategory: "Fresh Juices", title: "Blended Juice", desc: "Fresh blended fruit juice", price: "KES 250", img: "/menu/drinks/juices/blended-juice.png" },
+  { id: "juice-002", cat: "drinks", subcategory: "Fresh Juices", title: "Cocktail Juice", desc: "Mixed fruit cocktail juice", price: "KES 200", img: "/menu/drinks/juices/cocktail-juice.png" },
+  { id: "juice-003", cat: "drinks", subcategory: "Fresh Juices", title: "Mango Juice", desc: "Fresh mango juice", price: "KES 200", img: "/menu/drinks/juices/mango-juice.png", badge: "Popular" },
+  { id: "juice-004", cat: "drinks", subcategory: "Fresh Juices", title: "Orange Juice", desc: "Fresh orange juice", price: "KES 200", img: "/menu/drinks/juices/orange-juice.png" },
+  { id: "juice-005", cat: "drinks", subcategory: "Fresh Juices", title: "Passion Juice", desc: "Fresh passion fruit juice", price: "KES 200", img: "/menu/drinks/juices/passion-juice.png" },
+  { id: "juice-006", cat: "drinks", subcategory: "Fresh Juices", title: "Passion Juice 500ml", desc: "Large fresh passion juice", price: "KES 300", img: "/menu/drinks/juices/passion-juice-500.png" },
+  { id: "juice-007", cat: "drinks", subcategory: "Fresh Juices", title: "Pineapple Mint", desc: "Pineapple with fresh mint", price: "KES 200", img: "/menu/drinks/juices/pineapple-mint.png" },
+  { id: "juice-008", cat: "drinks", subcategory: "Fresh Juices", title: "Pineapple Mint 500ml", desc: "Large pineapple mint juice", price: "KES 300", img: "/menu/drinks/juices/pineapple-mint-500.png" },
+  { id: "juice-009", cat: "drinks", subcategory: "Fresh Juices", title: "Tamarind Juice", desc: "Tangy tamarind juice", price: "KES 200", img: "/menu/drinks/juices/tamarind-juice.png" },
+  { id: "juice-010", cat: "drinks", subcategory: "Fresh Juices", title: "Tropical Juice", desc: "Mixed tropical fruits", price: "KES 250", img: "/menu/drinks/juices/tropical-juice.png" },
+  { id: "juice-011", cat: "drinks", subcategory: "Fresh Juices", title: "Mursik", desc: "Traditional mursik beverage", price: "KES 200", img: "/menu/drinks/juices/mursik.png" },
+];
+
+// ============ DRINKS - SODAS & PACKAGED JUICES (48 items) ============
+const sodas: MenuItem[] = [
+  // Pick N Peel
+  { id: "soda-001", cat: "drinks", subcategory: "Sodas", title: "Pick N Peel Apple", desc: "Pick N Peel apple juice", price: "KES 150", img: "/menu/drinks/sodas/pick-n-peel-apple.png" },
+  { id: "soda-002", cat: "drinks", subcategory: "Sodas", title: "Pick N Peel Mango", desc: "Pick N Peel mango juice", price: "KES 150", img: "/menu/drinks/sodas/pick-n-peel-mango.png" },
+  { id: "soda-003", cat: "drinks", subcategory: "Sodas", title: "Pick N Peel Orange", desc: "Pick N Peel orange juice", price: "KES 150", img: "/menu/drinks/sodas/pick-n-peel-orange.png" },
+  { id: "soda-004", cat: "drinks", subcategory: "Sodas", title: "Pick N Peel 1L", desc: "Pick N Peel 1 litre", price: "KES 300", img: "/menu/drinks/sodas/pick-n-peel-1l.png" },
+  // Frosty & Fruitvile 250ml
+  { id: "soda-005", cat: "drinks", subcategory: "Sodas", title: "Apple Frosty", desc: "Apple Frosty chilled juice", price: "KES 100", img: "/menu/drinks/sodas/apple-frosty.png" },
+  { id: "soda-006", cat: "drinks", subcategory: "Sodas", title: "Apple Fruitvile", desc: "Apple Fruitvile juice", price: "KES 100", img: "/menu/drinks/sodas/apple-fruitvile.png" },
+  { id: "soda-007", cat: "drinks", subcategory: "Sodas", title: "Frosti Tropical", desc: "Tropical Frosti juice", price: "KES 100", img: "/menu/drinks/sodas/frosti-tropical.png" },
+  { id: "soda-008", cat: "drinks", subcategory: "Sodas", title: "Mango Frosti", desc: "Mango Frosti juice", price: "KES 100", img: "/menu/drinks/sodas/mango-frosti.png" },
+  { id: "soda-009", cat: "drinks", subcategory: "Sodas", title: "Mango Fruitvile", desc: "Mango Fruitvile juice", price: "KES 100", img: "/menu/drinks/sodas/mango-fruitvile.png" },
+  // 300ml Sodas
+  { id: "soda-010", cat: "drinks", subcategory: "Sodas", title: "Mirinda Orange 300ml", desc: "Mirinda orange soda", price: "KES 90", img: "/menu/drinks/sodas/mirinda-orange.png" },
+  { id: "soda-011", cat: "drinks", subcategory: "Sodas", title: "Pepsi 330ml", desc: "Classic Pepsi cola", price: "KES 100", img: "/menu/drinks/sodas/pepsi-330.png" },
+  { id: "soda-012", cat: "drinks", subcategory: "Sodas", title: "Black Current 300ml", desc: "Blackcurrant soda", price: "KES 90", img: "/menu/drinks/sodas/black-current.png" },
+  { id: "soda-013", cat: "drinks", subcategory: "Sodas", title: "Coke 300ml", desc: "Coca-Cola classic", price: "KES 90", img: "/menu/drinks/sodas/coke-300.png", badge: "Popular" },
+  { id: "soda-014", cat: "drinks", subcategory: "Sodas", title: "Fanta Orange 300ml", desc: "Fanta orange soda", price: "KES 90", img: "/menu/drinks/sodas/fanta-orange-300.png" },
+  { id: "soda-015", cat: "drinks", subcategory: "Sodas", title: "Fanta Passion 300ml", desc: "Fanta passion soda", price: "KES 90", img: "/menu/drinks/sodas/fanta-passion-300.png" },
+  { id: "soda-016", cat: "drinks", subcategory: "Sodas", title: "Krest 300ml", desc: "Krest lemonade", price: "KES 90", img: "/menu/drinks/sodas/krest-300.png" },
+  { id: "soda-017", cat: "drinks", subcategory: "Sodas", title: "Mirinda 300ml", desc: "Mirinda orange juice", price: "KES 90", img: "/menu/drinks/sodas/mirinda-300.png" },
+  { id: "soda-018", cat: "drinks", subcategory: "Sodas", title: "Mountain Dew", desc: "Mountain Dew citrus soda", price: "KES 100", img: "/menu/drinks/sodas/mountain-dew.png" },
+  { id: "soda-019", cat: "drinks", subcategory: "Sodas", title: "Pepsi 300ml", desc: "Pepsi cola 300ml", price: "KES 90", img: "/menu/drinks/sodas/pepsi-300.png" },
+  { id: "soda-020", cat: "drinks", subcategory: "Sodas", title: "Stoney Tangawizi", desc: "Stoney ginger beer", price: "KES 100", img: "/menu/drinks/sodas/stoney-tangawizi.png" },
+  { id: "soda-021", cat: "drinks", subcategory: "Sodas", title: "Sprite 300ml", desc: "Sprite lemon-lime soda", price: "KES 90", img: "/menu/drinks/sodas/sprite-300.png" },
+  // 350ml Sodas
+  { id: "soda-022", cat: "drinks", subcategory: "Sodas", title: "Stoney 350ml", desc: "Stoney ginger beer", price: "KES 120", img: "/menu/drinks/sodas/stoney-350.png" },
+  { id: "soda-023", cat: "drinks", subcategory: "Sodas", title: "Fanta Orange 350ml", desc: "Fanta orange 350ml", price: "KES 110", img: "/menu/drinks/sodas/fanta-orange-350.png" },
+  { id: "soda-024", cat: "drinks", subcategory: "Sodas", title: "Coke 350ml", desc: "Coca-Cola 350ml", price: "KES 110", img: "/menu/drinks/sodas/coke-350.png" },
+  { id: "soda-025", cat: "drinks", subcategory: "Sodas", title: "Black Current 350ml", desc: "Blackcurrant 350ml", price: "KES 110", img: "/menu/drinks/sodas/black-current-350.png" },
+  // Minute Maid 400ml
+  { id: "soda-026", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Orange 400ml", desc: "Minute Maid orange juice", price: "KES 150", img: "/menu/drinks/sodas/minute-maid-orange.png" },
+  { id: "soda-027", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Tropical 400ml", desc: "Minute Maid tropical juice", price: "KES 150", img: "/menu/drinks/sodas/minute-maid-tropical.png" },
+  { id: "soda-028", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Apple 400ml", desc: "Minute Maid apple juice", price: "KES 150", img: "/menu/drinks/sodas/minute-maid-apple.png" },
+  { id: "soda-029", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Mango 400ml", desc: "Minute Maid mango juice", price: "KES 150", img: "/menu/drinks/sodas/minute-maid-mango.png" },
+  // 500ml Juices
+  { id: "soda-030", cat: "drinks", subcategory: "Sodas", title: "Fruitville Mango 500ml", desc: "Fruitville mango juice", price: "KES 200", img: "/menu/drinks/sodas/fruitville-mango.png" },
+  { id: "soda-031", cat: "drinks", subcategory: "Sodas", title: "Fanta Orange 500ml", desc: "Fanta orange 500ml", price: "KES 180", img: "/menu/drinks/sodas/fanta-orange-500.png" },
+  { id: "soda-032", cat: "drinks", subcategory: "Sodas", title: "Guava Fruitville 500ml", desc: "Fruitville guava juice", price: "KES 200", img: "/menu/drinks/sodas/guava-fruitville.png" },
+  { id: "soda-033", cat: "drinks", subcategory: "Sodas", title: "Fanta Passion 500ml", desc: "Fanta passion 500ml", price: "KES 180", img: "/menu/drinks/sodas/fanta-passion-500.png" },
+  { id: "soda-034", cat: "drinks", subcategory: "Sodas", title: "Black Current 500ml", desc: "Blackcurrant 500ml", price: "KES 180", img: "/menu/drinks/sodas/black-current-500.png" },
+  { id: "soda-035", cat: "drinks", subcategory: "Sodas", title: "Coke 500ml", desc: "Coca-Cola 500ml", price: "KES 180", img: "/menu/drinks/sodas/coke-500.png" },
+  { id: "soda-036", cat: "drinks", subcategory: "Sodas", title: "Sprite 500ml", desc: "Sprite 500ml", price: "KES 180", img: "/menu/drinks/sodas/sprite-500.png" },
+  { id: "soda-037", cat: "drinks", subcategory: "Sodas", title: "Predator Energy Drink", desc: "Predator energy drink", price: "KES 250", img: "/menu/drinks/sodas/predator-energy.png" },
+  { id: "soda-038", cat: "drinks", subcategory: "Sodas", title: "Waba Water 500ml", desc: "Waba spring water", price: "KES 100", img: "/menu/drinks/sodas/waba-water.png" },
+  { id: "soda-039", cat: "drinks", subcategory: "Sodas", title: "Coke Zero 500ml", desc: "Coca-Cola Zero sugar", price: "KES 180", img: "/menu/drinks/sodas/coke-zero.png" },
+  // 1 Litre
+  { id: "soda-040", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Mango 1L", desc: "Minute Maid mango 1 litre", price: "KES 350", img: "/menu/drinks/sodas/minute-maid-mango-1l.png" },
+  { id: "soda-041", cat: "drinks", subcategory: "Sodas", title: "Delmonte 1L", desc: "Delmonte juice 1 litre", price: "KES 300", img: "/menu/drinks/sodas/delmonte.png" },
+  { id: "soda-042", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Apple 1L", desc: "Minute Maid apple 1 litre", price: "KES 350", img: "/menu/drinks/sodas/minute-maid-apple-1l.png" },
+  { id: "soda-043", cat: "drinks", subcategory: "Sodas", title: "Minute Maid Tropical 1L", desc: "Minute Maid tropical 1L", price: "KES 350", img: "/menu/drinks/sodas/minute-maid-tropical-1l.png" },
+  { id: "soda-044", cat: "drinks", subcategory: "Sodas", title: "Waba Water 1L", desc: "Waba spring water 1 litre", price: "KES 150", img: "/menu/drinks/sodas/waba-water-1l.png" },
+  // 125ml
+  { id: "soda-045", cat: "drinks", subcategory: "Sodas", title: "Fanta Orange 125ml", desc: "Fanta mini pack", price: "KES 50", img: "/menu/drinks/sodas/fanta-orange-125.png" },
+  { id: "soda-046", cat: "drinks", subcategory: "Sodas", title: "Coke 125ml", desc: "Coca-Cola mini pack", price: "KES 50", img: "/menu/drinks/sodas/coke-125.png" },
+  { id: "soda-047", cat: "drinks", subcategory: "Sodas", title: "Black Current 125ml", desc: "Blackcurrant mini pack", price: "KES 50", img: "/menu/drinks/sodas/black-current-125.png" },
+  { id: "soda-048", cat: "drinks", subcategory: "Sodas", title: "Sprite 125ml", desc: "Sprite mini pack", price: "KES 50", img: "/menu/drinks/sodas/sprite-125.png" },
+];
+
+// ============ DRINKS - SYRUPS (6 items) ============
+const syrups: MenuItem[] = [
+  { id: "syrup-001", cat: "drinks", subcategory: "Syrups", title: "Caramel Syrup", desc: "Sweet caramel syrup", price: "KES 50", img: "/menu/drinks/syrups/caramel-syrup.png" },
+  { id: "syrup-002", cat: "drinks", subcategory: "Syrups", title: "Hazelnut Syrup", desc: "Hazelnut flavored syrup", price: "KES 50", img: "/menu/drinks/syrups/hazelnut-syrup.png" },
+  { id: "syrup-003", cat: "drinks", subcategory: "Syrups", title: "Lime Syrup", desc: "Fresh lime syrup", price: "KES 50", img: "/menu/drinks/syrups/lime-syrup.png" },
+  { id: "syrup-004", cat: "drinks", subcategory: "Syrups", title: "Peppermint Syrup", desc: "Cooling peppermint syrup", price: "KES 50", img: "/menu/drinks/syrups/peppermint-syrup.png" },
+  { id: "syrup-005", cat: "drinks", subcategory: "Syrups", title: "Vanilla Syrup", desc: "Rich vanilla syrup", price: "KES 50", img: "/menu/drinks/syrups/vanilla-syrup.png" },
+  { id: "syrup-006", cat: "drinks", subcategory: "Syrups", title: "Coconut Syrup", desc: "Tropical coconut syrup", price: "KES 50", img: "/menu/drinks/syrups/coconut-syrup.png" },
+];
+
+// ============ DRINKS - HOT BEVERAGES (8 items) ============
+const teas: MenuItem[] = [
+  { id: "tea-001", cat: "drinks", subcategory: "Hot Beverages", title: "Black Masala Tea", desc: "Spiced black tea", price: "KES 100", img: "/menu/drinks/hot/black-masala-tea.png" },
+  { id: "tea-002", cat: "drinks", subcategory: "Hot Beverages", title: "Black Tea", desc: "Classic black tea", price: "KES 60", img: "/menu/drinks/hot/black-tea.png" },
+  { id: "tea-003", cat: "drinks", subcategory: "Hot Beverages", title: "Dawa", desc: "Traditional dawa tea", price: "KES 200", img: "/menu/drinks/hot/dawa.png" },
+  { id: "tea-004", cat: "drinks", subcategory: "Hot Beverages", title: "Hot Chocolate", desc: "Warm hot chocolate", price: "KES 120", img: "/menu/drinks/hot/hot-chocolate.png" },
+  { id: "tea-005", cat: "drinks", subcategory: "Hot Beverages", title: "Lemon Tea", desc: "Lemon flavored tea", price: "KES 80", img: "/menu/drinks/hot/lemon-tea.png" },
+  { id: "tea-006", cat: "drinks", subcategory: "Hot Beverages", title: "Hot Milk", desc: "Warm milk beverage", price: "KES 100", img: "/menu/drinks/hot/hot-milk.png" },
+  { id: "tea-007", cat: "drinks", subcategory: "Hot Beverages", title: "White Tea", desc: "Delicate white tea", price: "KES 100", img: "/menu/drinks/hot/white-tea.png" },
+  { id: "tea-008", cat: "drinks", subcategory: "Hot Beverages", title: "White Masala Tea", desc: "Spiced white tea", price: "KES 120", img: "/menu/drinks/hot/white-masala-tea.png" },
+];
+
+// ============ DRINKS - COFFEE (22 items) ============
+const coffees: MenuItem[] = [
+  { id: "coffee-001", cat: "drinks", subcategory: "Coffee", title: "Decaf Cappuccino", desc: "Caffeine-free cappuccino", price: "KES 180", img: "/menu/drinks/coffee/decaf-cappuccino.png" },
+  { id: "coffee-002", cat: "drinks", subcategory: "Coffee", title: "Decaf Cappuccino Small", desc: "Small decaf cappuccino", price: "KES 150", img: "/menu/drinks/coffee/decaf-cappuccino-s.png" },
+  { id: "coffee-003", cat: "drinks", subcategory: "Coffee", title: "Decaf Latte", desc: "Caffeine-free latte", price: "KES 180", img: "/menu/drinks/coffee/decaf-latte.png" },
+  { id: "coffee-004", cat: "drinks", subcategory: "Coffee", title: "Espresso", desc: "Strong espresso shot", price: "KES 100", img: "/menu/drinks/coffee/espresso.png" },
+  { id: "coffee-005", cat: "drinks", subcategory: "Coffee", title: "Espresso Small", desc: "Small espresso shot", price: "KES 80", img: "/menu/drinks/coffee/espresso-s.png" },
+  { id: "coffee-006", cat: "drinks", subcategory: "Coffee", title: "Americano", desc: "Classic americano", price: "KES 140", img: "/menu/drinks/coffee/americano.png", badge: "Popular" },
+  { id: "coffee-007", cat: "drinks", subcategory: "Coffee", title: "Americano Small", desc: "Small americano", price: "KES 110", img: "/menu/drinks/coffee/americano-s.png" },
+  { id: "coffee-008", cat: "drinks", subcategory: "Coffee", title: "Iced Americano", desc: "Cold americano", price: "KES 160", img: "/menu/drinks/coffee/iced-americano.png" },
+  { id: "coffee-009", cat: "drinks", subcategory: "Coffee", title: "Cappuccino", desc: "Creamy cappuccino", price: "KES 160", img: "/menu/drinks/coffee/cappuccino.png" },
+  { id: "coffee-010", cat: "drinks", subcategory: "Coffee", title: "Cappuccino Small", desc: "Small cappuccino", price: "KES 130", img: "/menu/drinks/coffee/cappuccino-s.png" },
+  { id: "coffee-011", cat: "drinks", subcategory: "Coffee", title: "Iced Cappuccino", desc: "Cold cappuccino", price: "KES 180", img: "/menu/drinks/coffee/iced-cappuccino.png" },
+  { id: "coffee-012", cat: "drinks", subcategory: "Coffee", title: "Latte", desc: "Smooth latte", price: "KES 160", img: "/menu/drinks/coffee/latte.png" },
+  { id: "coffee-013", cat: "drinks", subcategory: "Coffee", title: "Latte Small", desc: "Small latte", price: "KES 130", img: "/menu/drinks/coffee/latte-s.png" },
+  { id: "coffee-014", cat: "drinks", subcategory: "Coffee", title: "Iced Latte", desc: "Cold latte", price: "KES 180", img: "/menu/drinks/coffee/iced-latte.png" },
+  { id: "coffee-015", cat: "drinks", subcategory: "Coffee", title: "Macchiato", desc: "Espresso with milk", price: "KES 150", img: "/menu/drinks/coffee/macchiato.png" },
+  { id: "coffee-016", cat: "drinks", subcategory: "Coffee", title: "Mocha", desc: "Coffee with chocolate", price: "KES 180", img: "/menu/drinks/coffee/mocha.png" },
+  { id: "coffee-017", cat: "drinks", subcategory: "Coffee", title: "Mocha Small", desc: "Small mocha", price: "KES 150", img: "/menu/drinks/coffee/mocha-s.png" },
+  { id: "coffee-018", cat: "drinks", subcategory: "Coffee", title: "Iced Mocha", desc: "Cold mocha", price: "KES 200", img: "/menu/drinks/coffee/iced-mocha.png" },
+  { id: "coffee-019", cat: "drinks", subcategory: "Coffee", title: "Iced Espresso", desc: "Cold espresso", price: "KES 120", img: "/menu/drinks/coffee/iced-espresso.png" },
+  { id: "coffee-020", cat: "drinks", subcategory: "Coffee", title: "Black Coffee", desc: "Simple black coffee", price: "KES 100", img: "/menu/drinks/coffee/black-coffee.png" },
+  { id: "coffee-021", cat: "drinks", subcategory: "Coffee", title: "White Coffee", desc: "Coffee with milk", price: "KES 120", img: "/menu/drinks/coffee/white-coffee.png" },
+  { id: "coffee-022", cat: "drinks", subcategory: "Coffee", title: "White Decaf", desc: "Decaf with milk", price: "KES 150", img: "/menu/drinks/coffee/white-decaf.png" },
+];
+
+// ============ FOOD - PORRIDGE (3 items) ============
+const porridges: MenuItem[] = [
+  { id: "porridge-001", cat: "food", subcategory: "Porridge", title: "Uji Wimbi", desc: "Traditional millet porridge", price: "KES 80", img: "/menu/food/porridge/uji-wimbi.png" },
+  { id: "porridge-002", cat: "food", subcategory: "Porridge", title: "Uji Wimbi with Milk", desc: "Millet porridge with milk", price: "KES 120", img: "/menu/food/porridge/uji-wimbi-milk.png" },
+  { id: "porridge-003", cat: "food", subcategory: "Porridge", title: "Uji Power", desc: "Power-packed porridge blend", price: "KES 100", img: "/menu/food/porridge/uji-power.png" },
+];
+
+// ============ FOOD - BREAKFAST (20 items) ============
+const breakfast: MenuItem[] = [
+  { id: "breakfast-001", cat: "food", subcategory: "Breakfast", title: "Executive Breakfast", desc: "Full breakfast with protein and sides", price: "KES 450", img: "/menu/food/breakfast/executive-breakfast.png", badge: "Special" },
+  { id: "breakfast-002", cat: "food", subcategory: "Breakfast", title: "Healthy Start", desc: "Nutritious breakfast plate", price: "KES 400", img: "/menu/food/breakfast/healthy-start.png" },
+  { id: "breakfast-003", cat: "food", subcategory: "Breakfast", title: "Sunrise Breakfast", desc: "Classic breakfast combo", price: "KES 350", img: "/menu/food/breakfast/sunrise-breakfast.png" },
+  { id: "breakfast-004", cat: "food", subcategory: "Breakfast", title: "Classic Omelette", desc: "Three-egg omelette with fillings", price: "KES 250", img: "/menu/food/breakfast/classic-omelette.png" },
+  { id: "breakfast-005", cat: "food", subcategory: "Breakfast", title: "Pancake Stack", desc: "Fluffy pancakes with syrup", price: "KES 300", img: "/menu/food/breakfast/pancake-stack.png" },
+  { id: "breakfast-006", cat: "food", subcategory: "Breakfast", title: "Breakfast Sandwich", desc: "Egg and meat sandwich", price: "KES 200", img: "/menu/food/breakfast/breakfast-sandwich.png" },
+  { id: "breakfast-007", cat: "food", subcategory: "Breakfast", title: "French Toast", desc: "Golden French toast", price: "KES 280", img: "/menu/food/breakfast/french-toast.png" },
+  { id: "breakfast-008", cat: "food", subcategory: "Breakfast", title: "Mandazi & Chai", desc: "Traditional mandazi with tea", price: "KES 150", img: "/menu/food/breakfast/quick-start-mandazi.png" },
+  { id: "breakfast-009", cat: "food", subcategory: "Breakfast", title: "Samosa Combo", desc: "3 samosas with dip", price: "KES 120", img: "/menu/food/breakfast/samosa-combo.png" },
+  { id: "breakfast-010", cat: "food", subcategory: "Breakfast", title: "Rolex", desc: "Traditional rolex wrap", price: "KES 170", img: "/menu/food/breakfast/rolex.png" },
+  { id: "breakfast-011", cat: "food", subcategory: "Breakfast", title: "Ngwace Combo", desc: "Ugali with beans and veggies", price: "KES 180", img: "/menu/food/breakfast/ngwace-combo.png" },
+  { id: "breakfast-012", cat: "food", subcategory: "Breakfast", title: "Boiled Eggs Combo", desc: "Eggs with chapati", price: "KES 140", img: "/menu/food/breakfast/boiled-eggs-combo.png" },
+  { id: "breakfast-013", cat: "food", subcategory: "Breakfast", title: "Rolex Combo", desc: "Rolex with tea or juice", price: "KES 220", img: "/menu/food/breakfast/rolex-combo.png" },
+  { id: "breakfast-014", cat: "food", subcategory: "Breakfast", title: "Smocha", desc: "Meat filled pastry", price: "KES 160", img: "/menu/food/breakfast/smocha.png" },
+  { id: "breakfast-015", cat: "food", subcategory: "Breakfast", title: "Spring Rolls", desc: "2 crispy spring rolls", price: "KES 100", img: "/menu/food/breakfast/spring-rolls.png" },
+  { id: "breakfast-016", cat: "food", subcategory: "Breakfast", title: "Beef Kebabs", desc: "Grilled beef skewers", price: "KES 200", img: "/menu/food/breakfast/beef-kebabs.png" },
+  { id: "breakfast-017", cat: "food", subcategory: "Breakfast", title: "Smokie Kachumbari", desc: "Sausage with tomato salad", price: "KES 180", img: "/menu/food/breakfast/smokie-kachumbari.png" },
+  { id: "breakfast-018", cat: "food", subcategory: "Breakfast", title: "Boiled Eggs & Sweet Potato", desc: "Eggs with roasted potato", price: "KES 160", img: "/menu/food/breakfast/boiled-eggs-sweet-potato.png" },
+  { id: "breakfast-019", cat: "food", subcategory: "Breakfast", title: "Fried Eggs Toast", desc: "Eggs on toasted bread", price: "KES 140", img: "/menu/food/breakfast/fried-eggs-toast.png" },
+];
+
+// ============ FOOD - BEEF (31 items) ============
+const beef: MenuItem[] = [
+  { id: "beef-001", cat: "food", subcategory: "Beef", title: "Beef Stew", desc: "Tender beef in stew", price: "KES 300", img: "/menu/food/beef/beef-stew.png" },
+  { id: "beef-002", cat: "food", subcategory: "Beef", title: "Stir-Fried Beef", desc: "Beef cooked stir-fry style", price: "KES 350", img: "/menu/food/beef/stir-fried-beef.png" },
+  { id: "beef-003", cat: "food", subcategory: "Beef", title: "Beef with Rice", desc: "Beef stew with rice (half)", price: "KES 350", img: "/menu/food/beef/beef-rice.png" },
+  { id: "beef-004", cat: "food", subcategory: "Beef", title: "Jolof Rice Beef (Half)", desc: "Half plate jolof with beef", price: "KES 400", img: "/menu/food/beef/jolof-beef-half.png" },
+  { id: "beef-005", cat: "food", subcategory: "Beef", title: "Jolof Rice Beef (Full)", desc: "Full plate jolof with beef", price: "KES 600", img: "/menu/food/beef/jolof-beef-full.png", badge: "Popular" },
+  { id: "beef-006", cat: "food", subcategory: "Beef", title: "Rice & Beef (Half)", desc: "Plain rice with beef (half)", price: "KES 350", img: "/menu/food/beef/rice-beef-half.png" },
+  { id: "beef-007", cat: "food", subcategory: "Beef", title: "Rice & Beef (Full)", desc: "Plain rice with beef (full)", price: "KES 500", img: "/menu/food/beef/rice-beef-full.png" },
+  { id: "beef-008", cat: "food", subcategory: "Beef", title: "Pilau & Beef (Half)", desc: "Pilau rice with beef (half)", price: "KES 400", img: "/menu/food/beef/pilau-beef-half.png" },
+  { id: "beef-009", cat: "food", subcategory: "Beef", title: "Pilau & Beef (Full)", desc: "Pilau rice with beef (full)", price: "KES 600", img: "/menu/food/beef/pilau-beef-full.png" },
+  { id: "beef-010", cat: "food", subcategory: "Beef", title: "Beef & Ugali (Half)", desc: "Ugali with beef stew (half)", price: "KES 300", img: "/menu/food/beef/beef-ugali-half.png" },
+  { id: "beef-011", cat: "food", subcategory: "Beef", title: "Beef & Ugali (Full)", desc: "Ugali with beef stew (full)", price: "KES 400", img: "/menu/food/beef/beef-ugali-full.png" },
+  { id: "beef-012", cat: "food", subcategory: "Beef", title: "Stir-Fried Beef & Ugali", desc: "Stir-fry beef with ugali", price: "KES 450", img: "/menu/food/beef/stir-fried-beef-ugali.png" },
+  { id: "beef-013", cat: "food", subcategory: "Beef", title: "Chapati & Beef (Full)", desc: "Chapati with beef stew (full)", price: "KES 400", img: "/menu/food/beef/chapati-beef-full.png" },
+  { id: "beef-014", cat: "food", subcategory: "Beef", title: "Chapati & Beef (Half)", desc: "Chapati with beef stew (half)", price: "KES 300", img: "/menu/food/beef/chapati-beef-half.png" },
+  { id: "beef-015", cat: "food", subcategory: "Beef", title: "Mukimo & Beef (Full)", desc: "Mukimo with beef stew (full)", price: "KES 450", img: "/menu/food/beef/mukimo-beef-full.png" },
+  { id: "beef-016", cat: "food", subcategory: "Beef", title: "Mukimo & Beef (Half)", desc: "Mukimo with beef stew (half)", price: "KES 350", img: "/menu/food/beef/mukimo-beef-half.png" },
+  { id: "beef-017", cat: "food", subcategory: "Beef", title: "Chips & Beef (Full)", desc: "Chips with beef stew (full)", price: "KES 400", img: "/menu/food/beef/chips-beef-full.png" },
+  { id: "beef-018", cat: "food", subcategory: "Beef", title: "Chips & Beef (Half)", desc: "Chips with beef stew (half)", price: "KES 300", img: "/menu/food/beef/chips-beef-half.png" },
+  { id: "beef-019", cat: "food", subcategory: "Beef", title: "Masala Chips & Beef (Full)", desc: "Masala chips with beef (full)", price: "KES 450", img: "/menu/food/beef/chips-masala-beef-full.png" },
+  { id: "beef-020", cat: "food", subcategory: "Beef", title: "Masala Chips & Beef (Half)", desc: "Masala chips with beef (half)", price: "KES 350", img: "/menu/food/beef/masala-beef-half.png" },
+  { id: "beef-021", cat: "food", subcategory: "Beef", title: "Homefries & Beef (Half)", desc: "Homemade fries with beef (half)", price: "KES 350", img: "/menu/food/beef/homefries-beef-half.png" },
+  { id: "beef-022", cat: "food", subcategory: "Beef", title: "Bhajia & Beef (Full)", desc: "Potato bhajia with beef (full)", price: "KES 450", img: "/menu/food/beef/bhajia-beef-full.png" },
+  { id: "beef-023", cat: "food", subcategory: "Beef", title: "Bhajia & Beef (Half)", desc: "Potato bhajia with beef (half)", price: "KES 350", img: "/menu/food/beef/bhajia-beef-half.png" },
+  { id: "beef-024", cat: "food", subcategory: "Beef", title: "Potato Wedges & Beef (Full)", desc: "Wedges with beef stew (full)", price: "KES 500", img: "/menu/food/beef/potato-wedges-beef-full.png" },
+  { id: "beef-025", cat: "food", subcategory: "Beef", title: "Potato Wedges & Beef (Half)", desc: "Wedges with beef stew (half)", price: "KES 400", img: "/menu/food/beef/potato-wedges-beef-half.png" },
+  { id: "beef-026", cat: "food", subcategory: "Beef", title: "Saute Potatoes & Beef (Half)", desc: "Sauteed potatoes with beef (half)", price: "KES 350", img: "/menu/food/beef/potato-saute-beef-half.png" },
+  { id: "beef-027", cat: "food", subcategory: "Beef", title: "Saute Potatoes & Beef (Full)", desc: "Sauteed potatoes with beef (full)", price: "KES 450", img: "/menu/food/beef/potatoes-saute-beef-full.png" },
+  { id: "beef-028", cat: "food", subcategory: "Beef", title: "Roasted Potatoes & Beef (Full)", desc: "Roasted potatoes with beef (full)", price: "KES 500", img: "/menu/food/beef/roasted-potatoes-beef-full.png" },
+  { id: "beef-029", cat: "food", subcategory: "Beef", title: "Roasted Potatoes & Beef (Half)", desc: "Roasted potatoes with beef (half)", price: "KES 400", img: "/menu/food/beef/roasted-potatoes-beef-half.png" },
+  { id: "beef-030", cat: "food", subcategory: "Beef", title: "Spaghetti & Beef (Full)", desc: "Spaghetti with beef (full)", price: "KES 450", img: "/menu/food/beef/spaghetti-beef-full.png" },
+  { id: "beef-031", cat: "food", subcategory: "Beef", title: "Matoke & Beef (Half)", desc: "Matoke with beef stew (half)", price: "KES 350", img: "/menu/food/beef/matoke-beef-half.png" },
+];
+
+// ============ FOOD - GOAT/MBUZI (26 items) ============
+const goat: MenuItem[] = [
+  { id: "goat-001", cat: "food", subcategory: "Goat", title: "Mbuzi Stew", desc: "Traditional goat meat stew", price: "KES 350", img: "/menu/food/goat/mbuzi-stew.png" },
+  { id: "goat-002", cat: "food", subcategory: "Goat", title: "Mbuzi Choma", desc: "Grilled goat meat", price: "KES 400", img: "/menu/food/goat/mbuzi-choma.png", badge: "Popular" },
+  { id: "goat-003", cat: "food", subcategory: "Goat", title: "Rice & Mbuzi (Full)", desc: "Rice with goat stew (full)", price: "KES 600", img: "/menu/food/goat/rice-mbuzi-full.png" },
+  { id: "goat-004", cat: "food", subcategory: "Goat", title: "Rice & Mbuzi (Half)", desc: "Rice with goat stew (half)", price: "KES 400", img: "/menu/food/goat/rice-mbuzi-half.png" },
+  { id: "goat-005", cat: "food", subcategory: "Goat", title: "Ugali & Mbuzi (Full)", desc: "Ugali with goat stew (full)", price: "KES 500", img: "/menu/food/goat/ugali-mbuzi-full.png" },
+  { id: "goat-006", cat: "food", subcategory: "Goat", title: "Ugali & Mbuzi (Half)", desc: "Ugali with goat stew (half)", price: "KES 350", img: "/menu/food/goat/ugali-mbuzi-half.png" },
+  { id: "goat-007", cat: "food", subcategory: "Goat", title: "Mbuzi Choma & Ugali", desc: "Grilled goat with ugali", price: "KES 500", img: "/menu/food/goat/mbuzi-choma-ugali.png" },
+  { id: "goat-008", cat: "food", subcategory: "Goat", title: "Chapati & Mbuzi (Full)", desc: "Chapati with goat stew (full)", price: "KES 500", img: "/menu/food/goat/chapati-mbuzi-full.png" },
+  { id: "goat-009", cat: "food", subcategory: "Goat", title: "Chapati & Mbuzi (Half)", desc: "Chapati with goat stew (half)", price: "KES 350", img: "/menu/food/goat/chapati-mbuzi-half.png" },
+  { id: "goat-010", cat: "food", subcategory: "Goat", title: "Chips & Mbuzi (Full)", desc: "Chips with goat stew (full)", price: "KES 500", img: "/menu/food/goat/chips-mbuzi-full.png" },
+  { id: "goat-011", cat: "food", subcategory: "Goat", title: "Chips & Mbuzi (Half)", desc: "Chips with goat stew (half)", price: "KES 350", img: "/menu/food/goat/chips-mbuzi-half.png" },
+  { id: "goat-012", cat: "food", subcategory: "Goat", title: "Masala Chips & Mbuzi", desc: "Masala chips with goat stew", price: "KES 450", img: "/menu/food/goat/chips-masala-mbuzi.png" },
+  { id: "goat-013", cat: "food", subcategory: "Goat", title: "Homefries & Mbuzi", desc: "Homemade fries with goat", price: "KES 400", img: "/menu/food/goat/homefries-mbuzi.png" },
+  { id: "goat-014", cat: "food", subcategory: "Goat", title: "Bhajia & Mbuzi (Full)", desc: "Potato bhajia with goat (full)", price: "KES 500", img: "/menu/food/goat/bhajia-mbuzi-full.png" },
+  { id: "goat-015", cat: "food", subcategory: "Goat", title: "Potato Saute & Mbuzi (Full)", desc: "Sauteed potatoes with goat (full)", price: "KES 500", img: "/menu/food/goat/potato-saute-mbuzi-full.png" },
+  { id: "goat-016", cat: "food", subcategory: "Goat", title: "Potato Wedges & Mbuzi (Full)", desc: "Wedges with goat stew (full)", price: "KES 550", img: "/menu/food/goat/potato-wedges-mbuzi-full.png" },
+  { id: "goat-017", cat: "food", subcategory: "Goat", title: "Potato Wedges & Mbuzi (Half)", desc: "Wedges with goat stew (half)", price: "KES 450", img: "/menu/food/goat/potato-wedges-mbuzi-half.png" },
+  { id: "goat-018", cat: "food", subcategory: "Goat", title: "Potatoes Saute & Mbuzi (Half)", desc: "Sauteed potatoes with goat (half)", price: "KES 400", img: "/menu/food/goat/potatoes-saute-mbuzi-half.png" },
+  { id: "goat-019", cat: "food", subcategory: "Goat", title: "Roasted Potatoes & Mbuzi (Half)", desc: "Roasted potatoes with goat (half)", price: "KES 450", img: "/menu/food/goat/roasted-potatoes-mbuzi-half.png" },
+  { id: "goat-020", cat: "food", subcategory: "Goat", title: "Roasted Potatoes & Mbuzi (Full)", desc: "Roasted potatoes with goat (full)", price: "KES 550", img: "/menu/food/goat/roasted-potatoes-mbuzi-full.png" },
+  { id: "goat-021", cat: "food", subcategory: "Goat", title: "Mukimo & Mbuzi (Full)", desc: "Mukimo with goat stew (full)", price: "KES 500", img: "/menu/food/goat/mukimo-mbuzi-full.png" },
+  { id: "goat-022", cat: "food", subcategory: "Goat", title: "Mukimo & Mbuzi (Half)", desc: "Mukimo with goat stew (half)", price: "KES 400", img: "/menu/food/goat/mukimo-mbuzi-half.png" },
+  { id: "goat-023", cat: "food", subcategory: "Goat", title: "Matoke & Mbuzi", desc: "Matoke with goat stew", price: "KES 400", img: "/menu/food/goat/matoke-mbuzi.png" },
+  { id: "goat-024", cat: "food", subcategory: "Goat", title: "Pilau & Mbuzi (Full)", desc: "Pilau rice with goat (full)", price: "KES 650", img: "/menu/food/goat/pilau-mbuzi-full.png" },
+  { id: "goat-025", cat: "food", subcategory: "Goat", title: "Pilau & Mbuzi (Half)", desc: "Pilau rice with goat (half)", price: "KES 450", img: "/menu/food/goat/pilau-mbuzi-half.png" },
+  { id: "goat-026", cat: "food", subcategory: "Goat", title: "Stir-Fry Spaghetti & Mbuzi", desc: "Spaghetti with goat stir-fry", price: "KES 500", img: "/menu/food/goat/stir-fry-spaghetti-mbuzi.png" },
+];
+
+// ============ FOOD - FISH/TILAPIA (6 items) ============
+const fish: MenuItem[] = [
+  { id: "fish-001", cat: "food", subcategory: "Fish", title: "Tilapia Whole Fried", desc: "Whole fried tilapia fish", price: "KES 700", img: "/menu/food/fish/tilapia-whole-fried.png", badge: "Popular" },
+  { id: "fish-002", cat: "food", subcategory: "Fish", title: "Tilapia with Chips", desc: "Tilapia served with chips", price: "KES 650", img: "/menu/food/fish/tilapia-chips.png" },
+  { id: "fish-003", cat: "food", subcategory: "Fish", title: "Tilapia with Rice", desc: "Tilapia served with rice", price: "KES 700", img: "/menu/food/fish/tilapia-rice.png" },
+  { id: "fish-004", cat: "food", subcategory: "Fish", title: "Tilapia Sauteed", desc: "Sauteed tilapia fish", price: "KES 750", img: "/menu/food/fish/tilapia-saute.png" },
+  { id: "fish-005", cat: "food", subcategory: "Fish", title: "Tilapia with Ugali", desc: "Tilapia served with ugali", price: "KES 700", img: "/menu/food/fish/tilapia-ugali.png" },
+  { id: "fish-006", cat: "food", subcategory: "Fish", title: "Tilapia with Wedges", desc: "Tilapia served with potato wedges", price: "KES 700", img: "/menu/food/fish/tilapia-wedges.png" },
+];
+
+// ============ FOOD - GIZZARDS (17 items) ============
+const gizzards: MenuItem[] = [
+  { id: "gizzard-001", cat: "food", subcategory: "Gizzards", title: "Gizzards Plain", desc: "Plain fried gizzards", price: "KES 300", img: "/menu/food/gizzards/gizzards-plain.png" },
+  { id: "gizzard-002", cat: "food", subcategory: "Gizzards", title: "Gizzards Sauteed", desc: "Sauteed gizzards", price: "KES 350", img: "/menu/food/gizzards/gizzards-saute.png" },
+  { id: "gizzard-003", cat: "food", subcategory: "Gizzards", title: "Gizzard Rice (Full)", desc: "Gizzards with rice (full)", price: "KES 450", img: "/menu/food/gizzards/gizzard-rice-full.png" },
+  { id: "gizzard-004", cat: "food", subcategory: "Gizzards", title: "Gizzard Rice (Half)", desc: "Gizzards with rice (half)", price: "KES 350", img: "/menu/food/gizzards/gizzard-rice-half.png" },
+  { id: "gizzard-005", cat: "food", subcategory: "Gizzards", title: "Gizzard Veg Rice", desc: "Gizzards with veggie rice", price: "KES 400", img: "/menu/food/gizzards/gizzard-veg-rice.png" },
+  { id: "gizzard-006", cat: "food", subcategory: "Gizzards", title: "Gizzard Ugali", desc: "Gizzards with ugali", price: "KES 350", img: "/menu/food/gizzards/gizzard-ugali.png" },
+  { id: "gizzard-007", cat: "food", subcategory: "Gizzards", title: "Gizzard Chapati", desc: "Gizzards with chapati (full)", price: "KES 400", img: "/menu/food/gizzards/gizzard-chapati-full.png" },
+  { id: "gizzard-008", cat: "food", subcategory: "Gizzards", title: "Gizzard Chapati (Half)", desc: "Gizzards with chapati (half)", price: "KES 300", img: "/menu/food/gizzards/gizzard-chapati-half.png" },
+  { id: "gizzard-009", cat: "food", subcategory: "Gizzards", title: "Gizzard Chips", desc: "Gizzards with chips", price: "KES 350", img: "/menu/food/gizzards/gizzard-chips.png" },
+  { id: "gizzard-010", cat: "food", subcategory: "Gizzards", title: "Gizzard Homefries", desc: "Gizzards with homemade fries", price: "KES 400", img: "/menu/food/gizzards/gizzard-homemade-fries.png" },
+  { id: "gizzard-011", cat: "food", subcategory: "Gizzards", title: "Gizzard Wedges", desc: "Gizzards with potato wedges", price: "KES 400", img: "/menu/food/gizzards/gizzard-wedges.png" },
+  { id: "gizzard-012", cat: "food", subcategory: "Gizzards", title: "Gizzard Wedges (Half)", desc: "Gizzards with wedges (half)", price: "KES 300", img: "/menu/food/gizzards/gizzard-wedges-half.png" },
+  { id: "gizzard-013", cat: "food", subcategory: "Gizzards", title: "Gizzard Pilau", desc: "Gizzards with pilau rice", price: "KES 450", img: "/menu/food/gizzards/gizzard-pilau.png" },
+  { id: "gizzard-014", cat: "food", subcategory: "Gizzards", title: "Matoke & Gizzard", desc: "Matoke with gizzards", price: "KES 350", img: "/menu/food/gizzards/matoke-gizzard.png" },
+  { id: "gizzard-015", cat: "food", subcategory: "Gizzards", title: "Bhajia Gizzards (Half)", desc: "Potato bhajia with gizzards (half)", price: "KES 300", img: "/menu/food/gizzards/bhajia-gizzards-half.png" },
+  { id: "gizzard-016", cat: "food", subcategory: "Gizzards", title: "Mukimo & Gizzard (Half)", desc: "Mukimo with gizzards (half)", price: "KES 350", img: "/menu/food/gizzards/mukimo-gizzard-half.png" },
+  { id: "gizzard-017", cat: "food", subcategory: "Gizzards", title: "Saute Potatoes & Gizzard (Full)", desc: "Sauteed potatoes with gizzards", price: "KES 400", img: "/menu/food/gizzards/saute-potatoes-gizzard-full.png" },
+];
+
+// ============ FOOD - CHICKEN (33 items) ============
+const chicken: MenuItem[] = [
+  { id: "chicken-001", cat: "food", subcategory: "Chicken", title: "Kienyeji Wet Fry (Full)", desc: "Full plate kienyeji wet fry", price: "KES 1700", img: "/menu/food/chicken/kienyeji-wet-fry-full.png", badge: "Special" },
+  { id: "chicken-002", cat: "food", subcategory: "Chicken", title: "Kienyeji Wet Fry Plain", desc: "Kienyeji wet fry plain", price: "KES 800", img: "/menu/food/chicken/kienyeji-wet-fry-plain.png" },
+  { id: "chicken-003", cat: "food", subcategory: "Chicken", title: "Kienyeji Wet Fry & Rice", desc: "Kienyeji wet fry with rice", price: "KES 900", img: "/menu/food/chicken/kienyeji-wet-fry-rice.png" },
+  { id: "chicken-004", cat: "food", subcategory: "Chicken", title: "Kienyeji Wet Fry & Rice (Full)", desc: "Full plate kienyeji with rice", price: "KES 1200", img: "/menu/food/chicken/kienyeji-wet-fry-rice-full.png" },
+  { id: "chicken-005", cat: "food", subcategory: "Chicken", title: "Kienyeji Wet Fry & Ugali", desc: "Kienyeji with ugali", price: "KES 850", img: "/menu/food/chicken/kienyeji-wet-fry-ugali.png" },
+  { id: "chicken-006", cat: "food", subcategory: "Chicken", title: "Kienyeji Wet Fry & Wedges", desc: "Kienyeji with potato wedges", price: "KES 950", img: "/menu/food/chicken/kienyeji-wet-fry-wedges.png" },
+  { id: "chicken-007", cat: "food", subcategory: "Chicken", title: "Chicken Curry", desc: "Aromatic chicken curry", price: "KES 400", img: "/menu/food/chicken/chicken-curry.png", badge: "Popular" },
+  { id: "chicken-008", cat: "food", subcategory: "Chicken", title: "Chicken Curry & Chapati (Full)", desc: "Curry with chapati (full)", price: "KES 500", img: "/menu/food/chicken/chicken-curry-chapati-full.png" },
+  { id: "chicken-009", cat: "food", subcategory: "Chicken", title: "Chicken Curry Veggy Rice (Full)", desc: "Curry with veggie rice (full)", price: "KES 550", img: "/menu/food/chicken/chicken-curry-veggy-rice-full.png" },
+  { id: "chicken-010", cat: "food", subcategory: "Chicken", title: "Chicken Curry Rice (Half)", desc: "Curry with rice (half)", price: "KES 350", img: "/menu/food/chicken/chicken-curry-rice-half.png" },
+  { id: "chicken-011", cat: "food", subcategory: "Chicken", title: "Chicken Curry Ugali (Half)", desc: "Curry with ugali (half)", price: "KES 300", img: "/menu/food/chicken/chicken-curry-ugali-half.png" },
+  { id: "chicken-012", cat: "food", subcategory: "Chicken", title: "Chicken Curry Chapati (Half)", desc: "Curry with chapati (half)", price: "KES 350", img: "/menu/food/chicken/chicken-curry-chapati-half.png" },
+  { id: "chicken-013", cat: "food", subcategory: "Chicken", title: "Chicken Curry Veggy Rice (Half)", desc: "Curry with veggie rice (half)", price: "KES 350", img: "/menu/food/chicken/chicken-curry-veggy-rice-half.png" },
+  { id: "chicken-014", cat: "food", subcategory: "Chicken", title: "Chicken Curry Rice (Full)", desc: "Curry with rice (full)", price: "KES 450", img: "/menu/food/chicken/chicken-curry-rice-full.png" },
+  { id: "chicken-015", cat: "food", subcategory: "Chicken", title: "Joloff Chicken Curry", desc: "Curry with joloff rice", price: "KES 550", img: "/menu/food/chicken/joloff-chicken-curry.png" },
+  { id: "chicken-016", cat: "food", subcategory: "Chicken", title: "Chicken Stew", desc: "Traditional chicken stew", price: "KES 350", img: "/menu/food/chicken/chicken-stew.png" },
+  { id: "chicken-017", cat: "food", subcategory: "Chicken", title: "Chicken Masala", desc: "Spiced chicken masala", price: "KES 400", img: "/menu/food/chicken/chicken-masala.png" },
+  { id: "chicken-018", cat: "food", subcategory: "Chicken", title: "Chapati Chicken (Full)", desc: "Chapati with chicken (full)", price: "KES 450", img: "/menu/food/chicken/chapati-chicken-full.png" },
+  { id: "chicken-019", cat: "food", subcategory: "Chicken", title: "Chapati Chicken (Half)", desc: "Chapati with chicken (half)", price: "KES 350", img: "/menu/food/chicken/chapati-chicken-half.png" },
+  { id: "chicken-020", cat: "food", subcategory: "Chicken", title: "Chips & Chicken", desc: "Chips with chicken", price: "KES 400", img: "/menu/food/chicken/chips-chicken.png" },
+  { id: "chicken-021", cat: "food", subcategory: "Chicken", title: "Masala Chips & Chicken (Half)", desc: "Masala chips with chicken (half)", price: "KES 350", img: "/menu/food/chicken/chips-masala-chicken-half.png" },
+  { id: "chicken-022", cat: "food", subcategory: "Chicken", title: "Fried Chicken", desc: "Crispy fried chicken", price: "KES 450", img: "/menu/food/chicken/fried-chicken.png" },
+  { id: "chicken-023", cat: "food", subcategory: "Chicken", title: "Full Chicken Stew & Veges", desc: "Full chicken with vegetables", price: "KES 600", img: "/menu/food/chicken/full-chicken-stew-veges.png" },
+  { id: "chicken-024", cat: "food", subcategory: "Chicken", title: "Mukimo Kuku (Half)", desc: "Mukimo with chicken (half)", price: "KES 350", img: "/menu/food/chicken/mukimo-kuku-half.png" },
+  { id: "chicken-025", cat: "food", subcategory: "Chicken", title: "Pilau Chicken (Full)", desc: "Pilau rice with chicken (full)", price: "KES 600", img: "/menu/food/chicken/pilau-chicken-full.png" },
+  { id: "chicken-026", cat: "food", subcategory: "Chicken", title: "Pilau Chicken (Half)", desc: "Pilau rice with chicken (half)", price: "KES 450", img: "/menu/food/chicken/pilau-chicken-half.png" },
+  { id: "chicken-027", cat: "food", subcategory: "Chicken", title: "Potato Wedges Chicken (Full)", desc: "Wedges with chicken (full)", price: "KES 550", img: "/menu/food/chicken/potato-wedges-chicken-full.png" },
+  { id: "chicken-028", cat: "food", subcategory: "Chicken", title: "Potato Wedges Chicken (Half)", desc: "Wedges with chicken (half)", price: "KES 450", img: "/menu/food/chicken/potato-wedges-chicken-half.png" },
+  { id: "chicken-029", cat: "food", subcategory: "Chicken", title: "Potatoes Saute Chicken (Full)", desc: "Sauteed potatoes with chicken (full)", price: "KES 500", img: "/menu/food/chicken/potatoes-saute-chicken-full.png" },
+  { id: "chicken-030", cat: "food", subcategory: "Chicken", title: "Potatoes Saute Chicken (Half)", desc: "Sauteed potatoes with chicken (half)", price: "KES 400", img: "/menu/food/chicken/potatoes-saute-chicken-half.png" },
+  { id: "chicken-031", cat: "food", subcategory: "Chicken", title: "Rice Chicken (Half)", desc: "Rice with chicken (half)", price: "KES 350", img: "/menu/food/chicken/rice-chicken-half.png" },
+  { id: "chicken-032", cat: "food", subcategory: "Chicken", title: "Stir-Fry Spaghetti Chicken", desc: "Spaghetti with chicken stir-fry", price: "KES 450", img: "/menu/food/chicken/stir-fry-spaghetti-chicken.png" },
+  { id: "chicken-033", cat: "food", subcategory: "Chicken", title: "Vegetable Rice Chicken", desc: "Veggie rice with chicken", price: "KES 400", img: "/menu/food/chicken/vegetable-rice-chicken.png" },
+];
+
+// ============ FOOD - FISH FILLET (20 items) ============
+const fillet: MenuItem[] = [
+  { id: "fillet-001", cat: "food", subcategory: "Fillet", title: "Fish Fillet", desc: "Pan-fried fish fillet", price: "KES 450", img: "/menu/food/fillet/fish-fillet.png" },
+  { id: "fillet-002", cat: "food", subcategory: "Fillet", title: "Fish Fingers", desc: "Crispy fish fingers", price: "KES 400", img: "/menu/food/fillet/fish-fingers.png" },
+  { id: "fillet-003", cat: "food", subcategory: "Fillet", title: "Fish Fillet Rice", desc: "Fillet with rice", price: "KES 550", img: "/menu/food/fillet/fish-fillet-rice.png" },
+  { id: "fillet-004", cat: "food", subcategory: "Fillet", title: "Fillet Rice (Half)", desc: "Fillet with rice (half)", price: "KES 450", img: "/menu/food/fillet/fillet-rice-half.png" },
+  { id: "fillet-005", cat: "food", subcategory: "Fillet", title: "Fish Fillet Ugali", desc: "Fillet with ugali", price: "KES 500", img: "/menu/food/fillet/fish-fillet-ugali.png" },
+  { id: "fillet-006", cat: "food", subcategory: "Fillet", title: "Fillet Ugali (Half)", desc: "Fillet with ugali (half)", price: "KES 400", img: "/menu/food/fillet/fillet-ugali-half.png" },
+  { id: "fillet-007", cat: "food", subcategory: "Fillet", title: "Fish Fillet Pilau (Full)", desc: "Pilau rice with fillet (full)", price: "KES 650", img: "/menu/food/fillet/fish-fillet-pilau-full.png" },
+  { id: "fillet-008", cat: "food", subcategory: "Fillet", title: "Fish Fillet Potato Saute", desc: "Fillet with sauteed potatoes", price: "KES 600", img: "/menu/food/fillet/fish-fillet-potato-saute.png" },
+  { id: "fillet-009", cat: "food", subcategory: "Fillet", title: "Wedge Fillet", desc: "Fillet with wedges", price: "KES 600", img: "/menu/food/fillet/wedge-fillet.png" },
+  { id: "fillet-010", cat: "food", subcategory: "Fillet", title: "Fillet Chips (Half)", desc: "Fillet with chips (half)", price: "KES 450", img: "/menu/food/fillet/fillet-chips-half.png" },
+  { id: "fillet-011", cat: "food", subcategory: "Fillet", title: "Fillet Masala (Half)", desc: "Masala fillet (half)", price: "KES 400", img: "/menu/food/fillet/fillet-masala-half.png" },
+  { id: "fillet-012", cat: "food", subcategory: "Fillet", title: "Bhajia Fish Fillet (Half)", desc: "Fish fillet bhajia (half)", price: "KES 400", img: "/menu/food/fillet/half-bhajia-fish-fillet.png" },
+  { id: "fillet-013", cat: "food", subcategory: "Fillet", title: "Mukimo Fillet (Full)", desc: "Mukimo with fillet (full)", price: "KES 550", img: "/menu/food/fillet/mukimo-fillet-full.png" },
+  { id: "fillet-014", cat: "food", subcategory: "Fillet", title: "Mukimo Fillet (Half)", desc: "Mukimo with fillet (half)", price: "KES 450", img: "/menu/food/fillet/mukimo-fillet-half.png" },
+  { id: "fillet-015", cat: "food", subcategory: "Fillet", title: "Fish Spaghetti (Full)", desc: "Spaghetti with fish (full)", price: "KES 600", img: "/menu/food/fillet/fish-spaghetti-full.png" },
+  { id: "fillet-016", cat: "food", subcategory: "Fillet", title: "Bhajia Fish", desc: "Fish bhajia", price: "KES 400", img: "/menu/food/fillet/bhajia-fish.png" },
+  { id: "fillet-017", cat: "food", subcategory: "Fillet", title: "Chips Masala Fish", desc: "Fish with masala chips", price: "KES 500", img: "/menu/food/fillet/chips-masala-fish.png" },
+  { id: "fillet-018", cat: "food", subcategory: "Fillet", title: "Fish Mukimo", desc: "Fish with mukimo", price: "KES 450", img: "/menu/food/fillet/fish-mukimo.png" },
+  { id: "fillet-019", cat: "food", subcategory: "Fillet", title: "Omena Plain", desc: "Plain omena (small fish)", price: "KES 250", img: "/menu/food/fillet/omena-plain.png" },
+  { id: "fillet-020", cat: "food", subcategory: "Fillet", title: "Omena Ugali", desc: "Omena with ugali", price: "KES 300", img: "/menu/food/fillet/omena-ugali.png" },
+];
+
+// ============ FOOD - BEANS/NDENGU (5 items) ============
+const beans: MenuItem[] = [
+  { id: "beans-001", cat: "food", subcategory: "Beans", title: "Ndengu Plain", desc: "Plain cooked ndengu beans", price: "KES 150", img: "/menu/food/beans/ndengu-plain.png" },
+  { id: "beans-002", cat: "food", subcategory: "Beans", title: "Ndengu Rice", desc: "Ndengu with rice", price: "KES 250", img: "/menu/food/beans/ndengu-rice.png" },
+  { id: "beans-003", cat: "food", subcategory: "Beans", title: "Chapati Ndengu (Full)", desc: "Chapati with ndengu (full)", price: "KES 300", img: "/menu/food/beans/chapati-ndengu-full.png" },
+  { id: "beans-004", cat: "food", subcategory: "Beans", title: "Chapati Ndengu (Half)", desc: "Chapati with ndengu (half)", price: "KES 200", img: "/menu/food/beans/chapati-ndengu-half.png" },
+  { id: "beans-005", cat: "food", subcategory: "Beans", title: "Chapati Beans", desc: "Chapati with beans", price: "KES 200", img: "/menu/food/beans/chapati-beans.png" },
+];
+
+// ============ FOOD - MEATBALLS (14 items) ============
+const meatballs: MenuItem[] = [
+  { id: "meatball-001", cat: "food", subcategory: "Meatballs", title: "Meatballs Plain", desc: "Plain fried meatballs", price: "KES 300", img: "/menu/food/meatballs/meatballs-plain.png" },
+  { id: "meatball-002", cat: "food", subcategory: "Meatballs", title: "Meatballs", desc: "Delicious meatballs", price: "KES 350", img: "/menu/food/meatballs/meatballs.png" },
+  { id: "meatball-003", cat: "food", subcategory: "Meatballs", title: "Rice Meatballs (Half)", desc: "Rice with meatballs (half)", price: "KES 350", img: "/menu/food/meatballs/rice-meatballs-half.png" },
+  { id: "meatball-004", cat: "food", subcategory: "Meatballs", title: "Rice Meatball", desc: "Rice with meatball", price: "KES 300", img: "/menu/food/meatballs/rice-meatball.png" },
+  { id: "meatball-005", cat: "food", subcategory: "Meatballs", title: "Bhajia Meatballs", desc: "Meatballs with bhajia", price: "KES 400", img: "/menu/food/meatballs/bhajia-meatballs.png" },
+  { id: "meatball-006", cat: "food", subcategory: "Meatballs", title: "Chips Meatballs (Full)", desc: "Chips with meatballs (full)", price: "KES 450", img: "/menu/food/meatballs/chips-meatballs-full.png" },
+  { id: "meatball-007", cat: "food", subcategory: "Meatballs", title: "Chips Masala Meatball", desc: "Masala chips with meatball", price: "KES 350", img: "/menu/food/meatballs/chips-masala-meatball.png" },
+  { id: "meatball-008", cat: "food", subcategory: "Meatballs", title: "Chapati Meatballs (Full)", desc: "Chapati with meatballs (full)", price: "KES 400", img: "/menu/food/meatballs/chapati-meatballs-full.png" },
+  { id: "meatball-009", cat: "food", subcategory: "Meatballs", title: "Full Ugali Meatballs", desc: "Ugali with meatballs (full)", price: "KES 400", img: "/menu/food/meatballs/full-ugali-meatballs.png" },
+  { id: "meatball-010", cat: "food", subcategory: "Meatballs", title: "Meatball Joloff (Full)", desc: "Joloff rice with meatballs (full)", price: "KES 500", img: "/menu/food/meatballs/meatball-joloff-full.png" },
+  { id: "meatball-011", cat: "food", subcategory: "Meatballs", title: "Meatballs Potato Wedges", desc: "Meatballs with wedges", price: "KES 450", img: "/menu/food/meatballs/meatballs-potato-wedges.png" },
+  { id: "meatball-012", cat: "food", subcategory: "Meatballs", title: "Mukimo Meatballs", desc: "Mukimo with meatballs", price: "KES 400", img: "/menu/food/meatballs/mukimo-meatballs.png" },
+  { id: "meatball-013", cat: "food", subcategory: "Meatballs", title: "Potato Saute Meatballs", desc: "Sauteed potatoes with meatballs", price: "KES 400", img: "/menu/food/meatballs/potato-saute-meatballs.png" },
+  { id: "meatball-014", cat: "food", subcategory: "Meatballs", title: "Stir-Fry Spaghetti Meatballs (Half)", desc: "Spaghetti with meatballs (half)", price: "KES 400", img: "/menu/food/meatballs/stir-fried-spaghetti-meatballs-half.png" },
+];
+
+// ============ FOOD - STARTERS & EXTRAS (48 items) ============
+const starters: MenuItem[] = [
+  { id: "starter-001", cat: "food", subcategory: "Starters", title: "Samosa (3pc)", desc: "3 crispy samosas", price: "KES 120", img: "/menu/food/starters/samosa-3pc.png" },
+  { id: "starter-002", cat: "food", subcategory: "Starters", title: "Spring Rolls", desc: "2 crispy spring rolls", price: "KES 100", img: "/menu/food/starters/spring-rolls.png" },
+  { id: "starter-003", cat: "food", subcategory: "Starters", title: "Kaimati", desc: "Sweet fried dough", price: "KES 60", img: "/menu/food/starters/kaimati.png" },
+  { id: "starter-004", cat: "food", subcategory: "Starters", title: "Mahamri", desc: "Spiced fried pastry", price: "KES 80", img: "/menu/food/starters/mahamri.png" },
+  { id: "starter-005", cat: "food", subcategory: "Starters", title: "Mandazi", desc: "Traditional mandazi", price: "KES 25", img: "/menu/food/starters/mandazi.png" },
+  { id: "starter-006", cat: "food", subcategory: "Starters", title: "BBQ Wings", desc: "Grilled BBQ chicken wings", price: "KES 250", img: "/menu/food/starters/bbq-wings.png" },
+  { id: "starter-007", cat: "food", subcategory: "Starters", title: "Crispy Wings", desc: "Crispy fried wings", price: "KES 250", img: "/menu/food/starters/crispy-wings.png" },
+  { id: "starter-008", cat: "food", subcategory: "Starters", title: "Kebab", desc: "Grilled meat kebabs", price: "KES 200", img: "/menu/food/starters/kebab.png" },
+  { id: "starter-009", cat: "food", subcategory: "Starters", title: "Plain Choma", desc: "Grilled meat (choma)", price: "KES 250", img: "/menu/food/starters/plain-choma.png" },
+  { id: "starter-010", cat: "food", subcategory: "Starters", title: "Beef Burger", desc: "Classic beef burger", price: "KES 200", img: "/menu/food/starters/beef-burger.png" },
+  { id: "starter-011", cat: "food", subcategory: "Starters", title: "Double Feast Burger", desc: "Double patty burger", price: "KES 300", img: "/menu/food/starters/double-feast-burger.png", badge: "Special" },
+  { id: "starter-012", cat: "food", subcategory: "Starters", title: "Bhajia", desc: "Potato bhajia", price: "KES 150", img: "/menu/food/starters/bhajia.png" },
+  { id: "starter-013", cat: "food", subcategory: "Starters", title: "Bhajia Kuku (Full)", desc: "Chicken bhajia (full)", price: "KES 300", img: "/menu/food/starters/bhajia-kuku-full.png" },
+  { id: "starter-014", cat: "food", subcategory: "Starters", title: "Brown Ugali", desc: "Brown ugali serving", price: "KES 100", img: "/menu/food/starters/brown-ugali.png" },
+  { id: "starter-015", cat: "food", subcategory: "Starters", title: "Cabbage", desc: "Cooked cabbage", price: "KES 100", img: "/menu/food/starters/cabbage.png" },
+  { id: "starter-016", cat: "food", subcategory: "Starters", title: "Chapati Vegetable", desc: "Chapati with veggies", price: "KES 200", img: "/menu/food/starters/chapati-vegetable.png" },
+  { id: "starter-017", cat: "food", subcategory: "Starters", title: "Kachumbari", desc: "Tomato onion salad", price: "KES 80", img: "/menu/food/starters/kachumbari.png" },
+  { id: "starter-018", cat: "food", subcategory: "Starters", title: "Managu Plain", desc: "Plain cooked greens", price: "KES 80", img: "/menu/food/starters/managu-plain.png" },
+  { id: "starter-019", cat: "food", subcategory: "Starters", title: "Managu Ugali", desc: "Greens with ugali", price: "KES 200", img: "/menu/food/starters/managu-ugali.png" },
+  { id: "starter-020", cat: "food", subcategory: "Starters", title: "Spinach", desc: "Fresh spinach", price: "KES 100", img: "/menu/food/starters/spinach.png" },
+  { id: "starter-021", cat: "food", subcategory: "Starters", title: "Naan", desc: "Indian flatbread", price: "KES 150", img: "/menu/food/starters/naan.png" },
+  { id: "starter-022", cat: "food", subcategory: "Starters", title: "Pilau Plain", desc: "Plain pilau rice", price: "KES 150", img: "/menu/food/starters/pilau-plain.png" },
+  { id: "starter-023", cat: "food", subcategory: "Starters", title: "Rice Plain", desc: "Plain steamed rice", price: "KES 100", img: "/menu/food/starters/rice-plain.png" },
+  { id: "starter-024", cat: "food", subcategory: "Starters", title: "Ugali Plain", desc: "Plain ugali", price: "KES 80", img: "/menu/food/starters/ugali-plain.png" },
+  { id: "starter-025", cat: "food", subcategory: "Starters", title: "Ugali Vegetable", desc: "Ugali with veggies", price: "KES 150", img: "/menu/food/starters/ugali-vegetable.png" },
+  { id: "starter-026", cat: "food", subcategory: "Starters", title: "Matoke", desc: "Steamed banana", price: "KES 100", img: "/menu/food/starters/matoke.png" },
+  { id: "starter-027", cat: "food", subcategory: "Starters", title: "Plantain", desc: "Fried plantain", price: "KES 120", img: "/menu/food/starters/plantain.png" },
+  { id: "starter-028", cat: "food", subcategory: "Starters", title: "Home Fries", desc: "Homemade style fries", price: "KES 150", img: "/menu/food/starters/home-fries.png" },
+  { id: "starter-029", cat: "food", subcategory: "Starters", title: "Half Plain Chips", desc: "Half portion chips", price: "KES 100", img: "/menu/food/starters/half-plain-chips.png" },
+  { id: "starter-030", cat: "food", subcategory: "Starters", title: "Half Wedges", desc: "Half portion wedges", price: "KES 150", img: "/menu/food/starters/half-wedges.png" },
+  { id: "starter-031", cat: "food", subcategory: "Starters", title: "Full Plain Chips", desc: "Full portion chips", price: "KES 150", img: "/menu/food/starters/full-plain-chips.png" },
+  { id: "starter-032", cat: "food", subcategory: "Starters", title: "Potato Saute", desc: "Sauteed potatoes", price: "KES 150", img: "/menu/food/starters/potato-saute.png" },
+  { id: "starter-033", cat: "food", subcategory: "Starters", title: "Potato Saute (Half)", desc: "Sauteed potatoes (half)", price: "KES 100", img: "/menu/food/starters/potato-saute-half.png" },
+  { id: "starter-034", cat: "food", subcategory: "Starters", title: "Potato Wedges", desc: "Crispy wedges", price: "KES 180", img: "/menu/food/starters/potato-wedges.png" },
+  { id: "starter-035", cat: "food", subcategory: "Starters", title: "Roasted Potatoes", desc: "Oven-roasted potatoes", price: "KES 150", img: "/menu/food/starters/roasted-potatoes.png" },
+  { id: "starter-036", cat: "food", subcategory: "Starters", title: "Rice Minji (Full)", desc: "Rice with minced meat (full)", price: "KES 400", img: "/menu/food/starters/rice-minji-full.png" },
+  { id: "starter-037", cat: "food", subcategory: "Starters", title: "Rice Minji (Half)", desc: "Rice with minced meat (half)", price: "KES 300", img: "/menu/food/starters/rice-minji-half.png" },
+  { id: "starter-038", cat: "food", subcategory: "Starters", title: "Plain Minji", desc: "Plain minced meat", price: "KES 200", img: "/menu/food/starters/plain-minji.png" },
+  { id: "starter-039", cat: "food", subcategory: "Starters", title: "Vegetable Rice", desc: "Vegetable fried rice", price: "KES 200", img: "/menu/food/starters/vegetable-rice.png" },
+  { id: "starter-040", cat: "food", subcategory: "Starters", title: "Shawarma (Medium)", desc: "Medium shawarma wrap", price: "KES 250", img: "/menu/food/starters/shawarma-m.png" },
+  { id: "starter-041", cat: "food", subcategory: "Starters", title: "Shawarma (Regular)", desc: "Regular shawarma wrap", price: "KES 200", img: "/menu/food/starters/shawarma-r.png" },
+  { id: "starter-042", cat: "food", subcategory: "Starters", title: "Full Kuku Sama", desc: "Full chicken shawarma", price: "KES 350", img: "/menu/food/starters/full-kuku-sama.png" },
+  { id: "starter-043", cat: "food", subcategory: "Starters", title: "Soup", desc: "Soup of the day", price: "KES 150", img: "/menu/food/starters/soup.png" },
+  { id: "starter-044", cat: "food", subcategory: "Starters", title: "Spaghetti Minced Meat", desc: "Spaghetti with minced meat", price: "KES 300", img: "/menu/food/starters/spaghetti-minced-meat.png" },
+  { id: "starter-045", cat: "food", subcategory: "Starters", title: "Spaghetti Minji", desc: "Spaghetti with minji", price: "KES 300", img: "/menu/food/starters/spaghetti-minji.png" },
+  { id: "starter-046", cat: "food", subcategory: "Starters", title: "Stir-Fry Spaghetti", desc: "Stir-fried spaghetti", price: "KES 250", img: "/menu/food/starters/stir-fry-spaghetti.png" },
+  { id: "starter-047", cat: "food", subcategory: "Starters", title: "Mayai Ugali", desc: "Eggs with ugali", price: "KES 180", img: "/menu/food/starters/mayai-ugali.png" },
+  { id: "starter-048", cat: "food", subcategory: "Starters", title: "Mukimo Plain", desc: "Plain mukimo", price: "KES 120", img: "/menu/food/starters/mukimo-plain.png" },
+];
+
+// ============ COMPLETE MENU DATA ============
+export const menuData: MenuItem[] = [
+  ...freshJuices,
+  ...sodas,
+  ...syrups,
+  ...teas,
+  ...coffees,
+  ...porridges,
+  ...breakfast,
+  ...beef,
+  ...goat,
+  ...fish,
+  ...gizzards,
+  ...chicken,
+  ...fillet,
+  ...beans,
+  ...meatballs,
+  ...starters,
+];

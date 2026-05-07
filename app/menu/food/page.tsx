@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { MenuItem } from "@/types";
-import { menuData, getSubcategoryItems } from "@/data/menuData";
+import { getSubcategoryItems } from "@/data/menuDataComplete";
 import FilterButton from "@/components/FilterButton";
 import MenuGrid from "@/components/MenuGrid";
 

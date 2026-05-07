@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { menuData, getSubcategoriesForCategory } from "@/data/menuData";
-import FilterButton from "@/components/FilterButton";
+import { menuData, getSubcategoriesForCategory } from "@/data/menuDataComplete";
 import MenuGrid from "@/components/MenuGrid";
 import type { MenuItem } from "@/types";
 

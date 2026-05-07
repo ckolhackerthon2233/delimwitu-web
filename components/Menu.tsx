@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { menuData } from "@/data/menuData";
+import { menuData } from "@/data/menuDataComplete";
 import FilterButton from "@/components/FilterButton";
 
 export default function Menu() {
@@ -41,7 +41,7 @@ export default function Menu() {
 
          {/* Filter Tabs */}
          <div className="flex justify-center gap-2 flex-wrap mb-10">
-            {["all", "breakfast", "lunch", "mains", "desserts", "drinks"].map(
+            {["all", "food", "drinks"].map(
               (cat) => (
                 <FilterButton
                   key={cat}

@@ -2,7 +2,7 @@
 
 import { useState, use } from "react";
 import Link from "next/link";
-import { menuData } from "@/data/menuData";
+import { menuData } from "@/data/menuDataComplete";
 import { sendOrderEmail } from "@/actions/emails";
 
 interface Props {

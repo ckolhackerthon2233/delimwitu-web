@@ -9,17 +9,17 @@ const inspirationCards = [
   {
     title: "Savour the vibrant textures",
     desc: "A table set for friends, rich coffee aromas, and flavors that invite lingering conversations.",
-    image: "/hero/tb2.jpg",
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&crop=center",
   },
   {
     title: "Feast on our most-loved dishes",
     desc: "Freshly plated favorites that keep guests returning night after night.",
-    image: "/hero/coffee.png",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop&crop=center",
   },
   {
     title: "Celebrate in style",
     desc: "From casual catch-ups to special moments, our space is made for memorable dining.",
-    image: "/hero/tb1.jpg",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop&crop=center",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function HomePage() {
                 <div className="group relative overflow-hidden rounded-[2.5rem] bg-gray-100 shadow-2xl transition-transform duration-700 hover:-rotate-2 hover:scale-[1.02]">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-brown/10" />
                   <Image
-                    src="/menu/lunch&dinner/butter-curry-chicken-02_200x.png"
+                    src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=860&h=720&fit=crop&crop=center"
                     alt="Most served butter curry chicken"
                     width={860}
                     height={720}

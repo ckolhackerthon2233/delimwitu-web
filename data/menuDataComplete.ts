@@ -14,7 +14,7 @@ export const menuData: MenuItem[] = [
     title: "Blended Juice",
     desc: "Fresh blended fruit juice",
     price: "KES 250",
-    img: "/menu/drinks/juices/blended-juice.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "blended-juice-glass",
@@ -23,7 +23,7 @@ export const menuData: MenuItem[] = [
     title: "Blended Juice Glass",
     desc: "Fresh blended juice in glass",
     price: "KES 200",
-    img: "/menu/drinks/juices/blended-juice-glass.png"
+    img: "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "cocktail-juice",
@@ -32,7 +32,7 @@ export const menuData: MenuItem[] = [
     title: "Cocktail Juice",
     desc: "Mixed fruit cocktail juice",
     price: "KES 200",
-    img: "/menu/drinks/juices/cocktail-juice.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mango-juice",
@@ -41,7 +41,7 @@ export const menuData: MenuItem[] = [
     title: "Mango Juice",
     desc: "Fresh mango juice",
     price: "KES 200",
-    img: "/menu/drinks/juices/mango-juice.png",
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -51,7 +51,7 @@ export const menuData: MenuItem[] = [
     title: "Orange Juice",
     desc: "Fresh squeezed orange juice",
     price: "KES 150",
-    img: "/menu/drinks/juices/orange-juice.png"
+    img: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "passion-juice-250",
@@ -60,7 +60,7 @@ export const menuData: MenuItem[] = [
     title: "Passion Juice 250ml",
     desc: "Fresh passion fruit juice",
     price: "KES 150",
-    img: "/menu/drinks/juices/passion-juice.png"
+    img: "https://images.unsplash.com/photo-1618375569909-3c8616cf09ae?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "passion-juice-500",
@@ -69,7 +69,7 @@ export const menuData: MenuItem[] = [
     title: "Passion Juice 500ml",
     desc: "Fresh passion fruit juice large",
     price: "KES 200",
-    img: "/menu/drinks/juices/passion-juice-500.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pineapple-mint-250",
@@ -78,7 +78,7 @@ export const menuData: MenuItem[] = [
     title: "Pineapple Mint 250ml",
     desc: "Refreshing pineapple mint juice",
     price: "KES 150",
-    img: "/menu/drinks/juices/pineapple-mint.png"
+    img: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pineapple-mint-500",
@@ -87,7 +87,7 @@ export const menuData: MenuItem[] = [
     title: "Pineapple Mint 500ml",
     desc: "Refreshing pineapple mint juice large",
     price: "KES 250",
-    img: "/menu/drinks/juices/pineapple-mint-500.png"
+    img: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "tamarind-juice",
@@ -96,7 +96,7 @@ export const menuData: MenuItem[] = [
     title: "Tamarind Juice",
     desc: "Tangy tamarind juice",
     price: "KES 150",
-    img: "/menu/drinks/juices/tamarind-juice.png"
+    img: "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "tropical-juice",
@@ -105,7 +105,7 @@ export const menuData: MenuItem[] = [
     title: "Tropical Juice",
     desc: "Mixed tropical fruit juice",
     price: "KES 150",
-    img: "/menu/drinks/juices/tropical-juice.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mursik",
@@ -114,7 +114,7 @@ export const menuData: MenuItem[] = [
     title: "Mursik",
     desc: "Traditional fermented milk",
     price: "KES 120",
-    img: "/menu/drinks/juices/mursik.png"
+    img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ DRINKS - SODAS & PACKAGED JUICES ============
@@ -125,7 +125,7 @@ export const menuData: MenuItem[] = [
     title: "Pick N Peel Apple",
     desc: "Packaged apple juice",
     price: "KES 100",
-    img: "/menu/drinks/sodas/pick-n-peel-apple.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pick-n-peel-mango",
@@ -134,7 +134,7 @@ export const menuData: MenuItem[] = [
     title: "Pick N Peel Mango",
     desc: "Packaged mango juice",
     price: "KES 100",
-    img: "/menu/drinks/sodas/pick-n-peel-mango.png"
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pick-n-peel-orange",
@@ -143,7 +143,7 @@ export const menuData: MenuItem[] = [
     title: "Pick N Peel Orange",
     desc: "Packaged orange juice",
     price: "KES 100",
-    img: "/menu/drinks/sodas/pick-n-peel-orange.png"
+    img: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "apple-frosty-250",
@@ -152,7 +152,7 @@ export const menuData: MenuItem[] = [
     title: "Apple Frosty 250ml",
     desc: "Frosty apple drink",
     price: "KES 95",
-    img: "/menu/drinks/sodas/apple-frosty.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "apple-fruitvile-250",
@@ -161,7 +161,7 @@ export const menuData: MenuItem[] = [
     title: "Apple Fruitvile 250ml",
     desc: "Fruitvile apple juice",
     price: "KES 95",
-    img: "/menu/drinks/sodas/apple-fruitvile.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "frosti-tropical-250",
@@ -170,7 +170,7 @@ export const menuData: MenuItem[] = [
     title: "Frosti Tropical 250ml",
     desc: "Tropical frosty drink",
     price: "KES 85",
-    img: "/menu/drinks/sodas/frosti-tropical.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mango-frosti-250",
@@ -179,7 +179,7 @@ export const menuData: MenuItem[] = [
     title: "Mango Frosti 250ml",
     desc: "Mango frosty drink",
     price: "KES 85",
-    img: "/menu/drinks/sodas/mango-frosti.png"
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mango-fruitvile-250",
@@ -188,7 +188,7 @@ export const menuData: MenuItem[] = [
     title: "Mango Fruitvile 250ml",
     desc: "Fruitvile mango juice",
     price: "KES 95",
-    img: "/menu/drinks/sodas/mango-fruitvile.png"
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mirinda-orange-330",
@@ -197,7 +197,7 @@ export const menuData: MenuItem[] = [
     title: "Mirinda Orange 330ml",
     desc: "Mirinda orange soda",
     price: "KES 90",
-    img: "/menu/drinks/sodas/mirinda-orange.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pepsi-330",
@@ -206,7 +206,7 @@ export const menuData: MenuItem[] = [
     title: "Pepsi 330ml",
     desc: "Classic Pepsi cola",
     price: "KES 90",
-    img: "/menu/drinks/sodas/pepsi-330.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "black-current-300",
@@ -215,7 +215,7 @@ export const menuData: MenuItem[] = [
     title: "Black Current 300ml",
     desc: "Black current soda",
     price: "KES 90",
-    img: "/menu/drinks/sodas/black-current.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "coke-300",
@@ -224,7 +224,7 @@ export const menuData: MenuItem[] = [
     title: "Coke 300ml",
     desc: "Classic Coca-Cola",
     price: "KES 90",
-    img: "/menu/drinks/sodas/coke-300.png",
+    img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -234,7 +234,7 @@ export const menuData: MenuItem[] = [
     title: "Fanta Orange 300ml",
     desc: "Fanta orange soda",
     price: "KES 90",
-    img: "/menu/drinks/sodas/fanta-orange-300.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fanta-passion-300",
@@ -243,7 +243,7 @@ export const menuData: MenuItem[] = [
     title: "Fanta Passion 300ml",
     desc: "Fanta passion soda",
     price: "KES 90",
-    img: "/menu/drinks/sodas/fanta-passion-300.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "krest-300",
@@ -252,7 +252,7 @@ export const menuData: MenuItem[] = [
     title: "Krest 300ml",
     desc: "Krest soda",
     price: "KES 90",
-    img: "/menu/drinks/sodas/krest-300.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mirinda-300",
@@ -261,7 +261,7 @@ export const menuData: MenuItem[] = [
     title: "Mirinda 300ml",
     desc: "Mirinda orange drink",
     price: "KES 80",
-    img: "/menu/drinks/sodas/mirinda-300.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mountain-dew-300",
@@ -270,7 +270,7 @@ export const menuData: MenuItem[] = [
     title: "Mountain Dew 300ml",
     desc: "Mountain Dew citrus",
     price: "KES 80",
-    img: "/menu/drinks/sodas/mountain-dew.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pepsi-300",
@@ -279,7 +279,7 @@ export const menuData: MenuItem[] = [
     title: "Pepsi 300ml",
     desc: "Classic Pepsi",
     price: "KES 80",
-    img: "/menu/drinks/sodas/pepsi-300.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stoney-tangawizi-300",
@@ -288,7 +288,7 @@ export const menuData: MenuItem[] = [
     title: "Stoney Tangawizi 300ml",
     desc: "Ginger flavored Stoney",
     price: "KES 90",
-    img: "/menu/drinks/sodas/stoney-tangawizi.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "sprite-300",
@@ -297,7 +297,7 @@ export const menuData: MenuItem[] = [
     title: "Sprite 300ml",
     desc: "Lemon-lime Sprite",
     price: "KES 90",
-    img: "/menu/drinks/sodas/sprite-300.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stoney-350",
@@ -306,7 +306,7 @@ export const menuData: MenuItem[] = [
     title: "Stoney 350ml",
     desc: "Stoney ginger ale",
     price: "KES 90",
-    img: "/menu/drinks/sodas/stoney-350.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fanta-orange-350",
@@ -315,7 +315,7 @@ export const menuData: MenuItem[] = [
     title: "Fanta Orange 350ml",
     desc: "Fanta orange large",
     price: "KES 90",
-    img: "/menu/drinks/sodas/fanta-orange-350.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "coke-350",
@@ -324,7 +324,7 @@ export const menuData: MenuItem[] = [
     title: "Coke 350ml",
     desc: "Coca-Cola large",
     price: "KES 90",
-    img: "/menu/drinks/sodas/coke-350.png"
+    img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "black-current-350",
@@ -333,7 +333,7 @@ export const menuData: MenuItem[] = [
     title: "Black Current 350ml",
     desc: "Black current soda large",
     price: "KES 90",
-    img: "/menu/drinks/sodas/black-current-350.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-orange-400",
@@ -342,7 +342,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Orange 400ml",
     desc: "Minute Maid orange juice",
     price: "KES 120",
-    img: "/menu/drinks/sodas/minute-maid-orange.png"
+    img: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-tropical-400",
@@ -351,7 +351,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Tropical 400ml",
     desc: "Minute Maid tropical mix",
     price: "KES 120",
-    img: "/menu/drinks/sodas/minute-maid-tropical.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-apple-400",
@@ -360,7 +360,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Apple 400ml",
     desc: "Minute Maid apple juice",
     price: "KES 120",
-    img: "/menu/drinks/sodas/minute-maid-apple.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-mango-400",
@@ -369,7 +369,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Mango 400ml",
     desc: "Minute Maid mango juice",
     price: "KES 120",
-    img: "/menu/drinks/sodas/minute-maid-mango.png"
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fruitville-mango-500",
@@ -378,7 +378,7 @@ export const menuData: MenuItem[] = [
     title: "Fruitville Mango 500ml",
     desc: "Fruitville mango juice",
     price: "KES 120",
-    img: "/menu/drinks/sodas/fruitville-mango.png"
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fanta-orange-500",
@@ -387,7 +387,7 @@ export const menuData: MenuItem[] = [
     title: "Fanta Orange 500ml",
     desc: "Fanta orange large",
     price: "KES 120",
-    img: "/menu/drinks/sodas/fanta-orange-500.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "guava-fruitville-500",
@@ -396,7 +396,7 @@ export const menuData: MenuItem[] = [
     title: "Guava Fruitville 500ml",
     desc: "Fruitville guava juice",
     price: "KES 120",
-    img: "/menu/drinks/sodas/guava-fruitville.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fanta-passion-500",
@@ -405,7 +405,7 @@ export const menuData: MenuItem[] = [
     title: "Fanta Passion 500ml",
     desc: "Fanta passion large",
     price: "KES 120",
-    img: "/menu/drinks/sodas/fanta-passion-500.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "black-current-500",
@@ -414,7 +414,7 @@ export const menuData: MenuItem[] = [
     title: "Black Current 500ml",
     desc: "Black current soda large",
     price: "KES 120",
-    img: "/menu/drinks/sodas/black-current-500.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "coke-500",
@@ -423,7 +423,7 @@ export const menuData: MenuItem[] = [
     title: "Coke 500ml",
     desc: "Coca-Cola large",
     price: "KES 120",
-    img: "/menu/drinks/sodas/coke-500.png"
+    img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "sprite-500",
@@ -432,7 +432,7 @@ export const menuData: MenuItem[] = [
     title: "Sprite 500ml",
     desc: "Sprite large",
     price: "KES 120",
-    img: "/menu/drinks/sodas/sprite-500.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "predator-energy",
@@ -441,7 +441,7 @@ export const menuData: MenuItem[] = [
     title: "Predator Energy",
     desc: "Energy drink",
     price: "KES 120",
-    img: "/menu/drinks/sodas/predator-energy.png"
+    img: "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "waba-water-500",
@@ -450,7 +450,7 @@ export const menuData: MenuItem[] = [
     title: "Waba Water 500ml",
     desc: "Mineral water",
     price: "KES 80",
-    img: "/menu/drinks/sodas/waba-water.png"
+    img: "https://images.unsplash.com/photo-1559839914-17aae19cec41?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "coke-zero-500",
@@ -459,7 +459,7 @@ export const menuData: MenuItem[] = [
     title: "Coke Zero 500ml",
     desc: "Sugar-free Coca-Cola",
     price: "KES 120",
-    img: "/menu/drinks/sodas/coke-zero.png"
+    img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-mango-1l",
@@ -468,7 +468,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Mango 1L",
     desc: "Minute Maid mango large",
     price: "KES 220",
-    img: "/menu/drinks/sodas/minute-maid-mango-1l.png"
+    img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "delmonte-1l",
@@ -477,7 +477,7 @@ export const menuData: MenuItem[] = [
     title: "Delmonte 1L",
     desc: "Delmonte juice large",
     price: "KES 350",
-    img: "/menu/drinks/sodas/delmonte.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-apple-1l",
@@ -486,7 +486,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Apple 1L",
     desc: "Minute Maid apple large",
     price: "KES 220",
-    img: "/menu/drinks/sodas/minute-maid-apple-1l.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "minute-maid-tropical-1l",
@@ -495,7 +495,7 @@ export const menuData: MenuItem[] = [
     title: "Minute Maid Tropical 1L",
     desc: "Minute Maid tropical large",
     price: "KES 220",
-    img: "/menu/drinks/sodas/minute-maid-tropical-1l.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pick-n-peel-1l",
@@ -504,7 +504,7 @@ export const menuData: MenuItem[] = [
     title: "Pick N Peel 1L",
     desc: "Pick N Peel juice large",
     price: "KES 350",
-    img: "/menu/drinks/sodas/pick-n-peel-1l.png"
+    img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "waba-water-1l",
@@ -513,7 +513,7 @@ export const menuData: MenuItem[] = [
     title: "Waba Water 1L",
     desc: "Mineral water large",
     price: "KES 120",
-    img: "/menu/drinks/sodas/waba-water-1l.png"
+    img: "https://images.unsplash.com/photo-1559839914-17aae19cec41?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fanta-orange-125",
@@ -522,7 +522,7 @@ export const menuData: MenuItem[] = [
     title: "Fanta Orange 125ml",
     desc: "Fanta orange small",
     price: "KES 200",
-    img: "/menu/drinks/sodas/fanta-orange-125.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "coke-125",
@@ -531,7 +531,7 @@ export const menuData: MenuItem[] = [
     title: "Coke 125ml",
     desc: "Coca-Cola small",
     price: "KES 200",
-    img: "/menu/drinks/sodas/coke-125.png"
+    img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "black-current-125",
@@ -540,7 +540,7 @@ export const menuData: MenuItem[] = [
     title: "Black Current 125ml",
     desc: "Black current small",
     price: "KES 200",
-    img: "/menu/drinks/sodas/black-current-125.png"
+    img: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "sprite-125",
@@ -549,7 +549,7 @@ export const menuData: MenuItem[] = [
     title: "Sprite 125ml",
     desc: "Sprite small",
     price: "KES 200",
-    img: "/menu/drinks/sodas/sprite-125.png"
+    img: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ DRINKS - SYRUPS ============
@@ -560,7 +560,7 @@ export const menuData: MenuItem[] = [
     title: "Caramel Syrup",
     desc: "Caramel flavoring syrup",
     price: "KES 50",
-    img: "/menu/drinks/syrups/caramel-syrup.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "hazelnut-syrup",
@@ -569,7 +569,7 @@ export const menuData: MenuItem[] = [
     title: "Hazelnut Syrup",
     desc: "Hazelnut flavoring syrup",
     price: "KES 50",
-    img: "/menu/drinks/syrups/hazelnut-syrup.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "lime-syrup",
@@ -578,7 +578,7 @@ export const menuData: MenuItem[] = [
     title: "Lime Syrup",
     desc: "Lime flavoring syrup",
     price: "KES 50",
-    img: "/menu/drinks/syrups/lime-syrup.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "peppermint-syrup",
@@ -587,7 +587,7 @@ export const menuData: MenuItem[] = [
     title: "Peppermint Syrup",
     desc: "Peppermint flavoring syrup",
     price: "KES 50",
-    img: "/menu/drinks/syrups/peppermint-syrup.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "vanilla-syrup",
@@ -596,7 +596,7 @@ export const menuData: MenuItem[] = [
     title: "Vanilla Syrup",
     desc: "Vanilla flavoring syrup",
     price: "KES 50",
-    img: "/menu/drinks/syrups/vanilla-syrup.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "coconut-syrup",
@@ -605,7 +605,7 @@ export const menuData: MenuItem[] = [
     title: "Coconut Syrup",
     desc: "Coconut flavoring syrup",
     price: "KES 50",
-    img: "/menu/drinks/syrups/coconut-syrup.png"
+    img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ DRINKS - HOT BEVERAGES ============
@@ -616,7 +616,7 @@ export const menuData: MenuItem[] = [
     title: "Black Masala Tea",
     desc: "Spiced black tea",
     price: "KES 80",
-    img: "/menu/drinks/hot/black-masala-tea.png"
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "black-tea",
@@ -625,7 +625,7 @@ export const menuData: MenuItem[] = [
     title: "Black Tea",
     desc: "Classic black tea",
     price: "KES 60",
-    img: "/menu/drinks/hot/black-tea.png"
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "dawa",
@@ -634,7 +634,7 @@ export const menuData: MenuItem[] = [
     title: "Dawa",
     desc: "Traditional medicinal tea",
     price: "KES 250",
-    img: "/menu/drinks/hot/dawa.png"
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "hot-chocolate",
@@ -643,7 +643,7 @@ export const menuData: MenuItem[] = [
     title: "Hot Chocolate",
     desc: "Warm hot chocolate",
     price: "KES 120",
-    img: "/menu/drinks/hot/hot-chocolate.png"
+    img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "lemon-tea",
@@ -652,7 +652,7 @@ export const menuData: MenuItem[] = [
     title: "Lemon Tea",
     desc: "Refreshing lemon tea",
     price: "KES 80",
-    img: "/menu/drinks/hot/lemon-tea.png"
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "hot-milk",
@@ -661,7 +661,7 @@ export const menuData: MenuItem[] = [
     title: "Hot Milk",
     desc: "Warm milk",
     price: "KES 120",
-    img: "/menu/drinks/hot/hot-milk.png"
+    img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "white-tea",
@@ -670,7 +670,7 @@ export const menuData: MenuItem[] = [
     title: "White Tea",
     desc: "Delicate white tea",
     price: "KES 120",
-    img: "/menu/drinks/hot/white-tea.png"
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "white-masala-tea",
@@ -679,7 +679,7 @@ export const menuData: MenuItem[] = [
     title: "White Masala Tea",
     desc: "Spiced white tea",
     price: "KES 200",
-    img: "/menu/drinks/hot/white-masala-tea.png"
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ DRINKS - COFFEE ============
@@ -690,7 +690,7 @@ export const menuData: MenuItem[] = [
     title: "Decaf Cappuccino - Double",
     desc: "Decaffeinated double cappuccino",
     price: "KES 370",
-    img: "/menu/drinks/coffee/decaf-cappuccino.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "decaf-cappuccino-s",
@@ -699,7 +699,7 @@ export const menuData: MenuItem[] = [
     title: "Decaf Cappuccino - Single",
     desc: "Decaffeinated single cappuccino",
     price: "KES 330",
-    img: "/menu/drinks/coffee/decaf-cappuccino-s.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "decaf-latte-d",
@@ -708,7 +708,7 @@ export const menuData: MenuItem[] = [
     title: "Decaf Latte - Double",
     desc: "Decaffeinated double latte",
     price: "KES 400",
-    img: "/menu/drinks/coffee/decaf-latte.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "espresso-d",
@@ -717,7 +717,7 @@ export const menuData: MenuItem[] = [
     title: "Espresso - Double",
     desc: "Strong double espresso",
     price: "KES 250",
-    img: "/menu/drinks/coffee/espresso.png"
+    img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "espresso-s",
@@ -726,7 +726,7 @@ export const menuData: MenuItem[] = [
     title: "Espresso - Single",
     desc: "Strong single espresso",
     price: "KES 230",
-    img: "/menu/drinks/coffee/espresso-s.png"
+    img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "americano-d",
@@ -735,7 +735,7 @@ export const menuData: MenuItem[] = [
     title: "Americano - Double",
     desc: "Double americano",
     price: "KES 250",
-    img: "/menu/drinks/coffee/americano.png",
+    img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -745,7 +745,7 @@ export const menuData: MenuItem[] = [
     title: "Iced Americano",
     desc: "Chilled americano",
     price: "KES 300",
-    img: "/menu/drinks/coffee/iced-americano.png"
+    img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "iced-cappuccino",
@@ -754,7 +754,7 @@ export const menuData: MenuItem[] = [
     title: "Iced Cappuccino",
     desc: "Chilled cappuccino",
     price: "KES 350",
-    img: "/menu/drinks/coffee/iced-cappuccino.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "iced-espresso",
@@ -763,7 +763,7 @@ export const menuData: MenuItem[] = [
     title: "Iced Espresso",
     desc: "Chilled espresso",
     price: "KES 300",
-    img: "/menu/drinks/coffee/iced-espresso.png"
+    img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "iced-latte",
@@ -772,7 +772,7 @@ export const menuData: MenuItem[] = [
     title: "Iced Latte",
     desc: "Chilled latte",
     price: "KES 350",
-    img: "/menu/drinks/coffee/iced-latte.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "iced-mocha",
@@ -781,7 +781,7 @@ export const menuData: MenuItem[] = [
     title: "Iced Mocha",
     desc: "Chilled mocha",
     price: "KES 350",
-    img: "/menu/drinks/coffee/iced-mocha.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "latte-d",
@@ -790,7 +790,7 @@ export const menuData: MenuItem[] = [
     title: "Latte - Double",
     desc: "Double latte",
     price: "KES 330",
-    img: "/menu/drinks/coffee/latte.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "latte-s",
@@ -799,7 +799,7 @@ export const menuData: MenuItem[] = [
     title: "Latte - Single",
     desc: "Single latte",
     price: "KES 270",
-    img: "/menu/drinks/coffee/latte-s.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "cappuccino-d",
@@ -808,7 +808,7 @@ export const menuData: MenuItem[] = [
     title: "Cappuccino - Double",
     desc: "Double cappuccino",
     price: "KES 290",
-    img: "/menu/drinks/coffee/cappuccino.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "cappuccino-s",
@@ -817,7 +817,7 @@ export const menuData: MenuItem[] = [
     title: "Cappuccino - Single",
     desc: "Single cappuccino",
     price: "KES 250",
-    img: "/menu/drinks/coffee/cappuccino-s.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "macchiato",
@@ -826,7 +826,7 @@ export const menuData: MenuItem[] = [
     title: "Macchiato",
     desc: "Espresso with milk foam",
     price: "KES 270",
-    img: "/menu/drinks/coffee/macchiato.png"
+    img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mocha-d",
@@ -835,7 +835,7 @@ export const menuData: MenuItem[] = [
     title: "Mocha - Double",
     desc: "Double mocha",
     price: "KES 300",
-    img: "/menu/drinks/coffee/mocha.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mocha-s",
@@ -844,7 +844,7 @@ export const menuData: MenuItem[] = [
     title: "Mocha - Single",
     desc: "Single mocha",
     price: "KES 270",
-    img: "/menu/drinks/coffee/mocha-s.png"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "americano-s",
@@ -853,7 +853,7 @@ export const menuData: MenuItem[] = [
     title: "Americano - Single",
     desc: "Single americano",
     price: "KES 230",
-    img: "/menu/drinks/coffee/americano-s.png"
+    img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "black-coffee",
@@ -862,7 +862,7 @@ export const menuData: MenuItem[] = [
     title: "Black Coffee",
     desc: "Strong black coffee",
     price: "KES 100",
-    img: "/menu/drinks/coffee/black-coffee.png"
+    img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "white-coffee",
@@ -871,7 +871,7 @@ export const menuData: MenuItem[] = [
     title: "White Coffee",
     desc: "Coffee with milk",
     price: "KES 150",
-    img: "/menu/drinks/coffee/white-coffee.png"
+    img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "white-decaf",
@@ -880,7 +880,7 @@ export const menuData: MenuItem[] = [
     title: "White Decaf",
     desc: "Decaffeinated coffee with milk",
     price: "KES 230",
-    img: "/menu/drinks/coffee/white-decaf.png"
+    img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ DRINKS - PORRIDGE/UJI ============
@@ -891,7 +891,7 @@ export const menuData: MenuItem[] = [
     title: "Uji Wimbi",
     desc: "Traditional finger millet porridge",
     price: "KES 70",
-    img: "/menu/drinks/porridge/uji-wimbi.png"
+    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "uji-wimbi-milk",
@@ -900,7 +900,7 @@ export const menuData: MenuItem[] = [
     title: "Uji Wimbi with Milk",
     desc: "Finger millet porridge with milk",
     price: "KES 100",
-    img: "/menu/drinks/porridge/uji-wimbi-milk.png"
+    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "uji-power",
@@ -909,7 +909,7 @@ export const menuData: MenuItem[] = [
     title: "Uji Power",
     desc: "Nutritious power porridge",
     price: "KES 120",
-    img: "/menu/drinks/porridge/uji-power.png"
+    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - BREAKFAST ============
@@ -920,7 +920,7 @@ export const menuData: MenuItem[] = [
     title: "The Executive",
     desc: "2 Fried Eggs, 2 Sausages, Toast, Fries, Bacon, Baked Beans",
     price: "KES 800",
-    img: "/menu/food/breakfast/executive-breakfast.png",
+    img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -930,7 +930,7 @@ export const menuData: MenuItem[] = [
     title: "Classic Omelette",
     desc: "Fluffy Omelette with 2 Sausages and Buttered Toast",
     price: "KES 450",
-    img: "/menu/food/breakfast/classic-omelette.png"
+    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pancake-stack",
@@ -939,7 +939,7 @@ export const menuData: MenuItem[] = [
     title: "Pancake Stack",
     desc: "3 Golden Pancakes with Grilled Sausage",
     price: "KES 400",
-    img: "/menu/food/breakfast/pancake-stack.png"
+    img: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "healthy-start",
@@ -948,7 +948,7 @@ export const menuData: MenuItem[] = [
     title: "Healthy Start",
     desc: "Cereals, Yoghurt, Fresh Fruits and Juice",
     price: "KES 500",
-    img: "/menu/food/breakfast/healthy-start.png"
+    img: "https://images.unsplash.com/photo-1494597706938-16e75a2cce80?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "sunrise-breakfast",
@@ -957,7 +957,7 @@ export const menuData: MenuItem[] = [
     title: "The Sunrise",
     desc: "2 Fried Eggs, Buttered Toast, Sausage, Baked Potatoes",
     price: "KES 500",
-    img: "/menu/food/breakfast/sunrise-breakfast.png"
+    img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "breakfast-sandwich",
@@ -966,7 +966,7 @@ export const menuData: MenuItem[] = [
     title: "Breakfast Sandwich",
     desc: "Toasted Sandwich and Grilled Sausage",
     price: "KES 500",
-    img: "/menu/food/breakfast/breakfast-sandwich.png"
+    img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "quick-start-mandazi",
@@ -975,7 +975,7 @@ export const menuData: MenuItem[] = [
     title: "Quick Start - Mandazi",
     desc: "2 Fresh Mandazi and a Sausage (with Tea/Coffee)",
     price: "KES 270",
-    img: "/menu/food/breakfast/quick-start-mandazi.png"
+    img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "samosa-combo",
@@ -984,7 +984,7 @@ export const menuData: MenuItem[] = [
     title: "Samosa Combo",
     desc: "2 Samosas and a Mandazi (with Tea)",
     price: "KES 260",
-    img: "/menu/food/breakfast/samosa-combo.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rolex",
@@ -993,7 +993,7 @@ export const menuData: MenuItem[] = [
     title: "The Rolex",
     desc: "Traditional Chapati-wrapped Omelette",
     price: "KES 300",
-    img: "/menu/food/breakfast/rolex.png"
+    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "ngwace-combo",
@@ -1002,7 +1002,7 @@ export const menuData: MenuItem[] = [
     title: "Ngwace Combo",
     desc: "Sweet Potatoes/Nduma, Fried Eggs, Sausage (with Tea/Coffee)",
     price: "KES 300",
-    img: "/menu/food/breakfast/ngwace-combo.png"
+    img: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "boiled-eggs-combo",
@@ -1011,7 +1011,7 @@ export const menuData: MenuItem[] = [
     title: "Boiled Eggs Combo",
     desc: "2 Boiled Eggs with Sweet Potato/Nduma (with Tea/Coffee)",
     price: "KES 300",
-    img: "/menu/food/breakfast/boiled-eggs-combo.png"
+    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rolex-combo",
@@ -1020,7 +1020,7 @@ export const menuData: MenuItem[] = [
     title: "Rolex Combo",
     desc: "Rolex with Tea or Coffee",
     price: "KES 300",
-    img: "/menu/food/breakfast/rolex-combo.png"
+    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "smocha",
@@ -1029,7 +1029,7 @@ export const menuData: MenuItem[] = [
     title: "Smocha",
     desc: "Smokie-Chapati Wrap",
     price: "KES 120",
-    img: "/menu/food/breakfast/smocha.png"
+    img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "samosa-pack",
@@ -1038,7 +1038,7 @@ export const menuData: MenuItem[] = [
     title: "Samosa Pack",
     desc: "3 pcs Samosas with Lemon Juice",
     price: "KES 300",
-    img: "/menu/food/breakfast/samosa-pack.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "spring-rolls",
@@ -1047,7 +1047,7 @@ export const menuData: MenuItem[] = [
     title: "Spring Rolls",
     desc: "2 pcs Spring Rolls",
     price: "KES 140",
-    img: "/menu/food/breakfast/spring-rolls.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "beef-kebabs",
@@ -1103,7 +1103,7 @@ export const menuData: MenuItem[] = [
     title: "Beef Stew",
     desc: "Tender beef in rich stew sauce",
     price: "KES 300",
-    img: "/menu/food/beef/beef-stew.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stir-fried-beef",
@@ -1112,7 +1112,7 @@ export const menuData: MenuItem[] = [
     title: "Stir Fried Beef",
     desc: "Sautéed beef with vegetables",
     price: "KES 450",
-    img: "/menu/food/beef/stir-fried-beef.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "beef-rice",
@@ -1121,7 +1121,7 @@ export const menuData: MenuItem[] = [
     title: "Beef Rice",
     desc: "Seasoned beef with rice",
     price: "KES 350",
-    img: "/menu/food/beef/beef-rice.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "jolof-beef-half",
@@ -1130,7 +1130,7 @@ export const menuData: MenuItem[] = [
     title: "Jolof Beef Half",
     desc: "Half plate of Jolof rice with beef",
     price: "KES 400",
-    img: "/menu/food/beef/jolof-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "jolof-beef-full",
@@ -1139,7 +1139,7 @@ export const menuData: MenuItem[] = [
     title: "Jolof Beef Full",
     desc: "Full plate of Jolof rice with beef",
     price: "KES 500",
-    img: "/menu/food/beef/jolof-beef-full.png",
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -1149,7 +1149,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Beef Half",
     desc: "Half plate of rice with beef",
     price: "KES 350",
-    img: "/menu/food/beef/rice-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-beef-full",
@@ -1158,7 +1158,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Beef Full",
     desc: "Full plate of rice with beef",
     price: "KES 450",
-    img: "/menu/food/beef/rice-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-beef-half",
@@ -1167,7 +1167,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Beef Half",
     desc: "Half plate of Pilau with beef",
     price: "KES 450",
-    img: "/menu/food/beef/pilau-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-beef-full",
@@ -1176,7 +1176,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Beef Full",
     desc: "Full plate of Pilau with beef",
     price: "KES 550",
-    img: "/menu/food/beef/pilau-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "beef-ugali-half",
@@ -1185,7 +1185,7 @@ export const menuData: MenuItem[] = [
     title: "Beef Ugali Half",
     desc: "Half plate Ugali with beef",
     price: "KES 400",
-    img: "/menu/food/beef/beef-ugali-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "beef-ugali-full",
@@ -1194,7 +1194,7 @@ export const menuData: MenuItem[] = [
     title: "Beef Ugali Full",
     desc: "Full plate Ugali with beef",
     price: "KES 500",
-    img: "/menu/food/beef/beef-ugali-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stir-fried-beef-ugali",
@@ -1203,7 +1203,7 @@ export const menuData: MenuItem[] = [
     title: "Stir Fried Beef Ugali",
     desc: "Stir fried beef with Ugali",
     price: "KES 600",
-    img: "/menu/food/beef/stir-fried-beef-ugali.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-beef-full",
@@ -1212,7 +1212,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Beef Full",
     desc: "Full plate Chapati with beef",
     price: "KES 500",
-    img: "/menu/food/beef/chapati-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-beef-half",
@@ -1221,7 +1221,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Beef Half",
     desc: "Half plate Chapati with beef",
     price: "KES 350",
-    img: "/menu/food/beef/chapati-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-beef-full",
@@ -1230,7 +1230,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Beef Full",
     desc: "Full plate Mukimo with beef",
     price: "KES 550",
-    img: "/menu/food/beef/mukimo-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-beef-half",
@@ -1239,7 +1239,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Beef Half",
     desc: "Half plate Mukimo with beef",
     price: "KES 400",
-    img: "/menu/food/beef/mukimo-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-beef-full",
@@ -1248,7 +1248,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Beef Full",
     desc: "Full plate Chips with beef",
     price: "KES 500",
-    img: "/menu/food/beef/chips-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-beef-half",
@@ -1257,7 +1257,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Beef Half",
     desc: "Half plate Chips with beef",
     price: "KES 400",
-    img: "/menu/food/beef/chips-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-masala-beef-full",
@@ -1266,7 +1266,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Masala Beef Full",
     desc: "Full plate Masala chips with beef",
     price: "KES 550",
-    img: "/menu/food/beef/chips-masala-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "masala-beef-half",
@@ -1275,7 +1275,7 @@ export const menuData: MenuItem[] = [
     title: "Masala Beef Half",
     desc: "Half plate Masala beef",
     price: "KES 450",
-    img: "/menu/food/beef/masala-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "homefries-beef-half",
@@ -1284,7 +1284,7 @@ export const menuData: MenuItem[] = [
     title: "Homefries Beef Half",
     desc: "Half plate homemade fries with beef",
     price: "KES 450",
-    img: "/menu/food/beef/homefries-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-beef-full",
@@ -1293,7 +1293,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Beef Full",
     desc: "Full plate Bhajia with beef",
     price: "KES 550",
-    img: "/menu/food/beef/bhajia-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-beef-half",
@@ -1302,7 +1302,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Beef Half",
     desc: "Half plate Bhajia with beef",
     price: "KES 450",
-    img: "/menu/food/beef/bhajia-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-saute-beef-half",
@@ -1311,7 +1311,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Saute Beef Half",
     desc: "Half plate sautéed potatoes with beef",
     price: "KES 450",
-    img: "/menu/food/beef/potato-saute-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges-beef-full",
@@ -1320,7 +1320,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges Beef Full",
     desc: "Full plate potato wedges with beef",
     price: "KES 600",
-    img: "/menu/food/beef/potato-wedges-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges-beef-half",
@@ -1329,7 +1329,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges Beef Half",
     desc: "Half plate potato wedges with beef",
     price: "KES 450",
-    img: "/menu/food/beef/potato-wedges-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potatoes-saute-beef-full",
@@ -1338,7 +1338,7 @@ export const menuData: MenuItem[] = [
     title: "Potatoes Saute Beef Full",
     desc: "Full plate sautéed potatoes with beef",
     price: "KES 600",
-    img: "/menu/food/beef/potatoes-saute-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "roasted-potatoes-beef-full",
@@ -1347,7 +1347,7 @@ export const menuData: MenuItem[] = [
     title: "Roasted Potatoes Beef Full",
     desc: "Full plate roasted potatoes with beef",
     price: "KES 500",
-    img: "/menu/food/beef/roasted-potatoes-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "roasted-potatoes-beef-half",
@@ -1356,7 +1356,7 @@ export const menuData: MenuItem[] = [
     title: "Roasted Potatoes Beef Half",
     desc: "Half plate roasted potatoes with beef",
     price: "KES 400",
-    img: "/menu/food/beef/roasted-potatoes-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "spaghetti-beef-full",
@@ -1365,7 +1365,7 @@ export const menuData: MenuItem[] = [
     title: "Spaghetti Beef Full",
     desc: "Full plate spaghetti with beef",
     price: "KES 550",
-    img: "/menu/food/beef/spaghetti-beef-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "matoke-beef-half",
@@ -1374,7 +1374,7 @@ export const menuData: MenuItem[] = [
     title: "Matoke Beef Half",
     desc: "Half plate matoke with beef",
     price: "KES 400",
-    img: "/menu/food/beef/matoke-beef-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - GOAT/MBUZI ============
@@ -1385,7 +1385,7 @@ export const menuData: MenuItem[] = [
     title: "Mbuzi Stew",
     desc: "Tender goat in savory stew",
     price: "KES 350",
-    img: "/menu/food/goat/mbuzi-stew.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mbuzi-choma",
@@ -1394,7 +1394,7 @@ export const menuData: MenuItem[] = [
     title: "Mbuzi Choma",
     desc: "Grilled goat meat",
     price: "KES 450",
-    img: "/menu/food/goat/mbuzi-choma.png",
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -1404,7 +1404,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Mbuzi Full",
     desc: "Full plate rice with goat",
     price: "KES 550",
-    img: "/menu/food/goat/rice-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-mbuzi-half",
@@ -1413,7 +1413,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Mbuzi Half",
     desc: "Half plate rice with goat",
     price: "KES 400",
-    img: "/menu/food/goat/rice-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "ugali-mbuzi-full",
@@ -1422,7 +1422,7 @@ export const menuData: MenuItem[] = [
     title: "Ugali Mbuzi Full",
     desc: "Full plate Ugali with goat",
     price: "KES 550",
-    img: "/menu/food/goat/ugali-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "ugali-mbuzi-half",
@@ -1431,7 +1431,7 @@ export const menuData: MenuItem[] = [
     title: "Ugali Mbuzi Half",
     desc: "Half plate Ugali with goat",
     price: "KES 400",
-    img: "/menu/food/goat/ugali-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mbuzi-choma-ugali",
@@ -1440,7 +1440,7 @@ export const menuData: MenuItem[] = [
     title: "Mbuzi Choma Ugali",
     desc: "Grilled goat with Ugali",
     price: "KES 500",
-    img: "/menu/food/goat/mbuzi-choma-ugali.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-mbuzi-full",
@@ -1449,7 +1449,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Mbuzi Full",
     desc: "Full plate Chapati with goat",
     price: "KES 550",
-    img: "/menu/food/goat/chapati-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-mbuzi-half",
@@ -1458,7 +1458,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Mbuzi Half",
     desc: "Half plate Chapati with goat",
     price: "KES 400",
-    img: "/menu/food/goat/chapati-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-mbuzi-full",
@@ -1467,7 +1467,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Mbuzi Full",
     desc: "Full plate Chips with goat",
     price: "KES 550",
-    img: "/menu/food/goat/chips-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-mbuzi-half",
@@ -1476,7 +1476,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Mbuzi Half",
     desc: "Half plate Chips with goat",
     price: "KES 450",
-    img: "/menu/food/goat/chips-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-mbuzi-full",
@@ -1485,7 +1485,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Mbuzi Full",
     desc: "Full plate Bhajia with goat",
     price: "KES 600",
-    img: "/menu/food/goat/bhajia-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-masala-mbuzi",
@@ -1494,7 +1494,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Masala Mbuzi",
     desc: "Masala chips with goat",
     price: "KES 650",
-    img: "/menu/food/goat/chips-masala-mbuzi.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "homefries-mbuzi",
@@ -1503,7 +1503,7 @@ export const menuData: MenuItem[] = [
     title: "Homefries Mbuzi",
     desc: "Homemade fries with goat",
     price: "KES 600",
-    img: "/menu/food/goat/homefries-mbuzi.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-saute-mbuzi-full",
@@ -1512,7 +1512,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Saute Mbuzi Full",
     desc: "Full plate sautéed potatoes with goat",
     price: "KES 600",
-    img: "/menu/food/goat/potato-saute-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges-mbuzi-full",
@@ -1521,7 +1521,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges Mbuzi Full",
     desc: "Full plate potato wedges with goat",
     price: "KES 600",
-    img: "/menu/food/goat/potato-wedges-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges-mbuzi-half",
@@ -1530,7 +1530,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges Mbuzi Half",
     desc: "Half plate potato wedges with goat",
     price: "KES 450",
-    img: "/menu/food/goat/potato-wedges-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potatoes-saute-mbuzi-half",
@@ -1539,7 +1539,7 @@ export const menuData: MenuItem[] = [
     title: "Potatoes Saute Mbuzi Half",
     desc: "Half plate sautéed potatoes with goat",
     price: "KES 450",
-    img: "/menu/food/goat/potatoes-saute-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "roasted-potatoes-mbuzi-half",
@@ -1548,7 +1548,7 @@ export const menuData: MenuItem[] = [
     title: "Roasted Potatoes Mbuzi Half",
     desc: "Half plate roasted potatoes with goat",
     price: "KES 450",
-    img: "/menu/food/goat/roasted-potatoes-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "roasted-potatoes-mbuzi-full",
@@ -1557,7 +1557,7 @@ export const menuData: MenuItem[] = [
     title: "Roasted Potatoes Mbuzi Full",
     desc: "Full plate roasted potatoes with goat",
     price: "KES 600",
-    img: "/menu/food/goat/roasted-potatoes-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-mbuzi-full",
@@ -1566,7 +1566,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Mbuzi Full",
     desc: "Full plate Mukimo with goat",
     price: "KES 600",
-    img: "/menu/food/goat/mukimo-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-mbuzi-half",
@@ -1575,7 +1575,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Mbuzi Half",
     desc: "Half plate Mukimo with goat",
     price: "KES 450",
-    img: "/menu/food/goat/mukimo-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "matoke-mbuzi",
@@ -1584,7 +1584,7 @@ export const menuData: MenuItem[] = [
     title: "Matoke Mbuzi",
     desc: "Matoke with goat",
     price: "KES 550",
-    img: "/menu/food/goat/matoke-mbuzi.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-mbuzi-full",
@@ -1593,7 +1593,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Mbuzi Full",
     desc: "Full plate Pilau with goat",
     price: "KES 600",
-    img: "/menu/food/goat/pilau-mbuzi-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-mbuzi-half",
@@ -1602,7 +1602,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Mbuzi Half",
     desc: "Half plate Pilau with goat",
     price: "KES 450",
-    img: "/menu/food/goat/pilau-mbuzi-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stir-fry-spaghetti-mbuzi",
@@ -1611,7 +1611,7 @@ export const menuData: MenuItem[] = [
     title: "Stir Fry Spaghetti Mbuzi",
     desc: "Stir fried spaghetti with goat",
     price: "KES 550",
-    img: "/menu/food/goat/stir-fry-spaghetti-mbuzi.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - FISH/TILAPIA ============
@@ -1622,7 +1622,7 @@ export const menuData: MenuItem[] = [
     title: "Fried Tilapia Whole",
     desc: "Whole fried tilapia fish",
     price: "KES 500",
-    img: "/menu/food/fish/tilapia-whole-fried.png",
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -1632,7 +1632,7 @@ export const menuData: MenuItem[] = [
     title: "Tilapia Chips",
     desc: "Tilapia with chips",
     price: "KES 650",
-    img: "/menu/food/fish/tilapia-chips.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "tilapia-rice",
@@ -1641,7 +1641,7 @@ export const menuData: MenuItem[] = [
     title: "Tilapia Rice",
     desc: "Tilapia with rice",
     price: "KES 600",
-    img: "/menu/food/fish/tilapia-rice.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "tilapia-saute",
@@ -1650,7 +1650,7 @@ export const menuData: MenuItem[] = [
     title: "Tilapia Saute",
     desc: "Sautéed tilapia",
     price: "KES 700",
-    img: "/menu/food/fish/tilapia-saute.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "tilapia-ugali",
@@ -1659,7 +1659,7 @@ export const menuData: MenuItem[] = [
     title: "Tilapia Ugali",
     desc: "Tilapia with Ugali",
     price: "KES 550",
-    img: "/menu/food/fish/tilapia-ugali.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "tilapia-wedges",
@@ -1668,7 +1668,7 @@ export const menuData: MenuItem[] = [
     title: "Tilapia Wedges",
     desc: "Tilapia with potato wedges",
     price: "KES 700",
-    img: "/menu/food/fish/tilapia-wedges.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - GIZZARDS ============
@@ -1679,7 +1679,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzards Plain",
     desc: "Plain roasted gizzards",
     price: "KES 300",
-    img: "/menu/food/gizzards/gizzards-plain.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzards-saute",
@@ -1688,7 +1688,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzards Saute",
     desc: "Sautéed gizzards",
     price: "KES 500",
-    img: "/menu/food/gizzards/gizzards-saute.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-rice-full",
@@ -1697,7 +1697,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Rice Full",
     desc: "Full plate gizzards with rice",
     price: "KES 500",
-    img: "/menu/food/gizzards/gizzard-rice-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-rice-half",
@@ -1706,7 +1706,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Rice Half",
     desc: "Half plate gizzards with rice",
     price: "KES 350",
-    img: "/menu/food/gizzards/gizzard-rice-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-ugali",
@@ -1715,7 +1715,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Ugali",
     desc: "Gizzards with Ugali",
     price: "KES 350",
-    img: "/menu/food/gizzards/gizzard-ugali.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-chapati-full",
@@ -1724,7 +1724,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Chapati Full",
     desc: "Full plate gizzards with chapati",
     price: "KES 500",
-    img: "/menu/food/gizzards/gizzard-chapati-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-chapati-half",
@@ -1733,7 +1733,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Chapati Half",
     desc: "Half plate gizzards with chapati",
     price: "KES 350",
-    img: "/menu/food/gizzards/gizzard-chapati-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-chips",
@@ -1742,7 +1742,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Chips",
     desc: "Gizzards with chips",
     price: "KES 400",
-    img: "/menu/food/gizzards/gizzard-chips.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-homemade-fries",
@@ -1751,7 +1751,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Homemade Fries",
     desc: "Gizzards with homemade fries",
     price: "KES 450",
-    img: "/menu/food/gizzards/gizzard-homemade-fries.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-pilau",
@@ -1760,7 +1760,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Pilau",
     desc: "Gizzards with Pilau",
     price: "KES 550",
-    img: "/menu/food/gizzards/gizzard-pilau.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-veg-rice",
@@ -1769,7 +1769,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Veg Rice",
     desc: "Gizzards with vegetable rice",
     price: "KES 400",
-    img: "/menu/food/gizzards/gizzard-veg-rice.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-wedges",
@@ -1778,7 +1778,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Wedges",
     desc: "Gizzards with potato wedges",
     price: "KES 500",
-    img: "/menu/food/gizzards/gizzard-wedges.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "gizzard-wedges-half",
@@ -1787,7 +1787,7 @@ export const menuData: MenuItem[] = [
     title: "Gizzard Wedges Half",
     desc: "Half plate gizzards with wedges",
     price: "KES 400",
-    img: "/menu/food/gizzards/gizzard-wedges-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-gizzards-half",
@@ -1796,7 +1796,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Gizzards Half",
     desc: "Half plate bhajia with gizzards",
     price: "KES 400",
-    img: "/menu/food/gizzards/bhajia-gizzards-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "matoke-gizzard",
@@ -1805,7 +1805,7 @@ export const menuData: MenuItem[] = [
     title: "Matoke Gizzard",
     desc: "Matoke with gizzards",
     price: "KES 400",
-    img: "/menu/food/gizzards/matoke-gizzard.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-gizzard-half",
@@ -1814,7 +1814,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Gizzard Half",
     desc: "Half plate Mukimo with gizzards",
     price: "KES 450",
-    img: "/menu/food/gizzards/mukimo-gizzard-half.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "saute-potatoes-gizzard-full",
@@ -1823,7 +1823,7 @@ export const menuData: MenuItem[] = [
     title: "Saute Potatoes Gizzard Full",
     desc: "Full plate sautéed potatoes with gizzards",
     price: "KES 550",
-    img: "/menu/food/gizzards/saute-potatoes-gizzard-full.png"
+    img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - CHICKEN ============
@@ -1834,7 +1834,7 @@ export const menuData: MenuItem[] = [
     title: "Kienyeji Wet Fry Full",
     desc: "Full plate traditional chicken wet fry",
     price: "KES 1700",
-    img: "/menu/food/chicken/kienyeji-wet-fry-full.png",
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center",
     badge: "Special"
   },
   {
@@ -1844,7 +1844,7 @@ export const menuData: MenuItem[] = [
     title: "Kienyeji Wet Fry Plain",
     desc: "Plain traditional chicken wet fry",
     price: "KES 450",
-    img: "/menu/food/chicken/kienyeji-wet-fry-plain.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kienyeji-wet-fry-rice",
@@ -1853,7 +1853,7 @@ export const menuData: MenuItem[] = [
     title: "Kienyeji Wet Fry Rice",
     desc: "Traditional chicken with rice",
     price: "KES 550",
-    img: "/menu/food/chicken/kienyeji-wet-fry-rice.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kienyeji-wet-fry-rice-full",
@@ -1862,7 +1862,7 @@ export const menuData: MenuItem[] = [
     title: "Kienyeji Wet Fry Rice Full",
     desc: "Full plate traditional chicken with rice",
     price: "KES 650",
-    img: "/menu/food/chicken/kienyeji-wet-fry-rice-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kienyeji-wet-fry-ugali",
@@ -1871,7 +1871,7 @@ export const menuData: MenuItem[] = [
     title: "Kienyeji Wet Fry Ugali",
     desc: "Traditional chicken with Ugali",
     price: "KES 650",
-    img: "/menu/food/chicken/kienyeji-wet-fry-ugali.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kienyeji-wet-fry-wedges",
@@ -1880,7 +1880,7 @@ export const menuData: MenuItem[] = [
     title: "Kienyeji Wet Fry Wedges",
     desc: "Traditional chicken with potato wedges",
     price: "KES 700",
-    img: "/menu/food/chicken/kienyeji-wet-fry-wedges.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry",
@@ -1889,7 +1889,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry",
     desc: "Aromatic chicken curry",
     price: "KES 400",
-    img: "/menu/food/chicken/chicken-curry.png",
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
   {
@@ -1899,7 +1899,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Chapati Full",
     desc: "Full plate chicken curry with chapati",
     price: "KES 550",
-    img: "/menu/food/chicken/chicken-curry-chapati-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry-veggy-rice-full",
@@ -1908,7 +1908,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Veggy Rice Full",
     desc: "Full plate curry with vegetable rice",
     price: "KES 600",
-    img: "/menu/food/chicken/chicken-curry-veggy-rice-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-kuku-half",
@@ -1917,7 +1917,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Kuku Half",
     desc: "Half plate Mukimo with chicken",
     price: "KES 450",
-    img: "/menu/food/chicken/mukimo-kuku-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry-rice-half",
@@ -1926,7 +1926,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Rice Half",
     desc: "Half plate curry with rice",
     price: "KES 450",
-    img: "/menu/food/chicken/chicken-curry-rice-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry-ugali-half",
@@ -1935,7 +1935,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Ugali Half",
     desc: "Half plate curry with Ugali",
     price: "KES 450",
-    img: "/menu/food/chicken/chicken-curry-ugali-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry-chapati-half",
@@ -1944,7 +1944,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Chapati Half",
     desc: "Half plate curry with chapati",
     price: "KES 450",
-    img: "/menu/food/chicken/chicken-curry-chapati-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry-veggy-rice-half",
@@ -1953,7 +1953,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Veggy Rice Half",
     desc: "Half plate curry with vegetable rice",
     price: "KES 500",
-    img: "/menu/food/chicken/chicken-curry-veggy-rice-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-curry-rice-full",
@@ -1962,7 +1962,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Curry Rice Full",
     desc: "Full plate curry with rice",
     price: "KES 550",
-    img: "/menu/food/chicken/chicken-curry-rice-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "joloff-chicken-curry",
@@ -1971,7 +1971,7 @@ export const menuData: MenuItem[] = [
     title: "Joloff Chicken Curry",
     desc: "Chicken curry with Joloff rice",
     price: "KES 600",
-    img: "/menu/food/chicken/joloff-chicken-curry.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-chicken-full",
@@ -1980,7 +1980,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Chicken Full",
     desc: "Full plate chapati with chicken",
     price: "KES 550",
-    img: "/menu/food/chicken/chapati-chicken-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-chicken-half",
@@ -1989,7 +1989,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Chicken Half",
     desc: "Half plate chapati with chicken",
     price: "KES 450",
-    img: "/menu/food/chicken/chapati-chicken-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-masala",
@@ -1998,7 +1998,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Masala",
     desc: "Spiced chicken masala",
     price: "KES 600",
-    img: "/menu/food/chicken/chicken-masala.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chicken-stew",
@@ -2007,7 +2007,7 @@ export const menuData: MenuItem[] = [
     title: "Chicken Stew",
     desc: "Chicken in rich stew sauce",
     price: "KES 400",
-    img: "/menu/food/chicken/chicken-stew.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-chicken",
@@ -2016,7 +2016,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Chicken",
     desc: "Chicken with chips",
     price: "KES 600",
-    img: "/menu/food/chicken/chips-chicken.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-masala-chicken-half",
@@ -2025,7 +2025,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Masala Chicken Half",
     desc: "Half plate masala chips with chicken",
     price: "KES 500",
-    img: "/menu/food/chicken/chips-masala-chicken-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fried-chicken-1piece",
@@ -2034,7 +2034,7 @@ export const menuData: MenuItem[] = [
     title: "Fried Chicken 1 Piece",
     desc: "Single fried chicken piece",
     price: "KES 150",
-    img: "/menu/food/chicken/fried-chicken.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "full-chicken-stew-veges",
@@ -2043,7 +2043,7 @@ export const menuData: MenuItem[] = [
     title: "Full Chicken Stew Veges",
     desc: "Complete chicken stew with vegetables",
     price: "KES 1850",
-    img: "/menu/food/chicken/full-chicken-stew-veges.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-chicken",
@@ -2052,7 +2052,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Chicken",
     desc: "Mukimo with chicken",
     price: "KES 600",
-    img: "/menu/food/chicken/mukimo-chicken.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-chicken-full",
@@ -2061,7 +2061,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Chicken Full",
     desc: "Full plate Pilau with chicken",
     price: "KES 650",
-    img: "/menu/food/chicken/pilau-chicken-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-chicken-half",
@@ -2070,7 +2070,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Chicken Half",
     desc: "Half plate Pilau with chicken",
     price: "KES 450",
-    img: "/menu/food/chicken/pilau-chicken-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges-chicken-full",
@@ -2079,7 +2079,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges Chicken Full",
     desc: "Full plate potato wedges with chicken",
     price: "KES 600",
-    img: "/menu/food/chicken/potato-wedges-chicken-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges-chicken-half",
@@ -2088,7 +2088,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges Chicken Half",
     desc: "Half plate potato wedges with chicken",
     price: "KES 450",
-    img: "/menu/food/chicken/potato-wedges-chicken-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potatoes-saute-chicken-full",
@@ -2097,7 +2097,7 @@ export const menuData: MenuItem[] = [
     title: "Potatoes Saute Chicken Full",
     desc: "Full plate sautéed potatoes with chicken",
     price: "KES 600",
-    img: "/menu/food/chicken/potatoes-saute-chicken-full.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potatoes-saute-chicken-half",
@@ -2106,7 +2106,7 @@ export const menuData: MenuItem[] = [
     title: "Potatoes Saute Chicken Half",
     desc: "Half plate sautéed potatoes with chicken",
     price: "KES 500",
-    img: "/menu/food/chicken/potatoes-saute-chicken-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-chicken-half",
@@ -2115,7 +2115,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Chicken Half",
     desc: "Half plate rice with chicken",
     price: "KES 450",
-    img: "/menu/food/chicken/rice-chicken-half.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stir-fry-spaghetti-chicken",
@@ -2124,7 +2124,7 @@ export const menuData: MenuItem[] = [
     title: "Stir Fry Spaghetti Chicken",
     desc: "Stir fried spaghetti with chicken",
     price: "KES 600",
-    img: "/menu/food/chicken/stir-fry-spaghetti-chicken.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "vegetable-rice-chicken",
@@ -2133,7 +2133,7 @@ export const menuData: MenuItem[] = [
     title: "Vegetable Rice Chicken",
     desc: "Vegetable rice with chicken",
     price: "KES 600",
-    img: "/menu/food/chicken/vegetable-rice-chicken.png"
+    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - FISH FILLET ============
@@ -2144,7 +2144,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Fillet",
     desc: "Fresh fish fillet",
     price: "KES 450",
-    img: "/menu/food/fillet/fish-fillet.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-fillet-rice",
@@ -2153,7 +2153,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Fillet Rice",
     desc: "Fish fillet with rice",
     price: "KES 630",
-    img: "/menu/food/fillet/fish-fillet-rice.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-fillet-ugali",
@@ -2162,7 +2162,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Fillet Ugali",
     desc: "Fish fillet with Ugali",
     price: "KES 630",
-    img: "/menu/food/fillet/fish-fillet-ugali.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-fillet-pilau-full",
@@ -2171,7 +2171,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Fillet Pilau Full",
     desc: "Full plate fish fillet with Pilau",
     price: "KES 700",
-    img: "/menu/food/fillet/fish-fillet-pilau-full.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-fillet-potato-saute",
@@ -2180,7 +2180,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Fillet Potato Saute",
     desc: "Fish fillet with sautéed potatoes",
     price: "KES 770",
-    img: "/menu/food/fillet/fish-fillet-potato-saute.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fillet-chips-half",
@@ -2189,7 +2189,7 @@ export const menuData: MenuItem[] = [
     title: "Fillet Chips Half",
     desc: "Half plate fillet with chips",
     price: "KES 500",
-    img: "/menu/food/fillet/fillet-chips-half.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fillet-masala-half",
@@ -2198,7 +2198,7 @@ export const menuData: MenuItem[] = [
     title: "Fillet Masala Half",
     desc: "Half plate masala fillet",
     price: "KES 500",
-    img: "/menu/food/fillet/fillet-masala-half.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fillet-rice-half",
@@ -2207,7 +2207,7 @@ export const menuData: MenuItem[] = [
     title: "Fillet Rice Half",
     desc: "Half plate fillet with rice",
     price: "KES 500",
-    img: "/menu/food/fillet/fillet-rice-half.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fillet-ugali-half",
@@ -2216,7 +2216,7 @@ export const menuData: MenuItem[] = [
     title: "Fillet Ugali Half",
     desc: "Half plate fillet with Ugali",
     price: "KES 500",
-    img: "/menu/food/fillet/fillet-ugali-half.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "half-bhajia-fish-fillet",
@@ -2225,7 +2225,7 @@ export const menuData: MenuItem[] = [
     title: "Half Bhajia Fish Fillet",
     desc: "Half plate bhajia with fish fillet",
     price: "KES 500",
-    img: "/menu/food/fillet/half-bhajia-fish-fillet.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-fillet-full",
@@ -2234,7 +2234,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Fillet Full",
     desc: "Full plate Mukimo with fish fillet",
     price: "KES 630",
-    img: "/menu/food/fillet/mukimo-fillet-full.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-fillet-half",
@@ -2243,7 +2243,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Fillet Half",
     desc: "Half plate Mukimo with fish fillet",
     price: "KES 500",
-    img: "/menu/food/fillet/mukimo-fillet-half.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-fish",
@@ -2252,7 +2252,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Fish",
     desc: "Bhajia with fish",
     price: "KES 800",
-    img: "/menu/food/fillet/bhajia-fish.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-masala-fish",
@@ -2261,7 +2261,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Masala Fish",
     desc: "Masala chips with fish",
     price: "KES 800",
-    img: "/menu/food/fillet/chips-masala-fish.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-mukimo",
@@ -2270,7 +2270,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Mukimo",
     desc: "Fish with Mukimo",
     price: "KES 800",
-    img: "/menu/food/fillet/fish-mukimo.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-fingers",
@@ -2279,7 +2279,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Fingers",
     desc: "Crispy fish fingers",
     price: "KES 250",
-    img: "/menu/food/fillet/fish-fingers.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "fish-spaghetti-full",
@@ -2288,7 +2288,7 @@ export const menuData: MenuItem[] = [
     title: "Fish Spaghetti Full",
     desc: "Full plate spaghetti with fish",
     price: "KES 630",
-    img: "/menu/food/fillet/fish-spaghetti-full.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "omena-plain",
@@ -2297,7 +2297,7 @@ export const menuData: MenuItem[] = [
     title: "Omena Plain",
     desc: "Plain fried omena",
     price: "KES 150",
-    img: "/menu/food/fillet/omena-plain.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "omena-ugali",
@@ -2306,7 +2306,7 @@ export const menuData: MenuItem[] = [
     title: "Omena Ugali",
     desc: "Omena with Ugali",
     price: "KES 200",
-    img: "/menu/food/fillet/omena-ugali.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "wedge-fillet",
@@ -2315,7 +2315,7 @@ export const menuData: MenuItem[] = [
     title: "Wedge Fillet",
     desc: "Fillet with potato wedges",
     price: "KES 500",
-    img: "/menu/food/fillet/wedge-fillet.png"
+    img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - BEANS/NDENGU ============
@@ -2326,7 +2326,7 @@ export const menuData: MenuItem[] = [
     title: "Ndengu Plain",
     desc: "Plain cooked ndengu (beans)",
     price: "KES 150",
-    img: "/menu/food/beans/ndengu-plain.png"
+    img: "https://images.unsplash.com/photo-1515528414519-57d453b74ca9?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "ndengu-rice",
@@ -2335,7 +2335,7 @@ export const menuData: MenuItem[] = [
     title: "Ndengu Rice",
     desc: "Ndengu with rice",
     price: "KES 250",
-    img: "/menu/food/beans/ndengu-rice.png"
+    img: "https://images.unsplash.com/photo-1515528414519-57d453b74ca9?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-ndengu-full",
@@ -2344,7 +2344,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Ndengu Full",
     desc: "Full plate chapati with ndengu",
     price: "KES 250",
-    img: "/menu/food/beans/chapati-ndengu-full.png"
+    img: "https://images.unsplash.com/photo-1515528414519-57d453b74ca9?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-ndengu-half",
@@ -2353,7 +2353,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Ndengu Half",
     desc: "Half plate chapati with ndengu",
     price: "KES 200",
-    img: "/menu/food/beans/chapati-ndengu-half.png"
+    img: "https://images.unsplash.com/photo-1515528414519-57d453b74ca9?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-beans",
@@ -2362,7 +2362,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Beans",
     desc: "Chapati with beans",
     price: "KES 200",
-    img: "/menu/food/beans/chapati-beans.png"
+    img: "https://images.unsplash.com/photo-1515528414519-57d453b74ca9?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - MEATBALLS ============
@@ -2373,7 +2373,7 @@ export const menuData: MenuItem[] = [
     title: "Meatballs Plain",
     desc: "Plain cooked meatballs",
     price: "KES 400",
-    img: "/menu/food/meatballs/meatballs-plain.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "meatballs",
@@ -2382,7 +2382,7 @@ export const menuData: MenuItem[] = [
     title: "Meatballs",
     desc: "Seasoned meatballs",
     price: "KES 400",
-    img: "/menu/food/meatballs/meatballs.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-meatballs-half",
@@ -2391,7 +2391,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Meatballs Half",
     desc: "Half plate rice with meatballs",
     price: "KES 400",
-    img: "/menu/food/meatballs/rice-meatballs-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-meatball",
@@ -2400,7 +2400,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Meatball",
     desc: "Rice with meatball",
     price: "KES 450",
-    img: "/menu/food/meatballs/rice-meatball.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-meatballs",
@@ -2409,7 +2409,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Meatballs",
     desc: "Bhajia with meatballs",
     price: "KES 500",
-    img: "/menu/food/meatballs/bhajia-meatballs.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-meatballs-full",
@@ -2418,7 +2418,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Meatballs Full",
     desc: "Full plate chapati with meatballs",
     price: "KES 550",
-    img: "/menu/food/meatballs/chapati-meatballs-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-masala-meatball",
@@ -2427,7 +2427,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Masala Meatball",
     desc: "Masala chips with meatballs",
     price: "KES 600",
-    img: "/menu/food/meatballs/chips-masala-meatball.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chips-meatballs-full",
@@ -2436,7 +2436,7 @@ export const menuData: MenuItem[] = [
     title: "Chips Meatballs Full",
     desc: "Full plate chips with meatballs",
     price: "KES 550",
-    img: "/menu/food/meatballs/chips-meatballs-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "full-ugali-meatballs",
@@ -2445,7 +2445,7 @@ export const menuData: MenuItem[] = [
     title: "Full Ugali Meatballs",
     desc: "Full plate Ugali with meatballs",
     price: "KES 500",
-    img: "/menu/food/meatballs/full-ugali-meatballs.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "meatball-joloff-full",
@@ -2454,7 +2454,7 @@ export const menuData: MenuItem[] = [
     title: "Meatball Joloff Full",
     desc: "Full plate Joloff rice with meatballs",
     price: "KES 550",
-    img: "/menu/food/meatballs/meatball-joloff-full.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "meatballs-potato-wedges",
@@ -2463,7 +2463,7 @@ export const menuData: MenuItem[] = [
     title: "Meatballs Potato Wedges",
     desc: "Meatballs with potato wedges",
     price: "KES 550",
-    img: "/menu/food/meatballs/meatballs-potato-wedges.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-meatballs",
@@ -2472,7 +2472,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Meatballs",
     desc: "Mukimo with meatballs",
     price: "KES 550",
-    img: "/menu/food/meatballs/mukimo-meatballs.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-saute-meatballs",
@@ -2481,7 +2481,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Saute Meatballs",
     desc: "Sautéed potatoes with meatballs",
     price: "KES 550",
-    img: "/menu/food/meatballs/potato-saute-meatballs.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stir-fried-spaghetti-meatballs-half",
@@ -2490,7 +2490,7 @@ export const menuData: MenuItem[] = [
     title: "Stir Fried Spaghetti Meatballs Half",
     desc: "Half plate stir fried spaghetti with meatballs",
     price: "KES 500",
-    img: "/menu/food/meatballs/stir-fried-spaghetti-meatballs-half.png"
+    img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop&crop=center"
   },
 
   // ============ FOOD - STARTERS/EXTRAS ============
@@ -2501,7 +2501,7 @@ export const menuData: MenuItem[] = [
     title: "Samosa 3pc",
     desc: "3 piece crispy samosas",
     price: "KES 170",
-    img: "/menu/food/starters/samosa-3pc.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bbq-wings",
@@ -2510,7 +2510,7 @@ export const menuData: MenuItem[] = [
     title: "BBQ Wings",
     desc: "BBQ chicken wings",
     price: "KES 350",
-    img: "/menu/food/starters/bbq-wings.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "beef-burger",
@@ -2519,7 +2519,7 @@ export const menuData: MenuItem[] = [
     title: "Beef Burger",
     desc: "Juicy beef burger",
     price: "KES 650",
-    img: "/menu/food/starters/beef-burger.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia",
@@ -2528,7 +2528,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia",
     desc: "Crispy fried bhajia",
     price: "KES 250",
-    img: "/menu/food/starters/bhajia.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bhajia-kuku-full",
@@ -2537,7 +2537,7 @@ export const menuData: MenuItem[] = [
     title: "Bhajia Kuku Full",
     desc: "Full plate bhajia with chicken",
     price: "KES 600",
-    img: "/menu/food/starters/bhajia-kuku-full.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "brown-ugali",
@@ -2546,7 +2546,7 @@ export const menuData: MenuItem[] = [
     title: "Brown Ugali",
     desc: "Brown maize ugali",
     price: "KES 100",
-    img: "/menu/food/starters/brown-ugali.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "cabbage",
@@ -2555,7 +2555,7 @@ export const menuData: MenuItem[] = [
     title: "Cabbage",
     desc: "Cooked cabbage",
     price: "KES 50",
-    img: "/menu/food/starters/cabbage.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "chapati-vegetable",
@@ -2564,7 +2564,7 @@ export const menuData: MenuItem[] = [
     title: "Chapati Vegetable",
     desc: "Chapati with vegetable",
     price: "KES 150",
-    img: "/menu/food/starters/chapati-vegetable.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "crispy-wings",
@@ -2573,7 +2573,7 @@ export const menuData: MenuItem[] = [
     title: "Crispy Wings",
     desc: "Crispy chicken wings",
     price: "KES 320",
-    img: "/menu/food/starters/crispy-wings.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "double-feast-burger",
@@ -2582,7 +2582,7 @@ export const menuData: MenuItem[] = [
     title: "Double Feast Burger",
     desc: "Double stacked beef burger",
     price: "KES 850",
-    img: "/menu/food/starters/double-feast-burger.png",
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center",
     badge: "Special"
   },
   {
@@ -2592,7 +2592,7 @@ export const menuData: MenuItem[] = [
     title: "Full Kuku Sama",
     desc: "Full plate chicken with sides",
     price: "KES 1300",
-    img: "/menu/food/starters/full-kuku-sama.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "full-plain-chips",
@@ -2601,7 +2601,7 @@ export const menuData: MenuItem[] = [
     title: "Full Plain Chips",
     desc: "Full plate plain chips",
     price: "KES 300",
-    img: "/menu/food/starters/full-plain-chips.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "half-plain-chips",
@@ -2610,7 +2610,7 @@ export const menuData: MenuItem[] = [
     title: "Half Plain Chips",
     desc: "Half plate plain chips",
     price: "KES 200",
-    img: "/menu/food/starters/half-plain-chips.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "half-wedges",
@@ -2619,7 +2619,7 @@ export const menuData: MenuItem[] = [
     title: "Half Wedges",
     desc: "Half plate potato wedges",
     price: "KES 250",
-    img: "/menu/food/starters/half-wedges.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "home-fries",
@@ -2628,7 +2628,7 @@ export const menuData: MenuItem[] = [
     title: "Home Fries",
     desc: "Homemade fries",
     price: "KES 300",
-    img: "/menu/food/starters/home-fries.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kachumbari",
@@ -2637,7 +2637,7 @@ export const menuData: MenuItem[] = [
     title: "Kachumbari",
     desc: "Fresh tomato and onion salad",
     price: "KES 50",
-    img: "/menu/food/starters/kachumbari.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kaimati",
@@ -2646,7 +2646,7 @@ export const menuData: MenuItem[] = [
     title: "Kaimati",
     desc: "Sweet fried dough",
     price: "KES 30",
-    img: "/menu/food/starters/kaimati.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "kebab",
@@ -2655,7 +2655,7 @@ export const menuData: MenuItem[] = [
     title: "Kebab",
     desc: "Grilled meat kebab",
     price: "KES 150",
-    img: "/menu/food/starters/kebab.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mahamri",
@@ -2664,7 +2664,7 @@ export const menuData: MenuItem[] = [
     title: "Mahamri",
     desc: "Traditional fried pastry",
     price: "KES 25",
-    img: "/menu/food/starters/mahamri.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mandazi",
@@ -2673,7 +2673,7 @@ export const menuData: MenuItem[] = [
     title: "Mandazi",
     desc: "Fried mandazi dough",
     price: "KES 25",
-    img: "/menu/food/starters/mandazi.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "managu-plain",
@@ -2682,7 +2682,7 @@ export const menuData: MenuItem[] = [
     title: "Managu Plain",
     desc: "Plain cooked managu (spinach)",
     price: "KES 150",
-    img: "/menu/food/starters/managu-plain.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "managu-ugali",
@@ -2691,7 +2691,7 @@ export const menuData: MenuItem[] = [
     title: "Managu Ugali",
     desc: "Managu with Ugali",
     price: "KES 200",
-    img: "/menu/food/starters/managu-ugali.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "matoke",
@@ -2700,7 +2700,7 @@ export const menuData: MenuItem[] = [
     title: "Matoke",
     desc: "Cooked plantain",
     price: "KES 200",
-    img: "/menu/food/starters/matoke.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mayai-ugali",
@@ -2709,7 +2709,7 @@ export const menuData: MenuItem[] = [
     title: "Mayai Ugali",
     desc: "Eggs with Ugali",
     price: "KES 200",
-    img: "/menu/food/starters/mayai-ugali.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "mukimo-plain",
@@ -2718,7 +2718,7 @@ export const menuData: MenuItem[] = [
     title: "Mukimo Plain",
     desc: "Plain Mukimo (mashed vegetables)",
     price: "KES 250",
-    img: "/menu/food/starters/mukimo-plain.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "naan",
@@ -2727,7 +2727,7 @@ export const menuData: MenuItem[] = [
     title: "Naan",
     desc: "Indian flatbread naan",
     price: "KES 70",
-    img: "/menu/food/starters/naan.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "pilau-plain",
@@ -2736,7 +2736,7 @@ export const menuData: MenuItem[] = [
     title: "Pilau Plain",
     desc: "Plain Pilau rice",
     price: "KES 400",
-    img: "/menu/food/starters/pilau-plain.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "plain-choma",
@@ -2745,7 +2745,7 @@ export const menuData: MenuItem[] = [
     title: "Plain Choma",
     desc: "Grilled meat",
     price: "KES 400",
-    img: "/menu/food/starters/plain-choma.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "plain-minji",
@@ -2754,7 +2754,7 @@ export const menuData: MenuItem[] = [
     title: "Plain Minji",
     desc: "Plain minced meat",
     price: "KES 200",
-    img: "/menu/food/starters/plain-minji.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "plantain",
@@ -2763,7 +2763,7 @@ export const menuData: MenuItem[] = [
     title: "Plantain",
     desc: "Fried plantain",
     price: "KES 200",
-    img: "/menu/food/starters/plantain.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-saute",
@@ -2772,7 +2772,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Saute",
     desc: "Sautéed potatoes",
     price: "KES 350",
-    img: "/menu/food/starters/potato-saute.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-saute-half",
@@ -2781,7 +2781,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Saute Half",
     desc: "Half plate sautéed potatoes",
     price: "KES 250",
-    img: "/menu/food/starters/potato-saute-half.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "potato-wedges",
@@ -2790,7 +2790,7 @@ export const menuData: MenuItem[] = [
     title: "Potato Wedges",
     desc: "Fried potato wedges",
     price: "KES 400",
-    img: "/menu/food/starters/potato-wedges.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-kuku-full",
@@ -2799,7 +2799,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Kuku Full",
     desc: "Full plate rice with chicken",
     price: "KES 550",
-    img: "/menu/food/starters/rice-kuku-full.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-minji-full",
@@ -2808,7 +2808,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Minji Full",
     desc: "Full plate rice with minced meat",
     price: "KES 350",
-    img: "/menu/food/starters/rice-minji-full.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-minji-half",
@@ -2817,7 +2817,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Minji Half",
     desc: "Half plate rice with minced meat",
     price: "KES 250",
-    img: "/menu/food/starters/rice-minji-half.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "rice-plain",
@@ -2826,7 +2826,7 @@ export const menuData: MenuItem[] = [
     title: "Rice Plain",
     desc: "Plain cooked rice",
     price: "KES 100",
-    img: "/menu/food/starters/rice-plain.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "roasted-potatoes",
@@ -2835,7 +2835,7 @@ export const menuData: MenuItem[] = [
     title: "Roasted Potatoes",
     desc: "Roasted potatoes",
     price: "KES 200",
-    img: "/menu/food/starters/roasted-potatoes.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "shawarma-m",
@@ -2844,7 +2844,7 @@ export const menuData: MenuItem[] = [
     title: "Shawarma Medium",
     desc: "Medium sized shawarma",
     price: "KES 350",
-    img: "/menu/food/starters/shawarma-m.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "shawarma-r",
@@ -2853,7 +2853,7 @@ export const menuData: MenuItem[] = [
     title: "Shawarma Regular",
     desc: "Regular sized shawarma",
     price: "KES 450",
-    img: "/menu/food/starters/shawarma-r.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "soup",
@@ -2862,7 +2862,7 @@ export const menuData: MenuItem[] = [
     title: "Soup",
     desc: "Hot soup",
     price: "KES 60",
-    img: "/menu/food/starters/soup.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "spaghetti-minced-meat",
@@ -2871,7 +2871,7 @@ export const menuData: MenuItem[] = [
     title: "Spaghetti Minced Meat",
     desc: "Spaghetti with minced meat",
     price: "KES 450",
-    img: "/menu/food/starters/spaghetti-minced-meat.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "spaghetti-minji",
@@ -2880,7 +2880,7 @@ export const menuData: MenuItem[] = [
     title: "Spaghetti Minji",
     desc: "Spaghetti with minced meat",
     price: "KES 350",
-    img: "/menu/food/starters/spaghetti-minji.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "spinach",
@@ -2889,7 +2889,7 @@ export const menuData: MenuItem[] = [
     title: "Spinach",
     desc: "Cooked spinach",
     price: "KES 50",
-    img: "/menu/food/starters/spinach.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "stir-fry-spaghetti",
@@ -2898,7 +2898,7 @@ export const menuData: MenuItem[] = [
     title: "Stir Fry Spaghetti",
     desc: "Stir fried spaghetti",
     price: "KES 250",
-    img: "/menu/food/starters/stir-fry-spaghetti.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "ugali-plain",
@@ -2907,7 +2907,7 @@ export const menuData: MenuItem[] = [
     title: "Ugali Plain",
     desc: "Plain Ugali",
     price: "KES 70",
-    img: "/menu/food/starters/ugali-plain.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "ugali-vegetable",
@@ -2916,7 +2916,7 @@ export const menuData: MenuItem[] = [
     title: "Ugali Vegetable",
     desc: "Ugali with vegetable",
     price: "KES 150",
-    img: "/menu/food/starters/ugali-vegetable.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "vegetable-rice",
@@ -2925,7 +2925,7 @@ export const menuData: MenuItem[] = [
     title: "Vegetable Rice",
     desc: "Vegetable rice",
     price: "KES 350",
-    img: "/menu/food/starters/vegetable-rice.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bolognese-pasta-full",
@@ -2934,7 +2934,7 @@ export const menuData: MenuItem[] = [
     title: "Bolognese Pasta Full",
     desc: "Full plate bolognese pasta",
     price: "KES 450",
-    img: "/menu/food/starters/bolognese-pasta-full.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
   {
     id: "bolognese-pasta-half",
@@ -2943,7 +2943,7 @@ export const menuData: MenuItem[] = [
     title: "Bolognese Pasta Half",
     desc: "Half plate bolognese pasta",
     price: "KES 300",
-    img: "/menu/food/starters/bolognese-pasta-half.png"
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
   },
 ];
 

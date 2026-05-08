@@ -37,7 +37,8 @@ const coffeeTableRows = [
     desc: "Classic espresso shots",
     single: findDrinkPrice("Espresso Small"),
     double: findDrinkPrice("Espresso"),
-    iced: findDrinkPrice("Iced Espresso")
+    iced: findDrinkPrice("Iced Espresso"),
+    image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Americano",
@@ -45,59 +46,69 @@ const coffeeTableRows = [
     single: findDrinkPrice("Americano Small"),
     double: findDrinkPrice("Americano"),
     iced: findDrinkPrice("Iced Americano"),
-    badge: "Popular"
+    badge: "Popular",
+    image: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Cappuccino",
     desc: "Creamy cappuccino",
     single: findDrinkPrice("Cappuccino Small"),
     double: findDrinkPrice("Cappuccino"),
-    iced: findDrinkPrice("Iced Cappuccino")
+    iced: findDrinkPrice("Iced Cappuccino"),
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Latte",
     desc: "Smooth milk latte",
     single: findDrinkPrice("Latte Small"),
     double: findDrinkPrice("Latte"),
-    iced: findDrinkPrice("Iced Latte")
+    iced: findDrinkPrice("Iced Latte"),
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Mocha",
     desc: "Chocolate coffee drink",
     single: findDrinkPrice("Mocha Small"),
     double: findDrinkPrice("Mocha"),
-    iced: findDrinkPrice("Iced Mocha")
+    iced: findDrinkPrice("Iced Mocha"),
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Decaf Cappuccino",
     desc: "Caffeine-free cappuccino",
     single: findDrinkPrice("Decaf Cappuccino Small"),
-    double: findDrinkPrice("Decaf Cappuccino")
+    double: findDrinkPrice("Decaf Cappuccino"),
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Decaf Latte",
     desc: "Caffeine-free latte",
-    single: findDrinkPrice("Decaf Latte")
+    single: findDrinkPrice("Decaf Latte"),
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Macchiato",
     desc: "Espresso with a splash of milk",
-    single: findDrinkPrice("Macchiato")
+    single: findDrinkPrice("Macchiato"),
+    image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "Black Coffee",
     desc: "Simple black coffee",
-    single: findDrinkPrice("Black Coffee")
+    single: findDrinkPrice("Black Coffee"),
+    image: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "White Coffee",
     desc: "Smooth coffee with milk",
-    single: findDrinkPrice("White Coffee")
+    single: findDrinkPrice("White Coffee"),
+    image: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
     title: "White Decaf",
     desc: "Decaf coffee with milk",
-    single: findDrinkPrice("White Decaf")
+    single: findDrinkPrice("White Decaf"),
+    image: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   }
 ];
 
@@ -167,7 +178,7 @@ export default function DrinksMenuPage() {
             <DrinkMenuTable
               title="Hot Coffee Menu"
               subtitle="A compact coffee price table for popular hot brews."
-              note="Images can be added later once the coffee photography is available."
+              note="Each coffee drink shows a visual preview with pricing for single, double, and iced options."
               rows={coffeeTableRows}
             />
           ) : (

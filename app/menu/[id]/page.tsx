@@ -2,6 +2,7 @@
 
 import { useState, use } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { menuData } from "@/data/menuDataComplete";
 import { sendOrderEmail } from "@/actions/emails";
 
@@ -106,8 +107,15 @@ export default function FoodDetailPage({ params }: Props) {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Food Image */}
             <div className="relative">
-              <div className="aspect-square bg-white rounded-2xl shadow-xl overflow-hidden">
-                <img src={food.img} alt={food.title} className="w-full h-full object-cover" />
+              <div className="aspect-square bg-white rounded-2xl shadow-xl overflow-hidden relative">
+                <Image
+                  src={food.img}
+                  alt={food.title}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               {food.badge && (
                 <div className="absolute top-6 right-6 bg-orange text-white px-4 py-2 rounded-full font-bold text-sm">
@@ -247,25 +255,30 @@ export default function FoodDetailPage({ params }: Props) {
             {menuData
               .filter((item) => item.cat === food.cat && item.title !== food.title)
               .slice(0, 3)
-              .map((item, idx) => (
-                <Link
-                  key={idx}
-                  href={`/menu/${item.id || item.title.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all overflow-hidden"
-                >
-                  <div className="aspect-square bg-gray-200 overflow-hidden">
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-bold text-dark-brown mb-2 group-hover:text-orange transition">{item.title}</h3>
-                    <p className="text-lg font-bold text-orange">{item.price}</p>
-                  </div>
-                </Link>
-              ))}
+              .map((item, idx) => {
+                const itemId = item.id || item.title.toLowerCase().replace(/\s+/g, "-");
+                return (
+                  <Link
+                    key={idx}
+                    href={`/menu/${itemId}`}
+                    className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all overflow-hidden"
+                  >
+                    <div className="aspect-square bg-gray-200 overflow-hidden relative">
+                      <Image
+                        src={item.img}
+                        alt={item.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-bold text-dark-brown mb-2 group-hover:text-orange transition">{item.title}</h3>
+                      <p className="text-lg font-bold text-orange">{item.price}</p>
+                    </div>
+                  </Link>
+                );
+              })}
           </div>
         </div>
       </div>

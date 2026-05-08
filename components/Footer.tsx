@@ -4,16 +4,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
-  const hours = [
-    { day: "Monday", time: "7AM – 10PM" },
-    { day: "Tuesday", time: "7AM – 10PM" },
-    { day: "Wednesday", time: "7AM – 10PM" },
-    { day: "Thursday", time: "7AM – 10PM" },
-    { day: "Friday", time: "7AM – 11PM" },
-    { day: "Saturday", time: "8AM – 11PM" },
-    { day: "Sunday", time: "8AM – 10PM" },
-  ];
-
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const paymentMethods = [

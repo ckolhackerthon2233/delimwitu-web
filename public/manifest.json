@@ -1,0 +1,26 @@
+{
+  "name": "Delimwitu Cafe",
+  "short_name": "Delimwitu",
+  "description": "Nairobi's Premium Coffee & Food Destination",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFAF5",
+  "theme_color": "#ea580c",
+  "orientation": "portrait-primary",
+  "categories": ["food", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface DrinkMenuTableRow {
   title: string;
   desc?: string;
@@ -7,6 +9,7 @@ interface DrinkMenuTableRow {
   double?: string;
   iced?: string;
   badge?: string;
+  image?: string;
 }
 
 interface DrinkMenuTableProps {
@@ -35,6 +38,7 @@ export default function DrinkMenuTable({ rows, title, subtitle, note }: DrinkMen
             <table className="w-full border-separate border-spacing-0 text-left">
               <thead>
                 <tr className="bg-slate-50 text-sm font-semibold uppercase tracking-[0.15em] text-slate-700">
+                  <th className="px-5 py-4">Image</th>
                   <th className="px-5 py-4">Coffee</th>
                   <th className="px-5 py-4">Single</th>
                   <th className="px-5 py-4">Double</th>
@@ -44,6 +48,21 @@ export default function DrinkMenuTable({ rows, title, subtitle, note }: DrinkMen
               <tbody>
                 {rows.map((row) => (
                   <tr key={row.title} className="border-t border-slate-200 hover:bg-slate-50 transition-colors duration-200">
+                    <td className="px-5 py-5 align-middle">
+                      {row.image ? (
+                        <div className="relative h-16 w-16 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
+                          <Image
+                            src={row.image}
+                            alt={row.title}
+                            fill
+                            className="object-cover"
+                            sizes="64px"
+                          />
+                        </div>
+                      ) : (
+                        <div className="h-16 w-16 rounded-lg bg-gray-100 flex items-center justify-center text-xl">☕</div>
+                      )}
+                    </td>
                     <td className="px-5 py-5 align-top">
                       <div className="flex items-start gap-2">
                         <span className="text-base font-semibold text-dark-brown">{row.title}</span>
@@ -76,7 +95,7 @@ export default function DrinkMenuTable({ rows, title, subtitle, note }: DrinkMen
                 This section groups our coffee choices into a clean menu table. Single, double, and iced prices are shown side by side so customers can compare faster.
               </p>
               <p>
-                Use this format for busy drink categories where there are many item variants. Images can be added later when the specific drink photos are downloaded.
+                Coffee images are displayed alongside each item, making it easy for customers to identify their favorite drink at a glance.
               </p>
               {note ? <p className="rounded-2xl bg-white p-4 text-sm text-slate-600 border border-slate-200">{note}</p> : null}
             </div>

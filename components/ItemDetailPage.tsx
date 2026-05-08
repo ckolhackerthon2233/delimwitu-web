@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import { MenuItem } from "@/types";
 import { menuData } from "@/data/menuDataComplete";
 import OrderForm from "@/components/OrderForm";
@@ -16,22 +17,9 @@ interface ItemDetailPageProps {
 /* ── Lazy image with shimmer skeleton ─────────────────────────────── */
 function LazyImage({ src, alt }: { src: string; alt: string }) {
   const [loaded, setLoaded] = useState(false);
-  const [inView, setInView] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setInView(true); observer.disconnect(); } },
-      { threshold: 0.1 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
 
   return (
-    <div ref={ref} className="relative w-full h-full">
+    <div className="relative w-full h-full">
       {/* Shimmer skeleton */}
       {!loaded && (
         <div className="absolute inset-0 rounded-3xl overflow-hidden">
@@ -44,18 +32,17 @@ function LazyImage({ src, alt }: { src: string; alt: string }) {
           </div>
         </div>
       )}
-      {inView && (
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          decoding="async"
-          onLoad={() => setLoaded(true)}
-          className={`w-full h-full object-cover rounded-3xl transition-all duration-700 ease-out ${
-            loaded ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-105 blur-sm"
-          }`}
-        />
-      )}
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className={`object-cover rounded-3xl transition-all duration-700 ease-out ${
+          loaded ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-105 blur-sm"
+        }`}
+        onLoad={() => setLoaded(true)}
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority={false}
+      />
     </div>
   );
 }

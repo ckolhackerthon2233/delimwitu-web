@@ -66,7 +66,10 @@ export const metadata: Metadata = {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
     "mobile-web-app-capable": "yes",
-    "theme-color": "#e5e5e5",
+    "theme-color": "#ea580c",
+    "color-scheme": "light",
+    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+    "format-detection": "telephone=no",
     "contact": "contact@arnobmahmud.com",
   },
   creator: "Arnob Mahmud",
@@ -118,6 +121,10 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
+  alternates: {
+    canonical: "https://restaurant-wfood.vercel.app",
+  },
+  manifest: "/manifest.json",
   category: "restaurant",
 };
 

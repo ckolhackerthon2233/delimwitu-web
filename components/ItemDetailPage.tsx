@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { MenuItem } from "@/types";
-import { menuData } from "@/data/menuData";
+import { menuData } from "@/data/menuDataComplete";
 import OrderForm from "@/components/OrderForm";
 
 interface ItemDetailPageProps {

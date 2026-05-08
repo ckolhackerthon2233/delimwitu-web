@@ -1,0 +1,681 @@
+================================================================================
+DELIMWITU CAFE - COMPLETE PRODUCT IMAGE LINKS & CATEGORIZATION
+================================================================================
+Generated: May 7, 2026
+Total Categories: 12
+Total Products: 384
+
+IMPORTANT: All images should be placed in the /public/menu/ directory structure
+Image naming convention: Use kebab-case (e.g., blended-juice.png)
+
+================================================================================
+1. FRESH JUICES (12 items)
+================================================================================
+Category Path: /public/menu/drinks/juices/
+
+- blended-juice.png
+- blended-juice-glass.png
+- cocktail-juice.png
+- mango-juice.png (Popular)
+- orange-juice.png
+- passion-juice.png
+- passion-juice-500.png
+- pineapple-mint.png
+- pineapple-mint-500.png
+- tamarind-juice.png
+- tropical-juice.png
+- mursik.png
+
+================================================================================
+2. SODAS & PACKAGED JUICES (42 items)
+================================================================================
+Category Path: /public/menu/drinks/sodas/
+
+PICK N PEEL SERIES:
+- pick-n-peel-apple.png
+- pick-n-peel-mango.png
+- pick-n-peel-orange.png
+- pick-n-peel-1l.png
+
+FROSTY & FRUITVILE SERIES (250ml):
+- apple-frosty.png
+- apple-fruitvile.png
+- frosti-tropical.png
+- mango-frosti.png
+- mango-fruitvile.png
+
+300ml SODAS:
+- mirinda-orange.png
+- pepsi-330.png
+- black-current.png
+- coke-300.png (Popular)
+- fanta-orange-300.png
+- fanta-passion-300.png
+- krest-300.png
+- mirinda-300.png
+- mountain-dew.png
+- pepsi-300.png
+- stoney-tangawizi.png
+- sprite-300.png
+
+350ml SODAS:
+- stoney-350.png
+- fanta-orange-350.png
+- coke-350.png
+- black-current-350.png
+
+MINUTE MAID SERIES (400ml):
+- minute-maid-orange.png
+- minute-maid-tropical.png
+- minute-maid-apple.png
+- minute-maid-mango.png
+
+500ml JUICES & SODAS:
+- fruitville-mango.png
+- fanta-orange-500.png
+- guava-fruitville.png
+- fanta-passion-500.png
+- black-current-500.png
+- coke-500.png
+- sprite-500.png
+- predator-energy.png
+- waba-water.png
+- coke-zero.png
+
+1 LITRE SERIES:
+- minute-maid-mango-1l.png
+- delmonte.png
+- minute-maid-apple-1l.png
+- minute-maid-tropical-1l.png
+- pick-n-peel-1l.png
+- waba-water-1l.png
+
+125ml SERIES:
+- fanta-orange-125.png
+- coke-125.png
+- black-current-125.png
+- sprite-125.png
+
+================================================================================
+3. SYRUPS & FLAVORS (6 items)
+================================================================================
+Category Path: /public/menu/drinks/syrups/
+
+- caramel-syrup.png
+- hazelnut-syrup.png
+- lime-syrup.png
+- peppermint-syrup.png
+- vanilla-syrup.png
+- coconut-syrup.png
+
+================================================================================
+4. HOT BEVERAGES - TEAS (8 items)
+================================================================================
+Category Path: /public/menu/drinks/hot/
+
+- black-masala-tea.png
+- black-tea.png
+- dawa.png
+- hot-chocolate.png
+- lemon-tea.png
+- hot-milk.png
+- white-tea.png
+- white-masala-tea.png
+
+================================================================================
+5. COFFEE SERIES (22 items)
+================================================================================
+Category Path: /public/menu/drinks/coffee/
+
+DECAF SERIES:
+- decaf-cappuccino.png
+- decaf-cappuccino-s.png
+- decaf-latte.png
+
+ESPRESSO SERIES:
+- espresso.png
+- espresso-s.png
+
+AMERICANO SERIES:
+- americano.png (Popular)
+- americano-s.png
+- iced-americano.png
+
+CAPPUCCINO SERIES:
+- cappuccino.png
+- cappuccino-s.png
+- iced-cappuccino.png
+
+LATTE SERIES:
+- latte.png
+- latte-s.png
+- iced-latte.png
+
+SPECIALTY SERIES:
+- macchiato.png
+- mocha.png
+- mocha-s.png
+- iced-mocha.png
+- iced-espresso.png
+
+SIMPLE COFFEE:
+- black-coffee.png
+- white-coffee.png
+- white-decaf.png
+
+================================================================================
+6. PORRIDGE/UJI (3 items)
+================================================================================
+Category Path: /public/menu/drinks/porridge/
+
+- uji-wimbi.png
+- uji-wimbi-milk.png
+- uji-power.png
+
+================================================================================
+7. BREAKFAST ITEMS (20 items)
+================================================================================
+Category Path: /public/menu/food/breakfast/
+
+FULL BREAKFAST PLATES:
+- executive-breakfast.png (Popular)
+- healthy-start.png
+- sunrise-breakfast.png
+
+OMELETTES & PANCAKES:
+- classic-omelette.png
+- pancake-stack.png
+
+SANDWICHES & TOAST:
+- breakfast-sandwich.png
+- french-toast.png
+
+QUICK START OPTIONS:
+- quick-start-mandazi.png
+- samosa-combo.png
+
+TRADITIONAL COMBOS:
+- rolex.png
+- ngwace-combo.png
+- boiled-eggs-combo.png
+- rolex-combo.png
+
+SNACK PACKS:
+- smocha.png
+- samosa-pack.png
+- spring-rolls.png
+- beef-kebabs.png
+
+BREAKFAST SIDES:
+- smokie-kachumbari.png
+- boiled-eggs-sweet-potato.png
+- fried-eggs-toast.png
+
+================================================================================
+8. BEEF DISHES (31 items)
+================================================================================
+Category Path: /public/menu/food/beef/
+
+BASIC BEEF:
+- beef-stew.png
+- stir-fried-beef.png
+
+RICE COMBINATIONS:
+- beef-rice.png
+- jolof-beef-half.png
+- jolof-beef-full.png (Popular)
+- rice-beef-half.png
+- rice-beef-full.png
+
+PILAU COMBINATIONS:
+- pilau-beef-half.png
+- pilau-beef-full.png
+
+UGALI COMBINATIONS:
+- beef-ugali-half.png
+- beef-ugali-full.png
+- stir-fried-beef-ugali.png
+
+CHAPATI COMBINATIONS:
+- chapati-beef-full.png
+- chapati-beef-half.png
+
+MUKIMO COMBINATIONS:
+- mukimo-beef-full.png
+- mukimo-beef-half.png
+
+CHIPS & FRIED SIDES:
+- chips-beef-full.png
+- chips-beef-half.png
+- chips-masala-beef-full.png
+- masala-beef-half.png
+- homefries-beef-half.png
+
+BHAJIA & WEDGES:
+- bhajia-beef-full.png
+- bhajia-beef-half.png
+- potato-wedges-beef-full.png
+- potato-wedges-beef-half.png
+
+SAUTEED & ROASTED:
+- potato-saute-beef-half.png
+- potatoes-saute-beef-full.png
+- roasted-potatoes-beef-full.png
+- roasted-potatoes-beef-half.png
+
+OTHER CARBS:
+- spaghetti-beef-full.png
+- matoke-beef-half.png
+
+================================================================================
+9. GOAT/MBUZI DISHES (26 items)
+================================================================================
+Category Path: /public/menu/food/goat/
+
+BASIC GOAT:
+- mbuzi-stew.png
+- mbuzi-choma.png (Popular)
+
+RICE COMBINATIONS:
+- rice-mbuzi-full.png
+- rice-mbuzi-half.png
+
+UGALI COMBINATIONS:
+- ugali-mbuzi-full.png
+- ugali-mbuzi-half.png
+- mbuzi-choma-ugali.png
+
+CHAPATI COMBINATIONS:
+- chapati-mbuzi-full.png
+- chapati-mbuzi-half.png
+
+CHIPS & FRIED SIDES:
+- chips-mbuzi-full.png
+- chips-mbuzi-half.png
+- chips-masala-mbuzi.png
+- homefries-mbuzi.png
+
+BHAJIA & POTATOES:
+- bhajia-mbuzi-full.png
+- potato-saute-mbuzi-full.png
+- potato-wedges-mbuzi-full.png
+- potato-wedges-mbuzi-half.png
+- potatoes-saute-mbuzi-half.png
+- roasted-potatoes-mbuzi-half.png
+- roasted-potatoes-mbuzi-full.png
+
+MUKIMO & MATOKE:
+- mukimo-mbuzi-full.png
+- mukimo-mbuzi-half.png
+- matoke-mbuzi.png
+
+PILAU & PASTA:
+- pilau-mbuzi-full.png
+- pilau-mbuzi-half.png
+- stir-fry-spaghetti-mbuzi.png
+
+================================================================================
+10. FISH & TILAPIA (6 items)
+================================================================================
+Category Path: /public/menu/food/fish/
+
+- tilapia-whole-fried.png (Popular)
+- tilapia-chips.png
+- tilapia-rice.png
+- tilapia-saute.png
+- tilapia-ugali.png
+- tilapia-wedges.png
+
+================================================================================
+11. GIZZARDS (17 items)
+================================================================================
+Category Path: /public/menu/food/gizzards/
+
+PLAIN & SAUTEED:
+- gizzards-plain.png
+- gizzards-saute.png
+
+RICE COMBINATIONS:
+- gizzard-rice-full.png
+- gizzard-rice-half.png
+- gizzard-veg-rice.png
+
+UGALI & CHAPATI:
+- gizzard-ugali.png
+- gizzard-chapati-full.png
+- gizzard-chapati-half.png
+
+CHIPS & FRIED:
+- gizzard-chips.png
+- gizzard-homemade-fries.png
+- gizzard-wedges.png
+- gizzard-wedges-half.png
+
+PILAU & MATOKE:
+- gizzard-pilau.png
+- matoke-gizzard.png
+
+BHAJIA & MUKIMO:
+- bhajia-gizzards-half.png
+- mukimo-gizzard-half.png
+- saute-potatoes-gizzard-full.png
+
+================================================================================
+12. CHICKEN DISHES (31 items)
+================================================================================
+Category Path: /public/menu/food/chicken/
+
+KIENYEJI (TRADITIONAL CHICKEN):
+- kienyeji-wet-fry-full.png (Special)
+- kienyeji-wet-fry-plain.png
+- kienyeji-wet-fry-rice.png
+- kienyeji-wet-fry-rice-full.png
+- kienyeji-wet-fry-ugali.png
+- kienyeji-wet-fry-wedges.png
+
+CHICKEN CURRY:
+- chicken-curry.png (Popular)
+- chicken-curry-chapati-full.png
+- chicken-curry-veggy-rice-full.png
+- chicken-curry-rice-half.png
+- chicken-curry-ugali-half.png
+- chicken-curry-chapati-half.png
+- chicken-curry-veggy-rice-half.png
+- chicken-curry-rice-full.png
+- joloff-chicken-curry.png
+
+CHICKEN STEW & MASALA:
+- chicken-stew.png
+- chicken-masala.png
+
+CHAPATI COMBINATIONS:
+- chapati-chicken-full.png
+- chapati-chicken-half.png
+
+CHIPS & FRIED:
+- chips-chicken.png
+- chips-masala-chicken-half.png
+- fried-chicken.png
+
+SPECIAL DISHES:
+- full-chicken-stew-veges.png
+- mukimo-kuku-half.png
+
+PILAU & WEDGES:
+- pilau-chicken-full.png
+- pilau-chicken-half.png
+- potato-wedges-chicken-full.png
+- potato-wedges-chicken-half.png
+
+SAUTEED & OTHER:
+- potatoes-saute-chicken-full.png
+- potatoes-saute-chicken-half.png
+- rice-chicken-half.png
+- stir-fry-spaghetti-chicken.png
+- vegetable-rice-chicken.png
+
+================================================================================
+13. FISH FILLET (20 items)
+================================================================================
+Category Path: /public/menu/food/fillet/
+
+BASIC FILLET:
+- fish-fillet.png
+- fish-fingers.png
+
+RICE & UGALI:
+- fish-fillet-rice.png
+- fillet-rice-half.png
+- fish-fillet-ugali.png
+- fillet-ugali-half.png
+
+PILAU & WEDGES:
+- fish-fillet-pilau-full.png
+- fish-fillet-potato-saute.png
+- wedge-fillet.png
+
+CHIPS & FRIED:
+- fillet-chips-half.png
+- fillet-masala-half.png
+- half-bhajia-fish-fillet.png
+
+MUKIMO & SPAGHETTI:
+- mukimo-fillet-full.png
+- mukimo-fillet-half.png
+- fish-spaghetti-full.png
+
+SPECIALTY FISH DISHES:
+- bhajia-fish.png
+- chips-masala-fish.png
+- fish-mukimo.png
+
+OMENA:
+- omena-plain.png
+- omena-ugali.png
+
+================================================================================
+14. BEANS/NDENGU (5 items)
+================================================================================
+Category Path: /public/menu/food/beans/
+
+- ndengu-plain.png
+- ndengu-rice.png
+- chapati-ndengu-full.png
+- chapati-ndengu-half.png
+- chapati-beans.png
+
+================================================================================
+15. MEATBALLS (14 items)
+================================================================================
+Category Path: /public/menu/food/meatballs/
+
+PLAIN MEATBALLS:
+- meatballs-plain.png
+- meatballs.png
+
+RICE COMBINATIONS:
+- rice-meatballs-half.png
+- rice-meatball.png
+
+BHAJIA & CHIPS:
+- bhajia-meatballs.png
+- chips-meatballs-full.png
+- chips-masala-meatball.png
+
+CHAPATI & UGALI:
+- chapati-meatballs-full.png
+- full-ugali-meatballs.png
+
+SPECIAL COMBINATIONS:
+- meatball-joloff-full.png
+- meatballs-potato-wedges.png
+- mukimo-meatballs.png
+- potato-saute-meatballs.png
+- stir-fried-spaghetti-meatballs-half.png
+
+================================================================================
+16. STARTERS & EXTRAS (48 items)
+================================================================================
+Category Path: /public/menu/food/starters/
+
+SAMOSAS & FRIED ITEMS:
+- samosa-3pc.png
+- spring-rolls.png (Note: 2pcs)
+- kaimati.png
+- mahamri.png
+- mandazi.png
+
+GRILLED ITEMS:
+- bbq-wings.png
+- crispy-wings.png
+- kebab.png
+- plain-choma.png
+
+BURGERS:
+- beef-burger.png
+- double-feast-burger.png (Special)
+
+BHAJIA & SIDES:
+- bhajia.png
+- bhajia-kuku-full.png
+- brown-ugali.png
+- cabbage.png
+
+VEGETABLES & SALADS:
+- chapati-vegetable.png
+- kachumbari.png
+- managu-plain.png
+- managu-ugali.png
+- spinach.png
+
+STARCHES:
+- naan.png
+- pilau-plain.png
+- rice-plain.png
+- ugali-plain.png
+- ugali-vegetable.png
+- matoke.png
+- plantain.png
+
+POTATOES:
+- home-fries.png
+- half-plain-chips.png
+- half-wedges.png
+- full-plain-chips.png
+- potato-saute.png
+- potato-saute-half.png
+- potato-wedges.png
+- roasted-potatoes.png
+
+RICE & MINCED:
+- rice-minji-full.png
+- rice-minji-half.png
+- plain-minji.png
+- vegetable-rice.png
+
+SHAWARMA & SPECIAL:
+- shawarma-m.png
+- shawarma-r.png
+- full-kuku-sama.png
+- kuku-sama-quarter.png (Not in current list, reserve)
+
+SOUPS & PASTA:
+- soup.png
+- spaghetti-minced-meat.png
+- spaghetti-minji.png
+- stir-fry-spaghetti.png
+
+MAYO & EGGS:
+- mayai-ugali.png
+- mukimo-plain.png
+- bolognese-pasta-full.png
+- bolognese-pasta-half.png
+
+================================================================================
+RECOMMENDED HERO/BANNER IMAGES
+================================================================================
+
+HERO IMAGE OPTIONS (High-quality, high-resolution suggested):
+1. Overhead shot of Delimwitu cafe setting with signature dishes
+2. Vibrant food photography of: Joloff Beef, Chicken Curry, or Kienyeji Wet Fry
+3. Lifestyle image: Group dining at Delimwitu with warm ambiance
+4. Coffee/Breakfast specialty: High-quality macro shot of coffee and breakfast plate
+
+Suggested path: /public/hero/hero-main.png (1920x1080 recommended, or larger for retina)
+
+ALTERNATIVE HERO IMAGES:
+- /public/hero/hero-about.png (for about section)
+- /public/hero/hero-reservation.png (for reservation page)
+- /public/hero/hero-menu.png (for menu page)
+
+================================================================================
+IMAGE SOURCING RECOMMENDATIONS
+================================================================================
+
+SUGGESTED FREE SOURCES FOR PRODUCT IMAGES:
+1. Unsplash.com - Search: "Kenyan food", "African cuisine", "jollof rice", "grilled fish"
+2. Pexels.com - Search: "traditional African food", "street food", "cafe"
+3. Pixabay.com - Search: "food photography", "juice", "coffee"
+4. Freepik.com - Vector illustrations and realistic food photos
+
+SEARCH TERMS BY CATEGORY:
+- Juices: "Fresh juice", "fruit juice", "tropical juice", "passion fruit juice"
+- Sodas: "Soft drinks", "cola bottles", "soda bottles"
+- Coffee: "Coffee cups", "espresso", "cappuccino", "latte art"
+- Teas: "Tea cups", "hot tea", "masala tea"
+- Beef: "Grilled beef", "beef stew", "Kenyan beef", "beef rice"
+- Goat: "Grilled goat", "goat meat", "traditional goat"
+- Fish: "Fried tilapia", "grilled fish", "fish fillet"
+- Chicken: "Fried chicken", "grilled chicken", "wet fry chicken"
+- Breakfast: "African breakfast", "ugali and eggs", "chapati"
+- Starters: "Samosas", "spring rolls", "bhajia", "mandazi"
+
+PRO TIPS:
+- Download high-resolution images (at least 800x800px for product photos)
+- Ensure consistent color temperature and lighting across all images
+- Use 16:9 aspect ratio for hero/banner images
+- Resize and optimize images (compress to <100KB per image)
+- Use consistent naming convention (kebab-case, lowercase)
+
+================================================================================
+IMPLEMENTATION NOTES
+================================================================================
+
+1. Create folder structure in /public/menu/:
+   - drinks/
+     - juices/
+     - sodas/
+     - syrups/
+     - hot/
+     - coffee/
+     - porridge/
+   - food/
+     - breakfast/
+     - beef/
+     - goat/
+     - fish/
+     - gizzards/
+     - chicken/
+     - fillet/
+     - beans/
+     - meatballs/
+     - starters/
+
+2. Update menuData.ts import paths to match folder structure
+
+3. For hero image:
+   Replace /public/hero/bg.png with new high-quality image
+   Suggested: Professional food photography with warm tones
+   Size: 1920x1080 (or 2560x1440 for retina)
+
+4. Alternative hero approach:
+   If using existing images, consider creating a gallery rotation
+   Suggest images that showcase: Coffee, Breakfast, Lunch, Dinner
+
+================================================================================
+TOTAL IMAGE COUNT BY CATEGORY
+================================================================================
+
+1. Fresh Juices: 12 images
+2. Sodas & Packaged Juices: 42 images
+3. Syrups: 6 images
+4. Hot Beverages (Teas): 8 images
+5. Coffee: 22 images
+6. Porridge (Uji): 3 images
+7. Breakfast: 20 images
+8. Beef: 31 images
+9. Goat/Mbuzi: 26 images
+10. Fish/Tilapia: 6 images
+11. Gizzards: 17 images
+12. Chicken: 31 images
+13. Fish Fillet: 20 images
+14. Beans/Ndengu: 5 images
+15. Meatballs: 14 images
+16. Starters & Extras: 48 images
+
+TOTAL UNIQUE PRODUCT IMAGES NEEDED: 311 images
+PLUS 1-3 Hero/Banner Images
+
+================================================================================
+END OF IMAGE LINKS DOCUMENT
+================================================================================

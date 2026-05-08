@@ -470,3 +470,12 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ---
 
+
+
+today designinh the homepage refresh 
+creating the new menu fully with good refrence and quality
+designing nd refactoring the other pages to functionality to build the resented website in the market 
+creating the correct forms and connecting the social links and the delimwitu ordering page 
+resenting booking page for the clients to be more accessed nd resilient to the website 
+act as an advertising agent for the system build and entity of the company as a whole for it to be correctly embeded to the system 
+adding the payment images and the emails for the orders adding whatsapp too in it 

@@ -7,10 +7,9 @@ export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const paymentMethods = [
-    { name: "M-PESA", src: "/payment-icons/mpesa.svg", width: 96, height: 32 },
-    { name: "Airtel Money", src: "/payment-icons/airtel-money.svg", width: 120, height: 32 },
-    { name: "VISA", src: "/payment-icons/visa.svg", width: 88, height: 32 },
-    { name: "Paystack", src: "/payment-icons/paystack.svg", width: 120, height: 32 },
+    { name: "M-PESA", src: "/mpesa.jpeg" },
+    { name: "Airtel Money", src: "/airtel%20money.jpeg" },
+    { name: "VISA", src: "/visa.jpeg" },
   ];
 
   useEffect(() => {
@@ -182,13 +181,13 @@ export default function Footer() {
               {paymentMethods.map((method) => (
                 <div
                   key={method.name}
-                  className="rounded-full border border-white/10 bg-white/10 p-2 flex items-center justify-center"
+                  className="relative h-16 w-32"
                 >
                   <Image
                     src={method.src}
                     alt={method.name}
-                    width={method.width}
-                    height={method.height}
+                    fill
+                    className={`object-contain ${method.name === "VISA" ? "scale-125" : ""}`}
                     unoptimized
                   />
                 </div>

@@ -2,94 +2,126 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function About() {
-  const features = [
-    "Locally sourced ingredients",
-    "Zero-waste kitchen",
-    "Seasonal rotating menu",
-    "Private event catering",
-    "Vegan & allergy-friendly",
-    "Live music on weekends",
-  ];
-
-  const [smallImgSrc, setSmallImgSrc] = useState("/about/img.png");
-  const [largeImgSrc, setLargeImgSrc] = useState("/about/img-2.png");
-
   return (
-    <section id="about" className="py-24 max-md:py-16">
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-lg:gap-12 max-md:gap-8">
-          {/* Images Section */}
-          <div className="grid grid-cols-2 gap-6 max-md:gap-4">
-            {/* Large image */}
-            <div className="col-span-2 lg:col-span-1 lg:row-span-2 h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-md">
+    <section className="bg-cream">
+      <div className="max-w-7xl mx-auto px-6 py-24 space-y-20">
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] items-center">
+          <div className="space-y-6">
+            <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange mb-4">
+              Our Story
+            </span>
+            <h2 className="text-5xl font-black text-dark-brown max-w-2xl leading-tight md:text-6xl">
+              Delimwitu Market is more than a shop — it’s a culinary journey.
+            </h2>
+            <p className="text-base leading-relaxed text-dark-brown/80 max-w-2xl">
+              Delimwitu Market brings together inspired food, fresh produce,
+              beautiful blooms and everyday essentials under one welcoming roof.
+              From thoughtfully curated pantry goods to ready meals and live cooking
+              demos, every visit is designed to be flavorful, convenient, and full of
+              warmth.
+            </p>
+            <Link
+              href="/menu"
+              className="inline-flex items-center gap-2 rounded-full bg-orange px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-orange-hover"
+            >
+              Discover More
+            </Link>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="relative h-72 overflow-hidden rounded-[2rem] shadow-xl sm:h-[420px]">
               <Image
-                src={largeImgSrc}
-                alt="Cafe interior"
+                src="/about/img.png"
+                alt="Delimwitu market interior"
                 fill
                 className="object-cover"
-                onError={() => setLargeImgSrc("/hero/bg.png")}
               />
             </div>
-
-            {/* Small image */}
-            <div className="h-48 lg:h-56 rounded-lg overflow-hidden shadow-md relative">
+            <div className="relative h-72 overflow-hidden rounded-[2rem] shadow-xl sm:h-[420px]">
               <Image
-                src={smallImgSrc}
-                alt="Coffee preparation"
+                src="/about/img-2.svg"
+                alt="Fresh ingredients and bakery display"
                 fill
                 className="object-cover"
-                onError={() => setSmallImgSrc("/hero/bg.png")}
               />
             </div>
+          </div>
+        </div>
 
-            {/* Badge */}
-            <div className="flex justify-center items-center bg-orange text-white rounded-lg shadow-md col-span-1 h-32 lg:h-auto">
-              <div className="text-center">
-                <strong className="font-playfair text-3xl font-black block">5+</strong>
-                <span className="text-xs font-semibold uppercase tracking-wider">
-                  Years Serving
-                </span>
+        <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
+          <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
+            <Image
+              src="/about/img.png"
+              alt="Team at Delimwitu"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="space-y-6 rounded-[32px] bg-white p-10 shadow-xl">
+            <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange">
+              Our People
+            </span>
+            <h3 className="text-4xl font-bold text-dark-brown">
+              Built on family, passion and community.
+            </h3>
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              Delimwitu is a family of people who grow with us, care for one
+              another, and take pride in every moment they serve. Our leadership
+              is rooted in strong values, and our teams are empowered to learn,
+              excel, and create memorable experiences for every guest.
+            </p>
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              From baristas rising on stage to servers becoming managers, every
+              team member is part of what makes Delimwitu special. We celebrate
+              curiosity, craftsmanship, and a culture of support.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl bg-cream p-5">
+                <p className="text-sm uppercase tracking-[0.35em] text-sand/70">Team size</p>
+                <p className="mt-3 text-3xl font-bold text-dark-brown">190+</p>
+              </div>
+              <div className="rounded-3xl bg-cream p-5">
+                <p className="text-sm uppercase tracking-[0.35em] text-sand/70">Female leaders</p>
+                <p className="mt-3 text-3xl font-bold text-dark-brown">Majority</p>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Text Section */}
-          <div>
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">Our Story</span>
-            <h2 className="text-4xl font-bold text-dark-brown mb-6 max-md:text-3xl">Let&apos;s Talk About Delimwitu</h2>
-            <div className="h-0.75 w-15 bg-orange rounded mb-8"></div>
-
-            <p className="text-base leading-relaxed text-gray-700 mb-6">
-              Born from a deep love for rich culinary heritage,
-               Delimwitu began as a small corner café built on a 
-              simple belief: great food isn’t complicated it’s honest, 
-              fresh, and full of heart.
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] items-center">
+          <div className="space-y-6">
+            <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange">
+              Our Bakery
+            </span>
+            <h3 className="text-4xl font-bold text-dark-brown">
+              With love, passion and time-honored baking rituals.
+            </h3>
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              At the heart of Delimwitu lies a bakery dedicated to authentic,
+              artisanal breads made without additives or preservatives. We honor
+              techniques like natural fermentation, stone baking, and a starter
+              that has matured for years.
             </p>
-
-            <p className="text-base leading-relaxed text-gray-700 mb-8">
-              Today, we serve hundreds of guests daily, but our philosophy
-              remains unchanged: every plate leaving our kitchen carries the
-              same care as the very first one we made. We partner directly with
-              local farmers to ensure every ingredient is seasonal, sustainable,
-              and extraordinary.
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              Every loaf is shaped with care, baked to a golden crust, and packed
+              with flavor. It’s the kind of bread that feels like home in every bite.
             </p>
-
-            {/* Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-              {features.map((feature, idx) => (
-                <div key={idx} className="flex items-center gap-3 p-3 bg-cream rounded">
-                  <span className="w-2 h-2 rounded-full bg-orange flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-dark-brown">{feature}</span>
-                </div>
-              ))}
-            </div>
-
-            <Link href="/book-table" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-orange-hover hover:shadow-lg hover:-translate-y-0.5">
-              Reserve a Table
+            <Link
+              href="/book-table"
+              className="inline-flex items-center gap-2 rounded-full border border-orange px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-dark-brown transition hover:bg-orange/10"
+            >
+              Discover More
             </Link>
+          </div>
+          <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
+            <Image
+              src="/about/img-2.svg"
+              alt="Delimwitu bakery specialty"                
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

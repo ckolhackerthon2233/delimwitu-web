@@ -16,6 +16,13 @@ export default function Footer() {
 
   const [showScrollTop, setShowScrollTop] = useState(false);
 
+  const paymentMethods = [
+    { name: "M-PESA", src: "/payment-icons/mpesa.svg", width: 96, height: 32 },
+    { name: "Airtel Money", src: "/payment-icons/airtel-money.svg", width: 120, height: 32 },
+    { name: "VISA", src: "/payment-icons/visa.svg", width: 88, height: 32 },
+    { name: "Paystack", src: "/payment-icons/paystack.svg", width: 120, height: 32 },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -95,82 +102,114 @@ export default function Footer() {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 max-md:py-12">
+      <footer className="bg-green text-white py-16 max-md:py-12">
         <div className="px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 max-md:gap-6">
-            {/* Brand */}
-            <div className="md:col-span-2 lg:col-span-1">
-              <a href="#home" className="font-playfair text-2xl font-black italic text-dark-brown mb-4 inline-block">
-                Delimwitu
-              </a>
-              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                A café born from love and passion. We serve honest, 
-                fresh food made with ingredients you can&apos;t help but trust.
-              </p>
-              <div className="flex gap-3">
-                <a href="#" className="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center text-xs font-bold hover:bg-orange-hover transition-colors" aria-label="Instagram">
-                  IG
+          <div className="grid grid-cols-1 xl:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 xl:gap-12 mb-12">
+            <div className="space-y-6">
+              <div>
+                <a href="#home" className="font-playfair text-3xl font-black italic tracking-tight inline-block">
+                  Delimwitu
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center text-xs font-bold hover:bg-orange-hover transition-colors" aria-label="Facebook">
-                  FB
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center text-xs font-bold hover:bg-orange-hover transition-colors" aria-label="YouTube">
-                  YT
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center text-xs font-bold hover:bg-orange-hover transition-colors" aria-label="TikTok">
-                  TK
-                </a>
+                <p className="mt-3 max-w-xs text-sm text-sand/80">
+                  Café · Restaurant · Bar
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xs uppercase tracking-[0.35em] text-sand/60 mb-5 inline-block border-b border-white/15 pb-3">
+                  Keep in touch
+                </h3>
+                <ul className="space-y-3 text-sm">
+                  <li>
+                    <a href="#" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">f</span>
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">📸</span>
+                      Instagram
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            {/* Quick Links */}
             <div>
-              <h4 className="font-semibold text-dark-brown mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li><a href="#home" className="text-sm text-gray-600 hover:text-orange transition-colors">Home</a></li>
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">Our Menu</a></li>
-                <li><a href="#about" className="text-sm text-gray-600 hover:text-orange transition-colors">About Us</a></li>
-                <li><a href="#gallery" className="text-sm text-gray-600 hover:text-orange transition-colors">Gallery</a></li>
-                <li><a href="#reservation" className="text-sm text-gray-600 hover:text-orange transition-colors">Reserve</a></li>
-                <li><a href="#contact" className="text-sm text-gray-600 hover:text-orange transition-colors">Contact</a></li>
+              <h4 className="font-semibold text-white mb-5 border-b border-white/10 pb-3">Customer Service</h4>
+              <ul className="space-y-3 text-sm text-sand/80">
+                <li><a href="#" className="hover:text-white transition">Ways to order</a></li>
+                <li><a href="#" className="hover:text-white transition">Order by phone</a></li>
+                <li><a href="#" className="hover:text-white transition">Order by WhatsApp</a></li>
+                <li><a href="#" className="hover:text-white transition">Restaurant near you</a></li>
               </ul>
             </div>
 
-            {/* Menu Highlights */}
             <div>
-              <h4 className="font-semibold text-dark-brown mb-4">Menu Highlights</h4>
-              <ul className="space-y-2">
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">Swahili Breakfast</a></li>
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">Avocado Toast</a></li>
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">Coconut Curry</a></li>
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">Artisan Coffees</a></li>
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">Vegan Bowls</a></li>
-                <li><a href="#menu" className="text-sm text-gray-600 hover:text-orange transition-colors">House Desserts</a></li>
+              <h4 className="font-semibold text-white mb-5 border-b border-white/10 pb-3">Information</h4>
+              <ul className="space-y-3 text-sm text-sand/80">
+                <li><a href="#" className="hover:text-white transition">Terms & Conditions</a></li>
+                <li><a href="#" className="hover:text-white transition">Privacy Statement</a></li>
+                <li><a href="#" className="hover:text-white transition">Allergy Advice</a></li>
               </ul>
             </div>
 
-            {/* Hours */}
             <div>
-              <h4 className="font-semibold text-dark-brown mb-4">Opening Hours</h4>
-              <div className="space-y-1.5">
-                {hours.map((h, idx) => (
-                  <div key={idx} className="flex justify-between gap-4">
-                    <span className="text-xs text-gray-600">{h.day}</span>
-                    <span className="text-xs font-medium text-dark-brown">{h.time}</span>
-                  </div>
-                ))}
-              </div>
+              <h4 className="font-semibold text-white mb-5 border-b border-white/10 pb-3">About Us</h4>
+              <ul className="space-y-3 text-sm text-sand/80">
+                <li><a href="#" className="hover:text-white transition">Our story</a></li>
+                <li><a href="#" className="hover:text-white transition">Our standards</a></li>
+                <li><a href="#" className="hover:text-white transition">Health & safety measures</a></li>
+              </ul>
             </div>
           </div>
 
-          {/* Footer Bottom */}
-          <div className="border-t border-tan pt-4 flex flex-col md:flex-row justify-between items-center gap-4 text-lg text-gray-600">
-            <p className="items-center">&copy; 2026 Delimwitu Café. All rights reserved.</p>
-            <p>Made by  <a href="https://nexustechke.netlify.app" target="_blank" className="text-orange ">Vico softwares</a></p>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-8 items-end border-t border-white/10 pt-8">
+            <div className="space-y-4">
+              <p className="text-xs uppercase tracking-[0.35em] text-sand/60">Subscribe to our emails</p>
+              <p className="text-sm text-sand/80 max-w-md">
+                Stay updated with menu news, special offers, and restaurant events.
+              </p>
+            </div>
+
+            <form className="flex flex-wrap gap-3">
+              <label className="sr-only" htmlFor="footer-email">Email address</label>
+              <input
+                id="footer-email"
+                type="email"
+                placeholder="Enter your email address"
+                className="min-w-[240px] flex-1 rounded border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-sand/60 focus:border-white/40 focus:outline-none focus:ring-2 focus:ring-orange/50"
+              />
+              <button type="submit" className="inline-flex h-12 items-center justify-center rounded bg-orange px-6 text-sm font-semibold text-white hover:bg-orange-hover transition">
+                →
+              </button>
+            </form>
+          </div>
+
+          <div className="mt-12 border-t border-white/10 pt-6 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between text-sm text-sand/70">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+              {paymentMethods.map((method) => (
+                <div
+                  key={method.name}
+                  className="rounded-full border border-white/10 bg-white/10 p-2 flex items-center justify-center"
+                >
+                  <Image
+                    src={method.src}
+                    alt={method.name}
+                    width={method.width}
+                    height={method.height}
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
+            <p className="text-center sm:text-right">
+              © 2026, Artcaffè Restaurant & The Artcaffè Market are the registered trademark of Artcaffè Coffee & Bakery Limited. All Rights Reserved.
+            </p>
           </div>
         </div>
       </footer>
-
       {/* Scroll to Top Button */}
       <button
         id="scroll-top"

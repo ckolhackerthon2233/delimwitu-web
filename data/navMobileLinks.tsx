@@ -12,6 +12,6 @@ export const navMobileLinks: NavMobileLinkConfig[] = [
   { icon: <RiHomeFill />, path: "hero", name: "home", offset: 0 },
   { icon: <BiSolidFoodMenu />, path: "/menu", name: "menu", offset: 0, isExternal: true },
   { icon: <FaCalendarAlt />, path: "reservation", name: "book table", offset: -150 },
-  { icon: <FaUsers />, path: "about", name: "about", offset: -50 },
+  { icon: <FaUsers />, path: "/about", name: "about", offset: -50, isExternal: true },
   { icon: <FaEnvelope />, path: "contact", name: "contact", offset: 0 },
 ];

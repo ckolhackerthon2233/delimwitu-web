@@ -13,7 +13,7 @@ export const chickenData: MenuItem[] = [
     title: "Kienyeji Wet Fry Full",
     desc: "Full plate traditional chicken wet fry",
     price: "KES 1700",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center",
+    img: "/menu/chicken/kienyeji-wet-fry.jpg",
     badge: "Special"
   },
   {
@@ -23,7 +23,7 @@ export const chickenData: MenuItem[] = [
     title: "Kienyeji Wet Fry Plain",
     desc: "Plain traditional chicken wet fry",
     price: "KES 450",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
     id: "kienyeji-wet-fry-rice",
@@ -32,7 +32,7 @@ export const chickenData: MenuItem[] = [
     title: "Kienyeji Wet Fry Rice",
     desc: "Traditional chicken with rice",
     price: "KES 550",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
     id: "kienyeji-wet-fry-rice-full",
@@ -41,7 +41,7 @@ export const chickenData: MenuItem[] = [
     title: "Kienyeji Wet Fry Rice Full",
     desc: "Full plate traditional chicken with rice",
     price: "KES 650",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
     id: "kienyeji-wet-fry-ugali",
@@ -50,7 +50,7 @@ export const chickenData: MenuItem[] = [
     title: "Kienyeji Wet Fry Ugali",
     desc: "Traditional chicken with Ugali",
     price: "KES 650",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
     id: "kienyeji-wet-fry-wedges",
@@ -59,7 +59,7 @@ export const chickenData: MenuItem[] = [
     title: "Kienyeji Wet Fry Wedges",
     desc: "Traditional chicken with potato wedges",
     price: "KES 700",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
     id: "chicken-curry",
@@ -213,7 +213,7 @@ export const chickenData: MenuItem[] = [
     title: "Fried Chicken 1 Piece",
     desc: "Single fried chicken piece",
     price: "KES 150",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/fried-chicken.jpg"
   },
   {
     id: "full-chicken-stew-veges",
@@ -240,7 +240,7 @@ export const chickenData: MenuItem[] = [
     title: "Pilau Chicken Full",
     desc: "Full plate Pilau with chicken",
     price: "KES 650",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/pilau-chicken.jpg"
   },
   {
     id: "pilau-chicken-half",
@@ -249,7 +249,7 @@ export const chickenData: MenuItem[] = [
     title: "Pilau Chicken Half",
     desc: "Half plate Pilau with chicken",
     price: "KES 450",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/pilau-chicken.jpg"
   },
   {
     id: "potato-wedges-chicken-full",
@@ -276,7 +276,7 @@ export const chickenData: MenuItem[] = [
     title: "Potatoes Saute Chicken Full",
     desc: "Full plate sautéed potatoes with chicken",
     price: "KES 600",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/potato-saute-chicken.jpg"
   },
   {
     id: "potatoes-saute-chicken-half",
@@ -285,7 +285,7 @@ export const chickenData: MenuItem[] = [
     title: "Potatoes Saute Chicken Half",
     desc: "Half plate sautéed potatoes with chicken",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/potato-saute-chicken.jpg"
   },
   {
     id: "rice-chicken-half",
@@ -303,7 +303,7 @@ export const chickenData: MenuItem[] = [
     title: "Stir Fry Spaghetti Chicken",
     desc: "Stir fried spaghetti with chicken",
     price: "KES 600",
-    img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/chicken/spagheti-chicken.jpg"
   },
   {
     id: "vegetable-rice-chicken",

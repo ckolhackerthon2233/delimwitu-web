@@ -22,7 +22,7 @@ export const startersData: MenuItem[] = [
     title: "BBQ Wings",
     desc: "BBQ chicken wings",
     price: "KES 350",
-    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/starters/art-wings-large-02_180x.png"
   },
   {
     id: "beef-burger",
@@ -85,7 +85,7 @@ export const startersData: MenuItem[] = [
     title: "Crispy Wings",
     desc: "Crispy chicken wings",
     price: "KES 320",
-    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/starters/spicy-wings-02_180x.png"
   },
   {
     id: "double-feast-burger",
@@ -140,7 +140,7 @@ export const startersData: MenuItem[] = [
     title: "Home Fries",
     desc: "Homemade fries",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/starters/home-fries-01_1_180x.png"
   },
   {
     id: "kachumbari",

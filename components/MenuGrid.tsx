@@ -21,7 +21,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
           return (
             <Link
               key={idx}
-              href={`/menu/${category}/${item.subcategory || 'featured'}/${itemId}`}
+              href={`/order?itemId=${itemId}`}
               className="group bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:translate-y-3 hover:shadow-xl cursor-pointer"
             >
               {/* Image Container */}
@@ -57,7 +57,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                   <button
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = `/menu/${category}/${item.subcategory || 'featured'}/${itemId}`;
+                    window.location.href = `/order?itemId=${itemId}`;
                   }}
                     className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 transform hover:scale-110 cursor-pointer border-0"
                     title="View details"
@@ -81,7 +81,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
         return (
           <Link
             key={idx}
-            href={`/menu/${category}/${item.subcategory || 'featured'}/${itemId}`}
+            href={`/order?itemId=${itemId}`}
             className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-2 hover:shadow-lg cursor-pointer"
           >
             {/* Image Container */}
@@ -117,7 +117,7 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                 <button
                   onClick={(e) => {
                     e.preventDefault();
-                      window.location.href = `/menu/${category}/${item.subcategory || 'featured'}/${itemId}`;
+                      window.location.href = `/order?itemId=${itemId}`;
                   }}
                   className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
                   title="View details"

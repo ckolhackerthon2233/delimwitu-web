@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     "artisan coffee",
     "cafe nairobi",
     "specialty drinks",
-    "book table",
-    "cafe reservation",
+    "online ordering",
+    "WhatsApp ordering",
     "WiFi cafe",
   ],
   authors: [

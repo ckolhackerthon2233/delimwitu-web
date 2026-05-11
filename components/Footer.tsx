@@ -91,7 +91,7 @@ export default function Footer() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-green text-white py-16 max-md:py-12">
+      <footer className="bg-dark-brown text-white py-16 max-md:py-12">
         <div className="px-6">
           <div className="grid grid-cols-1 xl:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 xl:gap-12 mb-12">
             <div className="space-y-6">
@@ -110,15 +110,27 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-3 text-sm">
                   <li>
-                    <a href="#" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
+                    <a href="https://wa.me/254720000000" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">💬</span>
+                      WhatsApp
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">📸</span>
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
                       <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">f</span>
                       Facebook
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">📸</span>
-                      Instagram
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">🎵</span>
+                      TikTok
                     </a>
                   </li>
                 </ul>
@@ -194,7 +206,7 @@ export default function Footer() {
               ))}
             </div>
             <p className="text-center sm:text-right">
-              © 2026, Artcaffè Restaurant & The Artcaffè Market are the registered trademark of Artcaffè Coffee & Bakery Limited. All Rights Reserved.
+              © 2026, Delimwitu Café & Restaurant. All Rights Reserved. | <a href="/contact" className="hover:text-white transition">Contact Us</a> | <a href="/menu" className="hover:text-white transition">Menu</a>
             </p>
           </div>
         </div>

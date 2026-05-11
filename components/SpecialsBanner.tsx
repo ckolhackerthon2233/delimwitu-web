@@ -29,7 +29,7 @@ export default function SpecialsBanner() {
               <span className="bg-orange text-white px-2.5 py-1 rounded text-xs font-bold">Save 23%</span>
             </div>
 
-            <Link href="/book-table" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-cream hover:shadow-lg">
+            <Link href="/order" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-cream hover:shadow-lg">
               Order Now
             </Link>
           </div>

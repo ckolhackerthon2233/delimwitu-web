@@ -109,7 +109,7 @@ export default function About() {
               with flavor. It’s the kind of bread that feels like home in every bite.
             </p>
             <Link
-              href="/book-table"
+              href="/menu"
               className="inline-flex items-center gap-2 rounded-full border border-orange px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-dark-brown transition hover:bg-orange/10"
             >
               Discover More

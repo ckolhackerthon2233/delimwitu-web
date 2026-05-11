@@ -14,7 +14,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzards Plain",
     desc: "Plain roasted gizzards",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=400&h=400&fit=crop&crop=center" // roasted/grilled chicken pieces
+    img: "/menu/gizzard/download (1).jpg"
   },
   {
     id: "gizzards-saute",
@@ -23,7 +23,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzards Saute",
     desc: "Sautéed gizzards",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop&crop=center" // sautéed meat pan
+    img: "/menu/gizzard/download (2).jpg"
   },
   {
     id: "gizzard-rice-full",
@@ -32,7 +32,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Rice Full",
     desc: "Full plate gizzards with rice",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&crop=center" // rice with meat plate
+    img: "/menu/gizzard/download (3).jpg"
   },
   {
     id: "gizzard-rice-half",
@@ -41,7 +41,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Rice Half",
     desc: "Half plate gizzards with rice",
     price: "KES 350",
-    img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&crop=center" // rice with meat plate
+    img: "/menu/gizzard/download (4).jpg"
   },
   {
     id: "gizzard-ugali",
@@ -50,7 +50,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Ugali",
     desc: "Gizzards with Ugali",
     price: "KES 350",
-    img: "https://images.unsplash.com/photo-1567364816519-cbc9c4ffe1eb?w=400&h=400&fit=crop&crop=center" // ugali / stiff porridge with stew
+    img: "/menu/gizzard/download (5).jpg"
   },
   {
     id: "gizzard-chapati-full",
@@ -59,7 +59,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Chapati Full",
     desc: "Full plate gizzards with chapati",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop&crop=center" // chapati / flatbread
+    img: "/menu/gizzard/download (6).jpg"
   },
   {
     id: "gizzard-chapati-half",
@@ -68,7 +68,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Chapati Half",
     desc: "Half plate gizzards with chapati",
     price: "KES 350",
-    img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop&crop=center" // chapati / flatbread
+    img: "/menu/gizzard/download (7).jpg"
   },
   {
     id: "gizzard-chips",
@@ -77,7 +77,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Chips",
     desc: "Gizzards with chips",
     price: "KES 400",
-    img: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=400&fit=crop&crop=center" // chips / french fries
+    img: "/menu/gizzard/download (8).jpg"
   },
   {
     id: "gizzard-homemade-fries",
@@ -86,7 +86,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Homemade Fries",
     desc: "Gizzards with homemade fries",
     price: "KES 450",
-    img: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=400&fit=crop&crop=center" // homemade fries
+    img: "/menu/gizzard/download (9).jpg"
   },
   {
     id: "gizzard-pilau",
@@ -95,7 +95,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Pilau",
     desc: "Gizzards with Pilau",
     price: "KES 550",
-    img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=400&fit=crop&crop=center" // spiced pilau rice
+    img: "/menu/gizzard/download (10).jpg"
   },
   {
     id: "gizzard-veg-rice",
@@ -104,7 +104,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Veg Rice",
     desc: "Gizzards with vegetable rice",
     price: "KES 400",
-    img: "https://images.unsplash.com/photo-1645696301019-35adcc18cac5?w=400&h=400&fit=crop&crop=center" // vegetable fried rice
+    img: "/menu/gizzard/download (11).jpg"
   },
   {
     id: "gizzard-wedges",
@@ -113,7 +113,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Wedges",
     desc: "Gizzards with potato wedges",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=400&fit=crop&crop=center" // potato wedges
+    img: "/menu/gizzard/download (12).jpg"
   },
   {
     id: "gizzard-wedges-half",
@@ -122,7 +122,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Gizzard Wedges Half",
     desc: "Half plate gizzards with wedges",
     price: "KES 400",
-    img: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=400&fit=crop&crop=center" // potato wedges
+    img: "/menu/gizzard/download (13).jpg"
   },
   {
     id: "bhajia-gizzards-half",
@@ -131,7 +131,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Bhajia Gizzards Half",
     desc: "Half plate bhajia with gizzards",
     price: "KES 400",
-    img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=400&fit=crop&crop=center" // bhajia / pakora fritters
+    img: "/menu/gizzard/download (14).jpg"
   },
   {
     id: "matoke-gizzard",
@@ -140,7 +140,7 @@ export const gizzardsData: MenuItem[] = [
     title: "Matoke Gizzard",
     desc: "Matoke with gizzards",
     price: "KES 400",
-    img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=400&fit=crop&crop=center" // banana/matoke stew
+    img: "/menu/gizzard/download (15).jpg"
   },
   {
     id: "mukimo-gizzard-half",

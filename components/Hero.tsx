@@ -1,19 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Hero() {
-  const router = useRouter();
-
-  const handleBookTable = () => {
-    const win = typeof window !== 'undefined' ? (window as unknown as {showToast?: (msg: string, type: string) => void}) : null;
-    if (win?.showToast) {
-      win.showToast("Navigating to booking page...", "info");
-    }
-    router.push("/book-table");
-  };
-
   return (
     <>
       {/* Hero Section - Reduced Height */}
@@ -59,10 +48,10 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex gap-4 flex-wrap justify-center anim-fade-up delay-3 max-md:flex-col max-md:w-full">
-              <button onClick={handleBookTable} className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center cursor-pointer border-0">
-                Book a Table
-              </button>
-              <Link href="/menu" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
+              <Link href="/menu" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
+                Explore Menu
+              </Link>
+              <Link href="/order" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Order Online
               </Link>
             </div>

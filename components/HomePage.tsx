@@ -29,61 +29,6 @@ export default function HomePage() {
       <Header />
       <Hero />
 
-      <section className="py-24 px-6 lg:px-10">
-        <div className="max-w-screen-xl mx-auto grid gap-16 lg:grid-cols-[1.1fr_0.9fr] items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-3 rounded-full bg-orange/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-orange">
-              Most Served Dish
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-5xl font-black text-dark-brown leading-tight">
-                Meals our guests come back for again and again.
-              </h2>
-              <p className="max-w-2xl text-lg text-gray-700">
-                Beautifully plated, bold in flavor, and styled to deliver a delightful dining story from first sight to last bite.
-              </p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                "Slow-simmered curry with warm spices",
-                "Crispy roasted vegetables with herb drizzle",
-              ].map((text) => (
-                <div key={text} className="rounded-[2rem] border border-orange/20 bg-white p-6 shadow-[0_30px_60px_rgba(0,0,0,0.08)] transition hover:-translate-y-1">
-                  <p className="text-sm uppercase tracking-[0.3em] text-orange mb-3">Top choice</p>
-                  <h3 className="text-xl font-black text-dark-brown">{text}</h3>
-                </div>
-              ))}
-            </div>
-            <Link href="/book-table" className="inline-flex items-center gap-2 rounded-full bg-orange px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-lg transition hover:bg-orange-hover">
-              Reserve a taste of Delimwitu
-            </Link>
-          </div>
-
-          <div className="relative isolate overflow-visible">
-            <div className="absolute inset-0 -right-8 rounded-[3rem] bg-orange/10 blur-3xl" />
-            <div className="relative rounded-[3rem] bg-white p-6 shadow-[0_35px_90px_rgba(0,0,0,0.08)]">
-              <div className="perspective-[1400px]">
-                <div className="group relative overflow-hidden rounded-[2.5rem] bg-gray-100 shadow-2xl transition-transform duration-700 hover:-rotate-2 hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-brown/10" />
-                  <Image
-                    src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=860&h=720&fit=crop&crop=center"
-                    alt="Most served butter curry chicken"
-                    width={860}
-                    height={720}
-                    className="object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-white/90 p-6 backdrop-blur-sm">
-                    <p className="text-xs uppercase tracking-[0.35em] text-orange mb-3">Chef&apos;s signature</p>
-                    <h3 className="text-3xl font-black text-dark-brown">Butter curry chicken</h3>
-                    <p className="mt-2 text-sm text-gray-600">Creamy, fragrant, and plated with color and depth for every guest.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Menu />
 
       <section id="inspiration" className="py-24 px-6 lg:px-10 bg-white">

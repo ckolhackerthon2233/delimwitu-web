@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function ReservationCard() {
   return (
     <section id="reservation-cta" className="py-20 bg-gradient-to-br from-orange-50 to-cream">
@@ -16,12 +18,12 @@ export default function ReservationCard() {
               <p className="text-gray-600 mb-6">
                 Have questions or need assistance? Contact us and our team will be happy to help.
               </p>
-              <a
-                href="/contact"
+              <Link
+                href="/#contact"
                 className="inline-block px-8 py-3 bg-orange text-white font-semibold rounded-lg hover:bg-red-600 transition-colors duration-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -11,6 +11,6 @@ import type { NavMobileLinkConfig } from "@/types";
 export const navMobileLinks: NavMobileLinkConfig[] = [
   { icon: <RiHomeFill />, path: "hero", name: "home", offset: 0 },
   { icon: <BiSolidFoodMenu />, path: "/menu", name: "menu", offset: 0, isExternal: true },
-  { icon: <FaUsers />, path: "/testimonials", name: "reviews", offset: 0, isExternal: true },
-  { icon: <FaEnvelope />, path: "/contact", name: "contact", offset: 0, isExternal: true },
+  { icon: <FaUsers />, path: "reviews", name: "reviews", offset: 0 },
+  { icon: <FaEnvelope />, path: "contact", name: "contact", offset: 0 },
 ];

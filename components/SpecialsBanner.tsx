@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 export default function SpecialsBanner() {
   return (
@@ -29,9 +28,9 @@ export default function SpecialsBanner() {
               <span className="bg-orange text-white px-2.5 py-1 rounded text-xs font-bold">Save 23%</span>
             </div>
 
-            <Link href="/order" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-cream hover:shadow-lg">
+            <a href="https://wa.me/254712345678?text=Hi,%20I'd%20like%20to%20order%20the%20Chef's%20Special%20Spanish%20Curry" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-cream hover:shadow-lg">
               Order Now
-            </Link>
+            </a>
           </div>
 
           {/* Image Section */}

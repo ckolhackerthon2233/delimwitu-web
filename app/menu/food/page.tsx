@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { MenuItem } from "@/types";
-import { getSubcategoryItems } from "@/data/menuDataComplete";
+import { menuData, getSubcategoryItems } from "@/data/menuDataComplete";
 import FilterButton from "@/components/FilterButton";
 import MenuGrid from "@/components/MenuGrid";
 
@@ -11,6 +11,7 @@ export default function FoodMenuPage() {
 
   const subcategories = ["all", "breakfast", "starters", "bowls-salads", "lunch-dinner", "burgers", "pizza"];
   const filteredItems: MenuItem[] = getSubcategoryItems("food", activeSubfilter === "all" ? undefined : activeSubfilter);
+  const classicBreakfasts = menuData.filter((item) => item.subcategory === "Everyday Classic Breakfasts");
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream via-white to-warm-white">
@@ -45,15 +46,51 @@ export default function FoodMenuPage() {
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto mb-10 pb-2">
-            {subcategories.map((subcat) => (
-              <FilterButton
-                key={subcat}
-                label={subcat}
-                isActive={activeSubfilter === subcat}
-                onClick={() => setActiveSubfilter(subcat)}
-              />
-            ))}
+          <div className="sticky top-0 z-40 bg-cream/95 backdrop-blur-sm border-b border-tan/40 pb-4 mb-6">
+            <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto px-4 md:px-0 py-4">
+              {subcategories.map((subcat) => (
+                <FilterButton
+                  key={subcat}
+                  label={subcat}
+                  isActive={activeSubfilter === subcat}
+                  onClick={() => setActiveSubfilter(subcat)}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Featured Breakfast Picks */}
+          <div className="mb-10 rounded-[2rem] border border-orange/20 bg-cream/90 p-6 shadow-sm">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div>
+                <p className="text-xs uppercase tracking-[0.35em] text-orange font-semibold mb-2">
+                  Morning favourites
+                </p>
+                <h3 className="text-3xl font-black text-dark-brown">
+                  Everyday Classic Breakfasts
+                </h3>
+                <p className="mt-2 max-w-2xl text-sm text-gray-600">
+                  A bright little section for sunrise cravings and cosy morning moments — chef-picked breakfast bites with a playful twist.
+                </p>
+              </div>
+              <span className="inline-flex items-center rounded-full bg-orange/10 px-4 py-2 text-sm font-semibold text-orange">
+                Mornings made delicious
+              </span>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              {classicBreakfasts.map((item) => (
+                <div
+                  key={item.id ?? item.title}
+                  className="rounded-full border border-tan bg-white px-4 py-2 text-sm font-medium text-dark-brown shadow-sm"
+                >
+                  {item.title}
+                  <span className="ml-2 text-xs text-gray-500">
+                    +{item.price.replace("KES", "Ksh")}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Menu Grid */}

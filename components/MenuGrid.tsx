@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { MenuItem } from "@/types";
 
 interface MenuGridProps {
@@ -16,12 +15,9 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
     return (
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         {items.map((item, idx) => {
-          const itemId = item.id || item.title.toLowerCase().replace(/\s+/g, "-");
-          const category = item.cat;
           return (
-            <Link
+            <div
               key={idx}
-              href={`/order?itemId=${itemId}`}
               className="group bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:translate-y-3 hover:shadow-xl cursor-pointer"
             >
               {/* Image Container */}
@@ -54,19 +50,18 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                   <div className="font-semibold text-dark-brown text-sm md:text-base">
                     {item.price}
                   </div>
-                  <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = `/order?itemId=${itemId}`;
-                  }}
+                  <a
+                    href={`https://wa.me/254712345678?text=I%20would%20like%20to%20order%20${encodeURIComponent(item.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 transform hover:scale-110 cursor-pointer border-0"
-                    title="View details"
+                    title="Order via WhatsApp"
                   >
                     →
-                  </button>
+                  </a>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
@@ -76,12 +71,9 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
   return (
     <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {items.map((item, idx) => {
-        const itemId = item.id || item.title.toLowerCase().replace(/\s+/g, "-");
-        const category = item.cat;
         return (
-          <Link
+          <div
             key={idx}
-            href={`/order?itemId=${itemId}`}
             className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:translate-y-2 hover:shadow-lg cursor-pointer"
           >
             {/* Image Container */}
@@ -114,19 +106,18 @@ export default function MenuGrid({ items, variant = "default" }: MenuGridProps) 
                 <div className="font-semibold text-dark-brown">
                   {item.price}
                 </div>
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                      window.location.href = `/order?itemId=${itemId}`;
-                  }}
-                  className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
-                  title="View details"
+                <a
+                  href={`https://wa.me/254712345678?text=I%20would%20like%20to%20order%20${encodeURIComponent(item.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 transform hover:scale-110 cursor-pointer border-0"
+                  title="Order via WhatsApp"
                 >
                   →
-                </button>
+                </a>
               </div>
             </div>
-          </Link>
+          </div>
         );
       })}
     </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { menuData, getSubcategoriesForCategory } from "@/data/menuDataComplete";
-import MenuGrid from "@/components/MenuGrid";
+import MenuTable from "@/components/MenuTable";
 import type { MenuItem } from "@/types";
 
 const MAIN_CATEGORIES = [
@@ -48,14 +48,14 @@ export default function MenuPage() {
         </div>
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid gap-10 md:grid-cols-2 md:gap-12 items-center">
             <div className="text-center">
-              <h2 className="text-8xl md:text-9xl font-black text-orange/15 mb-4 leading-none">SUMMER</h2>
-              <h3 className="text-3xl md:text-4xl font-light text-orange italic mb-6">Seasonal Symphonies & Freshness</h3>
+              <h2 className="text-6xl sm:text-7xl md:text-9xl font-black text-orange/15 mb-4 leading-none">SUMMER</h2>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-light text-orange italic mb-6">Tropical rhythms, bright plates, and Delimwitu joy</h3>
             </div>
             <div className="text-center md:text-center text-gray-700 leading-relaxed">
               <p className="text-base mb-4">
-                Inspired by the spirit of summer, Artcaffè unveils a curated menu infused with vibrant Latin zest designed to delight the palate. Explore bright, artfully layered wraps, indulge in flavour-forward bowls crafted with seasonal vegetables, and discover flavourful new creations of our coffees and signature cocktails. Each plate, from the first bite, is a testament to culinary creativity, freshness, and a passionate celebration of the season's finest moments
+                Inspired by the spirit of Delimwitu, this menu brings together bold tropical flavours and comforting favourites to delight every guest. Discover colourful wraps, hearty bowls made from vibrant local produce, and playful new twists on our coffees and signature drinks. From the first bite, every dish celebrates creativity, freshness, and the warm energy of Delimwitu dining.
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function MenuPage() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Main Category Tabs - Left Aligned - Sticky with Pattern */}
-          <div className="sticky top-0 z-50 bg-white py-6 px-6 -mx-6 mb-8 shadow-sm relative">
+          <div className="z-50 bg-white py-6 px-6 -mx-6 mb-8 shadow-sm" style={{ position: "sticky", top: 0 }}>
             {/* Subtle hexagon pattern accent */}
             <div className="absolute bottom-0 left-0 w-full h-1 opacity-5" style={{backgroundImage: "url('data:image/svg+xml,%3Csvg width=%22100%22 height=%224%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M0 2 L5 0 L10 2 L10 4 L5 6 L0 4 Z%22 fill=%22%233D1F0D%22 opacity=%220.3%22/%3E%3C/svg%3E')", backgroundRepeat: "repeat-x"}}></div>
             
@@ -131,8 +131,8 @@ export default function MenuPage() {
             </p>
           </div>
 
-          {/* Menu Grid */}
-          <MenuGrid items={filteredItems} variant="default" />
+          {/* Menu Table */}
+          <MenuTable items={filteredItems} />
 
           {/* Empty State with Pattern */}
           {filteredItems.length === 0 && (

@@ -11,7 +11,7 @@ export default function WhatsAppFloat() {
       href="https://wa.me/254712345678?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Delimwitu"
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed bottom-6 right-6 flex items-center justify-center rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-40 ${
+      className={`fixed bottom-6 right-6 flex items-center justify-center rounded-full border border-green-500 bg-white shadow-lg hover:shadow-xl transition-all duration-300 z-40 ${
         isHovered
           ? "w-48 h-16"
           : "w-16 h-16"

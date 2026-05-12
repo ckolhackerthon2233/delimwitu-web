@@ -1,25 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
 
 export default function Footer() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
   const paymentMethods = [
-    { name: "M-PESA", src: "/mpesa.jpeg" },
-    { name: "Airtel Money", src: "/airtel%20money.jpeg" },
-    { name: "VISA", src: "/visa.jpeg" },
+    { name: "M-PESA", src: "/mpesa.png" },
+    { name: "Airtel Money", src: "/airtel.png" },
+    { name: "VISA", src: "/visa.png" },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
@@ -96,9 +84,16 @@ export default function Footer() {
         <div className="px-6">
           <div className="grid grid-cols-1 gap-10 xl:grid-cols-[1.6fr_1fr_1fr_1fr_1.2fr] xl:gap-12 mb-12">
             <div className="space-y-4">
-              <Link href="/" className="font-playfair text-3xl font-black italic tracking-tight inline-block text-orange">
-                Delimwitu
-              </Link>
+              <div className="inline-flex items-center justify-center rounded-full bg-white/10 p-2 shadow-sm border border-orange/20">
+                <span className="sr-only">Delimwitu</span>
+                <Image
+                  src="/logo.png"
+                  alt="Delimwitu Logo"
+                  width={64}
+                  height={64}
+                  className="w-16 h-16 rounded-full"
+                />
+              </div>
               <p className="text-sm text-sand/80 max-w-xs">
                 Bold flavours, fresh ingredients, and warm hospitality in every bite.
               </p>
@@ -198,15 +193,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      {/* Scroll to Top Button */}
-      <button
-        id="scroll-top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-8 right-8 w-12 h-12 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 hover:shadow-lg z-50 ${showScrollTop ? "opacity-100 visible" : "opacity-0 invisible"}`}
-        aria-label="Back to top"
-      >
-        ↑
-      </button>
     </>
   );
 }

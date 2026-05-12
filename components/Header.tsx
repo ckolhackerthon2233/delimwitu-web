@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,9 +29,13 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/menu", label: "Menu" },
+    { href: "/about", label: "About" },
     { href: "/#reviews", label: "Reviews" },
     { href: "/#contact", label: "Contact" },
   ];
+
+  const pathname = usePathname();
+  const isMenuPage = pathname?.startsWith("/menu");
 
   return (
     <>
@@ -68,7 +74,7 @@ export default function Header() {
       {/* Header */}
       <header
         id="header"
-        className={`fixed top-0 left-0 right-0 z-[1000] px-0 py-4.8 transition-all duration-300 ${
+        className={`${isMenuPage ? "relative" : "fixed top-0 left-0 right-0"} z-[1000] px-0 py-4.8 transition-all duration-300 ${
           scrolled ? "bg-cream shadow-sm" : "bg-cream"
         }`}
       >
@@ -76,11 +82,18 @@ export default function Header() {
           <div className="flex items-center justify-between gap-4">
             <Link
               href="/"
-              className="font-playfair text-2xl font-black italic text-dark-brown whitespace-nowrap bg-transparent border-0 cursor-pointer hover:text-orange transition-colors"
+              className="flex items-center justify-center rounded-full bg-white/90 p-2 shadow-sm transition hover:bg-white text-dark-brown"
             >
-              Delimwitu
+              <span className="sr-only">Delimwitu</span>
+              <Image
+                src="/logo.png"
+                alt="Delimwitu Logo"
+                width={64}
+                height={64}
+                className="w-16 h-16 rounded-full"
+              />
             </Link>
-            <nav className="hidden lg:flex gap-8 items-center ml-auto">
+            <nav className="hidden lg:flex gap-6 items-center ml-auto">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}

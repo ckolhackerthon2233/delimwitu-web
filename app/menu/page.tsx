@@ -77,11 +77,18 @@ export default function MenuPage() {
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
-          {/* Main Category Tabs - Left Aligned - Sticky with Pattern */}
-          <div className="z-50 bg-white py-6 px-6 -mx-6 mb-8 shadow-sm" style={{ position: "sticky", top: 0 }}>
+          {/* Main Category and Subcategory Controls — Sticky Together */}
+          <div className="sticky top-0 z-50 bg-white py-6 px-6 -mx-6 mb-8 shadow-sm">
             {/* Subtle hexagon pattern accent */}
-            <div className="absolute bottom-0 left-0 w-full h-1 opacity-5" style={{backgroundImage: "url('data:image/svg+xml,%3Csvg width=%22100%22 height=%224%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M0 2 L5 0 L10 2 L10 4 L5 6 L0 4 Z%22 fill=%22%233D1F0D%22 opacity=%220.3%22/%3E%3C/svg%3E')", backgroundRepeat: "repeat-x"}}></div>
-            
+            <div
+              className="absolute bottom-0 left-0 w-full h-1 opacity-5"
+              style={{
+                backgroundImage:
+                  "url('data:image/svg+xml,%3Csvg width=%22100%22 height=%224%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M0 2 L5 0 L10 2 L10 4 L5 6 L0 4 Z%22 fill=%22%233D1F0D%22 opacity=%220.3%22/%3E%3C/svg%3E')",
+                backgroundRepeat: "repeat-x",
+              }}
+            ></div>
+
             <div className="flex gap-8 flex-wrap items-center pb-6 border-b border-gray-200">
               {MAIN_CATEGORIES.map((cat) => (
                 <button
@@ -97,28 +104,26 @@ export default function MenuPage() {
                 </button>
               ))}
             </div>
-          </div>
 
-          {/* Horizontal Subcategories with Pattern Accent */}
-          <div className="mb-12 overflow-x-auto relative">
-            {/* Leaf decorations */}
-            <div className="absolute -top-8 left-0 opacity-10 text-orange text-4xl">🍃</div>
-            <div className="absolute -bottom-8 right-0 opacity-10 text-orange text-4xl">🌿</div>
-            
-            <div className="flex gap-3 flex-nowrap">
-              {subcategories.map((subcat) => (
-                <button
-                  key={subcat}
-                  onClick={() => setActiveSubCat(subcat)}
-                  className={`px-4 py-2 rounded-full border-2 text-sm font-semibold cursor-pointer transition-all duration-200 whitespace-nowrap ${
-                    selectedSubCat === subcat
-                      ? "bg-dark-green text-white border-dark-green"
-                      : "bg-white text-dark-brown border-dark-brown hover:bg-dark-brown hover:text-white"
-                  }`}
-                >
-                  {subcat}
-                </button>
-              ))}
+            <div className="mt-6 overflow-x-auto relative">
+              <div className="absolute -top-8 left-0 opacity-10 text-orange text-4xl">🍃</div>
+              <div className="absolute -bottom-8 right-0 opacity-10 text-orange text-4xl">🌿</div>
+
+              <div className="flex gap-3 flex-nowrap">
+                {subcategories.map((subcat) => (
+                  <button
+                    key={subcat}
+                    onClick={() => setActiveSubCat(subcat)}
+                    className={`px-4 py-2 rounded-full border-2 text-sm font-semibold cursor-pointer transition-all duration-200 whitespace-nowrap ${
+                      selectedSubCat === subcat
+                        ? "bg-orange text-white border-orange"
+                        : "bg-white text-dark-brown border-dark-brown hover:bg-dark-brown hover:text-white"
+                    }`}
+                  >
+                    {subcat}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 

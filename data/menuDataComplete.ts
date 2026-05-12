@@ -4,6 +4,7 @@
  */
 
 import type { MenuItem } from "@/types";
+import { slugify } from "@/lib/utils";
 import { drinksData } from "./menuDataDrinks";
 import { breakfastData } from "./menuDataBreakfast";
 import { fishData } from "./menuDataFish";
@@ -63,6 +64,6 @@ export const getTopLevelItems = (topLevel: 'food' | 'drinks' | 'bakery'): MenuIt
  */
 export const getSubcategoryItems = (topLevel: string, subcat?: string): MenuItem[] => {
   return menuData.filter(item => {
-    return item.cat === topLevel && (!subcat || item.subcategory === subcat);
+    return item.cat === topLevel && (!subcat || (item.subcategory ? slugify(item.subcategory) === slugify(subcat) : false));
   });
 };

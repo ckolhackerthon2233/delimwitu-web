@@ -162,7 +162,7 @@ export default function DrinksMenuPage() {
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto mb-10 pb-2">
+          <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto overflow-y-hidden mb-10 pb-2">
             {DRINK_FILTERS.map((subcat) => (
               <FilterButton
                 key={subcat}

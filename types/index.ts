@@ -37,3 +37,10 @@ export interface NavMobileLinkConfig extends NavLinkConfig {
   icon: ReactNode;
   isExternal?: boolean;
 }
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}

@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Reviews from "@/components/Reviews";
 import Image from "next/image";
 import Link from "next/link";
+import { sendContactEmail } from "@/actions/emails";
 
 const featuredDelimwitu = [
   { title: "Mango Juice Deli", subtitle: "Fresh cold juice", price: "KSh 150" },
@@ -19,11 +20,11 @@ const featuredDelimwitu = [
 
 const cuisineGallery = [
   { src: "/menu/everydayclassic/everyday-breakfast-01.png", alt: "Everyday breakfast" },
-  { src: "/menu/food/breakfast/eggs-toast.svg", alt: "Eggs and toast" },
-  { src: "/menu/food/starters/chicken-wings.svg", alt: "Chicken wings starter" },
   { src: "/menu/lunch&dinner/slow-cooked-bbq-beef-02_200x.png", alt: "Slow cooked beef" },
   { src: "/menu/everydayclassic/french-toast-01.png", alt: "French toast" },
   { src: "/menu/lunch&dinner/grilled-salmon-02_200x.png", alt: "Grilled salmon" },
+  { src: "/menu/pizza/hawaiian-pizza-01_180x.png", alt: "Hawaiian pizza" },
+  { src: "/menu/chicken/fried-chicken.jpg", alt: "Fried chicken" },
 ];
 
 const businessInfoSections = [
@@ -83,6 +84,57 @@ const businessInfoSections = [
 
 export default function HomePage() {
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const [contactForm, setContactForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
+
+  const showToast = (message: string, type: "success" | "error" | "info" = "info") => {
+    if (typeof window === "undefined") return;
+
+    const windowWithToast = window as Window & {
+      showToast?: (message: string, type: "success" | "error" | "info") => void;
+    };
+
+    windowWithToast.showToast?.(message, type);
+  };
+
+  const handleContactChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setContactForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleContactSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    if (!contactForm.name || !contactForm.email || !contactForm.phone || !contactForm.message) {
+      const message = "Please fill in all fields.";
+      setSubmitStatus({ type: "error", message });
+      showToast(message, "error");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const result = await sendContactEmail(contactForm);
+      if (result.success) {
+        const message = result.message;
+        setSubmitStatus({ type: "success", message });
+        setContactForm({ name: "", email: "", phone: "", message: "" });
+        showToast(message, "success");
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        const message = result.message || "Failed to send message. Please try again.";
+        setSubmitStatus({ type: "error", message });
+        showToast(message, "error");
+      }
+    } catch {
+      const message = "An error occurred. Please try again.";
+      setSubmitStatus({ type: "error", message });
+      showToast(message, "error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <main className="w-full overflow-hidden bg-cream">
@@ -200,8 +252,8 @@ export default function HomePage() {
                     }`}
                   >
                     <span className="text-sm font-medium">{section.title}</span>
-                    <span className={`text-xl font-light transition-transform duration-300 ${isOpen ? "rotate-45 text-orange" : "text-orange"}`}>
-                      +
+                    <span className={`text-lg transition-transform duration-300 ${isOpen ? "-rotate-180 text-orange" : "text-orange"}`}>
+                      ▼
                     </span>
                   </button>
 
@@ -224,82 +276,131 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="contact" className="py-16 px-6 lg:px-10 bg-orange-100 text-dark-brown">
+      <section id="contact" className="py-20 px-6 lg:px-10 bg-gradient-to-b from-cream to-white">
         <div className="max-w-screen-xl mx-auto">
-          <div className="grid gap-5 lg:grid-cols-2">
-            <div className="rounded-[1.5rem] bg-white/95 p-7 shadow-lg border border-orange-200">
-              <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange/80 mb-2">
-                Find Us
-              </span>
-              <h2 className="text-3xl font-black text-dark-brown mb-4">Location & Contact</h2>
-              <p className="text-sm text-dark-brown/80 mb-6">
-                Get in touch with the Delimwitu support team for bookings, inquiries, and venue details.
-              </p>
-              <form className="space-y-4">
-                <div className="grid gap-2 sm:grid-cols-3">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange mb-3">
+              Get In Touch
+            </span>
+            <h2 className="text-4xl font-black text-dark-brown sm:text-5xl mb-4">
+              Connect with Delimwitu
+            </h2>
+            <p className="mx-auto max-w-2xl text-base text-gray-600">
+              Have questions about reservations, catering, or just want to say hello? We&apos;d love to hear from you. Fill out the form and we&apos;ll respond within 24 hours.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-2">
+            {/* Contact Form */}
+            <div className="rounded-3xl bg-white p-8 shadow-lg border border-sand/20">
+              <h3 className="text-2xl font-bold text-dark-brown mb-6">Send us a Message</h3>
+              
+              <form onSubmit={handleContactSubmit} className="space-y-5">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-semibold text-dark-brown mb-2">
+                    Full Name
+                  </label>
                   <input
                     type="text"
-                    placeholder="Name"
-                    className="rounded-2xl border border-orange-200 bg-orange-50 px-3 py-2 text-sm text-dark-brown outline-none focus:border-orange focus:ring-2 focus:ring-orange/20"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="rounded-2xl border border-orange-200 bg-orange-50 px-3 py-2 text-sm text-dark-brown outline-none focus:border-orange focus:ring-2 focus:ring-orange/20"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="rounded-2xl border border-orange-200 bg-orange-50 px-3 py-2 text-sm text-dark-brown outline-none focus:border-orange focus:ring-2 focus:ring-orange/20"
+                    id="name"
+                    name="name"
+                    value={contactForm.name}
+                    onChange={handleContactChange}
+                    placeholder="Your name"
+                    className="w-full rounded-2xl border border-sand/40 bg-cream/50 px-4 py-3 text-sm text-dark-brown placeholder:text-gray-400 outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 transition"
+                    disabled={isSubmitting}
                   />
                 </div>
-                <textarea
-                  rows={3}
-                  placeholder="Message"
-                  className="w-full rounded-2xl border border-orange-200 bg-orange-50 px-3 py-2 text-sm text-dark-brown outline-none focus:border-orange focus:ring-2 focus:ring-orange/20"
-                />
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-dark-brown mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={contactForm.email}
+                    onChange={handleContactChange}
+                    placeholder="your@email.com"
+                    className="w-full rounded-2xl border border-sand/40 bg-cream/50 px-4 py-3 text-sm text-dark-brown placeholder:text-gray-400 outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 transition"
+                    disabled={isSubmitting}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-semibold text-dark-brown mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={contactForm.phone}
+                    onChange={handleContactChange}
+                    placeholder="+254 XXX XXX XXX"
+                    className="w-full rounded-2xl border border-sand/40 bg-cream/50 px-4 py-3 text-sm text-dark-brown placeholder:text-gray-400 outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 transition"
+                    disabled={isSubmitting}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold text-dark-brown mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={contactForm.message}
+                    onChange={handleContactChange}
+                    placeholder="Tell us about your inquiry..."
+                    rows={4}
+                    className="w-full rounded-2xl border border-sand/40 bg-cream/50 px-4 py-3 text-sm text-dark-brown placeholder:text-gray-400 outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 transition resize-none"
+                    disabled={isSubmitting}
+                  />
+                </div>
+
+                {submitStatus && (
+                  <div
+                    className={`rounded-2xl p-4 text-sm font-semibold ${
+                      submitStatus.type === "success"
+                        ? "bg-green-50 border border-green-200 text-green-700"
+                        : "bg-red-50 border border-red-200 text-red-700"
+                    }`}
+                  >
+                    {submitStatus.type === "success" ? "✓" : "✕"} {submitStatus.message}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-dark-brown px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-orange"
+                  disabled={isSubmitting}
+                  className="w-full inline-flex items-center justify-center rounded-full bg-gradient-to-r from-orange to-orange/80 px-6 py-3 text-sm font-semibold text-white transition hover:from-orange hover:to-orange/70 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
 
-            <div className="rounded-[1.5rem] bg-white/90 p-7 shadow-lg border border-orange-200">
-              <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange/80 mb-2">
-                Our open schedules
-              </span>
-              <h2 className="text-3xl font-black text-dark-brown mb-5">Hours</h2>
-              <div className="space-y-3 text-dark-brown/80 text-sm">
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Monday</span>
-                  <span className="font-semibold text-orange">8:00 AM – 9:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Tuesday</span>
-                  <span className="font-semibold text-orange">8:00 AM – 9:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Wednesday</span>
-                  <span className="font-semibold text-orange">8:00 AM – 9:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Thursday</span>
-                  <span className="font-semibold text-orange">8:00 AM – 9:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Friday</span>
-                  <span className="font-semibold text-orange">8:00 AM – 9:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Saturday</span>
-                  <span className="font-semibold text-orange">9:00 AM – 8:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between rounded-2xl bg-orange-50 px-3 py-2">
-                  <span>Sunday</span>
-                  <span className="font-semibold text-orange">9:00 AM – 8:00 PM</span>
+            {/* Hours & Info */}
+            <div className="space-y-6">
+              <div className="rounded-3xl bg-white p-8 shadow-lg border border-sand/20">
+                <h3 className="text-2xl font-bold text-dark-brown mb-6">Hours of Operation</h3>
+                <div className="space-y-3">
+                  {[
+                    { day: "Monday", hours: "8:00 AM – 9:00 PM" },
+                    { day: "Tuesday", hours: "8:00 AM – 9:00 PM" },
+                    { day: "Wednesday", hours: "8:00 AM – 9:00 PM" },
+                    { day: "Thursday", hours: "8:00 AM – 9:00 PM" },
+                    { day: "Friday", hours: "8:00 AM – 9:00 PM" },
+                    { day: "Saturday", hours: "9:00 AM – 8:00 PM" },
+                    { day: "Sunday", hours: "9:00 AM – 8:00 PM" },
+                  ].map((schedule) => (
+                    <div key={schedule.day} className="flex items-center justify-between rounded-2xl bg-cream/50 px-4 py-3">
+                      <span className="text-sm font-medium text-dark-brown">{schedule.day}</span>
+                      <span className="text-sm font-semibold text-orange">{schedule.hours}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

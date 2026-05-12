@@ -1,4 +1,6 @@
+import Link from "next/link";
 import type { MenuItem } from "@/types";
+import { slugify } from "@/lib/utils";
 
 interface MenuTableProps {
   items: MenuItem[];
@@ -29,15 +31,26 @@ export default function MenuTable({ items }: MenuTableProps) {
           </div>
 
           <div className="divide-y divide-sand/40">
-            {groupItems.map((item) => (
-              <div key={item.id ?? item.title} className="grid grid-cols-1 gap-4 px-6 py-4 md:grid-cols-[1.4fr_0.6fr] md:px-8 md:py-5 md:items-center text-sm md:text-base text-dark-brown">
-                <div className="space-y-1">
-                  <p className="font-medium">{item.title}</p>
-                  {item.desc && <p className="text-xs text-gray-500">{item.desc}</p>}
-                </div>
-                <div className="text-right font-semibold text-orange">{item.price.replace("KES", "KSh")}</div>
-              </div>
-            ))}
+            {groupItems.map((item) => {
+              const itemId = item.id || slugify(item.title);
+              const categorySlug = slugify(item.cat);
+              const subcategorySlug = slugify(item.subcategory || "all");
+              return (
+                <Link
+                  key={item.id ?? item.title}
+                  href={`/menu/${categorySlug}/${subcategorySlug}/${itemId}`}
+                  className="group block"
+                >
+                  <div className="grid grid-cols-1 gap-4 px-6 py-4 md:grid-cols-[1.4fr_0.6fr] md:px-8 md:py-5 md:items-center text-sm md:text-base text-dark-brown hover:bg-cream transition-colors duration-200">
+                    <div className="space-y-1">
+                      <p className="font-medium">{item.title}</p>
+                      {item.desc && <p className="text-xs text-gray-500">{item.desc}</p>}
+                    </div>
+                    <div className="text-right font-semibold text-orange">{item.price.replace("KES", "KSh")}</div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       ))}

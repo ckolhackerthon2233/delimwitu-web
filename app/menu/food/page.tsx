@@ -47,7 +47,7 @@ export default function FoodMenuPage() {
 
           {/* Filter Tabs */}
           <div className="sticky top-0 z-40 bg-cream/95 backdrop-blur-sm border-b border-tan/40 pb-4 mb-6">
-            <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto px-4 md:px-0 py-4">
+            <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto overflow-y-hidden px-4 md:px-0 py-4">
               {subcategories.map((subcat) => (
                 <FilterButton
                   key={subcat}

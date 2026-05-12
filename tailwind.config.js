@@ -41,6 +41,18 @@ export default {
         DEFAULT: "#3B6B4A",
         light: "#5A8F6A",
       },
+      amber: {
+        DEFAULT: "#D97706",
+        700: "#B45309",
+      },
+      slate: {
+        900: "#0F172A",
+      },
+      toast: {
+        success: "#16A34A",
+        error: "#DC2626",
+        info: "#0F172A",
+      },
       gold: "#C9963E",
       grey: "#888888",
       black: { DEFAULT: "#273029", heavy: "#1b211c" },

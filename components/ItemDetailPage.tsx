@@ -2,49 +2,17 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import Image from "next/image";
 import { MenuItem } from "@/types";
 import { menuData } from "@/data/menuDataComplete";
+import { slugify } from "@/lib/utils";
 import OrderForm from "@/components/OrderForm";
 
 interface ItemDetailPageProps {
   itemId: string;
   category: string;
+  subcategory?: string;
   backHref: string;
   backLabel: string;
-}
-
-/* ── Lazy image with shimmer skeleton ─────────────────────────────── */
-function LazyImage({ src, alt }: { src: string; alt: string }) {
-  const [loaded, setLoaded] = useState(false);
-
-  return (
-    <div className="relative w-full h-full">
-      {/* Shimmer skeleton */}
-      {!loaded && (
-        <div className="absolute inset-0 rounded-3xl overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-100 via-amber-50 to-orange-100 animate-shimmer bg-[length:200%_100%]" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="flex flex-col items-center gap-3 opacity-40">
-              <div className="w-16 h-16 rounded-full border-4 border-orange border-t-transparent animate-spin" />
-              <span className="text-orange text-sm font-semibold tracking-widest uppercase">Loading</span>
-            </div>
-          </div>
-        </div>
-      )}
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className={`object-cover rounded-3xl transition-all duration-700 ease-out ${
-          loaded ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-105 blur-sm"
-        }`}
-        onLoad={() => setLoaded(true)}
-        sizes="(max-width: 768px) 100vw, 50vw"
-        priority={false}
-      />
-    </div>
-  );
 }
 
 /* ── Animated info card ───────────────────────────────────────────── */
@@ -61,17 +29,16 @@ function InfoCard({
 }) {
   return (
     <div
-      className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-7 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden border border-orange/10"
+      className="rounded-[2rem] border border-orange/10 bg-white p-5 shadow-sm"
       style={{ animationDelay: delay }}
     >
-      {/* Hover glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange/5 to-amber-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-      {/* Icon bubble */}
-      <div className="relative z-10 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange to-red-500 flex items-center justify-center text-2xl mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300">
-        {icon}
+      <div className="flex items-center gap-4 mb-4">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange/10 text-orange text-lg">
+          {icon}
+        </div>
+        <h3 className="text-base font-semibold text-dark-brown">{title}</h3>
       </div>
-      <h3 className="relative z-10 font-black text-dark-brown text-lg mb-2">{title}</h3>
-      <p className="relative z-10 text-gray-500 text-sm leading-relaxed">{desc}</p>
+      <p className="text-sm leading-6 text-gray-600">{desc}</p>
     </div>
   );
 }
@@ -80,12 +47,18 @@ function InfoCard({
 export default function ItemDetailPage({
   itemId,
   category,
+  subcategory,
   backHref,
   backLabel,
 }: ItemDetailPageProps) {
   const item = menuData.find((menuItem) => {
-    const id = menuItem.id || menuItem.title.toLowerCase().replace(/\s+/g, "-");
-    return id === itemId && menuItem.cat === category;
+    const id = menuItem.id || slugify(menuItem.title);
+    const catMatch = menuItem.cat === category;
+    const subcatMatch = !subcategory || 
+      menuItem.subcategory === subcategory || 
+      (menuItem.subcategory && slugify(menuItem.subcategory) === subcategory) ||
+      (subcategory === "all" && !menuItem.subcategory);
+    return id === itemId && catMatch && subcatMatch;
   });
 
   /* ── Not found ── */
@@ -157,119 +130,84 @@ export default function ItemDetailPage({
 
         {/* ── Hero content ── */}
         <div className="relative z-10 pb-24 px-6 max-w-screen-xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-start">
 
-            {/* ── IMAGE COLUMN ── */}
-            <div className="animate-fade-in-left stagger-1">
-              {/* Outer glow ring */}
-              <div className="relative">
-                <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-orange/25 via-amber-300/20 to-red-400/20 blur-2xl animate-pulse" />
+            {/* ── LEFT COLUMN: Details + Info cards ── */}
+            <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-6">
+                <div className="animate-fade-in-right stagger-2">
+                  <span className="text-xs font-black uppercase tracking-[0.3em] text-orange mb-3 block">
+                    Delimwitu Kitchen
+                  </span>
+                  <h1 className="text-5xl md:text-6xl font-black text-dark-brown leading-none tracking-tight mb-5">
+                    {item.title}
+                  </h1>
+                  <p className="text-gray-500 text-lg leading-relaxed mb-6">
+                    {item.desc}
+                  </p>
 
-                {/* Main image frame */}
-                <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
-                  {/* Badge */}
-                  {item.badge && (
-                    <div className="absolute top-5 right-5 z-20 bg-gradient-to-r from-orange to-red-500 text-white px-4 py-2 text-xs font-black rounded-full shadow-lg uppercase tracking-wider">
-                      {item.badge}
+                  <div className="flex items-center gap-2 bg-white shadow-xl rounded-full px-5 py-3 border border-orange-light w-fit">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-orange to-red-500 animate-pulse" />
+                    <span className="text-dark-brown font-bold text-sm capitalize">{item.cat}</span>
+                    {item.subcategory && (
+                      <>
+                        <span className="text-gray-300">·</span>
+                        <span className="text-gray-500 text-sm">{item.subcategory}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                <div className="animate-fade-in-right stagger-3">
+                  <div className="inline-flex items-center gap-4 bg-gradient-to-r from-orange/10 to-amber-400/10 rounded-2xl px-6 py-4 border border-orange/15">
+                    <div>
+                      <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Price</p>
+                      <p className="text-4xl font-black text-orange leading-none">{item.price}</p>
                     </div>
-                  )}
-
-                  {/* Lazy image */}
-                  <LazyImage src={item.img} alt={item.title} />
-
-                  {/* Bottom colour wash */}
-                  <div className="absolute bottom-0 inset-x-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent rounded-b-3xl" />
-                </div>
-
-                {/* Floating category pill */}
-                <div className="absolute -bottom-5 left-8 flex items-center gap-2 bg-white shadow-xl rounded-full px-5 py-3 border border-orange/10">
-                  <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-orange to-red-500 animate-pulse" />
-                  <span className="text-dark-brown font-bold text-sm capitalize">{item.cat}</span>
-                  {item.subcategory && (
-                    <>
-                      <span className="text-gray-300">·</span>
-                      <span className="text-gray-500 text-sm">{item.subcategory}</span>
-                    </>
-                  )}
-                </div>
-              </div>
-
-              {/* Decorative dots grid below image */}
-              <div className="mt-12 ml-4 grid grid-cols-5 gap-2 w-fit opacity-30">
-                {Array.from({length: 20}).map((_, i) => (
-                  <div key={i} className="w-1.5 h-1.5 rounded-full bg-orange" />
-                ))}
-              </div>
-            </div>
-
-            {/* ── DETAILS COLUMN ── */}
-            <div className="flex flex-col gap-6">
-
-              {/* Title */}
-              <div className="animate-fade-in-right stagger-2">
-                <span className="text-xs font-black uppercase tracking-[0.3em] text-orange mb-3 block">
-                  Delimwitu Kitchen
-                </span>
-                <h1 className="text-5xl md:text-6xl font-black text-dark-brown leading-none tracking-tight mb-5">
-                  {item.title}
-                </h1>
-                <p className="text-gray-500 text-lg leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-
-              {/* Price strip */}
-              <div className="animate-fade-in-right stagger-3">
-                <div className="inline-flex items-center gap-4 bg-gradient-to-r from-orange/10 to-amber-400/10 rounded-2xl px-6 py-4 border border-orange/15">
-                  <div>
-                    <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Price</p>
-                    <p className="text-4xl font-black text-orange leading-none">{item.price}</p>
-                  </div>
-                  <div className="w-px h-10 bg-orange/20" />
-                  <div>
-                    <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Per</p>
-                    <p className="text-lg font-bold text-dark-brown">Item</p>
+                    <div className="w-px h-10 bg-orange/20" />
+                    <div>
+                      <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Per</p>
+                      <p className="text-lg font-bold text-dark-brown">Item</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Divider */}
-              <div className="animate-fade-in-right stagger-4">
-                <div className="h-px bg-gradient-to-r from-orange/30 via-amber-300/30 to-transparent" />
-              </div>
-
-              {/* Order form — receives loading state from inside OrderForm,
-                  but we wrap it to show a global loading overlay */}
-              <div className="animate-fade-in-right stagger-5">
-                <OrderFormWrapper item={item} />
+              <div className="mt-4 animate-fade-in-up stagger-6">
+                <div className="mb-6 text-center lg:text-left">
+                  <p className="text-xs font-black uppercase tracking-[0.25em] text-orange mb-3">
+                    How it works
+                  </p>
+                  <p className="text-gray-500 text-sm max-w-xl mx-auto lg:mx-0">
+                    Place your order by email, get a quick confirmation from our team, and pay when your meal is ready for pickup or delivery.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <InfoCard
+                    icon="📧"
+                    title="Email the order"
+                    desc="Send your item choice and any special requests. We’ll respond with order details and timing."
+                    delay=".1s"
+                  />
+                  <InfoCard
+                    icon="⚡"
+                    title="Fast confirmation"
+                    desc="You’ll hear from our team quickly so the order is confirmed and ready to go."
+                    delay=".2s"
+                  />
+                  <InfoCard
+                    icon="🔐"
+                    title="Pay on pickup"
+                    desc="No payment info is stored here. Pay safely when your food is ready."
+                    delay=".3s"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* ── Info cards ── */}
-          <div className="mt-28 animate-fade-in-up stagger-6">
-            <p className="text-xs font-black uppercase tracking-[0.25em] text-orange mb-8 text-center">
-              How it works
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <InfoCard
-                icon="📧"
-                title="Email Order"
-                desc="Send us your order details and we'll confirm via email. No payment needed online."
-                delay=".1s"
-              />
-              <InfoCard
-                icon="⚡"
-                title="Quick Response"
-                desc="Our team contacts you within minutes to confirm your order and arrange payment."
-                delay=".2s"
-              />
-              <InfoCard
-                icon="🔐"
-                title="Secure & Safe"
-                desc="No sensitive payment data is stored online. All transactions are handled securely."
-                delay=".3s"
-              />
+            {/* ── RIGHT COLUMN: Order form ── */}
+            <div className="animate-fade-in-right stagger-5 flex justify-center lg:justify-end">
+              <OrderFormWrapper item={item} />
             </div>
           </div>
         </div>
@@ -283,7 +221,7 @@ function OrderFormWrapper({ item }: { item: MenuItem }) {
   const [submitting, setSubmitting] = useState(false);
 
   return (
-    <div className="relative w-fit mx-auto">
+    <div className="relative w-full max-w-xl">
       {/* Loading overlay */}
       {submitting && (
         <div className="absolute inset-0 z-50 flex flex-col items-center justify-center rounded-2xl bg-white/95 backdrop-blur-sm border border-orange/20 shadow-2xl gap-4">

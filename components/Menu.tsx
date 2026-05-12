@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { menuData } from "@/data/menuDataComplete";
 import FilterButton from "@/components/FilterButton";
+import { slugify } from "@/lib/utils";
 
 export default function Menu() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -56,12 +57,13 @@ export default function Menu() {
         {/* Menu Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {filteredItems.map((item, idx) => {
-            const itemId = item.id || item.title.toLowerCase().replace(/\s+/g, "-");
+            const itemId = item.id || slugify(item.title);
             const category = item.cat;
+            const subcategorySlug = slugify(item.subcategory || "all");
             return (
               <Link
                 key={idx}
-                href={`/menu/${category}/${itemId}`}
+                href={`/menu/${category}/${subcategorySlug}/${itemId}`}
                 className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:-translate-y-2 hover:shadow-lg cursor-pointer"
               >
                 {/* Image Container */}
@@ -94,16 +96,12 @@ export default function Menu() {
                     <div className="font-semibold text-dark-brown">
                       {item.price}
                     </div>
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.location.href = `/menu/${category}/${itemId}`;
-                      }}
+                    <div
                       className="w-8 h-8 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-colors cursor-pointer border-0"
                       title="View details & order"
                     >
                       →
-                    </button>
+                    </div>
                   </div>
                 </div>
               </Link>

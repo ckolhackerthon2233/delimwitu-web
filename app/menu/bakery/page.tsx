@@ -45,7 +45,7 @@ export default function BakeryMenuPage() {
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto mb-10 pb-2">
+          <div className="flex justify-center gap-1 flex-nowrap overflow-x-auto overflow-y-hidden mb-10 pb-2">
             {subcategories.map((subcat) => (
               <FilterButton
                 key={subcat}

@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { menuData, getSubcategoriesForCategory } from "@/data/menuDataComplete";
+import { slugify } from "@/lib/utils";
 import MenuTable from "@/components/MenuTable";
 import type { MenuItem } from "@/types";
 
@@ -12,23 +14,60 @@ const MAIN_CATEGORIES = [
 ];
 
 export default function MenuPage() {
-  const [activeMainCat, setActiveMainCat] = useState<"food" | "bakery" | "drinks">("food");
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams?.get("category") as "food" | "bakery" | "drinks" | null;
+  const subcategoryParam = searchParams?.get("subcategory");
+  const initialCategory = categoryParam && MAIN_CATEGORIES.some((cat) => cat.id === categoryParam) ? categoryParam : "food";
+
+  const router = useRouter();
+  const [activeMainCat, setActiveMainCat] = useState<"food" | "bakery" | "drinks">(initialCategory);
   const [activeSubCat, setActiveSubCat] = useState<string | null>(null);
 
   // Get subcategories for active main category
   const subcategories = getSubcategoriesForCategory(activeMainCat);
-  
-  // Set first subcategory as active if none selected
-  const selectedSubCat = activeSubCat || (subcategories.length > 0 ? subcategories[0] : null);
+
+  useEffect(() => {
+    if (categoryParam && MAIN_CATEGORIES.some((cat) => cat.id === categoryParam) && categoryParam !== activeMainCat) {
+      setActiveMainCat(categoryParam);
+      setActiveSubCat(null);
+      return;
+    }
+
+    if (!subcategoryParam) {
+      setActiveSubCat(null);
+      return;
+    }
+
+    const normalized = subcategories.find((subcat) => slugify(subcat) === slugify(subcategoryParam));
+    setActiveSubCat(normalized || null);
+  }, [categoryParam, subcategoryParam, subcategories, activeMainCat]);
+
+  const selectedSubCat = activeSubCat;
+  const validSubCat = selectedSubCat && subcategories.includes(selectedSubCat) ? selectedSubCat : null;
 
   // Filter items based on active main category and subcategory
   const filteredItems: MenuItem[] = menuData.filter(
-    (item) => item.cat === activeMainCat && (selectedSubCat ? item.subcategory === selectedSubCat : true)
+    (item) => item.cat === activeMainCat && (validSubCat ? item.subcategory === validSubCat : true)
   );
+
+  const updateQuery = (category: string, subcategory?: string | null) => {
+    const query = new URLSearchParams();
+    query.set("category", category);
+    if (subcategory) {
+      query.set("subcategory", slugify(subcategory));
+    }
+    router.replace(`/menu?${query.toString()}`, { scroll: false });
+  };
 
   const handleMainCatChange = (catId: string) => {
     setActiveMainCat(catId as "food" | "bakery" | "drinks");
-    setActiveSubCat(null); // Reset subcategory
+    setActiveSubCat(null);
+    updateQuery(catId, null);
+  };
+
+  const handleSubCatChange = (subcat: string) => {
+    setActiveSubCat(subcat);
+    updateQuery(activeMainCat, subcat);
   };
 
   return (
@@ -94,10 +133,10 @@ export default function MenuPage() {
                 <button
                   key={cat.id}
                   onClick={() => handleMainCatChange(cat.id)}
-                  className={`text-lg font-bold tracking-widest transition-all duration-200 pb-2 border-b-4 ${
+                  className={`text-lg font-bold tracking-widest transition-all duration-200 pb-2 ${
                     activeMainCat === cat.id
-                      ? "text-dark-green border-dark-green"
-                      : "text-gray-600 border-transparent hover:text-dark-brown"
+                      ? "text-dark-green border-b-4 border-dark-green"
+                      : "text-gray-600 hover:text-dark-brown"
                   }`}
                 >
                   {cat.label}
@@ -113,9 +152,9 @@ export default function MenuPage() {
                 {subcategories.map((subcat) => (
                   <button
                     key={subcat}
-                    onClick={() => setActiveSubCat(subcat)}
+                    onClick={() => handleSubCatChange(subcat)}
                     className={`px-4 py-2 rounded-full border-2 text-sm font-semibold cursor-pointer transition-all duration-200 whitespace-nowrap ${
-                      selectedSubCat === subcat
+                      validSubCat === subcat
                         ? "bg-orange text-white border-orange"
                         : "bg-white text-dark-brown border-dark-brown hover:bg-dark-brown hover:text-white"
                     }`}

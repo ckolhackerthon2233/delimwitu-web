@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ToastProvider } from "@/components/ToastProvider";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 /** Playfair Display (serif) for headings */
 const playfair = Playfair_Display({
@@ -50,8 +51,8 @@ export const metadata: Metadata = {
     "artisan coffee",
     "cafe nairobi",
     "specialty drinks",
-    "book table",
-    "cafe reservation",
+    "online ordering",
+    "WhatsApp ordering",
     "WiFi cafe",
   ],
   authors: [
@@ -136,6 +137,7 @@ export default function RootLayout({
     <html lang="en" style={{ backgroundColor: "#FDFAF5" }}>
       <body className={`${playfair.variable} ${dmSans.variable}`} style={{ backgroundColor: "#FDFAF5" }}>
         <ToastProvider>{children}</ToastProvider>
+        <WhatsAppFloat />
       </body>
     </html>
   );

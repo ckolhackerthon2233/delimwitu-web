@@ -1,29 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 
 export default function Footer() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
   const paymentMethods = [
-    { name: "M-PESA", src: "/mpesa.jpeg" },
-    { name: "Airtel Money", src: "/airtel%20money.jpeg" },
-    { name: "VISA", src: "/visa.jpeg" },
+    { name: "M-PESA", src: "/mpesa.png" },
+    { name: "Airtel Money", src: "/airtel.png" },
+    { name: "VISA", src: "/visa.png" },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
       {/* Location Section */}
-      <section id="contact" className="py-24 max-md:py-16">
+      <section id="location" className="py-24 max-md:py-16">
         <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-lg:gap-12 max-md:gap-8">
             <div>
@@ -91,123 +80,119 @@ export default function Footer() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-green text-white py-16 max-md:py-12">
+      <footer className="bg-dark-brown text-white py-16 max-md:py-12">
         <div className="px-6">
-          <div className="grid grid-cols-1 xl:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 xl:gap-12 mb-12">
-            <div className="space-y-6">
-              <div>
-                <a href="#home" className="font-playfair text-3xl font-black italic tracking-tight inline-block">
-                  Delimwitu
-                </a>
-                <p className="mt-3 max-w-xs text-sm text-sand/80">
-                  Café · Restaurant · Bar
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xs uppercase tracking-[0.35em] text-sand/60 mb-5 inline-block border-b border-white/15 pb-3">
-                  Keep in touch
-                </h3>
-                <ul className="space-y-3 text-sm">
-                  <li>
-                    <a href="#" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">f</span>
-                      Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="inline-flex items-center gap-3 text-sand/80 hover:text-white transition">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-base">📸</span>
-                      Instagram
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-white mb-5 border-b border-white/10 pb-3">Customer Service</h4>
-              <ul className="space-y-3 text-sm text-sand/80">
-                <li><a href="#" className="hover:text-white transition">Ways to order</a></li>
-                <li><a href="#" className="hover:text-white transition">Order by phone</a></li>
-                <li><a href="#" className="hover:text-white transition">Order by WhatsApp</a></li>
-                <li><a href="#" className="hover:text-white transition">Restaurant near you</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-white mb-5 border-b border-white/10 pb-3">Information</h4>
-              <ul className="space-y-3 text-sm text-sand/80">
-                <li><a href="#" className="hover:text-white transition">Terms & Conditions</a></li>
-                <li><a href="#" className="hover:text-white transition">Privacy Statement</a></li>
-                <li><a href="#" className="hover:text-white transition">Allergy Advice</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-white mb-5 border-b border-white/10 pb-3">About Us</h4>
-              <ul className="space-y-3 text-sm text-sand/80">
-                <li><a href="#" className="hover:text-white transition">Our story</a></li>
-                <li><a href="#" className="hover:text-white transition">Our standards</a></li>
-                <li><a href="#" className="hover:text-white transition">Health & safety measures</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-8 items-end border-t border-white/10 pt-8">
+          <div className="grid grid-cols-1 gap-10 xl:grid-cols-[1.6fr_1fr_1fr_1fr_1.2fr] xl:gap-12 mb-12">
             <div className="space-y-4">
-              <p className="text-xs uppercase tracking-[0.35em] text-sand/60">Subscribe to our emails</p>
-              <p className="text-sm text-sand/80 max-w-md">
-                Stay updated with menu news, special offers, and restaurant events.
+              <div className="inline-flex items-center justify-center rounded-full bg-white/10 p-2 shadow-sm border border-orange/20">
+                <span className="sr-only">Delimwitu</span>
+                <Image
+                  src="/logo.png"
+                  alt="Delimwitu Logo"
+                  width={64}
+                  height={64}
+                  className="w-16 h-16 rounded-full"
+                />
+              </div>
+              <p className="text-sm text-sand/80 max-w-xs">
+                Bold flavours, fresh ingredients, and warm hospitality in every bite.
               </p>
+              <div className="space-y-3 text-sm text-sand/80">
+                <p>Ngong Road, Nairobi</p>
+                <p>Mon–Sun: 7:00 AM – 10:30 PM</p>
+                <p>hello@delimwitu.co.ke</p>
+              </div>
             </div>
 
-            <form className="flex flex-wrap gap-3">
-              <label className="sr-only" htmlFor="footer-email">Email address</label>
-              <input
-                id="footer-email"
-                type="email"
-                placeholder="Enter your email address"
-                className="min-w-[240px] flex-1 rounded border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-sand/60 focus:border-white/40 focus:outline-none focus:ring-2 focus:ring-orange/50"
-              />
-              <button type="submit" className="inline-flex h-12 items-center justify-center rounded bg-orange px-6 text-sm font-semibold text-white hover:bg-orange-hover transition">
-                →
-              </button>
-            </form>
+            <div>
+              <h4 className="font-semibold text-orange mb-5 border-b border-orange/20 pb-3">Customer Service</h4>
+              <ul className="space-y-3 text-sm text-sand/80">
+                <li><a href="#" className="hover:text-orange transition">Ways to Order</a></li>
+                <li><a href="#" className="hover:text-orange transition">Order by Phone</a></li>
+                <li><a href="#" className="hover:text-orange transition">Order by WhatsApp</a></li>
+                <li><a href="#" className="hover:text-orange transition">Restaurant Near You</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-orange mb-5 border-b border-orange/20 pb-3">Information</h4>
+              <ul className="space-y-3 text-sm text-sand/80">
+                <li><a href="#" className="hover:text-orange transition">Terms & Conditions</a></li>
+                <li><a href="#" className="hover:text-orange transition">Privacy Statement</a></li>
+                <li><a href="#" className="hover:text-orange transition">Allergy Advice</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-orange mb-5 border-b border-orange/20 pb-3">About Us</h4>
+              <ul className="space-y-3 text-sm text-sand/80">
+                <li><a href="#" className="hover:text-orange transition">Our Story</a></li>
+                <li><a href="#" className="hover:text-orange transition">Our Standards</a></li>
+                <li><a href="#" className="hover:text-orange transition">Health & Safety Measures</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-orange mb-5 border-b border-orange/20 pb-3">Keep in Touch</h4>
+              <ul className="space-y-4 text-sm text-sand/80">
+                <li>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-orange/20 bg-orange/10 text-orange">f</span>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-orange/20 bg-orange/10 text-orange">📸</span>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-orange/20 bg-orange/10 text-orange">🎵</span>
+                    TikTok
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="mt-12 border-t border-white/10 pt-6 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between text-sm text-sand/70">
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
-              {paymentMethods.map((method) => (
-                <div
-                  key={method.name}
-                  className="relative h-16 w-32"
-                >
-                  <Image
-                    src={method.src}
-                    alt={method.name}
-                    fill
-                    className={`object-contain ${method.name === "VISA" ? "scale-125" : ""}`}
-                    unoptimized
-                  />
-                </div>
-              ))}
+          <div className="border-t border-orange/20 pt-8">
+            <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr] lg:items-center lg:justify-between">
+              <div className="flex flex-wrap items-center gap-4">
+                {paymentMethods.map((method) => (
+                  <div key={method.name} className="relative h-14 w-28 rounded-xl border border-orange/30 bg-orange/5 p-2">
+                    <Image
+                      src={method.src}
+                      alt={method.name}
+                      fill
+                      className="object-contain"
+                      unoptimized
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <form className="flex flex-wrap items-center gap-3 justify-end">
+                <label className="sr-only" htmlFor="footer-email">Email address</label>
+                <input
+                  id="footer-email"
+                  type="email"
+                  placeholder="Enter your email address"
+                  className="min-w-[240px] flex-1 rounded border border-orange/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-sand/60 focus:border-orange focus:outline-none focus:ring-2 focus:ring-orange/40"
+                />
+                <button type="submit" className="inline-flex h-12 items-center justify-center rounded border border-orange bg-orange text-sm font-semibold text-dark-brown hover:bg-orange-hover transition px-5">
+                  →
+                </button>
+              </form>
             </div>
-            <p className="text-center sm:text-right">
-              © 2026, Artcaffè Restaurant & The Artcaffè Market are the registered trademark of Artcaffè Coffee & Bakery Limited. All Rights Reserved.
+
+            <p className="mt-8 text-sm text-sand/70 text-center lg:text-left">
+              © 2026, Delimwitu Cafe, Restaurant & Market. All Rights Reserved.
             </p>
           </div>
         </div>
       </footer>
-      {/* Scroll to Top Button */}
-      <button
-        id="scroll-top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-8 right-8 w-12 h-12 rounded-full bg-orange text-white font-bold flex items-center justify-center hover:bg-orange-hover transition-all duration-300 hover:shadow-lg z-50 ${showScrollTop ? "opacity-100 visible" : "opacity-0 invisible"}`}
-        aria-label="Back to top"
-      >
-        ↑
-      </button>
     </>
   );
 }

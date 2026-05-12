@@ -13,7 +13,7 @@ export const beansData: MenuItem[] = [
     title: "Ndengu Plain",
     desc: "Plain cooked ndengu (beans)",
     price: "KES 150",
-    img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=400&fit=crop&crop=center&auto=format&q=75" // plain cooked mung beans / ndengu curry
+    img: "/menu/beans/download (2).jpg"
   },
   {
     id: "ndengu-rice",
@@ -22,7 +22,7 @@ export const beansData: MenuItem[] = [
     title: "Ndengu Rice",
     desc: "Ndengu with rice",
     price: "KES 250",
-    img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&crop=center&auto=format&q=75" // rice with bean stew plate
+    img: "/menu/beans/download (3).jpg"
   },
   {
     id: "chapati-ndengu-full",
@@ -31,7 +31,7 @@ export const beansData: MenuItem[] = [
     title: "Chapati Ndengu Full",
     desc: "Full plate chapati with ndengu",
     price: "KES 250",
-    img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop&crop=center&auto=format&q=75" // chapati flatbread with beans
+    img: "/menu/beans/download (4).jpg"
   },
   {
     id: "chapati-ndengu-half",
@@ -40,7 +40,7 @@ export const beansData: MenuItem[] = [
     title: "Chapati Ndengu Half",
     desc: "Half plate chapati with ndengu",
     price: "KES 200",
-    img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop&crop=center&auto=format&q=75" // chapati flatbread with beans
+    img: "/menu/beans/download (4).jpg"
   },
   {
     id: "chapati-beans",
@@ -49,6 +49,6 @@ export const beansData: MenuItem[] = [
     title: "Chapati Beans",
     desc: "Chapati with beans",
     price: "KES 200",
-    img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=400&fit=crop&crop=center&auto=format&q=75" // red beans stew with chapati
+    img: "/menu/beans/download (5).jpg"
   },
 ];

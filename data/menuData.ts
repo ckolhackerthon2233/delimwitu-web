@@ -81,7 +81,7 @@ export const menuData: MenuItem[] = [
     title: "Grilled Chicken Wrap",
     desc: "Tender grilled chicken with fresh veggies and sauce",
     price: "KES 650",
-    img: "/menu/wraps/chicken-wrap.png"
+    img: "/menu/wraps/chick-a-loca-wrap.png"
   },
   {
     id: "beef-wrap",
@@ -90,7 +90,7 @@ export const menuData: MenuItem[] = [
     title: "Seasoned Beef Wrap",
     desc: "Spiced beef with lettuce, tomato and special sauce",
     price: "KES 750",
-    img: "/menu/wraps/beef-wrap.png"
+    img: "/menu/wraps/toro-wrapido.png"
   },
   {
     id: "veggie-wrap",
@@ -99,7 +99,7 @@ export const menuData: MenuItem[] = [
     title: "Garden Veggie Wrap",
     desc: "Fresh vegetables with hummus and herbs",
     price: "KES 580",
-    img: "/menu/wraps/veggie-wrap.png"
+    img: "/menu/wraps/halloumi-shawarma-wrap.png"
   },
 
   // FOOD - Bowls & Salads
@@ -177,7 +177,7 @@ export const menuData: MenuItem[] = [
     title: "Margherita Pizza",
     desc: "Classic pizza with fresh basil, mozzarella and tomato",
     price: "KES 1,200",
-    img: "/menu/pizza/beef-sausage-pizza-01_180x.png"
+    img: "/menu/pizza/Funghi-Basilico-Pizza_180x.png"
   },
   {
     id: "quattro-formaggi-pizza",
@@ -186,7 +186,7 @@ export const menuData: MenuItem[] = [
     title: "Quattro Formaggi Pizza",
     desc: "Four cheese blend with herbs",
     price: "KES 1,450",
-    img: "/menu/pizza/beef-sausage-pizza-01_180x.png"
+    img: "/menu/pizza/veg-extravaganza-pizza-01_180x.png"
   },
 
   // FOOD - Burgers
@@ -216,7 +216,7 @@ export const menuData: MenuItem[] = [
     title: "Bacon Mushroom Burger",
     desc: "Beef burger with crispy bacon and sautéed mushrooms",
     price: "KES 1,250",
-    img: "/menu/burgers/classic-beef-burger.png"
+    img: "/menu/burgers/cheese-burger.png"
   },
 
   // FOOD - Sandwiches

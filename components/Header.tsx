@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
-  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -26,30 +26,16 @@ export default function Header() {
     }
   };
 
-  const handleBookTable = () => {
-    const win = typeof window !== 'undefined' ? (window as unknown as {showToast?: (msg: string, type: string) => void}) : null;
-    if (win?.showToast) {
-      win.showToast("Navigating to booking page...", "info");
-    }
-    router.push("/book-table");
-  };
-
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/menu", label: "Menu" },
     { href: "/about", label: "About" },
+    { href: "/#reviews", label: "Reviews" },
     { href: "/#contact", label: "Contact" },
   ];
 
-  const handleNavClick = (href: string) => {
-    if (href.startsWith("/#")) {
-      const sectionId = href.substring(1);
-      const el = document.querySelector(sectionId);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
+  const pathname = usePathname();
+  const isMenuPage = pathname?.startsWith("/menu");
 
   return (
     <>
@@ -71,53 +57,24 @@ export default function Header() {
         }`}
       >
         <nav className="flex flex-col py-2">
-          {navLinks.map((link) =>
-            link.href.startsWith("/#") ? (
-              <button
-                key={link.href}
-                onClick={() => {
-                  handleNavClick(link.href);
-                  toggleMobileNav();
-                }}
-                className="group relative text-left px-5 py-2.5 text-sm font-medium text-dark-brown hover:text-orange hover:bg-orange/5 transition-colors duration-150 bg-transparent border-0 cursor-pointer overflow-hidden"
-              >
-                {link.label}
-                <span className="absolute bottom-1.5 left-5 w-0 h-[1.5px] bg-orange transition-all duration-250 group-hover:w-[calc(100%-40px)]" />
-              </button>
-            ) : (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={toggleMobileNav}
-                className="group relative px-5 py-2.5 text-sm font-medium text-dark-brown hover:text-orange hover:bg-orange/5 transition-colors duration-150 overflow-hidden"
-              >
-                {link.label}
-                <span className="absolute bottom-1.5 left-5 w-0 h-[1.5px] bg-orange transition-all duration-250 group-hover:w-[calc(100%-40px)]" />
-              </Link>
-            )
-          )}
-
-          {/* Divider */}
-          <div className="my-1.5 mx-4 h-px bg-black/8" />
-
-          <div className="px-3 pb-2">
-            <button
-              onClick={() => {
-                handleBookTable();
-                toggleMobileNav();
-              }}
-              className="w-full px-4 py-2 bg-orange text-white text-xs font-semibold uppercase tracking-wider rounded-lg transition-all duration-200 hover:bg-orange-hover hover:shadow-md cursor-pointer border-0"
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={toggleMobileNav}
+              className="group relative px-5 py-2.5 text-sm font-medium text-dark-brown hover:text-orange hover:bg-orange/5 transition-colors duration-150 overflow-hidden"
             >
-              Book a Table
-            </button>
-          </div>
+              {link.label}
+              <span className="absolute bottom-1.5 left-5 w-0 h-[1.5px] bg-orange transition-all duration-250 group-hover:w-[calc(100%-40px)]" />
+            </Link>
+          ))}
         </nav>
       </div>
 
       {/* Header */}
       <header
         id="header"
-        className={`fixed top-0 left-0 right-0 z-[1000] px-0 py-4.8 transition-all duration-300 ${
+        className={`${isMenuPage ? "relative" : "fixed top-0 left-0 right-0"} z-[1000] px-0 py-4.8 transition-all duration-300 ${
           scrolled ? "bg-cream shadow-sm" : "bg-cream"
         }`}
       >
@@ -125,50 +82,38 @@ export default function Header() {
           <div className="flex items-center justify-between gap-4">
             <Link
               href="/"
-              className="font-playfair text-2xl font-black italic text-dark-brown whitespace-nowrap bg-transparent border-0 cursor-pointer hover:text-orange transition-colors"
+              className="flex items-center justify-center rounded-full bg-white/90 p-2 shadow-sm transition hover:bg-white text-dark-brown"
             >
-              Delimwitu
+              <span className="sr-only">Delimwitu</span>
+              <Image
+                src="/logo.png"
+                alt="Delimwitu Logo"
+                width={64}
+                height={64}
+                className="w-16 h-16 rounded-full"
+              />
             </Link>
-            <nav className="hidden lg:flex gap-8 items-center">
-              {navLinks.map((link) =>
-                link.href.startsWith("/#") ? (
-                  <button
-                    key={link.href}
-                    onClick={() => handleNavClick(link.href)}
-                    className="text-sm font-medium text-dark-brown relative pb-0.75 tracking-wide transition-colors hover:text-orange group bg-transparent border-0 cursor-pointer"
-                  >
-                    {link.label}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.375 bg-orange transition-all duration-300 group-hover:w-full" />
-                  </button>
-                ) : (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-sm font-medium text-dark-brown relative pb-0.75 tracking-wide transition-colors hover:text-orange group bg-transparent border-0 cursor-pointer"
-                  >
-                    {link.label}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.375 bg-orange transition-all duration-300 group-hover:w-full" />
-                  </Link>
-                )
-              )}
+            <nav className="hidden lg:flex gap-6 items-center ml-auto">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-dark-brown relative pb-0.75 tracking-wide transition-colors hover:text-orange group"
+                >
+                  {link.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.375 bg-orange transition-all duration-300 group-hover:w-full" />
+                </Link>
+              ))}
             </nav>
-            <div className="flex items-center gap-4">
-              <button
-                onClick={handleBookTable}
-                className="hidden md:inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-xs font-semibold uppercase tracking-wider rounded cursor-pointer border-0 transition-all duration-250 hover:bg-orange-hover hover:shadow-lg"
-              >
-                Book a Table
-              </button>
-              <button
-                className="lg:hidden flex flex-col gap-1.25 cursor-pointer bg-transparent border-0 p-1"
-                onClick={toggleMobileNav}
-                aria-label="Open menu"
-              >
-                <span className={`block w-6 h-0.5 bg-dark-brown transition-all duration-300 rounded ${mobileMenuOpen ? "rotate-45 translate-y-1.75" : ""}`} />
-                <span className={`block w-6 h-0.5 bg-dark-brown transition-all duration-300 rounded ${mobileMenuOpen ? "opacity-0" : ""}`} />
-                <span className={`block w-6 h-0.5 bg-dark-brown transition-all duration-300 rounded ${mobileMenuOpen ? "-rotate-45 -translate-y-1.75" : ""}`} />
-              </button>
-            </div>
+            <button
+              className="lg:hidden flex flex-col gap-1.25 cursor-pointer bg-transparent border-0 p-1 ml-auto"
+              onClick={toggleMobileNav}
+              aria-label="Open menu"
+            >
+              <span className={`block w-6 h-0.5 bg-dark-brown transition-all duration-300 rounded ${mobileMenuOpen ? "rotate-45 translate-y-1.75" : ""}`} />
+              <span className={`block w-6 h-0.5 bg-dark-brown transition-all duration-300 rounded ${mobileMenuOpen ? "opacity-0" : ""}`} />
+              <span className={`block w-6 h-0.5 bg-dark-brown transition-all duration-300 rounded ${mobileMenuOpen ? "-rotate-45 -translate-y-1.75" : ""}`} />
+            </button>
           </div>
         </div>
       </header>

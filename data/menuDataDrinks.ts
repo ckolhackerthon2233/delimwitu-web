@@ -42,7 +42,7 @@ export const drinksData: MenuItem[] = [
     title: "Mango Juice",
     desc: "Fresh mango juice",
     price: "KES 200",
-    img: "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=400&fit=crop&crop=center",
+    img: "/menu/drinks/juices/mango-juice.svg",
     badge: "Popular"
   },
   {
@@ -61,7 +61,7 @@ export const drinksData: MenuItem[] = [
     title: "Passion Juice 250ml",
     desc: "Fresh passion fruit juice",
     price: "KES 150",
-    img: "https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/drinks/juices/passion-juice.svg"
   },
   {
     id: "passion-juice-500",
@@ -70,7 +70,7 @@ export const drinksData: MenuItem[] = [
     title: "Passion Juice 500ml",
     desc: "Fresh passion fruit juice large",
     price: "KES 200",
-    img: "https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/drinks/juices/passion-juice.svg"
   },
   {
     id: "pineapple-mint-250",
@@ -207,7 +207,7 @@ export const drinksData: MenuItem[] = [
     title: "Pepsi 330ml",
     desc: "Classic Pepsi cola",
     price: "KES 90",
-    img: "https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/drinks/sodas/pepsi-330.svg"
   },
   {
     id: "black-current-300",
@@ -225,7 +225,7 @@ export const drinksData: MenuItem[] = [
     title: "Coke 300ml",
     desc: "Classic Coca-Cola",
     price: "KES 90",
-    img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center",
+    img: "/menu/drinks/sodas/coke-300.svg",
     badge: "Popular"
   },
   {
@@ -235,7 +235,7 @@ export const drinksData: MenuItem[] = [
     title: "Fanta Orange 300ml",
     desc: "Fanta orange soda",
     price: "KES 90",
-    img: "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/drinks/sodas/fanta-orange-300.svg"
   },
   {
     id: "fanta-passion-300",

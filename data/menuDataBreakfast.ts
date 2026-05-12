@@ -14,7 +14,7 @@ export const breakfastData: MenuItem[] = [
     title: "The Executive",
     desc: "2 Fried Eggs, 2 Sausages, Toast, Fries, Bacon, Baked Beans",
     price: "KES 800",
-    img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=400&fit=crop&crop=center",
+    img: "/menu/breakfast/excutive-breakfast.png",
     badge: "Popular"
   },
   {
@@ -24,7 +24,7 @@ export const breakfastData: MenuItem[] = [
     title: "Classic Omelette",
     desc: "Fluffy Omelette with 2 Sausages and Buttered Toast",
     price: "KES 450",
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/download (11).jpg"
   },
   {
     id: "pancake-stack",
@@ -33,7 +33,7 @@ export const breakfastData: MenuItem[] = [
     title: "Pancake Stack",
     desc: "3 Golden Pancakes with Grilled Sausage",
     price: "KES 400",
-    img: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/Pancakes.png"
   },
   {
     id: "healthy-start",
@@ -42,7 +42,7 @@ export const breakfastData: MenuItem[] = [
     title: "Healthy Start",
     desc: "Cereals, Yoghurt, Fresh Fruits and Juice",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1494597706938-16e75a2cce80?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/download (24).jpg"
   },
   {
     id: "sunrise-breakfast",
@@ -51,7 +51,7 @@ export const breakfastData: MenuItem[] = [
     title: "The Sunrise",
     desc: "2 Fried Eggs, Buttered Toast, Sausage, Baked Potatoes",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/download (9).jpg"
   },
   {
     id: "breakfast-sandwich",
@@ -60,7 +60,7 @@ export const breakfastData: MenuItem[] = [
     title: "Breakfast Sandwich",
     desc: "Toasted Sandwich and Grilled Sausage",
     price: "KES 500",
-    img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/sandwich.jpg"
   },
   {
     id: "quick-start-mandazi",
@@ -69,7 +69,7 @@ export const breakfastData: MenuItem[] = [
     title: "Quick Start - Mandazi",
     desc: "2 Fresh Mandazi and a Sausage (with Tea/Coffee)",
     price: "KES 270",
-    img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/mandazi.jpg"
   },
   {
     id: "samosa-combo",
@@ -78,7 +78,7 @@ export const breakfastData: MenuItem[] = [
     title: "Samosa Combo",
     desc: "2 Samosas and a Mandazi (with Tea)",
     price: "KES 260",
-    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/samosa-kombo.jpg"
   },
   {
     id: "rolex",
@@ -87,7 +87,7 @@ export const breakfastData: MenuItem[] = [
     title: "The Rolex",
     desc: "Traditional Chapati-wrapped Omelette",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/rolex.jpg"
   },
   {
     id: "ngwace-combo",
@@ -96,7 +96,7 @@ export const breakfastData: MenuItem[] = [
     title: "Ngwace Combo",
     desc: "Sweet Potatoes/Nduma, Fried Eggs, Sausage (with Tea/Coffee)",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/ngwashe-combo.jpg"
   },
   {
     id: "boiled-eggs-combo",
@@ -105,7 +105,7 @@ export const breakfastData: MenuItem[] = [
     title: "Boiled Eggs Combo",
     desc: "2 Boiled Eggs with Sweet Potato/Nduma (with Tea/Coffee)",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/download (15).jpg"
   },
   {
     id: "rolex-combo",
@@ -114,7 +114,7 @@ export const breakfastData: MenuItem[] = [
     title: "Rolex Combo",
     desc: "Rolex with Tea or Coffee",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/rolex.jpg"
   },
   {
     id: "smocha",
@@ -123,7 +123,7 @@ export const breakfastData: MenuItem[] = [
     title: "Smocha",
     desc: "Smokie-Chapati Wrap",
     price: "KES 120",
-    img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/smocha2.jpg"
   },
   {
     id: "samosa-pack",
@@ -132,7 +132,7 @@ export const breakfastData: MenuItem[] = [
     title: "Samosa Pack",
     desc: "3 pcs Samosas with Lemon Juice",
     price: "KES 300",
-    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/download (18).jpg"
   },
   {
     id: "spring-rolls",
@@ -141,7 +141,7 @@ export const breakfastData: MenuItem[] = [
     title: "Spring Rolls",
     desc: "2 pcs Spring Rolls",
     price: "KES 140",
-    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop&crop=center"
+    img: "/menu/breakfast/spring-rolls.jpg"
   },
   {
     id: "beef-kebabs",
@@ -159,7 +159,7 @@ export const breakfastData: MenuItem[] = [
     title: "French Toast",
     desc: "Golden French toast",
     price: "KES 170",
-    img: "/menu/food/breakfast/french-toast.png"
+    img: "/menu/breakfast/french-toast.jpg"
   },
   {
     id: "smokie-kachumbari",
@@ -168,7 +168,7 @@ export const breakfastData: MenuItem[] = [
     title: "Smokie with Kachumbari",
     desc: "Grilled smokie with fresh tomato mix",
     price: "KES 150",
-    img: "/menu/food/breakfast/smokie-kachumbari.png"
+    img: "/menu/breakfast/smokie-kachumbari.jpg"
   },
   {
     id: "boiled-eggs-sweet-potato",
@@ -186,6 +186,6 @@ export const breakfastData: MenuItem[] = [
     title: "Fried Eggs & Toast",
     desc: "Fried eggs with toasted bread",
     price: "KES 150",
-    img: "/menu/food/breakfast/fried-eggs-toast.png"
+    img: "/menu/breakfast/friedeggs-toast.jpg"
   },
 ];

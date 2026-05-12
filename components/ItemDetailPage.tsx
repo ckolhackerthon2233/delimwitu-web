@@ -29,17 +29,16 @@ function InfoCard({
 }) {
   return (
     <div
-      className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-7 shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1 overflow-hidden border border-orange-light"
+      className="rounded-[2rem] border border-orange/10 bg-white p-5 shadow-sm"
       style={{ animationDelay: delay }}
     >
-      {/* Hover glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange/5 to-amber-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-      {/* Icon bubble */}
-      <div className="relative z-10 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange to-red-500 flex items-center justify-center text-2xl mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300">
-        {icon}
+      <div className="flex items-center gap-4 mb-4">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange/10 text-orange text-lg">
+          {icon}
+        </div>
+        <h3 className="text-base font-semibold text-dark-brown">{title}</h3>
       </div>
-      <h3 className="relative z-10 font-black text-dark-brown text-lg mb-2">{title}</h3>
-      <p className="relative z-10 text-gray-500 text-sm leading-relaxed">{desc}</p>
+      <p className="text-sm leading-6 text-gray-600">{desc}</p>
     </div>
   );
 }
@@ -175,26 +174,31 @@ export default function ItemDetailPage({
               </div>
 
               <div className="mt-4 animate-fade-in-up stagger-6">
-                <p className="text-xs font-black uppercase tracking-[0.25em] text-orange mb-8 text-center lg:text-left">
-                  How it works
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
+                <div className="mb-6 text-center lg:text-left">
+                  <p className="text-xs font-black uppercase tracking-[0.25em] text-orange mb-3">
+                    How it works
+                  </p>
+                  <p className="text-gray-500 text-sm max-w-xl mx-auto lg:mx-0">
+                    Place your order by email, get a quick confirmation from our team, and pay when your meal is ready for pickup or delivery.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <InfoCard
                     icon="📧"
-                    title="Email Order"
-                    desc="Send us your order details and we'll confirm via email. No payment needed online."
+                    title="Email the order"
+                    desc="Send your item choice and any special requests. We’ll respond with order details and timing."
                     delay=".1s"
                   />
                   <InfoCard
                     icon="⚡"
-                    title="Quick Response"
-                    desc="Our team contacts you within minutes to confirm your order and arrange payment."
+                    title="Fast confirmation"
+                    desc="You’ll hear from our team quickly so the order is confirmed and ready to go."
                     delay=".2s"
                   />
                   <InfoCard
                     icon="🔐"
-                    title="Secure & Safe"
-                    desc="No sensitive payment data is stored online. All transactions are handled securely."
+                    title="Pay on pickup"
+                    desc="No payment info is stored here. Pay safely when your food is ready."
                     delay=".3s"
                   />
                 </div>

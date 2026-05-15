@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Reviews from "@/components/Reviews";
-import Image from "next/image";
 import Link from "next/link";
 import { sendContactEmail } from "@/actions/emails";
 
@@ -19,12 +18,12 @@ const featuredDelimwitu = [
 ];
 
 const cuisineGallery = [
-  { src: "/menu/everydayclassic/everyday-breakfast-01.png", alt: "Everyday breakfast" },
-  { src: "/menu/lunch&dinner/slow-cooked-bbq-beef-02_200x.png", alt: "Slow cooked beef" },
+  { src: "/menu/lunch&dinner/butter-curry-chicken-02_200x.png", alt: "Butter curry chicken" },
+  { src: "/menu/lunch&dinner/chicken-schnitzel-02_200x.png", alt: "Chicken schnitzel" },
+  { src: "/menu/everydayclassic/bread-basket.png", alt: "Bread basket" },
+  { src: "/menu/everydayclassic/eggs-_-toast-02.png", alt: "Eggs and toast" },
+  { src: "/menu/everydayclassic/Pancakes.png", alt: "Pancakes" },
   { src: "/menu/everydayclassic/french-toast-01.png", alt: "French toast" },
-  { src: "/menu/lunch&dinner/grilled-salmon-02_200x.png", alt: "Grilled salmon" },
-  { src: "/menu/pizza/hawaiian-pizza-01_180x.png", alt: "Hawaiian pizza" },
-  { src: "/menu/chicken/fried-chicken.jpg", alt: "Fried chicken" },
 ];
 
 const businessInfoSections = [
@@ -217,8 +216,8 @@ export default function HomePage() {
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {cuisineGallery.map((image) => (
               <div key={image.src} className="overflow-hidden rounded-[2rem] border border-sand/40 bg-cream shadow-sm">
-                <div className="relative h-80 w-full">
-                  <Image src={image.src} alt={image.alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+                <div className="flex justify-center p-6">
+                  <img src={image.src} alt={image.alt} className="mx-auto h-auto max-w-full" />
                 </div>
               </div>
             ))}

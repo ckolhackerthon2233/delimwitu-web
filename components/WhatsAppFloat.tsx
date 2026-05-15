@@ -6,9 +6,13 @@ import Image from "next/image";
 export default function WhatsAppFloat() {
   const [isHovered, setIsHovered] = useState(false);
 
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "254742767255";
+  const defaultMessage = "Hi, I'd like to place an order with Delimwitu";
+  const encodedMessage = encodeURIComponent(defaultMessage);
+
   return (
     <a
-      href="https://wa.me/254712345678?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Delimwitu"
+      href={`https://wa.me/${whatsappNumber}?text=${encodedMessage}`}
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed bottom-6 right-6 flex items-center justify-center rounded-full border border-green-500 bg-white shadow-lg hover:shadow-xl transition-all duration-300 z-40 ${

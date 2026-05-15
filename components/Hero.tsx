@@ -38,12 +38,12 @@ export default function Hero() {
             {/* Location */}
             <div className="flex items-center justify-center gap-2 mb-8 anim-fade-up delay-1">
               <span className="text-2xl">📍</span>
-              <p className="text-white text-lg font-semibold drop-shadow-md">Kileleshua, Nairobi, Kenya</p>
+              <p className="text-white text-lg font-semibold drop-shadow-md">Maralal, Nairobi, Kenya</p>
             </div>
 
             {/* Tagline */}
             <p className="text-white/90 text-lg mb-10 anim-fade-up delay-2 drop-shadow-md max-w-xl font-medium max-md:text-base">
-              Experience authentic Kenyan coffee culture
+              Experience authentic Kenyan food culture
             </p>
 
             {/* CTA Buttons */}
@@ -51,7 +51,7 @@ export default function Hero() {
               <Link href="/menu" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Explore Menu
               </Link>
-              <a href="https://wa.me/254712345678?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Delimwitu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
+              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+254 757 787463"}?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Delimwitu`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Order Online
               </a>
             </div>

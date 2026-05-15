@@ -20,6 +20,7 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
   const [customerEmail, setCustomerEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
   const [specialRequests, setSpecialRequests] = useState("");
+  const [orderChannel, setOrderChannel] = useState<"email" | "whatsapp">("email");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -27,6 +28,8 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
     const value = e.target.value.replace(/[^0-9]/g, "");
     setQuantity(value);
   };
+
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "254742767255";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,35 +47,51 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
 
     setLoading(true);
     onSubmitStart?.();
-    try {
-      const result = await sendOrderEmail({
-        customerName,
-        customerEmail,
-        customerPhone,
-        itemName: item.title,
-        itemPrice: item.price,
-        quantity: quantityValue,
-        specialRequests: specialRequests || undefined,
-      });
 
-      if (result.success) {
-        setMessage("✓ Order sent successfully! Check your email for confirmation.");
-        // Show toast
-        if (typeof window !== 'undefined') {
-          (window as WindowWithToast).showToast?.('Order sent successfully! Check your email for confirmation.', 'success');
+    const total = (parseFloat(item.price.replace(/[^0-9.]/g, "")) * quantityValue).toFixed(2);
+    const orderSummary = `Hello Delimwitu,\n\nI would like to place an order:\n- Item: ${item.title}\n- Quantity: ${quantityValue}\n- Unit price: ${item.price}\n- Total: KSh ${total}\n\nCustomer details:\n- Name: ${customerName}\n- Email: ${customerEmail}\n- Phone: ${customerPhone}${specialRequests ? `\n- Special requests: ${specialRequests}` : ""}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderSummary)}`;
+
+    try {
+      if (orderChannel === "whatsapp") {
+        if (typeof window !== "undefined") {
+          window.open(whatsappUrl, "_blank");
         }
-        // Reset form
-        setCustomerName("");
-        setCustomerEmail("");
-        setCustomerPhone("");
-        setSpecialRequests("");
-        setQuantity("1");
-      } else {
-        setMessage("Failed to send order. Please try again.");
+        setMessage("✓ WhatsApp order opened. Please confirm the message in WhatsApp.");
         if (typeof window !== 'undefined') {
-          (window as WindowWithToast).showToast?.('Failed to send order. Please try again.', 'error');
+          (window as WindowWithToast).showToast?.('WhatsApp order opened. Confirm it in WhatsApp.', 'success');
+        }
+      } else {
+        const result = await sendOrderEmail({
+          customerName,
+          customerEmail,
+          customerPhone,
+          itemName: item.title,
+          itemPrice: item.price,
+          quantity: quantityValue,
+          specialRequests: specialRequests || undefined,
+        });
+
+        if (result.success) {
+          setMessage("✓ Order sent successfully! Check your email for confirmation.");
+          if (typeof window !== 'undefined') {
+            (window as WindowWithToast).showToast?.('Order sent successfully! Check your email for confirmation.', 'success');
+          }
+        } else {
+          setMessage("Failed to send order. Please try again.");
+          if (typeof window !== 'undefined') {
+            (window as WindowWithToast).showToast?.('Failed to send order. Please try again.', 'error');
+          }
         }
       }
+
+      // Reset form after any successful flow
+      setCustomerName("");
+      setCustomerEmail("");
+      setCustomerPhone("");
+      setSpecialRequests("");
+      setQuantity("1");
+      setOrderChannel("email");
     } catch (error) {
       setMessage("An error occurred. Please try again.");
       if (typeof window !== 'undefined') {
@@ -119,6 +138,29 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
             onChange={handleQuantityChange}
             className="w-full px-4 py-2 border border-orange-light rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-light/40"
           />
+        </div>
+
+        {/* Order Channel */}
+        <div>
+          <label className="block text-sm font-semibold text-dark-brown mb-2">
+            Order via
+          </label>
+          <div className="flex flex-wrap gap-3">
+            <button
+              type="button"
+              onClick={() => setOrderChannel("email")}
+              className={`rounded-2xl border px-4 py-2 text-sm font-semibold transition ${orderChannel === "email" ? "border-orange bg-orange/10 text-orange" : "border-slate-200 bg-white text-dark-brown hover:border-orange"}`}
+            >
+              Email
+            </button>
+            <button
+              type="button"
+              onClick={() => setOrderChannel("whatsapp")}
+              className={`rounded-2xl border px-4 py-2 text-sm font-semibold transition ${orderChannel === "whatsapp" ? "border-green-500 bg-green-50 text-green-700" : "border-slate-200 bg-white text-dark-brown hover:border-green-500"}`}
+            >
+              WhatsApp
+            </button>
+          </div>
         </div>
 
         {/* Price Display */}
@@ -193,7 +235,9 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
         </div>
 
         <div className="rounded-3xl border border-orange/10 bg-orange/10 px-4 py-3 text-sm text-orange font-semibold">
-          Email ordering only — your order will be sent directly to our team for confirmation.
+          {orderChannel === "whatsapp"
+            ? "WhatsApp ordering selected — your order will open in WhatsApp for confirmation."
+            : "Email ordering selected — your order will be sent directly to our team for confirmation."}
         </div>
 
         {/* Message */}
@@ -219,7 +263,9 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
         </button>
 
         <p className="text-xs text-gray-600 text-center">
-          We&apos;ll confirm your order via email. No payment info stored online.
+          {orderChannel === "whatsapp"
+            ? "We\'ll open WhatsApp so you can send your order directly to Delimwitu."
+            : "We\'ll confirm your order via email. No payment info stored online."}
         </p>
       </form>
     </div>

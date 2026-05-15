@@ -20,7 +20,7 @@ export default function Footer() {
               <h2 className="text-4xl font-bold text-dark-brown mb-6 max-md:text-3xl">Come Visit Us</h2>
               <div className="w-15 h-0.75 bg-orange rounded mb-8"></div>
               <p className="text-base text-gray-700 mb-8">
-                We&apos;re located around ngong road in lavington, with ample parking, a
+                We&apos;re located around ngong road in Lavington, with ample parking, a
                 beautiful outdoor terrace, and a warm welcome waiting for you.
               </p>
 
@@ -29,7 +29,7 @@ export default function Footer() {
                   <div className="text-2xl flex-shrink-0">📍</div>
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Address</h4>
-                    <p className="text-sm text-gray-600">Lovington, Nairobi, Kenya</p>
+                    <p className="text-sm text-gray-600">Maralal, Nairobi, Kenya</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -37,8 +37,8 @@ export default function Footer() {
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Hours</h4>
                     <p className="text-sm text-gray-600">
-                      Mon–Fri: 7:00 AM – 10:00 PM<br />
-                      Sat–Sun: 8:00 AM – 11:00 PM
+                      Mon–Fri: 7:00 AM – 8:30 PM<br />
+                      Sat–Sun: 8:00 AM – 7:30 PM
                     </p>
                   </div>
                 </div>
@@ -47,8 +47,8 @@ export default function Footer() {
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Contact</h4>
                     <p className="text-sm text-gray-600">
-                      +254 712 345 678<br />
-                      hello@wfoodcafe.co.ke
+                      +254 757 787463<br />
+                      delimwitu@chemalukacreslimited.co.ke
                     </p>
                   </div>
                 </div>
@@ -98,9 +98,9 @@ export default function Footer() {
                 Bold flavours, fresh ingredients, and warm hospitality in every bite.
               </p>
               <div className="space-y-3 text-sm text-sand/80">
-                <p>Ngong Road, Nairobi</p>
-                <p>Mon–Sun: 7:00 AM – 10:30 PM</p>
-                <p>hello@delimwitu.co.ke</p>
+                <p>Maralal, Nairobi</p>
+                <p>Mon–Sun: 7:00 AM – 8:30 PM</p>
+                <p>delimwitu@chemalukacreslimited.co.ke</p>
               </div>
             </div>
 
@@ -161,15 +161,15 @@ export default function Footer() {
             <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr] lg:items-center lg:justify-between">
               <div className="flex flex-wrap items-center gap-4">
                 {paymentMethods.map((method) => (
-                  <div key={method.name} className="relative h-14 w-28 rounded-xl border border-orange/30 bg-orange/5 p-2">
-                    <Image
-                      src={method.src}
-                      alt={method.name}
-                      fill
-                      className="object-contain"
-                      unoptimized
-                    />
-                  </div>
+                  <Image
+                    key={method.name}
+                    src={method.src}
+                    alt={method.name}
+                    width={96}
+                    height={56}
+                    className="object-contain"
+                    unoptimized
+                  />
                 ))}
               </div>
 

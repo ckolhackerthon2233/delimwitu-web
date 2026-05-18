@@ -30,7 +30,7 @@ export default function Hero() {
           <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
             {/* Cafe Name */}
             <h1 className="text-6xl md:text-7xl font-black text-white mb-4 anim-fade-up leading-tight drop-shadow-lg max-md:text-5xl">
-              Delimwitu
+              Deli Mwitu
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange to-red-500">Cafe</span>
             </h1>
@@ -38,7 +38,7 @@ export default function Hero() {
             {/* Location */}
             <div className="flex items-center justify-center gap-2 mb-8 anim-fade-up delay-1">
               <span className="text-2xl">📍</span>
-              <p className="text-white text-lg font-semibold drop-shadow-md">Maralal, Nairobi, Kenya</p>
+              <p className="text-white text-lg font-semibold drop-shadow-md">Maralal Oasis, Hurlingham, Nairobi</p>
             </div>
 
             {/* Tagline */}

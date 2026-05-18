@@ -18,12 +18,12 @@ const featuredDelimwitu = [
 ];
 
 const cuisineGallery = [
-  { src: "/menu/lunch&dinner/butter-curry-chicken-02_200x.png", alt: "Butter curry chicken" },
-  { src: "/menu/lunch&dinner/chicken-schnitzel-02_200x.png", alt: "Chicken schnitzel" },
-  { src: "/menu/everydayclassic/bread-basket.png", alt: "Bread basket" },
-  { src: "/menu/everydayclassic/eggs-_-toast-02.png", alt: "Eggs and toast" },
-  { src: "/menu/everydayclassic/Pancakes.png", alt: "Pancakes" },
-  { src: "/menu/everydayclassic/french-toast-01.png", alt: "French toast" },
+  { src: "/menu/everydayclassic/bhajia.jpg", alt: "Bhajia" },
+  { src: "/menu/everydayclassic/beef-stew-ugali1.jpg", alt: "Beef stew ugali" },
+  { src: "/menu/everydayclassic/tilapia1.jpg", alt: "Tilapia Full" },
+  { src: "/menu/everydayclassic/grilled-chicken1.jpg", alt: "Grilled chicken" },
+  { src: "/menu/everydayclassic/mokimo1.jpg", alt: "Mukimo" },
+  { src: "/menu/everydayclassic/chapati-rolex-combo1.jpg", alt: "Chapati rolex combo" },
 ];
 
 const businessInfoSections = [
@@ -213,11 +213,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {cuisineGallery.map((image) => (
-              <div key={image.src} className="overflow-hidden rounded-[2rem] border border-sand/40 bg-cream shadow-sm">
-                <div className="flex justify-center p-6">
-                  <img src={image.src} alt={image.alt} className="mx-auto h-auto max-w-full" />
+              <div key={image.src} className="flex justify-center">
+                <div className="overflow-hidden rounded-3xl shadow-md bg-cream w-full max-w-sm">
+                  <img src={image.src} alt={image.alt} className="h-72 w-full object-contain  rounded-3xl" />
                 </div>
               </div>
             ))}

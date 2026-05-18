@@ -387,13 +387,13 @@ export default function HomePage() {
                 <h3 className="text-2xl font-bold text-dark-brown mb-6">Hours of Operation</h3>
                 <div className="space-y-3">
                   {[
-                    { day: "Monday", hours: "8:00 AM – 9:00 PM" },
-                    { day: "Tuesday", hours: "8:00 AM – 9:00 PM" },
-                    { day: "Wednesday", hours: "8:00 AM – 9:00 PM" },
-                    { day: "Thursday", hours: "8:00 AM – 9:00 PM" },
-                    { day: "Friday", hours: "8:00 AM – 9:00 PM" },
-                    { day: "Saturday", hours: "9:00 AM – 8:00 PM" },
-                    { day: "Sunday", hours: "9:00 AM – 8:00 PM" },
+                    { day: "Monday", hours: "7:00 AM – 8:30 PM" },
+                    { day: "Tuesday", hours: "7:00 AM – 8:30 PM" },
+                    { day: "Wednesday", hours: "7:00 AM – 8:30 PM" },
+                    { day: "Thursday", hours: "7:00 AM – 8:30 PM" },
+                    { day: "Friday", hours: "7:00 AM – 8:30 PM" },
+                    { day: "Saturday", hours: "8:00 AM – 7:00 PM" },
+                    { day: "Sunday", hours: "8:00 AM – 7:00 PM" },
                   ].map((schedule) => (
                     <div key={schedule.day} className="flex items-center justify-between rounded-2xl bg-cream/50 px-4 py-3">
                       <span className="text-sm font-medium text-dark-brown">{schedule.day}</span>

@@ -20,8 +20,9 @@ export default function Footer() {
               <h2 className="text-4xl font-bold text-dark-brown mb-6 max-md:text-3xl">Come Visit Us</h2>
               <div className="w-15 h-0.75 bg-orange rounded mb-8"></div>
               <p className="text-base text-gray-700 mb-8">
-                We&apos;re located around ngong road in Lavington, with ample parking, a
-                beautiful outdoor terrace, and a warm welcome waiting for you.
+                We&apos;re located  in Marala Oasis, Ground floor, Hurlingham, 
+                we have ample parking on Rose avenue in B1-B3 
+                 and we warmly welcome and waiting for you.
               </p>
 
               <div className="space-y-6">
@@ -29,7 +30,7 @@ export default function Footer() {
                   <div className="text-2xl flex-shrink-0">📍</div>
                   <div>
                     <h4 className="font-semibold text-dark-brown mb-1">Address</h4>
-                    <p className="text-sm text-gray-600">Maralal, Nairobi, Kenya</p>
+                    <p className="text-sm text-gray-600">Maralal Oasis, Ground Floor, Hurlingham, Nairobi</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -38,7 +39,7 @@ export default function Footer() {
                     <h4 className="font-semibold text-dark-brown mb-1">Hours</h4>
                     <p className="text-sm text-gray-600">
                       Mon–Fri: 7:00 AM – 8:30 PM<br />
-                      Sat–Sun: 8:00 AM – 7:30 PM
+                      Sat–Sun: 8:00 AM – 7:00 PM
                     </p>
                   </div>
                 </div>
@@ -48,6 +49,7 @@ export default function Footer() {
                     <h4 className="font-semibold text-dark-brown mb-1">Contact</h4>
                     <p className="text-sm text-gray-600">
                       +254 757 787463<br />
+                      +254 788 401395<br />
                       delimwitu@chemalukacreslimited.co.ke
                     </p>
                   </div>
@@ -85,7 +87,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 xl:grid-cols-[1.6fr_1fr_1fr_1fr_1.2fr] xl:gap-12 mb-12">
             <div className="space-y-4">
               <div className="inline-flex items-center justify-center rounded-full bg-white/10 p-2 shadow-sm border border-orange/20">
-                <span className="sr-only">Delimwitu</span>
+                <span className="sr-only">Deli Mwitu</span>
                 <Image
                   src="/logo.png"
                   alt="Delimwitu Logo"
@@ -99,7 +101,10 @@ export default function Footer() {
               </p>
               <div className="space-y-3 text-sm text-sand/80">
                 <p>Maralal, Nairobi</p>
-                <p>Mon–Sun: 7:00 AM – 8:30 PM</p>
+                <p>Mon–Fri: 7:00 AM – 8:30 PM</p>
+                <p>Sat–Sun: 8:00 AM – 7:00 PM</p>
+                <p>+254 757 787463</p>
+                <p>+254 788 401395</p>
                 <p>delimwitu@chemalukacreslimited.co.ke</p>
               </div>
             </div>
@@ -188,7 +193,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-8 text-sm text-sand/70 text-center lg:text-left">
-              © 2026, Delimwitu Cafe, Restaurant & Market. All Rights Reserved.
+              © 2026, Deli Mwitu Cafe, Restaurant & Market. All Rights Reserved.
             </p>
           </div>
         </div>

@@ -32,7 +32,7 @@ export default function Hero() {
             <h1 className="text-6xl md:text-7xl font-black text-white mb-4 anim-fade-up leading-tight drop-shadow-lg max-md:text-5xl">
               Deli Mwitu
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange to-red-500">Cafe</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange to-red-500">Restaurant</span>
             </h1>
 
             {/* Location */}

@@ -147,13 +147,13 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
+                  <a href="https://www.instagram.com/deli.mwitu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-orange/20 bg-orange/10 text-orange">📸</span>
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
+                  <a href="https://www.tiktok.com/@deli_mwitu?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-orange transition">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-orange/20 bg-orange/10 text-orange">🎵</span>
                     TikTok
                   </a>

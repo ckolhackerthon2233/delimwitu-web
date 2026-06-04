@@ -27,33 +27,40 @@ const dmSans = DM_Sans({
  * metadataBase: base URL for resolving relative image paths in Open Graph.
  */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://restaurant-wfood.vercel.app"),
+  metadataBase: new URL("https://delimwitu.co.ke"),
   title: {
-    default: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
+    default: "Delimwitu Cafe & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
     template: "%s | Delimwitu Cafe",
   },
   description:
-    "Experience authentic Kenyan coffee and cuisine at Delimwitu Cafe in Kileleshua, Nairobi. Premium roasted beans, fresh pastries, and a vibrant community space.",
+    "Discover Delimwitu Cafe near Nairobi with hotel-style comfort, Maralal Oasis location vibes, deli food, fast food, coffee, pastries, and local dining experiences.",
   keywords: [
-    "coffee",
-    "cafe",
-    "Nairobi",
-    "K",
     "Delimwitu Cafe",
+    "hotel near Nairobi",
+    "hotels near Nairobi",
+    "Maralal Oasis",
+    "Maralal Oasis hotel",
+    "Maralal Oasis location",
+    "deli near Nairobi",
+    "fast food near Nairobi",
+    "Kenyan coffee",
     "specialty coffee",
-    "third-wave roastery",
+    "cafe Nairobi",
+    "restaurant near Nairobi",
     "local food",
     "pastries",
-    "dining",
-    "restaurant",
-    "community space",
-    "Kenyan coffee",
-    "artisan coffee",
-    "cafe nairobi",
-    "specialty drinks",
-    "online ordering",
-    "WhatsApp ordering",
-    "WiFi cafe",
+    "hotel stay",
+    "guest house",
+    "lodging",
+    "travel stop",
+    "food and accommodation",
+    "Nairobi dining",
+    "coffee shop",
+    "breakfast spot",
+    "deli",
+    "fast food",
+    "outdoor dining",
+    "hotel amenities",
   ],
   authors: [
     {
@@ -89,11 +96,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "#",
-    siteName: "Delimwitu Cafe",
-    title: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
+    url: "https://delimwitu.co.ke",
+    siteName: "Delimwitu Cafe & Hotel Stay",
+    title: "Delimwitu Cafe & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
     description:
-      "Experience authentic Kenyan coffee and cuisine at Delimwitu Cafe in Kileleshua, Nairobi. Book a table online.",
+      "Enjoy Delimwitu Cafe near Nairobi with hotel-style comfort, deli bites, fast food, coffee, pastries, and a welcoming Maralal Oasis experience.",
     images: [
       {
         url: "/hero/plate.png",
@@ -111,9 +118,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Delimwitu Cafe - Nairobi's Premium Coffee & Food Destination",
+    title: "Delimwitu Cafe & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
     description:
-      "Experience authentic Kenyan coffee and cuisine at Delimwitu Cafe in Kileleshua, Nairobi. Book a table online.",
+      "Enjoy Delimwitu Cafe near Nairobi with hotel-style comfort, deli bites, fast food, coffee, pastries, and a welcoming Maralal Oasis experience.",
     images: ["/hero/plate.png"],
     creator: "@delimwitu_cafe",
   },
@@ -123,7 +130,7 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
   alternates: {
-    canonical: "https://restaurant-wfood.vercel.app",
+    canonical: "https://delimwitu.co.ke",
   },
   manifest: "/manifest.json",
   category: "restaurant",

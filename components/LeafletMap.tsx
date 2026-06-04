@@ -19,28 +19,12 @@ function fixLeafletIcons() {
 // Branch locations in Nairobi — update coordinates to match your real branches
 const BRANCHES = [
   {
-    name: "Delimwitu Kileleshua",
-    address: "Kileleshua, Nairobi",
+    name: "Delimwitu Restaurant",
+    address: "Maralal Oasis, Ground Floor, Nairobi",
     lat: -1.2611,
     lng: 36.8219,
     phone: "+254 701 234 567",
     hours: "10:00 AM – 10:00 PM",
-  },
-  {
-    name: "Delimwitu Downtown",
-    address: "CBD, Nairobi",
-    lat: -1.2841,
-    lng: 36.8155,
-    phone: "+254 701 234 568",
-    hours: "10:00 AM – 10:00 PM",
-  },
-  {
-    name: "Delimwitu Westlands",
-    address: "Westlands, Nairobi",
-    lat: -1.2637,
-    lng: 36.8025,
-    phone: "+254 701 234 569",
-    hours: "10:00 AM – 11:00 PM",
   },
 ];
 

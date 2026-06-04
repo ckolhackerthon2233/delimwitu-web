@@ -1,5 +1,5 @@
 /**
- * Starters/Extras menu data for Delimwitu Cafe
+ * Starters/Extras menu data for Delimwitu Restaurant
  * All starter and extra food items
  */
 

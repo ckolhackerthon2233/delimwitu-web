@@ -1,5 +1,5 @@
 /**
- * Gizzards menu data for Delimwitu Cafe
+ * Gizzards menu data for Delimwitu Restaurant
  * All gizzard items with various preparation styles
  */
 

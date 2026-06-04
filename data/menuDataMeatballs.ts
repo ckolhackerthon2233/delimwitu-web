@@ -1,5 +1,5 @@
 /**
- * Meatballs menu data for Delimwitu Cafe
+ * Meatballs menu data for Delimwitu Restaurant
  * All meatball items with various preparation styles
  */
 

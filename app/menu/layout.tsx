@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Menu - delimwitu",
-  description: "Explore our delicious menu at Delimwitu Cafe",
+  description: "Explore our delicious menu at Delimwitu Restaurant",
 };
 
 export default function MenuLayout({

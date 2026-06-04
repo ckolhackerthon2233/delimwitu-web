@@ -1,5 +1,5 @@
 /**
- * Fish fillet dishes menu data for Delimwitu Cafe
+ * Fish fillet dishes menu data for Delimwitu Restaurant
  * All fish fillet-related food items
  */
 

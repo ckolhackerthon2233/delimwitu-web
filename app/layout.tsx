@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "fast food near Nairobi",
     "Kenyan coffee",
     "specialty coffee",
-    "cafe Nairobi",
+    "Restaurant Nairobi",
     "restaurant near Nairobi",
     "local food",
     "pastries",

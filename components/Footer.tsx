@@ -193,7 +193,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-8 text-sm text-sand/70 text-center lg:text-left">
-              © 2026, Deli Mwitu Cafe, Restaurant & Market. All Rights Reserved.
+              © 2026, Deli Mwitu Restaurant & Market. All Rights Reserved.
             </p>
           </div>
         </div>

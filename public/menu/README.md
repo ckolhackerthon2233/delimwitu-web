@@ -1,4 +1,4 @@
-# Delimwitu Cafe Menu Images
+# Delimwitu Restaurant Menu Images
 
 This folder contains placeholder images for all menu items. **REPLACE THESE WITH ACTUAL PHOTOS** for the best user experience.
 

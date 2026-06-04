@@ -1,5 +1,5 @@
 /**
- * Breakfast menu data for Delimwitu Cafe
+ * Breakfast menu data for Delimwitu Restaurant
  * All breakfast items organized by meal type
  */
 

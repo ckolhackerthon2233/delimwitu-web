@@ -1,4 +1,4 @@
-# Delimwitu Cafe Website - Implementation Summary
+# Delimwitu Restaurant Website - Implementation Summary
 
 **Project Status**: 80% Complete
 

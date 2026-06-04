@@ -8,7 +8,7 @@ import type { MapMarkerData } from "@/types";
 export const mapMarkers: MapMarkerData[] = [
   {
     position: [-1.2921, 36.8219],
-    title: "Kileleshwa Branch",
+    title: "Maralal Oasis Ground Floor Branch",
     subtitle: "Our main location in the heart of Nairobi",
     image: "/map/1.png",
   },

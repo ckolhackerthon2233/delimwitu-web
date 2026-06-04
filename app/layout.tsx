@@ -29,13 +29,13 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://delimwitu.co.ke"),
   title: {
-    default: "Delimwitu Cafe & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
-    template: "%s | Delimwitu Cafe",
+    default: "Delimwitu Restaurant & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
+    template: "%s | Delimwitu Restaurant",
   },
   description:
-    "Discover Delimwitu Cafe near Nairobi with hotel-style comfort, Maralal Oasis location vibes, deli food, fast food, coffee, pastries, and local dining experiences.",
+    "Discover Delimwitu Restaurant near Nairobi with hotel-style comfort, Maralal Oasis location vibes, deli food, fast food, coffee, pastries, and local dining experiences.",
   keywords: [
-    "Delimwitu Cafe",
+    "Delimwitu Restaurant",
     "hotel near Nairobi",
     "hotels near Nairobi",
     "Maralal Oasis",
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
     },
   ],
   other: {
-    "application-name": "Delimwitu Cafe",
-    "apple-mobile-web-app-title": "Delimwitu Cafe",
+    "application-name": "Delimwitu Restaurant",
+    "apple-mobile-web-app-title": "Delimwitu Restaurant",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
     "mobile-web-app-capable": "yes",
@@ -97,30 +97,30 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://delimwitu.co.ke",
-    siteName: "Delimwitu Cafe & Hotel Stay",
-    title: "Delimwitu Cafe & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
+    siteName: "Delimwitu Restaurant & Hotel Stay",
+    title: "Delimwitu Restaurant & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
     description:
-      "Enjoy Delimwitu Cafe near Nairobi with hotel-style comfort, deli bites, fast food, coffee, pastries, and a welcoming Maralal Oasis experience.",
+      "Enjoy Delimwitu Restaurant near Nairobi with hotel-style comfort, deli bites, fast food, coffee, pastries, and a welcoming Maralal Oasis experience.",
     images: [
       {
         url: "/hero/plate.png",
         width: 756,
         height: 682,
-        alt: "Delimwitu Cafe - Premium Coffee in Nairobi",
+        alt: "Delimwitu Restaurant - Premium Coffee in Nairobi",
       },
       {
         url: "/logo.svg",
         width: 90,
         height: 36,
-        alt: "Delimwitu Cafe Logo",
+        alt: "Delimwitu Restaurant Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Delimwitu Cafe & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
+    title: "Delimwitu Restaurant & Hotel Stay Near Nairobi | Maralal Oasis Dining, Fast Food & More",
     description:
-      "Enjoy Delimwitu Cafe near Nairobi with hotel-style comfort, deli bites, fast food, coffee, pastries, and a welcoming Maralal Oasis experience.",
+      "Enjoy Delimwitu Restaurant near Nairobi with hotel-style comfort, deli bites, fast food, coffee, pastries, and a welcoming Maralal Oasis experience.",
     images: ["/hero/plate.png"],
     creator: "@delimwitu_cafe",
   },

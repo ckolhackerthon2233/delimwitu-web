@@ -1,5 +1,5 @@
 /**
- * Fish menu data for Delimwitu Cafe
+ * Fish menu data for Delimwitu Restaurant
  * All fish and tilapia items
  */
 

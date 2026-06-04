@@ -1,5 +1,5 @@
 /**
- * Bakery menu data for Delimwitu Cafe
+ * Bakery menu data for Delimwitu Restaurant
  * All bakery and dessert items
  */
 

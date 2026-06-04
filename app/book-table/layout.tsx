@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Book a Table - delimwitu",
-  description: "Reserve your table at Delimwitu Cafe",
+  description: "Reserve your table at Delimwitu Restaurant",
 };
 
 export default function BookTableLayout({

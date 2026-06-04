@@ -1,5 +1,5 @@
 /**
- * Beef dishes menu data for Delimwitu Cafe
+ * Beef dishes menu data for Delimwitu Restaurant
  * All beef-related food items
  */
 

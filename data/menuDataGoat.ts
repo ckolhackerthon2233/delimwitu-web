@@ -1,5 +1,5 @@
 /**
- * Goat/Mbuzi dishes menu data for Delimwitu Cafe
+ * Goat/Mbuzi dishes menu data for Delimwitu Restaurant
  * All goat-related food items
  */
 

@@ -13,20 +13,16 @@ export default function About() {
               Our Story
             </span>
             <h2 className="text-5xl font-black text-dark-brown max-w-2xl leading-tight md:text-6xl">
-              Delimwitu Market is more than a shop — it’s a culinary journey.
+              Deli Mwitu Restaurant is a Kenyan restaurant serving authentic local favourites.
             </h2>
             <p className="text-base leading-relaxed text-dark-brown/80 max-w-2xl">
-              Delimwitu Market brings together inspired food, fresh produce,
-              beautiful blooms and everyday essentials under one welcoming roof.
-              From thoughtfully curated pantry goods to ready meals and live cooking
-              demos, every visit is designed to be flavorful, convenient, and full of
-              warmth.
+              Deli Mwitu Restaurant is located at Maralal Oasis, Ground Floor, Hurlingham, Nairobi. We serve authentic Kenyan meals, local favourites, takeaway and delivery services.
             </p>
             <Link
               href="/menu"
               className="inline-flex items-center gap-2 rounded-full bg-orange px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-orange-hover"
             >
-              Discover More
+              Discover Menu
             </Link>
           </div>
 

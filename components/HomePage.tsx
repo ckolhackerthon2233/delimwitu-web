@@ -8,6 +8,22 @@ import Reviews from "@/components/Reviews";
 import Link from "next/link";
 import { sendContactEmail } from "@/actions/emails";
 
+const restaurantSchema = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Deli Mwitu Restaurant",
+  "url": "https://delimwitu.co.ke",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Maralal Oasis, Ground Floor, Hurlingham",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "servesCuisine": "Kenyan Cuisine",
+  "priceRange": "$$",
+  "hasMenu": "https://delimwitu.co.ke/menu"
+};
+
 const featuredDelimwitu = [
   { title: "Mango Juice Deli", subtitle: "Fresh cold juice", price: "KSh 150" },
   { title: "Passion Juice 250 ML Deli", subtitle: "Tropical refreshment", price: "KSh 150" },
@@ -137,6 +153,7 @@ export default function HomePage() {
 
   return (
     <main className="w-full overflow-hidden bg-cream">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchema) }} />
       <Header />
       <Hero />
 

@@ -28,7 +28,6 @@ export default function Hero() {
         {/* Content at Bottom */}
         <div className="max-w-[1200px] w-full mx-auto px-6 relative z-10 pb-12 max-md:pb-8">
           <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-            {/* Cafe Name */}
             <h1 className="text-6xl md:text-7xl font-black text-white mb-4 anim-fade-up leading-tight drop-shadow-lg max-md:text-5xl">
               Deli Mwitu
               <br />

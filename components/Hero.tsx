@@ -50,7 +50,7 @@ export default function Hero() {
               <Link href="/menu" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Explore Menu
               </Link>
-              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+254 757 787463"}?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Delimwitu`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
+              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+254 757 787463"}?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Deli Mwitu`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Order Online
               </a>
             </div>

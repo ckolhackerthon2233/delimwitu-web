@@ -49,7 +49,7 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
     onSubmitStart?.();
 
     const total = (parseFloat(item.price.replace(/[^0-9.]/g, "")) * quantityValue).toFixed(2);
-    const orderSummary = `Hello Delimwitu,\n\nI would like to place an order:\n- Item: ${item.title}\n- Quantity: ${quantityValue}\n- Unit price: ${item.price}\n- Total: KSh ${total}\n\nCustomer details:\n- Name: ${customerName}\n- Email: ${customerEmail}\n- Phone: ${customerPhone}${specialRequests ? `\n- Special requests: ${specialRequests}` : ""}`;
+    const orderSummary = `Hello Deli Mwitu,\n\nI would like to place an order:\n- Item: ${item.title}\n- Quantity: ${quantityValue}\n- Unit price: ${item.price}\n- Total: KSh ${total}\n\nCustomer details:\n- Name: ${customerName}\n- Email: ${customerEmail}\n- Phone: ${customerPhone}${specialRequests ? `\n- Special requests: ${specialRequests}` : ""}`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderSummary)}`;
 
     try {
@@ -264,7 +264,7 @@ export default function OrderForm({ item, onSubmitStart, onSubmitEnd }: OrderFor
 
         <p className="text-xs text-gray-600 text-center">
           {orderChannel === "whatsapp"
-            ? "We\'ll open WhatsApp so you can send your order directly to Delimwitu."
+            ? "We\'ll open WhatsApp so you can send your order directly to Deli Mwitu."
             : "We\'ll confirm your order via email. No payment info stored online."}
         </p>
       </form>

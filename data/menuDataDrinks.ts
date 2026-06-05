@@ -1,5 +1,5 @@
 /**
- * Drinks menu data for Delimwitu Restaurant
+ * Drinks menu data for Deli Mwitu Restaurant
  * Organized by beverage categories: juices, sodas, syrups, hot beverages, coffee, and porridge
  * Images updated with specific, item-accurate Unsplash photos
  */

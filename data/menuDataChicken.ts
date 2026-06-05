@@ -1,5 +1,5 @@
 /**
- * Chicken dishes menu data for Delimwitu Restaurant
+ * Chicken dishes menu data for Deli Mwitu Restaurant
  * All chicken-related food items
  */
 

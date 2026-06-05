@@ -137,7 +137,7 @@ export default function ItemDetailPage({
               <div className="flex flex-col gap-6">
                 <div className="animate-fade-in-right stagger-2">
                   <span className="text-xs font-black uppercase tracking-[0.3em] text-orange mb-3 block">
-                    Delimwitu Kitchen
+                    Deli Mwitu Kitchen
                   </span>
                   <h1 className="text-5xl md:text-6xl font-black text-dark-brown leading-none tracking-tight mb-5">
                     {item.title}

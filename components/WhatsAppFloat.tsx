@@ -7,7 +7,7 @@ export default function WhatsAppFloat() {
   const [isHovered, setIsHovered] = useState(false);
 
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "254742767255";
-  const defaultMessage = "Hi, I'd like to place an order with Delimwitu";
+  const defaultMessage = "Hi, I'd like to place an order with Deli Mwitu";
   const encodedMessage = encodeURIComponent(defaultMessage);
 
   return (

@@ -30,7 +30,7 @@ export default function About() {
             <div className="relative h-72 overflow-hidden rounded-[2rem] shadow-xl sm:h-[420px]">
               <Image
                 src="/about/img.png"
-                alt="Delimwitu market interior"
+                alt="Deli Mwitu market interior"
                 fill
                 className="object-cover"
               />
@@ -50,7 +50,7 @@ export default function About() {
           <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
             <Image
               src="/about/img.png"
-              alt="Team at Delimwitu"
+              alt="Team at Deli Mwitu"
               fill
               className="object-cover"
             />
@@ -63,14 +63,14 @@ export default function About() {
               Built on family, passion and community.
             </h3>
             <p className="text-base leading-relaxed text-dark-brown/80">
-              Delimwitu is a family of people who grow with us, care for one
+              Deli Mwitu is a family of people who grow with us, care for one
               another, and take pride in every moment they serve. Our leadership
               is rooted in strong values, and our teams are empowered to learn,
               excel, and create memorable experiences for every guest.
             </p>
             <p className="text-base leading-relaxed text-dark-brown/80">
               From baristas rising on stage to servers becoming managers, every
-              team member is part of what makes Delimwitu special. We celebrate
+              team member is part of what makes Deli Mwitu special. We celebrate
               curiosity, craftsmanship, and a culture of support.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -95,7 +95,7 @@ export default function About() {
               With love, passion and time-honored baking rituals.
             </h3>
             <p className="text-base leading-relaxed text-dark-brown/80">
-              At the heart of Delimwitu lies a bakery dedicated to authentic,
+              At the heart of Deli Mwitu lies a bakery dedicated to authentic,
               artisanal breads made without additives or preservatives. We honor
               techniques like natural fermentation, stone baking, and a starter
               that has matured for years.
@@ -114,7 +114,7 @@ export default function About() {
           <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
             <Image
               src="/about/img-2.svg"
-              alt="Delimwitu bakery specialty"                
+              alt="Deli Mwitu bakery specialty"                
               fill
               className="object-cover"
             />

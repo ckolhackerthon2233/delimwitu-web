@@ -1,5 +1,5 @@
 /**
- * Gizzards menu data for Delimwitu Restaurant
+ * Gizzards menu data for Deli Mwitu Restaurant
  * All gizzard items with various preparation styles
  */
 

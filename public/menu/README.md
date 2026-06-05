@@ -1,4 +1,4 @@
-# Delimwitu Restaurant Menu Images
+# Deli Mwitu Restaurant Menu Images
 
 This folder contains placeholder images for all menu items. **REPLACE THESE WITH ACTUAL PHOTOS** for the best user experience.
 
@@ -107,4 +107,4 @@ Replace images in this order for best user experience:
 
 ---
 **Remember**: High-quality, appetizing food photos significantly improve user experience and conversion rates!</content>
-<parameter name="filePath">c:\Users\Felix cole\Desktop\deli\delimwitu\public\menu\README.md
+<parameter name="filePath">c:\Users\Felix cole\Desktop\deli\Deli Mwitu\public\menu\README.md

@@ -90,7 +90,7 @@ export default function Footer() {
                 <span className="sr-only">Deli Mwitu</span>
                 <Image
                   src="/logo.png"
-                  alt="Delimwitu Logo"
+                  alt="Deli Mwitu Logo"
                   width={64}
                   height={64}
                   className="w-16 h-16 rounded-full"

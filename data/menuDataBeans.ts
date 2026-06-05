@@ -1,5 +1,5 @@
 /**
- * Beans/Ndengu dishes menu data for Delimwitu Restaurant
+ * Beans/Ndengu dishes menu data for Deli Mwitu Restaurant
  * All beans-related food items
  */
 

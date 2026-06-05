@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Delimwitu Restaurant - Fast Loading Restaurant Website',
-  description: 'Experience lightning-fast navigation at Delimwitu Restaurant. Premium coffee, food, and optimized performance.',
+  title: 'Deli Mwitu Restaurant - Fast Loading Restaurant Website',
+  description: 'Experience lightning-fast navigation at Deli Mwitu Restaurant. Premium coffee, food, and optimized performance.',
   other: {
     'theme-color': '#ea580c',
     'color-scheme': 'light',
@@ -11,6 +11,6 @@ export const metadata: Metadata = {
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'default',
-    'apple-mobile-web-app-title': 'Delimwitu Restaurant',
+    'apple-mobile-web-app-title': 'Deli Mwitu Restaurant',
   },
 };

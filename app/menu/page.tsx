@@ -90,11 +90,11 @@ export default function MenuPage() {
           <div className="grid gap-10 md:grid-cols-2 md:gap-12 items-center">
             <div className="text-center">
               <h2 className="text-6xl sm:text-7xl md:text-9xl font-black text-orange/15 mb-4 leading-none">SUMMER</h2>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-light text-orange italic mb-6">Tropical rhythms, bright plates, and Delimwitu joy</h3>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-light text-orange italic mb-6">Tropical rhythms, bright plates, and Deli Mwitu joy</h3>
             </div>
             <div className="text-center md:text-center text-gray-700 leading-relaxed">
               <p className="text-base mb-4">
-                Inspired by the spirit of Delimwitu, this menu brings together bold tropical flavours and comforting favourites to delight every guest. Discover colourful wraps, hearty bowls made from vibrant local produce, and playful new twists on our coffees and signature drinks. From the first bite, every dish celebrates creativity, freshness, and the warm energy of Delimwitu dining.
+                Inspired by the spirit of Deli Mwitu, this menu brings together bold tropical flavours and comforting favourites to delight every guest. Discover colourful wraps, hearty bowls made from vibrant local produce, and playful new twists on our coffees and signature drinks. From the first bite, every dish celebrates creativity, freshness, and the warm energy of Deli Mwitu dining.
               </p>
             </div>
           </div>

@@ -1,5 +1,5 @@
 /**
- * Beef dishes menu data for Delimwitu Restaurant
+ * Beef dishes menu data for Deli Mwitu Restaurant
  * All beef-related food items
  */
 

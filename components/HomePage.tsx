@@ -24,7 +24,7 @@ const restaurantSchema = {
   "hasMenu": "https://delimwitu.co.ke/menu"
 };
 
-const featuredDelimwitu = [
+const featuredDeliMwitu = [
   { title: "Mango Juice Deli", subtitle: "Fresh cold juice", price: "KSh 150" },
   { title: "Passion Juice 250 ML Deli", subtitle: "Tropical refreshment", price: "KSh 150" },
   { title: "Cappuccino S Deli", subtitle: "Classic espresso drink", price: "KSh 250" },
@@ -186,7 +186,7 @@ export default function HomePage() {
               Featured Products
             </span>
             <h2 className="text-4xl font-black text-dark-brown sm:text-5xl">
-              Flavours from the Delimwitu menu you can’t miss.
+              Flavours from the Deli Mwitu menu you can’t miss.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base text-gray-700">
               A fresh look at our most-loved drinks and dishes, styled as a simple menu highlight that invites guests to explore more.
@@ -194,7 +194,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-            {featuredDelimwitu.map((item) => (
+            {featuredDeliMwitu.map((item) => (
               <div key={item.title} className="flex items-center justify-between rounded-3xl border border-sand/40 bg-cream px-5 py-4 shadow-sm transition hover:shadow-md">
                 <div>
                   <p className="text-base font-semibold text-dark-brown">{item.title}</p>
@@ -220,13 +220,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-screen-xl">
           <div className="text-center mb-12">
             <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange mb-3">
-              Delimwitu Cuisine
+              Deli Mwitu Cuisine
             </span>
             <h2 className="text-4xl font-black text-dark-brown sm:text-5xl">
               Gallery of flavours and plates
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base text-gray-700">
-              A visual preview of Delimwitu’s food and drink styling with curated menu shots from our kitchen.
+              A visual preview of Deli Mwitu’s food and drink styling with curated menu shots from our kitchen.
             </p>
           </div>
 
@@ -299,7 +299,7 @@ export default function HomePage() {
               Get In Touch
             </span>
             <h2 className="text-4xl font-black text-dark-brown sm:text-5xl mb-4">
-              Connect with Delimwitu
+              Connect with Deli Mwitu
             </h2>
             <p className="mx-auto max-w-2xl text-base text-gray-600">
               Have questions about reservations, catering, or just want to say hello? We&apos;d love to hear from you. Fill out the form and we&apos;ll respond within 24 hours.

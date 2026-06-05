@@ -1,5 +1,5 @@
 ================================================================================
-DELIMWITU RESTAURANT - COMPLETE PRODUCT IMAGE LINKS & CATEGORIZATION
+Deli Mwitu RESTAURANT - COMPLETE PRODUCT IMAGE LINKS & CATEGORIZATION
 ================================================================================
 Generated: May 7, 2026
 Total Categories: 12
@@ -576,9 +576,9 @@ RECOMMENDED HERO/BANNER IMAGES
 ================================================================================
 
 HERO IMAGE OPTIONS (High-quality, high-resolution suggested):
-1. Overhead shot of Delimwitu restaurant setting with signature dishes
+1. Overhead shot of Deli Mwitu restaurant setting with signature dishes
 2. Vibrant food photography of: Joloff Beef, Chicken Curry, or Kienyeji Wet Fry
-3. Lifestyle image: Group dining at Delimwitu with warm ambiance
+3. Lifestyle image: Group dining at Deli Mwitu with warm ambiance
 4. Coffee/Breakfast specialty: High-quality macro shot of coffee and breakfast plate
 
 Suggested path: /public/hero/hero-main.png (1920x1080 recommended, or larger for retina)

@@ -1,5 +1,5 @@
 /**
- * Complete menu data for Delimwitu Restaurant - All Products with Prices
+ * Complete menu data for Deli Mwitu Restaurant - All Products with Prices
  * Combines drinks data with food data
  */
 

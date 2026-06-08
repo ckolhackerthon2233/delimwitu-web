@@ -7,6 +7,13 @@ export default function Reviews() {
   const reviews = [
     {
       rating: 5,
+      text: '"I eat at Deli Mwitu Monday to Saturday. Breakfast and lunch. Food is just like home. It\'s affordable and healthy. I take regular takeout for the family usually kebabs, sausages, chips and full grilled chicken and wet fry fish. My family simply love the place."',
+      author: 'Kimutai',
+      role: 'Regular Guest · Nairobi',
+      avatar: 'https://i.pravatar.cc/80?img=68',
+    },
+    {
+      rating: 5,
       text: '"Hands down the best brunch spot in Mombasa. The avocado toast is absolutely heavenly, and the coffee is roasted in-house. I come here every Sunday without fail."',
       author: 'Amina Khalid',
       role: 'Regular Guest · Mombasa',

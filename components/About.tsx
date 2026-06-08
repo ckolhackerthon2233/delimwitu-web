@@ -13,20 +13,19 @@ export default function About() {
               About Us
             </span>
             <h2 className="text-5xl font-black text-dark-brown max-w-2xl leading-tight md:text-6xl">
-              Delimwitu Market is more than a shop — it’s a culinary journey.
+              At Deli Mwitu, we are more than just a food spot — we are a team built on passion, people, and the everyday Kenyan spirit.
             </h2>
             <p className="text-base leading-relaxed text-dark-brown/80 max-w-2xl">
-              Delimwitu Market brings together inspired food, fresh produce,
-              beautiful blooms and everyday essentials under one welcoming roof.
-              From thoughtfully curated pantry goods to ready meals and live cooking
-              demos, every visit is designed to be flavorful, convenient, and full of
-              warmth.
+              Rooted in the heart of Nairobi, we’ve created a vibrant space that reflects the energy around us: warm, lively, and grounded in real connection. We believe that food should be exciting, evolving, and enjoyable every single time you visit.
+            </p>
+            <p className="text-base leading-relaxed text-dark-brown/80 max-w-2xl">
+              That’s why our menu thoughtfully balances the rich comfort of Kenyan traditions with the fast-paced creativity of modern café culture. Whether you are dropping in for a quick bite on the move or sitting down to connect with friends, Deli Mwitu is a place where you can always discover something new while enjoying the flavors you already love.
             </p>
             <Link
               href="/menu"
               className="inline-flex items-center gap-2 rounded-full bg-orange px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-orange-hover"
             >
-              Discover Menu
+              Discover More
             </Link>
           </div>
 
@@ -34,7 +33,7 @@ export default function About() {
             <div className="relative h-72 overflow-hidden rounded-[2rem] shadow-xl sm:h-[420px]">
               <Image
                 src="/about/img.png"
-                alt="Deli Mwitu market interior"
+                alt="Delimwitu market interior"
                 fill
                 className="object-cover"
               />
@@ -54,7 +53,7 @@ export default function About() {
           <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
             <Image
               src="/about/img.png"
-              alt="Team at Deli Mwitu"
+              alt="Team at Delimwitu"
               fill
               className="object-cover"
             />
@@ -67,26 +66,17 @@ export default function About() {
               The Deli Mwitu menu tells a story of comfort, variety, and authentic Kenyan hospitality.
             </h3>
             <p className="text-base leading-relaxed text-dark-brown/80">
-              Delimwitu is a family of people who grow with us, care for one
-              another, and take pride in every moment they serve. Our leadership
-              is rooted in strong values, and our teams are empowered to learn,
-              excel, and create memorable experiences for every guest.
+              We pride ourselves on offering a diverse selection where traditional favorites sit comfortably alongside contemporary café staples.
             </p>
             <p className="text-base leading-relaxed text-dark-brown/80">
-              From baristas rising on stage to servers becoming managers, every
-              team member is part of what makes Delimwitu special. We celebrate
-              curiosity, craftsmanship, and a culture of support.
+              Traditional Comforts: Hearty, heritage dishes like perfectly prepared mukimo, savory mbuzi, fresh managu, and nourishing uji that taste like home.
             </p>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl bg-cream p-5">
-                <p className="text-sm uppercase tracking-[0.35em] text-sand/70">Team size</p>
-                <p className="mt-3 text-3xl font-bold text-dark-brown">190+</p>
-              </div>
-              <div className="rounded-3xl bg-cream p-5">
-                <p className="text-sm uppercase tracking-[0.35em] text-sand/70">Female leaders</p>
-                <p className="mt-3 text-3xl font-bold text-dark-brown">Majority</p>
-              </div>
-            </div>
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              Modern Café Culture: Quick, flavorful bites and contemporary favorites, including juicy burgers, savory shawarmas, fresh juices, and specialty coffees crafted for life on the go.
+            </p>
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              Every plate and drink we serve is intentional, fresh, and designed to bring people together over satisfying, familiar meals.
+            </p>
           </div>
         </div>
 
@@ -99,10 +89,10 @@ export default function About() {
               Authentic Hospitality, Thoughtful Variety, Continuous Growth.
             </h3>
             <p className="text-base leading-relaxed text-dark-brown/80">
-              At the heart of Delimwitu lies a bakery dedicated to authentic,
-              artisanal breads made without additives or preservatives. We honor
-              techniques like natural fermentation, stone baking, and a starter
-              that has matured for years.
+              Authentic Hospitality: Grounded in a real Kenyan vibe, offering warmth, care, and a welcoming environment to everyone who walks through our doors.
+            </p>
+            <p className="text-base leading-relaxed text-dark-brown/80">
+              Thoughtful Variety: Keeping food exciting by balancing classic heritage dishes with modern, fresh café favorites.
             </p>
             <p className="text-base leading-relaxed text-dark-brown/80">
               Continuous Growth: Intentional about service, committed to consistency, and always listening to our community so we can improve every single day.
@@ -111,7 +101,7 @@ export default function About() {
           <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
             <Image
               src="/about/img-2.svg"
-              alt="Delimwitu bakery specialty"                
+              alt="Delimwitu team and hospitality"
               fill
               className="object-cover"
             />

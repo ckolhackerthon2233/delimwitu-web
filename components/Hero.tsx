@@ -28,7 +28,6 @@ export default function Hero() {
         {/* Content at Bottom */}
         <div className="max-w-[1200px] w-full mx-auto px-6 relative z-10 pb-12 max-md:pb-8">
           <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-            {/* Cafe Name */}
             <h1 className="text-6xl md:text-7xl font-black text-white mb-4 anim-fade-up leading-tight drop-shadow-lg max-md:text-5xl">
               Deli Mwitu
               <br />
@@ -51,7 +50,7 @@ export default function Hero() {
               <Link href="/menu" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-dark-brown text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Explore Menu
               </Link>
-              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+254 757 787463"}?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Delimwitu`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
+              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+254 757 787463"}?text=Hi,%20I'd%20like%20to%20place%20an%20order%20with%20Deli Mwitu`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-orange text-white text-sm font-bold uppercase tracking-wider rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 max-md:w-full max-md:justify-center">
                 Order Online
               </a>
             </div>

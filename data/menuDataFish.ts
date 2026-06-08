@@ -1,5 +1,5 @@
 /**
- * Fish menu data for Delimwitu Restaurant
+ * Fish menu data for Deli Mwitu Restaurant
  * All fish and tilapia items
  */
 

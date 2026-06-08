@@ -31,7 +31,7 @@ export async function sendOrderEmail(data: OrderEmailData) {
       <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(255, 107, 53, 0.2);">
         <!-- Header -->
         <div style="background: linear-gradient(135deg, #FF6B35 0%, #D94B1F 100%); padding: 40px 20px; text-align: center; color: white;">
-          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ DELIMWITU</h1>
+          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ Deli Mwitu</h1>
           <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; letter-spacing: 2px;">ORDER CONFIRMATION</p>
         </div>
 
@@ -95,7 +95,7 @@ export async function sendOrderEmail(data: OrderEmailData) {
               <li>We're preparing your order now</li>
               <li>You'll receive an update when it's ready</li>
               <li>We'll contact you at ${data.customerPhone}</li>
-              <li>Thank you for choosing Delimwitu!</li>
+              <li>Thank you for choosing Deli Mwitu!</li>
             </ul>
           </div>
 
@@ -108,14 +108,14 @@ export async function sendOrderEmail(data: OrderEmailData) {
           </div>
 
           <p style="color: #999; font-size: 12px; text-align: center; margin: 30px 0 0 0; line-height: 1.6;">
-            Thank you for choosing <strong style="color: #333;">Delimwitu Restaurant</strong>. Enjoy your meal!
+            Thank you for choosing <strong style="color: #333;">Deli Mwitu Restaurant</strong>. Enjoy your meal!
           </p>
         </div>
 
         <!-- Footer -->
         <div style="background: #F5F5F5; padding: 20px; text-align: center; border-top: 1px solid #EEE;">
           <p style="margin: 0; color: #999; font-size: 12px;">
-            © 2026 Delimwitu Restaurant. All rights reserved.
+            © 2026 Deli Mwitu Restaurant. All rights reserved.
           </p>
         </div>
       </div>
@@ -126,7 +126,7 @@ export async function sendOrderEmail(data: OrderEmailData) {
       <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(255, 107, 53, 0.2);">
         <!-- Header -->
         <div style="background: linear-gradient(135deg, #FF6B35 0%, #D94B1F 100%); padding: 40px 20px; text-align: center; color: white;">
-          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ DELIMWITU</h1>
+          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ Deli Mwitu</h1>
           <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; letter-spacing: 2px;">NEW ORDER ALERT</p>
         </div>
 
@@ -217,7 +217,7 @@ export async function sendOrderEmail(data: OrderEmailData) {
         <!-- Footer -->
         <div style="background: #F5F5F5; padding: 20px; text-align: center; border-top: 1px solid #EEE;">
           <p style="margin: 0; color: #999; font-size: 12px;">
-            © 2026 Delimwitu Restaurant Management System
+            © 2026 Deli Mwitu Restaurant Management System
           </p>
         </div>
       </div>
@@ -269,7 +269,7 @@ export async function sendContactEmail(data: {
       <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #F7931E 0%, #FFB84D 100%); padding: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(247, 147, 30, 0.2);">
         <!-- Header -->
         <div style="background: linear-gradient(135deg, #F7931E 0%, #E67E1A 100%); padding: 40px 20px; text-align: center; color: white;">
-          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ DELIMWITU</h1>
+          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ Deli Mwitu</h1>
           <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; letter-spacing: 2px;">MESSAGE RECEIVED</p>
         </div>
 
@@ -284,7 +284,7 @@ export async function sendContactEmail(data: {
 
           <p style="color: #333; font-size: 16px; margin: 0 0 30px 0; text-align: center;">
             <strong>Hi ${data.name},</strong><br>
-            <span style="color: #666; font-size: 14px;">Thank you for reaching out to Delimwitu! We've received your message and will respond shortly.</span>
+            <span style="color: #666; font-size: 14px;">Thank you for reaching out to Deli Mwitu! We've received your message and will respond shortly.</span>
           </p>
 
           <!-- Message Details -->
@@ -319,7 +319,7 @@ export async function sendContactEmail(data: {
               <li>We've logged your inquiry in our system</li>
               <li>Our team will review your message</li>
               <li>You'll receive a response within 24 hours</li>
-              <li>We appreciate your interest in Delimwitu</li>
+              <li>We appreciate your interest in Deli Mwitu</li>
             </ul>
           </div>
 
@@ -337,7 +337,7 @@ export async function sendContactEmail(data: {
         <!-- Footer -->
         <div style="background: #F5F5F5; padding: 20px; text-align: center; border-top: 1px solid #EEE;">
           <p style="margin: 0; color: #999; font-size: 12px;">
-            © 2026 Delimwitu Restaurant. All rights reserved.
+            © 2026 Deli Mwitu Restaurant. All rights reserved.
           </p>
         </div>
       </div>
@@ -348,7 +348,7 @@ export async function sendContactEmail(data: {
       <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #F7931E 0%, #FFB84D 100%); padding: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(247, 147, 30, 0.2);">
         <!-- Header -->
         <div style="background: linear-gradient(135deg, #F7931E 0%, #E67E1A 100%); padding: 40px 20px; text-align: center; color: white;">
-          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ DELIMWITU</h1>
+          <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ Deli Mwitu</h1>
           <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; letter-spacing: 2px;">NEW INQUIRY</p>
         </div>
 
@@ -410,7 +410,7 @@ export async function sendContactEmail(data: {
         <!-- Footer -->
         <div style="background: #F5F5F5; padding: 20px; text-align: center; border-top: 1px solid #EEE;">
           <p style="margin: 0; color: #999; font-size: 12px;">
-            © 2026 Delimwitu Restaurant Management System
+            © 2026 Deli Mwitu Restaurant Management System
           </p>
         </div>
       </div>
@@ -420,7 +420,7 @@ export async function sendContactEmail(data: {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: data.email,
-      subject: `✓ Message Received - Delimwitu Restaurant (REF-${messageId})`,
+      subject: `✓ Message Received - Deli Mwitu Restaurant (REF-${messageId})`,
       html: customerEmailContent,
     });
 

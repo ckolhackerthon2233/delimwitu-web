@@ -18,7 +18,7 @@ interface Branch {
 const BRANCHES: Branch[] = [
   {
     id: "1",
-    name: "Delimwitu",
+    name: "Deli Mwitu",
     address: "Lovington, Nairobi",
     phone: "+254 701 234 567",
     openTime: "10:00 AM",
@@ -27,7 +27,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "2",
-    name: "Delimwitu Downtown",
+    name: "Deli Mwitu Downtown",
     address: "CBD, Nairobi",
     phone: "+254 701 234 568",
     openTime: "10:00 AM",
@@ -36,7 +36,7 @@ const BRANCHES: Branch[] = [
   },
   {
     id: "3",
-    name: "Delimwitu Westlands",
+    name: "Deli Mwitu Westlands",
     address: "Westlands, Nairobi",
     phone: "+254 701 234 569",
     openTime: "10:00 AM",

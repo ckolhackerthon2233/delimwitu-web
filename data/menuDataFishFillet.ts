@@ -1,5 +1,5 @@
 /**
- * Fish fillet dishes menu data for Delimwitu Restaurant
+ * Fish fillet dishes menu data for Deli Mwitu Restaurant
  * All fish fillet-related food items
  */
 

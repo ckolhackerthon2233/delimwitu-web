@@ -1,5 +1,5 @@
 /**
- * Meatballs menu data for Delimwitu Restaurant
+ * Meatballs menu data for Deli Mwitu Restaurant
  * All meatball items with various preparation styles
  */
 

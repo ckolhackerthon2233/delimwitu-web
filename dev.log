@@ -32,12 +32,12 @@
  ✓ Compiled in 3.4s (698 modules)
  ✓ Compiled in 3.5s (698 modules)
  ✓ Compiled in 2.7s (698 modules)
-<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/3.pack.gz_' -> '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/3.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/Deli Mwitu-web/.next/cache/webpack/client-development/3.pack.gz_' -> '/home/wilfred/Deli Mwitu-web/.next/cache/webpack/client-development/3.pack.gz'
  ✓ Compiled in 3.6s (698 modules)
-<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/delimwitu-web/.next/cache/webpack/server-development/4.pack.gz_' -> '/home/wilfred/delimwitu-web/.next/cache/webpack/server-development/4.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/Deli Mwitu-web/.next/cache/webpack/server-development/4.pack.gz_' -> '/home/wilfred/Deli Mwitu-web/.next/cache/webpack/server-development/4.pack.gz'
  ✓ Compiled in 4.6s (698 modules)
  ✓ Compiled in 1593ms (698 modules)
-<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/1.pack.gz_' -> '/home/wilfred/delimwitu-web/.next/cache/webpack/client-development/1.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/wilfred/Deli Mwitu-web/.next/cache/webpack/client-development/1.pack.gz_' -> '/home/wilfred/Deli Mwitu-web/.next/cache/webpack/client-development/1.pack.gz'
  ✓ Compiled in 7.4s (698 modules)
  ✓ Compiled in 3.6s (698 modules)
  ✓ Compiled in 3.1s (698 modules)

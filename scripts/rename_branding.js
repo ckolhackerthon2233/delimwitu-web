@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const root = path.resolve('c:/Users/Felix cole/Desktop/delimwitu-web');
+const root = path.resolve('c:/Users/Felix cole/Desktop/Deli Mwitu-web');
 const repls = [
-  ['Delimwitu Restaurant', 'Delimwitu Restaurant'],
-  ['delimwitu restaurant', 'delimwitu restaurant'],
+  ['Deli Mwitu Restaurant', 'Deli Mwitu Restaurant'],
+  ['Deli Mwitu restaurant', 'Deli Mwitu restaurant'],
   ['Maralal Oasis Ground Floor', 'Maralal Oasis Ground Floor'],
   ['Maralal Oasis Ground Floor', 'Maralal Oasis Ground Floor'],
   ['maralal oasis ground floor', 'maralal oasis ground floor'],

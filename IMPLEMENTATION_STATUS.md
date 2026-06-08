@@ -1,4 +1,4 @@
-# Delimwitu Restaurant Website - Implementation Summary
+# Deli Mwitu Restaurant Website - Implementation Summary
 
 **Project Status**: 80% Complete
 
@@ -110,7 +110,7 @@
 ## File Structure Summary
 
 ```
-delimwitu/
+Deli Mwitu/
 ├── data/
 │   ├── menuDataComplete.ts ✅ (380+ products)
 │   ├── mapMarkers.ts
@@ -193,7 +193,7 @@ delimwitu/
 ## Running the Image Setup Script
 
 ```bash
-cd c:\Users\Felix\ cole\Desktop\deli\delimwitu
+cd c:\Users\Felix\ cole\Desktop\deli\Deli Mwitu
 python scripts/download-images.py
 ```
 

@@ -1,9 +1,9 @@
 from pathlib import Path
 
-root = Path('c:/Users/Felix cole/Desktop/delimwitu-web')
+root = Path('c:/Users/Felix cole/Desktop/Deli Mwitu-web')
 repls = [
-    ('Delimwitu Cafe', 'Delimwitu Restaurant'),
-    ('delimwitu cafe', 'delimwitu restaurant'),
+    ('Deli Mwitu Cafe', 'Deli Mwitu Restaurant'),
+    ('Deli Mwitu cafe', 'Deli Mwitu restaurant'),
     ('Kileleshwa', 'Maralal Oasis Ground Floor'),
     ('Kileleshua', 'Maralal Oasis Ground Floor'),
     ('kileleshwa', 'maralal oasis ground floor'),

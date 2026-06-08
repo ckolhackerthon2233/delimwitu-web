@@ -1,5 +1,5 @@
 /**
- * Complete menu data for Delimwitu Restaurant - All Products with Prices
+ * Complete menu data for Deli Mwitu Restaurant - All Products with Prices
  * Organized by major categories: Drinks, Breakfast, Beef, Goat, Fish, Chicken, Fillet, Beans, Meatballs, Starters
  */
 

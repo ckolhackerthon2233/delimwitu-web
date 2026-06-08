@@ -20,7 +20,7 @@ export default function Footer() {
               <h2 className="text-4xl font-bold text-dark-brown mb-6 max-md:text-3xl">Come Visit Us</h2>
               <div className="w-15 h-0.75 bg-orange rounded mb-8"></div>
               <p className="text-base text-gray-700 mb-8">
-                We&apos;re located  in Marala Oasis, Ground floor, Hurlingham, 
+                We&apos;re located  in Maralal Oasis, Ground floor, Hurlingham, 
                 we have ample parking on Rose avenue in B1-B3 
                  and we warmly welcome and waiting for you.
               </p>
@@ -90,7 +90,7 @@ export default function Footer() {
                 <span className="sr-only">Deli Mwitu</span>
                 <Image
                   src="/logo.png"
-                  alt="Delimwitu Logo"
+                  alt="Deli Mwitu Logo"
                   width={64}
                   height={64}
                   className="w-16 h-16 rounded-full"
@@ -193,7 +193,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-8 text-sm text-sand/70 text-center lg:text-left">
-              © 2026, Deli Mwitu Restaurant & Market. All Rights Reserved.
+              © 2026, Deli Mwitu Restaurant. Authentic Kenyan Cuisine. All Rights Reserved.
             </p>
           </div>
         </div>

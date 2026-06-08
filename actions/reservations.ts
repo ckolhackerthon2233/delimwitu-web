@@ -30,7 +30,7 @@ function generateCustomerEmailHTML(data: ReservationData): string {
     <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(255, 107, 53, 0.2);">
       <!-- Header -->
       <div style="background: linear-gradient(135deg, #FF6B35 0%, #D94B1F 100%); padding: 40px 20px; text-align: center; color: white;">
-        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ DELIMWITU</h1>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ Deli Mwitu</h1>
         <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; letter-spacing: 2px;">RESTAURANT</p>
       </div>
 
@@ -109,14 +109,14 @@ function generateCustomerEmailHTML(data: ReservationData): string {
         </div>
 
         <p style="color: #999; font-size: 12px; text-align: center; margin: 0; line-height: 1.6;">
-          Thank you for choosing <strong style="color: #333;">Delimwitu Restaurant</strong>. We can't wait to welcome you!
+          Thank you for choosing <strong style="color: #333;">Deli Mwitu Restaurant</strong>. We can't wait to welcome you!
         </p>
       </div>
 
       <!-- Footer -->
       <div style="background: #F5F5F5; padding: 20px; text-align: center; border-top: 1px solid #EEE;">
         <p style="margin: 0; color: #999; font-size: 12px;">
-          © 2026 Delimwitu Restaurant. All rights reserved.
+          © 2026 Deli Mwitu Restaurant. All rights reserved.
         </p>
       </div>
     </div>
@@ -129,7 +129,7 @@ function generateRestaurantEmailHTML(data: ReservationData): string {
     <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(255, 107, 53, 0.2);">
       <!-- Header -->
       <div style="background: linear-gradient(135deg, #FF6B35 0%, #D94B1F 100%); padding: 40px 20px; text-align: center; color: white;">
-        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ DELIMWITU</h1>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">🍽️ Deli Mwitu</h1>
         <p style="margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; letter-spacing: 2px;">NEW RESERVATION</p>
       </div>
 
@@ -215,7 +215,7 @@ function generateRestaurantEmailHTML(data: ReservationData): string {
       <!-- Footer -->
       <div style="background: #F5F5F5; padding: 20px; text-align: center; border-top: 1px solid #EEE;">
         <p style="margin: 0; color: #999; font-size: 12px;">
-          © 2026 Delimwitu Restaurant Management System
+          © 2026 Deli Mwitu Restaurant Management System
         </p>
       </div>
     </div>
@@ -230,7 +230,7 @@ export async function createReservation(data: ReservationData) {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: data.customerEmail,
-      subject: `🍽️ Your Reservation at Delimwitu Restaurant - ${new Date(data.reservationDate).toLocaleDateString()}`,
+      subject: `🍽️ Your Reservation at Deli Mwitu Restaurant - ${new Date(data.reservationDate).toLocaleDateString()}`,
       html: customerEmailContent,
     });
 

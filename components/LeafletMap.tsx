@@ -19,7 +19,7 @@ function fixLeafletIcons() {
 // Branch locations in Nairobi — update coordinates to match your real branches
 const BRANCHES = [
   {
-    name: "Delimwitu Restaurant",
+    name: "Deli Mwitu Restaurant",
     address: "Maralal Oasis, Ground Floor, Nairobi",
     lat: -1.2611,
     lng: 36.8219,
@@ -35,7 +35,7 @@ export default function LeafletMap() {
       fixLeafletIcons();
 
       // Prevent double-init if component re-renders
-      const container = document.getElementById("delimwitu-map") as HTMLElement & {
+      const container = document.getElementById("Deli Mwitu-map") as HTMLElement & {
         _leaflet_id?: number;
       };
       if (!container || container._leaflet_id) return;
@@ -74,7 +74,7 @@ export default function LeafletMap() {
 
       // Add a marker for each branch
       BRANCHES.forEach((branch) => {
-        const popup = L.popup({ maxWidth: 240, className: "delimwitu-popup" }).setContent(`
+        const popup = L.popup({ maxWidth: 240, className: "Deli Mwitu-popup" }).setContent(`
           <div style="font-family: sans-serif; padding: 4px;">
             <h3 style="margin: 0 0 6px; font-size: 15px; font-weight: 800; color: #1a0a00;">
               ${branch.name}
@@ -100,7 +100,7 @@ export default function LeafletMap() {
 
   return (
     <div
-      id="delimwitu-map"
+      id="Deli Mwitu-map"
       style={{ width: "100%", height: "100%", minHeight: "500px" }}
     />
   );

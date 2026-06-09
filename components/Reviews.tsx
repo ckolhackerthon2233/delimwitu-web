@@ -47,6 +47,13 @@ export default function Reviews() {
       role: 'Family Guest · Rongai, Nairobi',
       avatar: 'https://i.pravatar.cc/80?img=55',
     },
+    {
+      rating: 5,
+      text: '"I grab breakfast here regularly, and it\'s always on point, fresh, tasty, and exactly what I need to start the day right."',
+      author: 'Julia',
+      role: 'Breakfast Guest · Nairobi',
+      avatar: 'https://i.pravatar.cc/80?img=20',
+    },
   ];
 
   const trackRef = useRef(null);
@@ -74,7 +81,7 @@ export default function Reviews() {
     return () => cancelAnimationFrame(rafId);
   }, [isPaused, itemWidth, totalItems]);
 
-  const displayItems = [...reviews, ...reviews, ...reviews];
+  const displayItems = reviews;
 
   return (
     <section id="reviews" className="py-24 bg-white max-md:py-16 overflow-hidden">

@@ -12,70 +12,66 @@ export default function Footer() {
   return (
     <>
       {/* Location Section */}
-      <section id="location" className="py-24 max-md:py-16">
+      <section id="location" className="py-24 max-md:py-16 bg-white">
         <div className="px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-lg:gap-12 max-md:gap-8">
-            <div>
-              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-orange mb-4">Find Us</span>
-              <h2 className="text-4xl font-bold text-dark-brown mb-6 max-md:text-3xl">Come Visit Us</h2>
-              <div className="w-15 h-0.75 bg-orange rounded mb-8"></div>
-              <p className="text-base text-gray-700 mb-8">
-                We&apos;re located  in Maralal Oasis, Ground floor, Hurlingham, 
-                we have ample parking on Rose avenue in B1-B3 
-                 and we warmly welcome and waiting for you.
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-start">
+            <div className="rounded-[32px] bg-cream/70 p-8 shadow-sm ring-1 ring-orange/10 max-md:p-6">
+              <span className="inline-block text-xs font-semibold uppercase tracking-[0.35em] text-orange mb-4">Find Us</span>
+              <h2 className="text-4xl font-bold text-dark-brown mb-4 max-md:text-3xl">Come Visit Us</h2>
+              <div className="w-16 h-0.75 bg-orange rounded mb-6"></div>
+              <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                Delimwitu is at Maralal Oasis, Ground Floor, Hurlingham, Nairobi. It’s easy to reach, has parking on Rose Avenue, and is a great stop for a relaxed meal or quick takeaway.
               </p>
+              <div className="rounded-3xl border border-orange/10 bg-white p-4 text-sm text-gray-700 shadow-sm mb-8">
+                <strong className="text-dark-brown">Directions:</strong> From Nairobi, head toward Hurlingham and look for Maralal Oasis on Rose Avenue. Delimwitu is on the ground floor with parking available nearby.
+              </div>
 
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="text-2xl flex-shrink-0">📍</div>
-                  <div>
-                    <h4 className="font-semibold text-dark-brown mb-1">Address</h4>
-                    <p className="text-sm text-gray-600">Maralal Oasis, Ground Floor, Hurlingham, Nairobi</p>
-                  </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-orange/10">
+                  <div className="mb-2 text-xl">📍</div>
+                  <h4 className="font-semibold text-dark-brown mb-1">Address</h4>
+                  <p className="text-sm text-gray-600">Maralal Oasis, Ground Floor, Hurlingham, Nairobi</p>
                 </div>
-                <div className="flex gap-4">
-                  <div className="text-2xl flex-shrink-0">🕐</div>
-                  <div>
-                    <h4 className="font-semibold text-dark-brown mb-1">Hours</h4>
-                    <p className="text-sm text-gray-600">
-                      Mon–Fri: 7:00 AM – 8:30 PM<br />
-                      Sat–Sun: 8:00 AM – 7:00 PM
-                    </p>
-                  </div>
+                <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-orange/10">
+                  <div className="mb-2 text-xl">🕐</div>
+                  <h4 className="font-semibold text-dark-brown mb-1">Hours</h4>
+                  <p className="text-sm text-gray-600">Mon–Fri: 7:00 AM – 8:30 PM<br />Sat–Sun: 8:00 AM – 7:00 PM</p>
                 </div>
-                <div className="flex gap-4">
-                  <div className="text-2xl flex-shrink-0">📞</div>
-                  <div>
-                    <h4 className="font-semibold text-dark-brown mb-1">Contact</h4>
-                    <p className="text-sm text-gray-600">
-                      +254 757 787463<br />
-                      +254 788 401395<br />
-                      delimwitu@chemalukacreslimited.co.ke
-                    </p>
-                  </div>
+                <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-orange/10">
+                  <div className="mb-2 text-xl">📞</div>
+                  <h4 className="font-semibold text-dark-brown mb-1">Contact</h4>
+                  <p className="text-sm text-gray-600">+254 757 787463<br />+254 788 401395<br />delimwitu@chemalukacreslimited.co.ke</p>
                 </div>
-                <div className="flex gap-4">
-                  <div className="text-2xl flex-shrink-0">🚗</div>
-                  <div>
-                    <h4 className="font-semibold text-dark-brown mb-1">Getting Here</h4>
-                    <p className="text-sm text-gray-600">
-                      Free parking available. 5 mins from Nairobi Hospital. 
-                      Bus stop directly outside.
-                    </p>
-                  </div>
+                <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-orange/10">
+                  <div className="mb-2 text-xl">🚗</div>
+                  <h4 className="font-semibold text-dark-brown mb-1">Directions</h4>
+                  <p className="text-sm text-gray-600">Free parking on Rose Avenue, 5 mins from Nairobi Hospital, and easy access from the main road.</p>
                 </div>
               </div>
             </div>
 
-            {/* Map */}
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-md">
-              <Image
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&h=900&fit=crop"
-                alt="Restaurant ambiance"
-                fill
-                className="object-cover"
-                unoptimized
-              />
+            <div className="rounded-[32px] border border-orange/10 bg-white p-3 shadow-xl">
+              <div className="relative h-[420px] overflow-hidden rounded-[24px] bg-cream sm:h-[460px] lg:h-[520px]">
+                <iframe
+                  title="Delimwitu location in Maralal Oasis"
+                  src="https://www.google.com/maps?q=Maralal%20Oasis%2C%20Ground%20Floor%2C%20Hurlingham%2C%20Nairobi&z=15&output=embed"
+                  className="h-full w-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <div className="mt-4 flex flex-col gap-3 rounded-[24px] bg-cream/80 p-4 text-sm text-gray-700 sm:flex-row sm:items-center sm:justify-between">
+                <p className="leading-relaxed">Get turn-by-turn directions to Delimwitu in Maralal Oasis, Hurlingham.</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Maralal+Oasis%2C+Ground+Floor%2C+Hurlingham%2C+Nairobi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-orange px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-orange-hover"
+                >
+                  Open Directions
+                </a>
+              </div>
             </div>
           </div>
         </div>

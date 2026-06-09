@@ -13,10 +13,10 @@ export default function About() {
               About Us
             </span>
             <h2 className="text-5xl font-black text-dark-brown max-w-2xl leading-tight md:text-6xl">
-              At Deli Mwitu, we are more than just a food spot — we are a team built on passion, people, and the everyday Kenyan spirit.
+              At Deli Mwitu, we are more than just a food spot, 
             </h2>
             <p className="text-base leading-relaxed text-dark-brown/80 max-w-2xl">
-              Rooted in the heart of Nairobi, we’ve created a vibrant space that reflects the energy around us: warm, lively, and grounded in real connection. We believe that food should be exciting, evolving, and enjoyable every single time you visit.
+              We are a team built on passion, people, and the everyday Kenyan spirit. Rooted in the heart of Nairobi, we’ve created a vibrant space that reflects the energy around us: warm, lively, and grounded in real connection. We believe that food should be exciting, evolving, and enjoyable every single time you visit.
             </p>
             <p className="text-base leading-relaxed text-dark-brown/80 max-w-2xl">
               That’s why our menu thoughtfully balances the rich comfort of Kenyan traditions with the fast-paced creativity of modern café culture. Whether you are dropping in for a quick bite on the move or sitting down to connect with friends, Deli Mwitu is a place where you can always discover something new while enjoying the flavors you already love.

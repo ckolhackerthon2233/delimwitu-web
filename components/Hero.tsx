@@ -7,15 +7,16 @@ export default function Hero() {
     <>
       {/* Hero Section - Reduced Height */}
       <section id="hero" className="relative h-screen flex flex-col items-end justify-end overflow-hidden bg-dark-brown pt-20 max-md:pt-16 max-md:h-[600px]">
-        {/* Background image - Full height */}
+        {/* Hero image - use the supplied deli sign artwork and fit it fully within the section */}
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&h=1080&fit=crop&crop=center')",
+            backgroundImage: "url('/png/pdeli-hero.png')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "center center",
             backgroundAttachment: "scroll",
-            backgroundRepeat: "no-repeat"
+            backgroundRepeat: "no-repeat",
+            backgroundColor: "#1d1a17"
           }}
         ></div>
 

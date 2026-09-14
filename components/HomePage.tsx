@@ -234,7 +234,7 @@ export default function HomePage() {
             {cuisineGallery.map((image) => (
               <div key={image.src} className="flex justify-center">
                 <div className="overflow-hidden rounded-3xl shadow-md bg-cream w-full max-w-sm">
-                  <img src={image.src} alt={image.alt} className="h-72 w-full object-contain  rounded-3xl" />
+                  <img src={image.src} alt={image.alt} className="h-72 w-full object-contain rounded-3xl" />
                 </div>
               </div>
             ))}

@@ -12,11 +12,48 @@
     @apply scroll-smooth;
   }
 
+  :root {
+    --primary-red: #670800;
+    --secondary-red: #B32200;
+  }
+
   body {
-    color: #1a1208;
+    color: #670800;
     background: #FDFAF5;
     overflow-x: hidden;
     font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  }
+
+  .bg-dark-brown,
+  .bg-dark-brown\/95,
+  .bg-dark-brown\/80,
+  .bg-dark-brown\/70,
+  .bg-dark-brown\/60,
+  .bg-dark-brown\/50 {
+    background-color: var(--primary-red) !important;
+  }
+
+  .bg-dark-brown,
+  .bg-dark-brown *,
+  .bg-dark-brown\/95,
+  .bg-dark-brown\/95 *,
+  .bg-dark-brown\/80,
+  .bg-dark-brown\/80 *,
+  .bg-dark-brown\/70,
+  .bg-dark-brown\/70 *,
+  .bg-dark-brown\/60,
+  .bg-dark-brown\/60 *,
+  .bg-dark-brown\/50,
+  .bg-dark-brown\/50 * {
+    color: #ffffff !important;
+  }
+
+  .text-dark-brown,
+  .text-dark-brown\/80,
+  .text-dark-brown\/70,
+  .text-dark-brown\/60,
+  .text-dark-brown\/50 {
+    color: var(--primary-red) !important;
   }
 
   h1, h2, h3, h4 {
@@ -41,7 +78,7 @@
   }
 
   p {
-    @apply leading-relaxed text-[#5a4232];
+    @apply leading-relaxed text-[#670800];
   }
 
   a {

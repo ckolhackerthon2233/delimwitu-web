@@ -29,9 +29,9 @@ export default {
       "warm-white": "#FFF9F0",
       sand: "#F5EDD8",
       tan: "#E8D5B0",
-      brown: "#8B5E3C",
-      "dark-brown": "#3D1F0D",
-      espresso: "#1a1208",
+      brown: "#B32200",
+      "dark-brown": "#670800",
+      espresso: "#670800",
       orange: {
         DEFAULT: "#E8703A",
         light: "#F5956A",

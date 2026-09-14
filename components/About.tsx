@@ -29,31 +29,20 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="relative h-72 overflow-hidden rounded-[2rem] shadow-xl sm:h-[420px]">
-              <Image
-                src="/about/img.png"
-                alt="Delimwitu market interior"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-72 overflow-hidden rounded-[2rem] shadow-xl sm:h-[420px]">
-              <Image
-                src="/about/img-2.svg"
-                alt="Fresh ingredients and bakery display"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="relative h-[420px] overflow-hidden rounded-[2rem] shadow-xl">
+            <img
+              src="/png/pdf-kitch.png"
+              alt="Kitchen team at Delimwitu"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
 
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
-          <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
+          <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl bg-[#e7c7a6]">
             <Image
-              src="/about/img.png"
-              alt="Team at Delimwitu"
+              src="/png/pdf-kitch.png"
+              alt="Kitchen team at Delimwitu"
               fill
               className="object-cover"
             />
@@ -98,9 +87,9 @@ export default function About() {
               Continuous Growth: Intentional about service, committed to consistency, and always listening to our community so we can improve every single day.
             </p>
           </div>
-          <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl">
+          <div className="relative h-[420px] overflow-hidden rounded-[32px] shadow-2xl bg-[#e7c7a6]">
             <Image
-              src="/about/img-2.svg"
+              src="/png/pdf-deliii.png"
               alt="Delimwitu team and hospitality"
               fill
               className="object-cover"

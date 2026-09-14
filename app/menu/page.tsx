@@ -79,7 +79,7 @@ export default function MenuPage() {
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="diagonal" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                <line x1="0" y1="0" x2="40" y2="40" stroke="#3D1F0D" strokeWidth="2" />
+                <line x1="0" y1="0" x2="40" y2="40" stroke="#670800" strokeWidth="2" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#diagonal)" />
@@ -123,7 +123,7 @@ export default function MenuPage() {
               className="absolute bottom-0 left-0 w-full h-1 opacity-5"
               style={{
                 backgroundImage:
-                  "url('data:image/svg+xml,%3Csvg width=%22100%22 height=%224%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M0 2 L5 0 L10 2 L10 4 L5 6 L0 4 Z%22 fill=%22%233D1F0D%22 opacity=%220.3%22/%3E%3C/svg%3E')",
+                  "url('data:image/svg+xml,%3Csvg width=%22100%22 height=%224%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M0 2 L5 0 L10 2 L10 4 L5 6 L0 4 Z%22 fill=%22%23670800%22 opacity=%220.3%22/%3E%3C/svg%3E')",
                 backgroundRepeat: "repeat-x",
               }}
             ></div>
@@ -201,7 +201,7 @@ export default function MenuPage() {
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="circles" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
-                <circle cx="25" cy="25" r="20" fill="none" stroke="#3D1F0D" strokeWidth="1" />
+                <circle cx="25" cy="25" r="20" fill="none" stroke="#670800" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#circles)" />

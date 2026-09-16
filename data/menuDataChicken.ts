@@ -12,7 +12,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Kienyeji Wet Fry Full",
     desc: "Full plate traditional chicken wet fry",
-    price: "KES 1700",
+    price: "KES 1300",
     img: "/menu/chicken/kienyeji-wet-fry.jpg",
     badge: "Special"
   },
@@ -22,7 +22,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Kienyeji Wet Fry Plain",
     desc: "Plain traditional chicken wet fry",
-    price: "KES 450",
+    price: "KES 250",
     img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
@@ -31,7 +31,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Kienyeji Wet Fry Rice",
     desc: "Traditional chicken with rice",
-    price: "KES 550",
+    price: "KES 250",
     img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
@@ -40,7 +40,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Kienyeji Wet Fry Rice Full",
     desc: "Full plate traditional chicken with rice",
-    price: "KES 650",
+    price: "KES 350",
     img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
@@ -49,7 +49,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Kienyeji Wet Fry Ugali",
     desc: "Traditional chicken with Ugali",
-    price: "KES 650",
+    price: "KES 350",
     img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
@@ -58,7 +58,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Kienyeji Wet Fry Wedges",
     desc: "Traditional chicken with potato wedges",
-    price: "KES 700",
+    price: "KES 450",
     img: "/menu/chicken/kienyeji-wet-fry.jpg"
   },
   {
@@ -67,7 +67,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry",
     desc: "Aromatic chicken curry",
-    price: "KES 400",
+    price: "KES 300",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
@@ -77,7 +77,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Chapati Full",
     desc: "Full plate chicken curry with chapati",
-    price: "KES 550",
+    price: "KES 480",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -86,7 +86,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Veggy Rice Full",
     desc: "Full plate curry with vegetable rice",
-    price: "KES 600",
+    price: "KES 500",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -95,7 +95,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Mukimo Kuku Half",
     desc: "Half plate Mukimo with chicken",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -104,7 +104,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Rice Half",
     desc: "Half plate curry with rice",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -113,7 +113,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Ugali Half",
     desc: "Half plate curry with Ugali",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -122,7 +122,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Chapati Half",
     desc: "Half plate curry with chapati",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -131,7 +131,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Veggy Rice Half",
     desc: "Half plate curry with vegetable rice",
-    price: "KES 500",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -140,7 +140,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Curry Rice Full",
     desc: "Full plate curry with rice",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -149,7 +149,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Joloff Chicken Curry",
     desc: "Chicken curry with Joloff rice",
-    price: "KES 600",
+      price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -158,7 +158,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chapati Chicken Full",
     desc: "Full plate chapati with chicken",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -167,7 +167,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chapati Chicken Half",
     desc: "Half plate chapati with chicken",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -176,7 +176,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Masala",
     desc: "Spiced chicken masala",
-    price: "KES 600",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -185,7 +185,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chicken Stew",
     desc: "Chicken in rich stew sauce",
-    price: "KES 400",
+    price: "KES 250",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -194,7 +194,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Chips Chicken",
     desc: "Chicken with chips",
-    price: "KES 600",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -221,7 +221,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Full Chicken Stew Veges",
     desc: "Complete chicken stew with vegetables",
-    price: "KES 1850",
+      price: "KES 1650",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -230,7 +230,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Mukimo Chicken",
     desc: "Mukimo with chicken",
-    price: "KES 600",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -239,7 +239,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Pilau Chicken Full",
     desc: "Full plate Pilau with chicken",
-    price: "KES 650",
+    price: "KES 450",
     img: "/menu/chicken/pilau-chicken.jpg"
   },
   {
@@ -248,7 +248,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Pilau Chicken Half",
     desc: "Half plate Pilau with chicken",
-    price: "KES 450",
+    price: "KES 350",
     img: "/menu/chicken/pilau-chicken.jpg"
   },
   {
@@ -257,7 +257,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Potato Wedges Chicken Full",
     desc: "Full plate potato wedges with chicken",
-    price: "KES 600",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -266,7 +266,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Potato Wedges Chicken Half",
     desc: "Half plate potato wedges with chicken",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -275,7 +275,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Potatoes Saute Chicken Full",
     desc: "Full plate sautéed potatoes with chicken",
-    price: "KES 600",
+    price: "KES 450",
     img: "/menu/chicken/potato-saute-chicken.jpg"
   },
   {
@@ -284,7 +284,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Potatoes Saute Chicken Half",
     desc: "Half plate sautéed potatoes with chicken",
-    price: "KES 500",
+    price: "KES 350",
     img: "/menu/chicken/potato-saute-chicken.jpg"
   },
   {
@@ -293,7 +293,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Rice Chicken Half",
     desc: "Half plate rice with chicken",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -302,7 +302,7 @@ export const chickenData: MenuItem[] = [
     subcategory: "Chicken",
     title: "Stir Fry Spaghetti Chicken",
     desc: "Stir fried spaghetti with chicken",
-    price: "KES 600",
+    price: "KES 450",
     img: "/menu/chicken/spagheti-chicken.jpg"
   },
   {

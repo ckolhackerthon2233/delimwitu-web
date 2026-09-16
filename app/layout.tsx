@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     "Food Delivery Hurlingham",
     "Takeaway Nairobi",
     "Dining Hurlingham",
-    "Maralal Oasis Restaurant",
+    "Delimwitu Maralal Oasis",
+    "Maralal Oasis Ground Floor Restaurant",
   ],
   authors: [
     {
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://delimwitu.co.ke",
     siteName: "Deli Mwitu Restaurant",
-    title: "Deli Mwitu Restaurant | Authentic Kenyan Cuisine in Hurlingham, Nairobi",
+    title: "Delimwitu Maralal Oasis | Authentic Kenyan Cuisine in Hurlingham, Nairobi",
     description:
       "Deli Mwitu Restaurant is located at Maralal Oasis, Ground Floor, Hurlingham, Nairobi, serving authentic Kenyan cuisine, breakfast, lunch, dinner, takeaway and delivery.",
     images: [

@@ -41,7 +41,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Fresh Juices",
     title: "Mango Juice",
     desc: "Fresh mango juice",
-    price: "KES 200",
+    price: "KES 250",
     img: "/menu/drinks/juices/mango-juice.svg",
     badge: "Popular"
   },
@@ -69,7 +69,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Fresh Juices",
     title: "Passion Juice 500ml",
     desc: "Fresh passion fruit juice large",
-    price: "KES 200",
+    price: "KES 250",
     img: "/menu/drinks/juices/passion-juice.svg"
   },
   {
@@ -114,7 +114,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Fresh Juices",
     title: "Mursik",
     desc: "Traditional fermented milk",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=400&fit=crop&crop=center"
   },
 
@@ -342,7 +342,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Minute Maid Orange 400ml",
     desc: "Minute Maid orange juice",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -351,7 +351,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Minute Maid Tropical 400ml",
     desc: "Minute Maid tropical mix",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -360,7 +360,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Minute Maid Apple 400ml",
     desc: "Minute Maid apple juice",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1576777911680-6e4a7bf4ff7e?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -369,7 +369,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Minute Maid Mango 400ml",
     desc: "Minute Maid mango juice",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -378,7 +378,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Fruitville Mango 500ml",
     desc: "Fruitville mango juice",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -387,7 +387,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Fanta Orange 500ml",
     desc: "Fanta orange large",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -396,7 +396,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Guava Fruitville 500ml",
     desc: "Fruitville guava juice",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1536408745983-0f03be6e8a5d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -405,7 +405,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Fanta Passion 500ml",
     desc: "Fanta passion large",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -414,7 +414,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Black Current 500ml",
     desc: "Black current soda large",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -423,7 +423,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Coke 500ml",
     desc: "Coca-Cola large",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -432,7 +432,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Sprite 500ml",
     desc: "Sprite large",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -441,7 +441,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Predator Energy",
     desc: "Energy drink",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -459,7 +459,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Sodas & Packaged Juices",
     title: "Coke Zero 500ml",
     desc: "Sugar-free Coca-Cola",
-    price: "KES 120",
+    price: "KES 130",
     img: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -670,7 +670,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Hot Beverages",
     title: "White Tea",
     desc: "Delicate white tea",
-    price: "KES 120",
+    price: "KES 80",
     img: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -679,7 +679,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Hot Beverages",
     title: "White Masala Tea",
     desc: "Spiced white tea",
-    price: "KES 200",
+    price: "KES 180",
     img: "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=400&h=400&fit=crop&crop=center"
   },
 
@@ -690,7 +690,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Decaf Cappuccino - Double",
     desc: "Decaffeinated double cappuccino",
-    price: "KES 370",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -699,7 +699,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Decaf Cappuccino - Single",
     desc: "Decaffeinated single cappuccino",
-    price: "KES 330",
+    price: "KES 310",
     img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -708,7 +708,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Decaf Latte - Double",
     desc: "Decaffeinated double latte",
-    price: "KES 400",
+    price: "KES 380",
     img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -717,7 +717,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Espresso - Double",
     desc: "Strong double espresso",
-    price: "KES 250",
+    price: "KES 230",
     img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -726,7 +726,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Espresso - Single",
     desc: "Strong single espresso",
-    price: "KES 230",
+    price: "KES 200",
     img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -735,7 +735,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Americano - Double",
     desc: "Double americano",
-    price: "KES 250",
+    price: "KES 230",
     img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center",
     badge: "Popular"
   },
@@ -745,7 +745,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Iced Americano",
     desc: "Chilled americano",
-    price: "KES 300",
+    price: "KES 280",
     img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -754,7 +754,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Iced Cappuccino",
     desc: "Chilled cappuccino",
-    price: "KES 350",
+    price: "KES 320",
     img: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -763,7 +763,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Iced Espresso",
     desc: "Chilled espresso",
-    price: "KES 300",
+    price: "KES 280",
     img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -772,7 +772,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Iced Latte",
     desc: "Chilled latte",
-    price: "KES 350",
+    price: "KES 320",
     img: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -781,7 +781,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Iced Mocha",
     desc: "Chilled mocha",
-    price: "KES 350",
+    price: "KES 330",
     img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -790,7 +790,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Latte - Double",
     desc: "Double latte",
-    price: "KES 330",
+    price: "KES 310",
     img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -799,7 +799,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Latte - Single",
     desc: "Single latte",
-    price: "KES 270",
+    price: "KES 250",
     img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -808,7 +808,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Cappuccino - Double",
     desc: "Double cappuccino",
-    price: "KES 290",
+    price: "KES 270",
     img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -817,7 +817,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Cappuccino - Single",
     desc: "Single cappuccino",
-    price: "KES 250",
+    price: "KES 230",
     img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -826,7 +826,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Macchiato",
     desc: "Espresso with milk foam",
-    price: "KES 270",
+    price: "KES 250",
     img: "https://images.unsplash.com/photo-1485808191679-5f86510bd652?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -835,7 +835,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Mocha - Double",
     desc: "Double mocha",
-    price: "KES 300",
+    price: "KES 280",
     img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -844,7 +844,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Mocha - Single",
     desc: "Single mocha",
-    price: "KES 270",
+    price: "KES 240",
     img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -853,7 +853,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Coffee",
     title: "Americano - Single",
     desc: "Single americano",
-    price: "KES 230",
+    price: "KES 200",
     img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -891,7 +891,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Porridge",
     title: "Uji Wimbi",
     desc: "Traditional finger millet porridge",
-    price: "KES 70",
+    price: "KES 50",
     img: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -900,7 +900,7 @@ export const drinksData: MenuItem[] = [
     subcategory: "Porridge",
     title: "Uji Wimbi with Milk",
     desc: "Finger millet porridge with milk",
-    price: "KES 100",
+    price: "KES 80",
     img: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop&crop=center"
   },
   {
@@ -910,6 +910,15 @@ export const drinksData: MenuItem[] = [
     title: "Uji Power",
     desc: "Nutritious power porridge",
     price: "KES 120",
+    img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    id: "uji-power-small",
+    cat: "drinks",
+    subcategory: "Porridge",
+    title: "Uji Power",
+    desc: "Nutritious power porridge",
+    price: "KES 80",
     img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=400&fit=crop&crop=center"
   },
 ];

@@ -38,7 +38,7 @@ export default function Hero() {
             {/* Location */}
             <div className="flex items-center justify-center gap-2 mb-8 anim-fade-up delay-1">
               <span className="text-2xl">📍</span>
-              <p className="text-white text-lg font-semibold drop-shadow-md">Maralal Oasis, Hurlingham, Nairobi</p>
+              <p className="text-white text-lg font-semibold drop-shadow-md">Delimwitu, Maralal Oasis, Hurlingham, Nairobi</p>
             </div>
 
             {/* Tagline */}

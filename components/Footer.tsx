@@ -54,7 +54,7 @@ export default function Footer() {
               <div className="relative h-[420px] overflow-hidden rounded-[24px] bg-cream sm:h-[460px] lg:h-[520px]">
                 <iframe
                   title="Delimwitu location in Maralal Oasis"
-                  src="https://www.google.com/maps?q=Maralal%20Oasis%2C%20Ground%20Floor%2C%20Hurlingham%2C%20Nairobi&z=15&output=embed"
+                  src="https://www.google.com/maps?q=Delimwitu%2C%20Maralal%20Oasis%2C%20Ground%20Floor%2C%20Hurlingham%2C%20Nairobi&z=17&output=embed"
                   className="h-full w-full border-0"
                   loading="lazy"
                   allowFullScreen
@@ -64,12 +64,12 @@ export default function Footer() {
               <div className="mt-4 flex flex-col gap-3 rounded-[24px] bg-cream/80 p-4 text-sm text-gray-700 sm:flex-row sm:items-center sm:justify-between">
                 <p className="leading-relaxed">Get turn-by-turn directions to Delimwitu in Maralal Oasis, Hurlingham.</p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Maralal+Oasis%2C+Ground+Floor%2C+Hurlingham%2C+Nairobi"
+                  href="https://www.google.com/maps/search/?api=1&query=Delimwitu%2C+Maralal+Oasis%2C+Ground+Floor%2C+Hurlingham%2C+Nairobi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-orange px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-orange-hover"
                 >
-                  Open Directions
+                  Open Delimwitu Directions
                 </a>
               </div>
             </div>

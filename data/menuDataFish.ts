@@ -62,4 +62,31 @@ export const fishData: MenuItem[] = [
     price: "KES 700",
     img: "https://images.unsplash.com/photo-1630431341973-02e1b662ec35?w=400&h=400&fit=crop&crop=center"
   },
+  {
+    id: "tilapia-plain-half",
+    cat: "food",
+    subcategory: "Fish",
+    title: "Tilapia Plain Half",
+    desc: "Half portion plain tilapia",
+    price: "KES 300",
+    img: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    id: "tilapia-whole-ugali",
+    cat: "food",
+    subcategory: "Fish",
+    title: "Tilapia Whole Ugali",
+    desc: "Whole tilapia served with Ugali",
+    price: "KES 500",
+    img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    id: "tilapia-wedge-full",
+    cat: "food",
+    subcategory: "Fish",
+    title: "Tilapia-Wedge Full",
+    desc: "Tilapia served with potato wedges",
+    price: "KES 600",
+    img: "https://images.unsplash.com/photo-1630431341973-02e1b662ec35?w=400&h=400&fit=crop&crop=center"
+  },
 ];

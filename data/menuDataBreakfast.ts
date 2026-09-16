@@ -8,6 +8,24 @@ import type { MenuItem } from "@/types";
 export const breakfastData: MenuItem[] = [
   // ============ FOOD - BREAKFAST ============
   {
+    id: "breakfast-sandwich-budget",
+    cat: "food",
+    subcategory: "Breakfast",
+    title: "Breakfast Sandwich",
+    desc: "Breakfast sandwich",
+    price: "KES 350",
+    img: "/menu/breakfast/sandwich.jpg"
+  },
+  {
+    id: "ngwace-combo-eggs",
+    cat: "food",
+    subcategory: "Breakfast",
+    title: "Ngwace Combo - 2 Boiled Eggs",
+    desc: "Ngwace combo served with two boiled eggs",
+    price: "KES 300",
+    img: "/menu/breakfast/ngwashe-combo.jpg"
+  },
+  {
     id: "breakfast-executive",
     cat: "food",
     subcategory: "Breakfast",

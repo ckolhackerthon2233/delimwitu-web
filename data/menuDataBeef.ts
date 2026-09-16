@@ -13,7 +13,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Beef Stew",
     desc: "Tender beef in rich stew sauce",
-    price: "KES 300",
+    price: "KES 250",
     img: "https://images.unsplash.com/photo-1608877907149-a206d75ba011?w=400&h=400&fit=crop&crop=center" // beef stew rich sauce
   },
   {
@@ -22,7 +22,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Stir Fried Beef",
     desc: "Sautéed beef with vegetables",
-    price: "KES 450",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=400&fit=crop&crop=center" // stir fried beef vegetables
   },
   {
@@ -31,7 +31,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Beef Rice",
     desc: "Seasoned beef with rice",
-    price: "KES 350",
+    price: "KES 300",
     img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&crop=center" // rice with beef/meat
   },
   {
@@ -40,7 +40,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Jolof Beef Half",
     desc: "Half plate of Jolof rice with beef",
-    price: "KES 400",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1674143438043-2a9e7f928b3e?w=400&h=400&fit=crop&crop=center" // jollof rice
   },
   {
@@ -49,7 +49,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Jolof Beef Full",
     desc: "Full plate of Jolof rice with beef",
-    price: "KES 500",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1674143438043-2a9e7f928b3e?w=400&h=400&fit=crop&crop=center", // jollof rice
     badge: "Popular"
   },
@@ -59,7 +59,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Rice Beef Half",
     desc: "Half plate of rice with beef",
-    price: "KES 350",
+    price: "KES 300",
     img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&crop=center" // plain rice with beef
   },
   {
@@ -68,7 +68,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Rice Beef Full",
     desc: "Full plate of rice with beef",
-    price: "KES 450",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&crop=center" // plain rice with beef
   },
   {
@@ -77,7 +77,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Pilau Beef Half",
     desc: "Half plate of Pilau with beef",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=400&fit=crop&crop=center" // Kenyan pilau spiced rice
   },
   {
@@ -86,7 +86,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Pilau Beef Full",
     desc: "Full plate of Pilau with beef",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=400&fit=crop&crop=center" // Kenyan pilau spiced rice
   },
   {
@@ -95,7 +95,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Beef Ugali Half",
     desc: "Half plate Ugali with beef",
-    price: "KES 400",
+    price: "KES 300",
     img: "https://images.unsplash.com/photo-1567364816519-cbc9c4ffe1eb?w=400&h=400&fit=crop&crop=center" // ugali and stew plate
   },
   {
@@ -104,7 +104,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Beef Ugali Full",
     desc: "Full plate Ugali with beef",
-    price: "KES 500",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1567364816519-cbc9c4ffe1eb?w=400&h=400&fit=crop&crop=center" // ugali and stew plate
   },
   {
@@ -113,7 +113,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Stir Fried Beef Ugali",
     desc: "Stir fried beef with Ugali",
-    price: "KES 600",
+    price: "KES 500",
     img: "https://images.unsplash.com/photo-1567364816519-cbc9c4ffe1eb?w=400&h=400&fit=crop&crop=center" // ugali with beef
   },
   {
@@ -122,7 +122,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Chapati Beef Full",
     desc: "Full plate Chapati with beef",
-    price: "KES 500",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop&crop=center" // chapati flatbread
   },
   {
@@ -131,7 +131,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Chapati Beef Half",
     desc: "Half plate Chapati with beef",
-    price: "KES 350",
+    price: "KES 300",
     img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop&crop=center" // chapati flatbread
   },
   {
@@ -140,7 +140,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Mukimo Beef Full",
     desc: "Full plate Mukimo with beef",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=400&fit=crop&crop=center" // mukimo mashed greens
   },
   {
@@ -149,7 +149,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Mukimo Beef Half",
     desc: "Half plate Mukimo with beef",
-    price: "KES 400",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=400&fit=crop&crop=center" // mukimo mashed greens
   },
   {
@@ -158,7 +158,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Chips Beef Full",
     desc: "Full plate Chips with beef",
-    price: "KES 500",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=400&fit=crop&crop=center" // chips/fries
   },
   {
@@ -167,7 +167,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Chips Beef Half",
     desc: "Half plate Chips with beef",
-    price: "KES 400",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=400&fit=crop&crop=center" // chips/fries
   },
   {
@@ -176,7 +176,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Chips Masala Beef Full",
     desc: "Full plate Masala chips with beef",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400&h=400&fit=crop&crop=center" // masala chips spiced fries
   },
   {
@@ -185,7 +185,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Masala Beef Half",
     desc: "Half plate Masala beef",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400&h=400&fit=crop&crop=center" // masala spiced beef
   },
   {
@@ -194,7 +194,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Homefries Beef Half",
     desc: "Half plate homemade fries with beef",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1615297928064-24977384d0da?w=400&h=400&fit=crop&crop=center" // homemade golden fries
   },
   {
@@ -203,7 +203,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Bhajia Beef Full",
     desc: "Full plate Bhajia with beef",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=400&fit=crop&crop=center" // bhajia potato fritters
   },
   {
@@ -212,7 +212,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Bhajia Beef Half",
     desc: "Half plate Bhajia with beef",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=400&fit=crop&crop=center" // bhajia potato fritters
   },
   {
@@ -221,7 +221,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Potato Saute Beef Half",
     desc: "Half plate sautéed potatoes with beef",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=400&fit=crop&crop=center" // sautéed potatoes skillet
   },
   {
@@ -230,7 +230,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Potato Wedges Beef Full",
     desc: "Full plate potato wedges with beef",
-    price: "KES 600",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=400&fit=crop&crop=center" // crispy potato wedges
   },
   {
@@ -239,7 +239,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Potato Wedges Beef Half",
     desc: "Half plate potato wedges with beef",
-    price: "KES 450",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=400&fit=crop&crop=center" // crispy potato wedges
   },
   {
@@ -248,7 +248,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Potatoes Saute Beef Full",
     desc: "Full plate sautéed potatoes with beef",
-    price: "KES 600",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=400&fit=crop&crop=center" // sautéed potatoes skillet
   },
   {
@@ -257,7 +257,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Roasted Potatoes Beef Full",
     desc: "Full plate roasted potatoes with beef",
-    price: "KES 500",
+    price: "KES 400",
     img: "https://images.unsplash.com/photo-1529565214546-78a6c86b7a1e?w=400&h=400&fit=crop&crop=center" // oven roasted herbed potatoes
   },
   {
@@ -266,7 +266,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Roasted Potatoes Beef Half",
     desc: "Half plate roasted potatoes with beef",
-    price: "KES 400",
+    price: "KES 300",
     img: "https://images.unsplash.com/photo-1529565214546-78a6c86b7a1e?w=400&h=400&fit=crop&crop=center" // oven roasted herbed potatoes
   },
   {
@@ -275,7 +275,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Spaghetti Beef Full",
     desc: "Full plate spaghetti with beef",
-    price: "KES 550",
+    price: "KES 450",
     img: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&h=400&fit=crop&crop=center" // spaghetti bolognese beef
   },
   {
@@ -284,7 +284,7 @@ export const beefData: MenuItem[] = [
     subcategory: "Beef",
     title: "Matoke Beef Half",
     desc: "Half plate matoke with beef",
-    price: "KES 400",
+    price: "KES 350",
     img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=400&fit=crop&crop=center" // matoke green banana stew
   },
 ];

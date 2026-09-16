@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Reviews from "@/components/Reviews";
 import Link from "next/link";
+import Image from "next/image";
 import { sendContactEmail } from "@/actions/emails";
 
 const restaurantSchema = {
@@ -18,6 +19,14 @@ const restaurantSchema = {
     "streetAddress": "Maralal Oasis, Ground Floor, Hurlingham",
     "addressLocality": "Nairobi",
     "addressCountry": "KE"
+  },
+  "telephone": "+254757787463",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Delimwitu%2C+Maralal+Oasis%2C+Ground+Floor%2C+Hurlingham%2C+Nairobi",
+  "location": "Delimwitu, Maralal Oasis",
+  "areaServed": ["Hurlingham", "Nairobi"],
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": "https://delimwitu.co.ke/menu"
   },
   "servesCuisine": "Kenyan Cuisine",
   "priceRange": "$$",
@@ -234,7 +243,14 @@ export default function HomePage() {
             {cuisineGallery.map((image) => (
               <div key={image.src} className="flex justify-center">
                 <div className="overflow-hidden rounded-3xl shadow-md bg-cream w-full max-w-sm">
-                  <img src={image.src} alt={image.alt} className="h-72 w-full object-contain rounded-3xl" />
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={640}
+                    height={480}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                    className="h-72 w-full object-contain rounded-3xl"
+                  />
                 </div>
               </div>
             ))}

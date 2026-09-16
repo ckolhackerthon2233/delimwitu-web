@@ -30,10 +30,12 @@ export default function About() {
           </div>
 
           <div className="relative h-[420px] overflow-hidden rounded-[2rem] shadow-xl">
-            <img
+            <Image
               src="/png/pdf-kitch.png"
               alt="Kitchen team at Delimwitu"
-              className="h-full w-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 48vw"
+              className="object-cover"
             />
           </div>
         </div>

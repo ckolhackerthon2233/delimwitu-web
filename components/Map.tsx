@@ -92,6 +92,8 @@ export default function Map() {
                     width={130}
                     height={160}
                     alt={marker.title}
+                    sizes="130px"
+                    loading="lazy"
                   />
                 </div>
               </div>
